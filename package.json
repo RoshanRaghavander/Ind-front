@@ -4,7 +4,7 @@
     "private": true,
     "type": "module",
     "scripts": {
-        "build": "bun ./scripts/build.js",
+        "build": "node ./scripts/build.js",
         "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
         "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
         "clean": "rm -rf node_modules && rm -rf .svelte_kit && bun install",
@@ -17,6 +17,7 @@
         "icons:optimize": "bun ./src/icons/optimize.js",
         "lint": "prettier --check . && eslint .",
         "preview": "vite preview",
+        "start": "node build/index.js",
         "test": "bun run test:integration",
         "test:integration": "playwright test",
         "test:unit": "vitest",
