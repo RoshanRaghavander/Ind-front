@@ -1,5 +1,4 @@
 <script lang="ts">
-    import { PUBLIC_APPWRITE_DASHBOARD } from '$env/static/public';
     import Android from '../(assets)/platforms/android.svg';
     import Apple from '../(assets)/platforms/apple.svg';
     import Flutter from '../(assets)/platforms/flutter.svg';

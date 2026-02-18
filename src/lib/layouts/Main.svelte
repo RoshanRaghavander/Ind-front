@@ -14,7 +14,7 @@
     import { createScrollInfo } from '$lib/utils/scroll';
     import { addEventListener } from '@melt-ui/svelte/internal/helpers';
     import { onMount } from 'svelte';
-    import { PUBLIC_APPWRITE_DASHBOARD } from '$env/static/public';
+    import { getAppwriteDashboardUrl } from '$lib/utils/dashboard';
     import { trackEvent } from '$lib/actions/analytics';
     import MainNav from '$lib/components/MainNav.svelte';
     import { page } from '$app/state';
@@ -142,7 +142,7 @@
 
     $: isOfferPage = page.route.id?.includes('/offer-300') ?? false;
 
-    const DASHBOARD_URL = PUBLIC_APPWRITE_DASHBOARD || 'http://localhost:3000/auth';
+    const DASHBOARD_URL = getAppwriteDashboardUrl();
 
     $: mobileButtonHref = isOfferPage ? 'https://apwr.dev/DCMWDSw' : DASHBOARD_URL;
     $: mobileButtonEvent = isOfferPage
