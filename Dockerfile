@@ -4,6 +4,7 @@ RUN corepack enable
 ARG PUBLIC_GROWTH_ENDPOINT
 ENV PUBLIC_GROWTH_ENDPOINT=${PUBLIC_GROWTH_ENDPOINT}
 COPY package.json pnpm-lock.yaml ./
+COPY scripts ./scripts
 RUN pnpm install --frozen-lockfile
 COPY . .
 RUN pnpm build
