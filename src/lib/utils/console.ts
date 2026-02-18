@@ -8,7 +8,7 @@ import { env as publicEnv } from '$env/dynamic/public';
 
 const client = new Client();
 
-const endpoint = publicEnv.PUBLIC_APPWRITE_ENDPOINT ?? 'https://cloud.appwrite.io/v1';
+const endpoint = publicEnv.PUBLIC_APPWRITE_ENDPOINT ?? 'https://api.indobase.fun/v1';
 
 // Guard for SSR
 if (endpoint) {
