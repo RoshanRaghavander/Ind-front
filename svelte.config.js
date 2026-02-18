@@ -45,7 +45,7 @@ const config = {
             $markdoc: './src/markdoc'
         },
         prerender: {
-            concurrency: 32,
+            concurrency: 1,
             /**
              * @type {import('@sveltejs/kit').PrerenderMissingIdHandler}
              */
