@@ -7,8 +7,8 @@ COPY package.json pnpm-lock.yaml ./
 COPY scripts ./scripts
 RUN pnpm install --frozen-lockfile
 COPY . .
-ENV NODE_OPTIONS="--max-old-space-size=2048"
-ENV UV_THREADPOOL_SIZE=4
+ENV NODE_OPTIONS="--max-old-space-size=1536"
+ENV UV_THREADPOOL_SIZE=1
 RUN pnpm build
 
 FROM node:20 AS runner
