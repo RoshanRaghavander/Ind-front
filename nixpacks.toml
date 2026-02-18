@@ -1,6 +1,10 @@
 [phases.setup]
 nixPkgs = ['nodejs_22', 'pnpm-9_x', 'openssl']
 
+# Force higher Node heap during build (Nixpacks build phase may not inherit [variables])
+[phases.build]
+cmds = ['NODE_OPTIONS="--max-old-space-size=8192" pnpm run build']
+
 [variables]
 NODE_OPTIONS = '--max-old-space-size=4096'
 ENABLE_IMAGE_OPTIMIZER = 'false'
