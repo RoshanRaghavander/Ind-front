@@ -12,7 +12,7 @@
             name: 'Hassan Ahmed',
             title: 'Engineer at DevKind',
             avatar: '/images/testimonials/hassan.png',
-            url: '/blog/post/customer-story-storealert'
+            url: '#'
         },
         {
             logo: LangX,
@@ -21,7 +21,7 @@
             name: 'Xue',
             title: 'Founder at LangX',
             avatar: '/images/testimonials/xue.webp',
-            url: '/blog/post/customer-stories-langx'
+            url: '#'
         },
         {
             logo: KCollect,
@@ -30,7 +30,7 @@
             name: "Ryan O'Connor",
             title: 'Founder at K-Collect',
             avatar: '/images/testimonials/ryan.png',
-            url: '/blog/post/customer-stories-kcollect'
+            url: '#'
         }
     ];
 

@@ -3,32 +3,32 @@
         {
             label: 'Auth',
             icon: '/images/icons/illustrated/light/auth.png',
-            href: '/products/auth'
+            href: '/pricing'
         },
         {
             label: 'Databases',
             icon: '/images/icons/illustrated/light/databases.png',
-            href: '/docs/products/databases'
+            href: '/pricing'
         },
         {
             label: 'Storage',
             icon: '/images/icons/illustrated/light/storage.png',
-            href: '/products/storage'
+            href: '/pricing'
         },
         {
             label: 'Functions',
             icon: '/images/icons/illustrated/light/functions.png',
-            href: '/products/functions'
+            href: '/pricing'
         },
         {
             label: 'Messaging',
             icon: '/images/icons/illustrated/light/messaging.png',
-            href: '/products/messaging'
+            href: '/pricing'
         },
         {
             label: 'Realtime',
             icon: '/images/icons/illustrated/light/realtime.png',
-            href: '/docs/apis/realtime'
+            href: '/pricing'
         }
     ];
 
@@ -36,7 +36,7 @@
         {
             label: 'Sites',
             icon: '/images/icons/illustrated/light/sites.png',
-            href: '/products/sites'
+            href: '/pricing'
         }
     ];
 </script>

@@ -10,49 +10,49 @@
             description:
                 'Automatically detect and mitigate Distributed Denial-of-Service (DDoS) attacks.',
             icon: '/images/icons/gradients/shield.svg',
-            href: '/docs/advanced/security/abuse-protection#ddos-protection'
+            href: '/pricing'
         },
         {
             label: 'Encryption',
             description: 'Built-in data encryption both in rest and in transit.',
             icon: '/images/icons/gradients/lock.svg',
-            href: '/docs/advanced/security/encryption'
+            href: '/pricing'
         },
         {
             label: 'Abuse protection',
             description: 'Protect your APIs from abuse with built-in protection.',
             icon: '/images/icons/gradients/verified.svg',
-            href: '/docs/advanced/security/abuse-protection#rate-limiting'
+            href: '/pricing'
         },
         {
             label: 'Data migrations',
             description: 'Easily transfer data from 3rd parties or between Cloud and self-hosted.',
             icon: '/images/icons/gradients/database.svg',
-            href: '/docs/advanced/migrations'
+            href: '/pricing'
         },
         {
             label: 'GDPR',
             description: 'Safeguard user data and privacy with provided GDPR regulations.',
             icon: '/images/icons/gradients/star.svg',
-            href: '/docs/advanced/security/gdpr'
+            href: '/pricing'
         },
         {
             label: 'SOC-2',
             description: 'Ensure the highest level of security and privacy protection.',
             icon: '/images/icons/gradients/soc-2.svg',
-            href: '/docs/advanced/security/soc2'
+            href: '/pricing'
         },
         {
             label: 'HIPAA',
             description: 'Protect sensitive user health data.',
             icon: '/images/icons/gradients/hipaa.svg',
-            href: '/docs/advanced/security/hipaa'
+            href: '/pricing'
         },
         {
             label: 'CCPA',
             description: 'Protect sensitive user health data.',
             icon: '/images/icons/gradients/ccpa.svg',
-            href: '/docs/advanced/security/ccpa'
+            href: '/pricing'
         }
     ];
 

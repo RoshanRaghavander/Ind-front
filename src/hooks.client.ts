@@ -6,4 +6,5 @@ Sentry.init({
     tracesSampleRate: 1.0
 });
 
+export function init() {}
 export const handleError = handleErrorWithSentry();

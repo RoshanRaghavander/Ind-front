@@ -19,9 +19,6 @@
     import MainNav from '$lib/components/MainNav.svelte';
     import { page } from '$app/state';
     import { Button, Icon } from '$lib/components/ui';
-    import AnnouncementBanner from '$routes/(init)/init/(components)/announcement-banner.svelte';
-    import HackathonBanner from '$routes/(marketing)/(components)/(hackathon)/hackathon-banner.svelte';
-    import TeaserBanner from '$routes/(marketing)/(components)/teaser/teaser-banner.svelte';
 
     export let omitMainId = false;
     export let hideNavigation = false;
@@ -98,18 +95,11 @@
     });
 
     $: navLinks = [
-        {
-            label: 'Docs',
-            href: '/docs'
-        },
-        {
-            label: 'Pricing',
-            href: '/pricing'
-        },
-        {
-            label: 'Enterprise',
-            href: '/contact-us/enterprise'
-        }
+        { label: 'Pricing', href: '/pricing' },
+        { label: 'Contact', href: '/contact-us' },
+        { label: 'Terms', href: '/terms' },
+        { label: 'Privacy', href: '/privacy' },
+        { label: 'Enterprise', href: '/contact-us/enterprise' }
     ];
 
     $: resolvedTheme = $isMobileNavOpen ? 'dark' : theme;
@@ -127,28 +117,11 @@
         return $scrollInfo.deltaDirChange < 200;
     })();
 
-    function updateSideNav() {
-        if (browser) {
-            const integrationsSide = document.getElementById('integrations-side');
-            if (integrationsSide) {
-                $isHeaderHidden
-                    ? integrationsSide.classList.remove('menu-visible')
-                    : integrationsSide.classList.add('menu-visible');
-            }
-        }
-    }
-
-    $: ($isHeaderHidden, updateSideNav());
-
-    $: isOfferPage = page.route.id?.includes('/offer-300') ?? false;
-
     const DASHBOARD_URL = getAppwriteDashboardUrl();
 
-    $: mobileButtonHref = isOfferPage ? 'https://apwr.dev/DCMWDSw' : DASHBOARD_URL;
-    $: mobileButtonEvent = isOfferPage
-        ? 'mobile-claim_300_credits_btn-click'
-        : 'main-start_building_btn-click';
-    $: mobileButtonText = isOfferPage ? 'Claim 300$ credits' : 'Start building';
+    $: mobileButtonHref = DASHBOARD_URL;
+    $: mobileButtonEvent = 'main-start_building_btn-click';
+    $: mobileButtonText = 'Start building';
 
     const handleNav = () => {
         $isMobileNavOpen = !$isMobileNavOpen;
@@ -227,12 +200,12 @@
                 <span class="nav-badge text-sub-body font-medium text-primary">
                     Made in India
                 </span>
-                <IsLoggedIn offerButton={isOfferPage} />
+                <IsLoggedIn offerButton={false} />
             </div>
         </div>
     </header>
     {#if !hideNavigation}
-        <MobileNav bind:open={$isMobileNavOpen} links={navLinks} offerButton={isOfferPage} />
+        <MobileNav bind:open={$isMobileNavOpen} links={navLinks} offerButton={false} />
     {/if}
 
     <main

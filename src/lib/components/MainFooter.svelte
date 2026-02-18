@@ -57,7 +57,7 @@
                 <li>
                     <a
                         class="web-link"
-                        href="/cookies"
+                        href="/privacy"
                         onclick={() => trackEvent(`footer-cookies-click`)}>Cookies</a
                     >
                 </li>

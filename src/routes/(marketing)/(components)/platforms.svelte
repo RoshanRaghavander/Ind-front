@@ -33,16 +33,16 @@
 
     const platforms = [
         // Web Frameworks (by popularity)
-        { name: 'Next.js', dark: Nextjs, href: '/docs/quick-starts/nextjs', primary: '#fff' },
-        { name: 'React', dark: React, href: '/docs/quick-starts/react', primary: '#53C1DE' },
-        { name: 'Vue', dark: Vue, href: '/docs/quick-starts/vue', primary: '#4FC08D' },
-        { name: 'Angular', dark: Angular, href: '/docs/quick-starts/angular', primary: '#DD0031' },
-        { name: 'Svelte', dark: Svelte, href: '/docs/quick-starts/sveltekit', primary: '#FF3E00' },
+        { name: 'Next.js', dark: Nextjs, href: '/pricing', primary: '#fff' },
+        { name: 'React', dark: React, href: '/pricing', primary: '#53C1DE' },
+        { name: 'Vue', dark: Vue, href: '/pricing', primary: '#4FC08D' },
+        { name: 'Angular', dark: Angular, href: '/pricing', primary: '#DD0031' },
+        { name: 'Svelte', dark: Svelte, href: '/pricing', primary: '#FF3E00' },
         {
             name: 'TanStack Start',
             dark: TanStack,
             light: TanStackLight,
-            href: '/docs/quick-starts/tanstack-start',
+            href: '/pricing',
             primary: '#fff'
         },
 
@@ -50,13 +50,13 @@
         {
             name: 'React Native',
             dark: ReactNative,
-            href: '/docs/quick-starts/react-native',
+            href: '/pricing',
             primary: '#61DAFB'
         },
         {
             name: 'Flutter',
             dark: Flutter,
-            href: '/docs/quick-starts/flutter',
+            href: '/pricing',
             primary: '#00569E',
             secondary: '#47C5FB'
         },
@@ -64,55 +64,55 @@
             name: 'iOS',
             dark: Apple,
             light: AppleLight,
-            href: '/docs/quick-starts/apple',
+            href: '/pricing',
             primary: '#fff'
         },
-        { name: 'Android', dark: Android, href: '/docs/quick-starts/android', primary: '#3DDC84' },
+        { name: 'Android', dark: Android, href: '/pricing', primary: '#3DDC84' },
         {
             name: 'Kotlin',
             dark: Kotlin,
-            href: '/docs/quick-starts/kotlin',
+            href: '/pricing',
             primary: '#6D74E1',
             secondary: '#E1725C'
         },
         {
             name: 'Swift',
             dark: Swift,
-            href: '/docs/quick-starts/swift',
+            href: '/pricing',
             primary: '#F88A36',
             secondary: '#FD2020'
         },
 
         // Backend Languages & Runtimes
-        { name: 'Node.js', dark: Node, href: '/docs/quick-starts/node', primary: '#8CC84B' },
+        { name: 'Node.js', dark: Node, href: '/pricing', primary: '#8CC84B' },
         {
             name: 'Python',
             dark: Python,
-            href: '/docs/quick-starts/python',
+            href: '/pricing',
             primary: '#F9C600',
             secondary: '#327EBD'
         },
-        { name: 'PHP', dark: Php, href: '/docs/quick-starts/php', primary: '#8892BF' },
+        { name: 'PHP', dark: Php, href: '/pricing', primary: '#8892BF' },
         {
             name: 'Ruby',
             dark: Ruby,
-            href: '/docs/quick-starts/ruby',
+            href: '/pricing',
             primary: '#791C12',
             secondary: '#9E120B'
         },
-        { name: '.NET', dark: Net, href: '/docs/quick-starts/dotnet', primary: '#512BD4' },
-        { name: 'Go', dark: Go, light: GoLight, href: '/docs/quick-starts/go', primary: '#fff' },
+        { name: '.NET', dark: Net, href: '/pricing', primary: '#512BD4' },
+        { name: 'Go', dark: Go, light: GoLight, href: '/pricing', primary: '#fff' },
         {
             name: 'Deno',
             dark: Deno,
             light: DenoLight,
-            href: '/docs/quick-starts/deno',
+            href: '/pricing',
             primary: '#fff'
         },
         {
             name: 'Dart',
             dark: Dart,
-            href: '/docs/quick-starts/dart',
+            href: '/pricing',
             primary: '#01579B',
             secondary: '#29B6F6'
         }

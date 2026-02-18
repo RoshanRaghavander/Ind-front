@@ -77,7 +77,7 @@
         displayHiringMessage();
         saveReferrerAndUtmSource(page.url);
 
-        const initialTheme = page.route.id?.startsWith('/docs') ? getPreferredTheme() : 'dark';
+        const initialTheme = getPreferredTheme();
 
         applyTheme(initialTheme);
 
@@ -97,14 +97,8 @@
     });
 
     $effect(() => {
-        const isDocs = browser && page.route.id?.startsWith('/docs');
-
-        if (isDocs) {
-            if (!document.body.classList.contains(`${$currentTheme}`)) {
-                applyTheme($currentTheme);
-            }
-        } else {
-            applyTheme('dark');
+        if (browser && !document.body.classList.contains(`${$currentTheme}`)) {
+            applyTheme($currentTheme);
         }
     });
 

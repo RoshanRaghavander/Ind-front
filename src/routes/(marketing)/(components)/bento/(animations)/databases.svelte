@@ -141,7 +141,7 @@
 </script>
 
 <a
-    href="/docs/products/databases"
+    href="/pricing"
     class="border-smooth col-span-12 flex flex-col rounded-2xl border bg-white/2 p-2 transition-shadow duration-300 hover:shadow-[0px_0px_0px_4px_var(--color-offset)] focus:shadow-[0px_0px_0px_4px_var(--color-offset)] md:col-span-6"
     onclick={() => {
         trackEvent(`bento-databases-click`);

@@ -14,80 +14,12 @@
 
     const links: Record<string, { label: string; href: string; target?: string; rel?: string }[]> =
         {
-            'Quick starts': [
-                { label: 'Web', href: '/docs/quick-starts/web' },
-                { label: 'Next.js', href: '/docs/quick-starts/nextjs' },
-                { label: 'React', href: '/docs/quick-starts/react' },
-                { label: 'Vue.js', href: '/docs/quick-starts/vue' },
-                { label: 'Nuxt', href: '/docs/quick-starts/nuxt' },
-                { label: 'SvelteKit', href: '/docs/quick-starts/sveltekit' },
-                { label: 'Refine', href: '/docs/quick-starts/refine' },
-                { label: 'Angular', href: '/docs/quick-starts/angular' },
-                { label: 'React Native', href: '/docs/quick-starts/react-native' },
-                { label: 'Flutter', href: '/docs/quick-starts/flutter' },
-                { label: 'Apple', href: '/docs/quick-starts/apple' },
-                { label: 'Android', href: '/docs/quick-starts/android' },
-                { label: 'Qwik', href: '/docs/quick-starts/qwik' },
-                { label: 'Astro', href: '/docs/quick-starts/astro' },
-                { label: 'Solid', href: '/docs/quick-starts/solid' }
-            ],
-            Products: [
-                { label: 'Auth', href: '/products/auth' },
-                { label: 'Databases', href: '/docs/products/databases' },
-                { label: 'Storage', href: '/products/storage' },
-                { label: 'Functions', href: '/products/functions' },
-                { label: 'Messaging', href: '/products/messaging' },
-                { label: 'Realtime', href: '/docs/apis/realtime' },
-                { label: 'Sites', href: '/products/sites' }
-            ],
-            Learn: [
-                { label: 'Docs', href: '/docs' },
-                { label: 'Integrations', href: '/integrations' },
-                { label: 'Community', href: '/community' },
-                { label: 'Init', href: '/init' },
-                { label: 'Blog', href: '/blog' },
-                { label: 'Changelog', href: '/changelog' },
-                {
-                    label: 'Roadmap',
-                    href: 'https://github.com/orgs/appwrite/projects',
-                    target: '_blank',
-                    rel: 'noopener noreferrer'
-                },
-                {
-                    label: 'Source code',
-                    href: 'https://github.com/appwrite',
-                    target: '_blank',
-                    rel: 'noopener noreferrer'
-                }
-                // {
-                //     label: 'Status',
-                //     href: 'https://appwrite.online',
-                //     target: '_blank',
-                //     rel: 'noopener noreferrer'
-                // }
-            ],
-            Programs: [
-                { label: 'Heroes', href: '/heroes' },
-                { label: 'Startups', href: '/startups' },
-                { label: 'Education', href: '/education' }
-            ],
-            About: [
-                { label: 'Company', href: '/company' },
+            'Links': [
                 { label: 'Pricing', href: '/pricing' },
-                {
-                    label: 'Careers',
-                    href: 'https://appwrite.careers',
-                    target: '_blank',
-                    rel: 'noopener noreferrer'
-                },
-                {
-                    label: 'Store',
-                    href: 'https://appwrite.store',
-                    target: '_blank',
-                    rel: 'noopener noreferrer'
-                },
                 { label: 'Contact us', href: '/contact-us' },
-                { label: 'Assets', href: '/assets' }
+                { label: 'Enterprise', href: '/contact-us/enterprise' },
+                { label: 'Terms', href: '/terms' },
+                { label: 'Privacy', href: '/privacy' }
             ]
         };
 </script>

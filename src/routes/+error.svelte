@@ -3,15 +3,9 @@
     import { FooterNav, MainFooter } from '$lib/components';
     import { Button } from '$lib/components/ui';
     import { Main } from '$lib/layouts';
-    import DocsError from './docs/+error.svelte';
-
-    const isDocs = page.url.pathname.startsWith('/docs');
 </script>
 
-{#if isDocs}
-    <DocsError />
-{:else}
-    <Main>
+<Main>
         <div class="web-big-padding-section">
             <div class="web-big-padding-section-level-2">
                 <div class="container">
@@ -26,7 +20,7 @@
                             <p class="text-description">
                                 Sorry, it seems that the page you are looking for does not exist.
                                 Feel free to use our navigation menu or the button below to explore
-                                more of Indobase's documentation.
+                                more of Indobase.
                             </p>
                         {/if}
                         <Button href="/" class="self-center">Back to homepage</Button>
@@ -41,4 +35,3 @@
             </div>
         </div>
     </Main>
-{/if}
