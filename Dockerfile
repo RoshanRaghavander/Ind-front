@@ -3,6 +3,8 @@ WORKDIR /app
 RUN corepack enable
 ARG PUBLIC_GROWTH_ENDPOINT
 ENV PUBLIC_GROWTH_ENDPOINT=${PUBLIC_GROWTH_ENDPOINT}
+ENV NODE_ENV=production
+ENV ENABLE_IMAGE_OPTIMIZER=false
 COPY package.json pnpm-lock.yaml ./
 COPY scripts ./scripts
 RUN pnpm install --frozen-lockfile

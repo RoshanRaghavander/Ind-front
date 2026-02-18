@@ -6,6 +6,9 @@ import manifestSRI from 'vite-plugin-manifest-sri';
 import { defineConfig } from 'vitest/config';
 // import { sentrySvelteKit } from '@sentry/sveltekit';
 
+const enableImageOptimizer = process.env.ENABLE_IMAGE_OPTIMIZER === 'true';
+const isProd = process.env.NODE_ENV === 'production';
+
 export default defineConfig({
     plugins: [
         // sentrySvelteKit({
@@ -23,21 +26,25 @@ export default defineConfig({
                 }
             }
         }),
-        ViteImageOptimizer({
-            include: ['**/*.png', '**/*.jpg', '**/*.jpeg', '**/*.gif', '**/*.svg'],
-            exclude: ['**/*.avif', '**/*.webp'],
-            cache: true,
-            cacheLocation: '.cache'
-        }),
+        ...(enableImageOptimizer
+            ? [
+                  ViteImageOptimizer({
+                      include: ['**/*.png', '**/*.jpg', '**/*.jpeg', '**/*.gif', '**/*.svg'],
+                      exclude: ['**/*.avif', '**/*.webp'],
+                      cache: true,
+                      cacheLocation: '.cache'
+                  })
+              ]
+            : []),
         manifestSRI({
             algorithms: ['sha384']
         })
     ],
     css: {
-        devSourcemap: process.env.NODE_ENV !== 'production'
+        devSourcemap: !isProd
     },
     build: {
-        sourcemap: process.env.NODE_ENV !== 'production',
+        sourcemap: false,
         reportCompressedSize: false
     },
     test: {
