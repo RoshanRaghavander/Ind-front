@@ -1,4 +1,3 @@
-import { PUBLIC_APPWRITE_COL_MESSAGES_ID, PUBLIC_APPWRITE_COL_THREADS_ID } from '$env/static/public';
 import { env as publicEnv } from '$env/dynamic/public';
 import { databases } from '$lib/appwrite';
 import { Query } from '@appwrite.io/console';
@@ -83,7 +82,7 @@ export async function getThreads({ q, tags, allTags }: GetThreadsArgs) {
 
     const data = await databases.listDocuments(
         publicEnv.PUBLIC_APPWRITE_DB_MAIN_ID ?? 'default',
-        PUBLIC_APPWRITE_COL_THREADS_ID,
+        publicEnv.PUBLIC_APPWRITE_COL_THREADS_ID ?? '',
         query.filter(Boolean) as string[]
     );
 
@@ -94,7 +93,7 @@ export async function getThreads({ q, tags, allTags }: GetThreadsArgs) {
 export async function getThread($id: string) {
     return (await databases.getDocument(
         publicEnv.PUBLIC_APPWRITE_DB_MAIN_ID ?? 'default',
-        PUBLIC_APPWRITE_COL_THREADS_ID,
+        publicEnv.PUBLIC_APPWRITE_COL_THREADS_ID ?? '',
         $id
     )) as unknown as DiscordThread;
 }
@@ -109,7 +108,7 @@ export async function getRelatedThreads(thread: DiscordThread, limit: number = 3
 export async function getThreadMessages(threadId: string) {
     const data = await databases.listDocuments(
         publicEnv.PUBLIC_APPWRITE_DB_MAIN_ID ?? 'default',
-        PUBLIC_APPWRITE_COL_MESSAGES_ID,
+        publicEnv.PUBLIC_APPWRITE_COL_MESSAGES_ID ?? '',
         [Query.equal('threadId', threadId)].filter(Boolean) as string[]
     );
 
@@ -130,7 +129,7 @@ export async function* iterateAllThreads(total: number | undefined = undefined) 
 
         const data = await databases.listDocuments<DiscordThread>(
             publicEnv.PUBLIC_APPWRITE_DB_MAIN_ID ?? 'default',
-            PUBLIC_APPWRITE_COL_THREADS_ID,
+            publicEnv.PUBLIC_APPWRITE_COL_THREADS_ID ?? '',
             queries
         );
 
