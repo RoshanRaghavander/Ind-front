@@ -1,4 +1,4 @@
-﻿---
+---
 layout: integration
 title: WhatsApp with Vonage
 description: Send automated replies to messages on WhatsApp
@@ -52,7 +52,7 @@ Once the Indobase Function is deployed, we will return here to add the Function 
 
 ## Step 2: Create the Indobase Function
 
-For this step, [create an account on Indobase Cloud](https://cloud.appwrite.io/register) or [self-host Indobase](https://appwrite.io/docs/advanced/self-hosting) if you haven’t already. In case you decide to self-host Indobase, there are [additional setup steps](https://appwrite.io/docs/advanced/self-hosting/functions) to use Indobase Function templates.
+For this step, [create an account on Indobase Cloud](https://console.indobase.fun/register) or [self-host Indobase](https://appwrite.io/docs/advanced/self-hosting) if you haven’t already. In case you decide to self-host Indobase, there are [additional setup steps](https://appwrite.io/docs/advanced/self-hosting/functions) to use Indobase Function templates.
 
 In your Indobase project, go to the **Functions** page, click on the **Templates** tab, search for ‘Vonage’, and select the **WhatsApp with Vonage** function template. 
 

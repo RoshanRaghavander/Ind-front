@@ -1,4 +1,4 @@
-﻿---
+---
 layout: changelog
 title: Fixes and improvements to Indobase Cloud
 date: 2024-11-29
@@ -20,6 +20,6 @@ We've shipped several updates and improvements to Indobase Cloud for a smoother 
 
 These updates are aimed at improving the overall usability and performance of Indobase Cloud. Let us know if you encounter any issues!
 
-{% arrow_link href="https://cloud.appwrite.io/console" %}
+{% arrow_link href="https://console.indobase.fun/console" %}
 Explore the Console to see the updates
 {% /arrow_link %}

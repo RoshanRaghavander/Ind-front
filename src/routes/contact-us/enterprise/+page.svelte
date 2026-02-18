@@ -4,7 +4,7 @@
     import { TITLE_SUFFIX } from '$routes/titles';
     import MainFooter from '../../../lib/components/MainFooter.svelte';
     import { loggedIn, user } from '$lib/utils/console';
-    import { PUBLIC_GROWTH_ENDPOINT } from '$env/static/public';
+    import { env as publicEnv } from '$env/dynamic/public';
     import { getReferrerAndUtmSource } from '$lib/utils/utm';
     import { Button } from '$lib/components/ui';
     import { trackEvent } from '$lib/actions/analytics';
@@ -27,7 +27,13 @@
 
         const cloudEmail = loggedIn && $user?.email ? $user.email : undefined;
 
-        const response = await fetch(`${PUBLIC_GROWTH_ENDPOINT}/feedback/sales/enterprise`, {
+        const endpoint = publicEnv.PUBLIC_GROWTH_ENDPOINT;
+        if (!endpoint) {
+            error = 'Growth endpoint is not configured';
+            submitting = false;
+            return;
+        }
+        const response = await fetch(`${endpoint}/feedback/sales/enterprise`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: article
 title: Start with Web
 description: Build JavaScript or Typescript web apps with Indobase. Add authentication, user management, file storage, and more. Read our guide to get started!
@@ -9,7 +9,7 @@ back: /docs/quick-starts
 
 Learn how to add Indobase to your web apps.
 {% section #step-1 step=1 title="Create project" %}
-Head to the [Indobase Console](https://cloud.appwrite.io/console).
+Head to the [Indobase Console](https://console.indobase.fun).
 
 {% only_dark %}
 ![Create project screen](/images/docs/quick-starts/dark/create-project.png)

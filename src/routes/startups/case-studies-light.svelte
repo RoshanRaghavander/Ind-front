@@ -26,7 +26,7 @@
         {
             logo: KCollect,
             headline: 'K-Collect reduced infrastructure costs by 700%',
-            blurb: 'A major impact that Indobase made was the amount of time and stress saved.',,
+            blurb: 'A major impact that Indobase made was the amount of time and stress saved.',
             name: "Ryan O'Connor",
             title: 'Founder at K-Collect',
             avatar: '/images/testimonials/ryan.png',

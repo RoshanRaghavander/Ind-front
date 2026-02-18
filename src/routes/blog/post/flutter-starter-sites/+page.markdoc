@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: How to setup the Flutter starter template on Indobase Sites
 description: Learn the process of deploying the Flutter starter template on Indobase Sites.
@@ -29,7 +29,7 @@ Indobase's Flutter starter template includes:
 
 # Deploy the starter template on Indobase
 
-Firstly, you must head to Indobase Cloud and [create an account](https://cloud.appwrite.io/console/register) if you haven't already (or [self-host Indobase 1.7](https://appwrite.io/docs/advanced/self-hosting)). Next, create your first project, which will lead you to the project overview page.
+Firstly, you must head to Indobase Cloud and [create an account](https://console.indobase.fun/console/register) if you haven't already (or [self-host Indobase 1.7](https://appwrite.io/docs/advanced/self-hosting)). Next, create your first project, which will lead you to the project overview page.
 
 ![Add platform](/images/blog/flutter-starter-sites/add-platform.png)
 

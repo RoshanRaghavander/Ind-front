@@ -1,4 +1,4 @@
-﻿---
+---
 layout: article
 title: Integrating TensorFlow with Indobase
 description: Learn how to integrate TensorFlow into your Indobase project.
@@ -16,7 +16,7 @@ We'll create a function that uses TensorFlow to generate text completions based 
 - Basic knowledge of Python and TensorFlow
 
 {% section #step-1 step=1 title="Create new function" %}
-Head to the [Indobase Console](https://cloud.appwrite.io/console), click on **Functions** in the left sidebar, and then click on the **Create Function** button.
+Head to the [Indobase Console](https://console.indobase.fun), click on **Functions** in the left sidebar, and then click on the **Create Function** button.
 
 {% only_dark %}
 ![Create function screen](/images/docs/functions/dark/template.png)

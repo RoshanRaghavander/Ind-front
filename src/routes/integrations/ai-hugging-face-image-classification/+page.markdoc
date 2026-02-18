@@ -1,4 +1,4 @@
-﻿---
+---
 layout: integration
 title: Image classification with Hugging Face
 description: Understand and label the contents of images
@@ -40,7 +40,7 @@ First, you must [sign up for a Hugging Face account](https://huggingface.co/join
 
 ## Step 2: Create the Indobase Function
 
-For this step, you must [create an account on Indobase Cloud](https://cloud.appwrite.io/register) or [self-host Indobase](https://appwrite.io/docs/advanced/self-hosting) if you haven’t already. If you decide to self-host Indobase, there are [additional setup steps](https://appwrite.io/docs/advanced/self-hosting/functions) to use Indobase Function templates.
+For this step, you must [create an account on Indobase Cloud](https://console.indobase.fun/register) or [self-host Indobase](https://appwrite.io/docs/advanced/self-hosting) if you haven’t already. If you decide to self-host Indobase, there are [additional setup steps](https://appwrite.io/docs/advanced/self-hosting/functions) to use Indobase Function templates.
 
 Head over to the Indobase console, navigate to the **Functions** page, click on the **Templates** tab, and search for the **Image Classification** function template.
 

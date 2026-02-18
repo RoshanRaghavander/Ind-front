@@ -3,7 +3,7 @@
     import { page } from '$app/state';
     import { fade } from 'svelte/transition';
     import { loggedIn, user } from '$lib/utils/console';
-    import { PUBLIC_GROWTH_ENDPOINT } from '$env/static/public';
+    import { env as publicEnv } from '$env/dynamic/public';
     import { Button } from '$lib/components/ui';
 
     export let date: string | undefined = undefined;
@@ -21,7 +21,13 @@
 
         const userId = loggedIn && $user?.$id ? $user.$id : undefined;
 
-        const response = await fetch(`${PUBLIC_GROWTH_ENDPOINT}/feedback/docs`, {
+        const endpoint = publicEnv.PUBLIC_GROWTH_ENDPOINT;
+        if (!endpoint) {
+            submitting = false;
+            error = 'Growth endpoint is not configured';
+            return;
+        }
+        const response = await fetch(`${endpoint}/feedback/docs`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

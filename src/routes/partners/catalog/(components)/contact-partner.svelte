@@ -1,8 +1,12 @@
 <script context="module" lang="ts">
-    import { PUBLIC_GROWTH_ENDPOINT } from '$env/static/public';
+    import { env as publicEnv } from '$env/dynamic/public';
 
     export const subscribeToNewsletter = async (email: string) => {
-        const response = await fetch(`${PUBLIC_GROWTH_ENDPOINT}/partners/contact`, {
+        const endpoint = publicEnv.PUBLIC_GROWTH_ENDPOINT;
+        if (!endpoint) {
+            return new Response(null, { status: 500, statusText: 'Growth endpoint missing' });
+        }
+        const response = await fetch(`${endpoint}/partners/contact`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

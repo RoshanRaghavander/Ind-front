@@ -11,13 +11,13 @@
     import OpenSource from './(components)/OpenSource.svelte';
     import Hero from '$lib/components/product-pages/hero.svelte';
     import Testimonials from '$lib/components/product-pages/testimonials.svelte';
-    import { PUBLIC_APPWRITE_DASHBOARD } from '$env/static/public';
+    import { getAppwriteDashboardUrl } from '$lib/utils/dashboard';
     import HeroImage from './(assets)/hero-image.png';
     import ProductCards from '$lib/components/product-pages/product-cards.svelte';
     import Optimized from './(components)/Optimized.svelte';
     import { Button } from '$lib/components/ui';
 
-    const DASHBOARD_URL = PUBLIC_APPWRITE_DASHBOARD || 'http://localhost:3000';
+    const DASHBOARD_URL = getAppwriteDashboardUrl();
 
     const title = 'Storage' + TITLE_SUFFIX;
     const description =

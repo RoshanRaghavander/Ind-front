@@ -5,7 +5,7 @@
     import FooterNav from '../../lib/components/FooterNav.svelte';
     import MainFooter from '../../lib/components/MainFooter.svelte';
     import { socials } from '$lib/constants';
-    import { PUBLIC_GROWTH_ENDPOINT } from '$env/static/public';
+    import { env as publicEnv } from '$env/dynamic/public';
     import { getReferrerAndUtmSource } from '$lib/utils/utm';
     import { Button } from '$lib/components/ui';
     import { trackEvent } from '$lib/actions/analytics';
@@ -23,7 +23,13 @@
         error = undefined;
         submitting = true;
 
-        const response = await fetch(`${PUBLIC_GROWTH_ENDPOINT}/feedback`, {
+        const endpoint = publicEnv.PUBLIC_GROWTH_ENDPOINT;
+        if (!endpoint) {
+            error = 'Growth endpoint is not configured';
+            submitting = false;
+            return;
+        }
+        const response = await fetch(`${endpoint}/feedback`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

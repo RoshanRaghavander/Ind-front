@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: "Top 30 software development tools for agencies and teams"
 description: Explore 30 essential tools that help software agencies and development teams build faster, collaborate better, and scale efficiently.
@@ -131,7 +131,7 @@ A code editor is often the first and most frequently used tool in any developer�
 
 **CodeSandbox pricing:** Free for learning and experimenting. $170 per month per workspace for the Scale plan.
 
-{% call_to_action title="All-in-one development platform" description="Use built-in backend infrastructure and web hosting, all from a single place." point1="Open source"  point2="Start for free" point3="Support for over 13 SDKs" point4="Managed cloud solution" cta="Start building for free" url="https://cloud.appwrite.io/console/" /%}
+{% call_to_action title="All-in-one development platform" description="Use built-in backend infrastructure and web hosting, all from a single place." point1="Open source"  point2="Start for free" point3="Support for over 13 SDKs" point4="Managed cloud solution" cta="Start building for free" url="https://console.indobase.fun/console/" /%}
 
 # The 5 best IDEs
 
@@ -706,4 +706,4 @@ Indobase is an open-source alternative to Firebase and Vercel**.** It’s an all
 
 Picking the right tools is essential to how fast and effectively your team can build and ship software. From planning and collaboration to development, testing, and deployment, every stage benefits when your tooling is reliable, integrated, and easy to use. 
 
-This list includes a mix of proven and modern tools that help you do exactly that. Whether it’s managing tasks, testing APIs, running containers, or building internal dashboards, the goal is the same: ship faster with fewer blockers. And if you're looking for a complete all-in-one development solution that covers everything from authentication to hosting, without the need for stitching together multiple services, then check out Indobase and start building for [free](https://cloud.appwrite.io/console).
+This list includes a mix of proven and modern tools that help you do exactly that. Whether it’s managing tasks, testing APIs, running containers, or building internal dashboards, the goal is the same: ship faster with fewer blockers. And if you're looking for a complete all-in-one development solution that covers everything from authentication to hosting, without the need for stitching together multiple services, then check out Indobase and start building for [free](https://console.indobase.fun/console).

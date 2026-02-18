@@ -1,4 +1,4 @@
-﻿---
+---
 layout: article
 title: Start with Kotlin
 description: Learn to get started with server integrations with Indobase Kotlin SDK.
@@ -8,7 +8,7 @@ back: /docs/quick-starts
 ---
 Learn how to setup your first Kotlin project powered by Indobase.
 {% section #step-1 step=1 title="Create project" %}
-Head to the [Indobase Console](https://cloud.appwrite.io/console).
+Head to the [Indobase Console](https://console.indobase.fun).
 
 {% info title="Server SDK" %}
 This tutorial is for the Kotlin Server SDK, meant for server and backend applications.

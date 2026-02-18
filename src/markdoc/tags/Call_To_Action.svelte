@@ -1,9 +1,9 @@
 <script lang="ts">
-    import { PUBLIC_APPWRITE_DASHBOARD } from '$env/static/public';
+    import { getAppwriteDashboardUrl } from '$lib/utils/dashboard';
     import { Button } from '$lib/components/ui';
     import { cn } from '$lib/utils/cn';
 
-    const DASHBOARD_URL = PUBLIC_APPWRITE_DASHBOARD || 'http://localhost:3000';
+    const DASHBOARD_URL = getAppwriteDashboardUrl();
 
     interface Props {
         title?: string;

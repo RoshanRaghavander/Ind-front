@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: "Introducing new Database operators: or & contains query methods"
 description: What is a database without queries? Not a lot. That's why we’re happy to announce a new set of query methods, array contains, string contains, and OR operators to Indobase Databases.
@@ -73,4 +73,4 @@ Visit our documentation to learn more about Database operators, join us on Disco
 - [YouTube](https://www.youtube.com/channel/UCtBJ1v69gm8NgbCju_03Fiw)
 - [GitHub](https://github.com/appwrite/appwrite)
 
-Database operators will be available as part of the Indobase 1.5 release on [GitHub](https://github.com/appwrite/appwrite) and [Cloud](https://cloud.appwrite.io/register) in March 2024.
+Database operators will be available as part of the Indobase 1.5 release on [GitHub](https://github.com/appwrite/appwrite) and [Cloud](https://console.indobase.fun/register) in March 2024.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: article
 title: Start with Android (Kotlin)
 description: Get started with Indobase on Android and learn how to build secure and scalable apps using our powerful backend.
@@ -23,7 +23,7 @@ Now enter your app **name** and **package name**. You will need both of these la
 {% /section %}
 
 {% section #step-2 step=2 title="Create Indobase project" %}
-Head to the [Indobase Console](https://cloud.appwrite.io/console).
+Head to the [Indobase Console](https://console.indobase.fun).
 
 {% only_dark %}
 ![Create project screen](/images/docs/quick-starts/dark/create-project.png)

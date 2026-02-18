@@ -3,7 +3,7 @@
     import { FooterNav, MainFooter } from '$lib/components';
     import { Main } from '$lib/layouts';
     import { onMount } from 'svelte';
-    import { PUBLIC_GROWTH_ENDPOINT } from '$env/static/public';
+    import { env as publicEnv } from '$env/dynamic/public';
     import { Button } from '$lib/components/ui';
 
     let error: string | undefined;
@@ -11,7 +11,12 @@
     onMount(async () => {
         const email = page.url.searchParams.get('email');
         const key = page.url.searchParams.get('key');
-        const response = await fetch(`${PUBLIC_GROWTH_ENDPOINT}/newsletter/verify`, {
+        const endpoint = publicEnv.PUBLIC_GROWTH_ENDPOINT;
+        if (!endpoint) {
+            error = 'Growth endpoint is not configured';
+            return;
+        }
+        const response = await fetch(`${endpoint}/newsletter/verify`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

@@ -37,7 +37,7 @@
 
             <div class="flex flex-col items-center gap-2 md:flex-row">
                 <a
-                    href="https://cloud.appwrite.io/console/apply-credit?code=sites300"
+                    href="https://console.indobase.fun/console/apply-credit?code=sites300"
                     class="web-button !w-full md:!w-fit"
                 >
                     Get started with $300 credits

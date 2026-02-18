@@ -1,4 +1,4 @@
-﻿---
+---
 layout: integration
 title: SMS with Twilio
 description: Send customized SMS messages to your users
@@ -47,7 +47,7 @@ Ensure you save the following information for later use:
 
 ## Step 2: Add Twilio provider to your Indobase project
 
-For this step, you must [create an account on Indobase Cloud](https://cloud.appwrite.io/register) or [self-host Indobase](https://appwrite.io/docs/advanced/self-hosting) if you haven't already. In your Indobase project, head over to the **Messaging** page, click on the **Providers** tab, and **create a new SMS provider**.
+For this step, you must [create an account on Indobase Cloud](https://console.indobase.fun/register) or [self-host Indobase](https://appwrite.io/docs/advanced/self-hosting) if you haven't already. In your Indobase project, head over to the **Messaging** page, click on the **Providers** tab, and **create a new SMS provider**.
 
 Select **Twilio** and add the **account SID**, **auth token**, and **phone number** that you saved from the Twilio console.
 

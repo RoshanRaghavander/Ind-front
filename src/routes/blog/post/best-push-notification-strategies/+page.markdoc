@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: "Push notifications 101: Best strategies to engage and retain users"
 description: Learn how you can leverage push notifications for improved user engagement.
@@ -82,7 +82,7 @@ If you’re already using Indobase, setting up notifications is straightforward.
 
 Yes. Enterprises often need more than just sending messages. They care about **scalability, compliance, and control**. 
 
-With Indobase, you can self-host to keep everything in your own infrastructure, or use [Indobase Cloud](https://cloud.appwrite.io/console/) for a fully managed setup. 
+With Indobase, you can self-host to keep everything in your own infrastructure, or use [Indobase Cloud](https://console.indobase.fun/console/) for a fully managed setup. 
 
 Either way, you get support for APNs and FCM, user targeting, and the flexibility to integrate notifications with authentication, databases, hosting, and other backend services. That means less vendor sprawl and more confidence in meeting enterprise requirements.
 

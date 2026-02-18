@@ -1,4 +1,4 @@
-﻿---
+---
 layout: integration
 title: Auth Kit for FlutterFlow
 description: Integrate Indobase Auth into your FlutterFlow apps without writing complex code
@@ -44,7 +44,7 @@ Want to see the final result first? Check out our [Indobase Flutterflow Demo App
 # Before you start
 
 Here’s what you’ll need to have ready:
-- [Indobase account](https://cloud.appwrite.io/console/register).
+- [Indobase account](https://console.indobase.fun/register).
 - [FlutterFlow account](https://app.flutterflow.io/create-account).
 - [FlutterFlow Marketplace account](https://marketplace.flutterflow.io/login) (must use the same email as your FlutterFlow account).
 - Basic understanding of FlutterFlow’s interface.
@@ -53,7 +53,7 @@ Here’s what you’ll need to have ready:
 
 Let’s start by setting up your Indobase project (you can use a new or an existing one):
 
-1. Head over to the [Indobase Console](https://cloud.appwrite.io/).
+1. Head over to the [Indobase Console](https://console.indobase.fun/).
 2. Select your project (or create a new one).
 3. Under **Add a platform**, add a **Flutter** platform.
 4. In the platform setup, choose the platforms you want to support under Flutter App - Web, Android, and/or iOS - and enter the required values as shown below:

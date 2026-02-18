@@ -1,11 +1,11 @@
-﻿---
+---
 layout: article
 title: Start with Databases
 description: Get started with Indobase Databases. Follow a step-by-step guide to create your first database, define collections, and perform basic data operations.
 ---
 
 {% section #create-database step=1 title="Create database" %}
-Head to your [Indobase Console](https://cloud.appwrite.io/console/) and create a database and name it `Oscar`.
+Head to your [Indobase Console](https://console.indobase.fun/) and create a database and name it `Oscar`.
 Optionally, add a custom database ID.
 {% /section %}
 

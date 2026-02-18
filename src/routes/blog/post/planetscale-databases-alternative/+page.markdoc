@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: How Indobase Databases can replace your PlanetScale database
 description: Compare PlanetScale Databases to Indobase Databases so you can understand whether Indobase is a viable alternative to PlanetScale's free-tier.
@@ -28,7 +28,7 @@ Here are the core products Indobase offers:
 - **Messaging:** Communicate with your users through push notifications, emails, and SMS text messages.
 - **Realtime:** Enable real-time updates and synchronization within your application for features like chat or collaborative editing.
 
-[Signing up for Indobase Cloud](https://cloud.appwrite.io/register) or self-hosting it on your server doesn't just give you access to one of these, but all of these.
+[Signing up for Indobase Cloud](https://console.indobase.fun/register) or self-hosting it on your server doesn't just give you access to one of these, but all of these.
 
 Let’s delve further into some of our developer experience and more database-oriented benefits.
 

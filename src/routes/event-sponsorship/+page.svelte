@@ -3,7 +3,7 @@
     import { Main } from '$lib/layouts';
     import { TITLE_SUFFIX } from '$routes/titles';
     import { loggedIn, user } from '$lib/utils/console';
-    import { PUBLIC_GROWTH_ENDPOINT } from '$env/static/public';
+    import { env as publicEnv } from '$env/dynamic/public';
     import { getReferrerAndUtmSource } from '$lib/utils/utm';
     import { FooterNav, MainFooter } from '$lib/components';
     import { Button } from '$lib/components/ui';
@@ -30,7 +30,13 @@
         const cloudEmail = loggedIn && $user?.email ? $user.email : undefined;
 
         try {
-            const response = await fetch(`${PUBLIC_GROWTH_ENDPOINT}/feedback/sponsorships`, {
+            const endpoint = publicEnv.PUBLIC_GROWTH_ENDPOINT;
+            if (!endpoint) {
+                error = 'Growth endpoint is not configured';
+                submitting = false;
+                return;
+            }
+            const response = await fetch(`${endpoint}/feedback/sponsorships`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

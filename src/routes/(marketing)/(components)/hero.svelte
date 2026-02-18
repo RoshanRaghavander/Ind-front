@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { PUBLIC_APPWRITE_DASHBOARD } from '$env/static/public';
+    import { getAppwriteDashboardUrl } from '$lib/utils/dashboard';
     import { trackEvent } from '$lib/actions/analytics';
     import AppwriteIn100Seconds from '$lib/components/AppwriteIn100Seconds.svelte';
     import GradientText from '$lib/components/fancy/gradient-text.svelte';
@@ -13,7 +13,7 @@
         subtitle?: string;
     };
 
-    const DASHBOARD_URL = PUBLIC_APPWRITE_DASHBOARD || 'http://localhost:3000/auth';
+    const DASHBOARD_URL = getAppwriteDashboardUrl();
 
     const {
         title = 'All-in-one infra for solo devs & SMBs',
@@ -36,7 +36,7 @@
         <div
             class="animate-blur-in flex flex-col gap-4 [animation-delay:150ms] [animation-duration:1000ms] md:ml-12 lg:ml-0"
         >
-            <HeroBanner title="Introducing Imagine" href="/blog/post/introducing-imagine" />
+            
 
             <h1 class="font-aeonik-pro text-headline text-pretty text-primary animate-fade-in">
                 {title}<span class="text-accent">_</span>

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: article
 title: Start with Node.js
 description: Dive into our step-by-step guide on integrating Indobase with your Node.js server backend application. Get your backend up and running quickly with this tutorial.
@@ -8,7 +8,7 @@ back: /docs/quick-starts
 ---
 Learn how to setup your first Node.js project powered by Indobase.
 {% section #step-1 step=1 title="Create project" %}
-Head to the [Indobase Console](https://cloud.appwrite.io/console).
+Head to the [Indobase Console](https://console.indobase.fun).
 
 If this is your first time using Indobase, create an account and create your first project.
 

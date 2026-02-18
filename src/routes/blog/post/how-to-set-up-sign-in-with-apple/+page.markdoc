@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: How to set up Sign in with Apple
 description: This step-by-step guide will walk you through setting up Sign in with Apple, configuring your Indobase project, and integrating it into various platforms like web, Android, iOS, and Flutter.
@@ -31,7 +31,7 @@ Indobase's built-in support for OAuth2 allows you to enable various third-party 
 
 To start, you'll need to create a new project in your Indobase instance. This project will manage your app's users, authentication, databases, and more.
 
-1. **Log in to the Indobase console**: Access your Indobase console at [cloud.appwrite.io](https://cloud.appwrite.io/console).
+1. **Log in to the Indobase console**: Access your Indobase console at [console.indobase.fun](https://console.indobase.fun/console).
 2. **Create a new project**: In the dashboard, click **Create Project**, enter a name for your project, and click **Create**.
 
 ![Create a new Indobase project](/images/blog/how-to-set-up-sign-in-with-apple/create-project.png)

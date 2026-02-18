@@ -1,34 +1,21 @@
 FROM node:20 AS builder
-
 WORKDIR /app
-
-# install pnpm
-RUN npm install -g pnpm
-
-# install bun
-RUN curl -fsSL https://bun.sh/install | bash
-ENV PATH="/root/.bun/bin:$PATH"
-
+RUN corepack enable
+ARG PUBLIC_GROWTH_ENDPOINT
+ENV PUBLIC_GROWTH_ENDPOINT=${PUBLIC_GROWTH_ENDPOINT}
 COPY package.json pnpm-lock.yaml ./
-RUN pnpm install
-
+RUN pnpm install --frozen-lockfile
 COPY . .
-RUN pnpm run build
+RUN pnpm build
 
-
-
-# Production stage
-FROM node:20-slim
-
+FROM node:20 AS runner
 WORKDIR /app
-
-COPY --from=builder /app/build ./build
-COPY --from=builder /app/server ./server
-COPY --from=builder /app/node_modules ./node_modules
-
-ENV HOST=0.0.0.0
+RUN corepack enable
+ENV NODE_ENV=production
 ENV PORT=3000
-
+ENV PUBLIC_GROWTH_ENDPOINT=${PUBLIC_GROWTH_ENDPOINT}
+COPY --from=builder /app/build ./build
+COPY --from=builder /app/node_modules ./node_modules
+COPY package.json ./
 EXPOSE 3000
-
-CMD ["node", "server/main.js"]
+CMD ["node", "build/index.js"]

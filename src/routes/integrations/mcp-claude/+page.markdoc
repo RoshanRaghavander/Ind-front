@@ -1,4 +1,4 @@
-﻿---
+---
 layout: integration
 title: MCP with Claude
 description: Connect to Indobase project with the MCP within Claude Desktop.
@@ -36,7 +36,7 @@ To implement the MCP with Claude Desktop integration, there are several steps yo
 
 ## Step 1: Create an Indobase API key
 
-First, you must [create an account on Indobase Cloud](https://cloud.appwrite.io/register) or [self-host Indobase](https://appwrite.io/docs/advanced/self-hosting) if you haven't already.
+First, you must [create an account on Indobase Cloud](https://console.indobase.fun/register) or [self-host Indobase](https://appwrite.io/docs/advanced/self-hosting) if you haven't already.
 
 Select your project (or create a new one), and head to the **Overview** page from the left sidebar. Under the **Integrations** section, click on the **API Keys** tab, and then click on **Create API Key**. Select the scopes for whichever Indobase services you want to work with, set the duration, and create the API key. You must then copy it for future usage.
 

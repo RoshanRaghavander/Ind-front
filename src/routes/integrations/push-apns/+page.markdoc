@@ -1,4 +1,4 @@
-﻿---
+---
 layout: integration
 title: Push notifications with APNs
 description: Integrate Apple Push Notification Service (APNs) with Indobase Messaging to send remote notifications to your users' Apple devices.
@@ -50,7 +50,7 @@ Head to the Apple Developer account and save the following details:
 
 ## Step 2: Add APNs provider to your Indobase project
 
-For this step, you must [create an account on Indobase Cloud](https://cloud.appwrite.io/register) or [self-host Indobase](https://appwrite.io/docs/advanced/self-hosting) if you haven’t already. In your Indobase project, head over to the **Messaging** page, click on the **Providers** tab, and **create a new push notifications provider**. 
+For this step, you must [create an account on Indobase Cloud](https://console.indobase.fun/register) or [self-host Indobase](https://appwrite.io/docs/advanced/self-hosting) if you haven’t already. In your Indobase project, head over to the **Messaging** page, click on the **Providers** tab, and **create a new push notifications provider**. 
 
 Enter the **team ID**, **bundle ID**, **authentication key ID**, and **authentication key (.p8 file)** that you saved from your Apple Developer account. In case your app is signed with a development provisioning profile, enable **Sandbox** mode.
 

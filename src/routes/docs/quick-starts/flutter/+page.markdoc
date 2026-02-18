@@ -1,4 +1,4 @@
-﻿---
+---
 layout: article
 title: Start with Flutter
 description: Build Flutter apps with Indobase and learn how to use our powerful backend to add authentication, user management, file storage, and more.
@@ -18,7 +18,7 @@ flutter create my_app && cd my_app
 {% /section %}
 
 {% section #step-2 step=2 title="Create project" %}
-Head to the [Indobase Console](https://cloud.appwrite.io/console).
+Head to the [Indobase Console](https://console.indobase.fun).
 
 {% only_dark %}
 ![Create project screen](/images/docs/quick-starts/dark/create-project.png)

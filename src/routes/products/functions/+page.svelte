@@ -14,10 +14,10 @@
     import DevelopLocally from './(components)/DevelopLocally.svelte';
     import DeploySeamlessly from './(components)/DeploySeamlessly.svelte';
     import Testimonials from './(components)/Testimonials.svelte';
-    import { PUBLIC_APPWRITE_DASHBOARD } from '$env/static/public';
+    import { getAppwriteDashboardUrl } from '$lib/utils/dashboard';
     import ProductCards from '$lib/components/product-pages/product-cards.svelte';
 
-    const DASHBOARD_URL = PUBLIC_APPWRITE_DASHBOARD || 'http://localhost:3000';
+    const DASHBOARD_URL = getAppwriteDashboardUrl();
 
     const title = 'Functions' + TITLE_SUFFIX;
     const description =

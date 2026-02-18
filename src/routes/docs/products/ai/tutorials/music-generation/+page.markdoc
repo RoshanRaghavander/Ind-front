@@ -1,4 +1,4 @@
-﻿---
+---
 layout: article
 title: Music generation with Hugging Face
 description: Learn how to integrate Hugging Face into your Indobase project for music generation.
@@ -15,7 +15,7 @@ This example uses the "facebook/musicgen-large" from Hugging Face to convert tex
 - A [Hugging Face API keys](https://huggingface.co/docs/api-inference/en/quicktour#get-your-api-token)
 
 {% section #step-1 step=1 title="Create new function" %}
-Head to the [Indobase Console](https://cloud.appwrite.io/console) then click on **Functions** in the left sidebar and then click on the **Create Function** button.
+Head to the [Indobase Console](https://console.indobase.fun) then click on **Functions** in the left sidebar and then click on the **Create Function** button.
 
 {% only_dark %}
 ![Create function screen](/images/docs/functions/dark/template.png)

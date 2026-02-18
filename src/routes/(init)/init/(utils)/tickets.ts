@@ -1,4 +1,4 @@
-import { APPWRITE_DB_INIT_ID, APPWRITE_COL_INIT_ID } from '$env/static/private';
+import { env as privateEnv } from '$env/dynamic/private';
 import { Query, ID, type Models } from 'appwrite';
 import type { User } from './auth';
 import { createInitServerClient } from './appwrite';
@@ -35,7 +35,7 @@ export const getTicketByUser = async (user: User) => {
 
     if (!githubLogin) return null;
 
-    const githubAccount = await databases.listDocuments(APPWRITE_DB_INIT_ID, APPWRITE_COL_INIT_ID, [
+    const githubAccount = await databases.listDocuments(privateEnv.APPWRITE_DB_INIT_ID, privateEnv.APPWRITE_COL_INIT_ID, [
         Query.equal('gh_user', githubLogin)
     ]);
 
@@ -58,7 +58,7 @@ export const createNewTicket = async (user: User) => {
     const appwriteName = user.appwrite?.name;
 
     if (!githubLogin) return;
-    const githubTicket = await databases.listDocuments(APPWRITE_DB_INIT_ID, APPWRITE_COL_INIT_ID, [
+    const githubTicket = await databases.listDocuments(privateEnv.APPWRITE_DB_INIT_ID, privateEnv.APPWRITE_COL_INIT_ID, [
         Query.equal('gh_user', githubLogin)
     ]);
 
@@ -75,9 +75,9 @@ export const createNewTicket = async (user: User) => {
             });
         }
 
-        const countQuery = await databases.listDocuments(APPWRITE_DB_INIT_ID, APPWRITE_COL_INIT_ID);
+        const countQuery = await databases.listDocuments(privateEnv.APPWRITE_DB_INIT_ID, privateEnv.APPWRITE_COL_INIT_ID);
 
-        await databases.createDocument(APPWRITE_DB_INIT_ID, APPWRITE_COL_INIT_ID, ID.unique(), {
+        await databases.createDocument(privateEnv.APPWRITE_DB_INIT_ID, privateEnv.APPWRITE_COL_INIT_ID, ID.unique(), {
             aw_email: appwriteEmail,
             gh_user: githubLogin,
             avatar_url: githubAvatar,
@@ -92,7 +92,7 @@ export const createNewTicket = async (user: User) => {
 
 export const getTicketDocByUsername = async (username: string) => {
     const { databases } = createInitServerClient();
-    const tickets = await databases.listDocuments(APPWRITE_DB_INIT_ID, APPWRITE_COL_INIT_ID, [
+    const tickets = await databases.listDocuments(privateEnv.APPWRITE_DB_INIT_ID, privateEnv.APPWRITE_COL_INIT_ID, [
         Query.equal('gh_user', username)
     ]);
 

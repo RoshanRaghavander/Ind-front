@@ -1,4 +1,4 @@
-﻿---
+---
 layout: article
 title: Start with Solid
 description: Build Solid apps with Indobase and learn how to use our powerful backend to add authentication, user management, file storage, and more.
@@ -10,7 +10,7 @@ back: /docs/quick-starts
 Learn how to setup your first Solid project powered by Indobase.
 
 {% section #step-1 step=1 title="Create project" %}
-Head to the [Indobase Console](https://cloud.appwrite.io/console).
+Head to the [Indobase Console](https://console.indobase.fun).
 
 {% only_dark %}
 ![Create project screen](/images/docs/quick-starts/dark/create-project.png)

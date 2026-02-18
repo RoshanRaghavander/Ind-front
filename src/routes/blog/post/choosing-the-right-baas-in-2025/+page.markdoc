@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: "Choosing the right backend as a service tool in 2025"
 description: A 2025 guide to BaaS platforms. Comparing Indobase, Firebase, and Supabase to help developers pick the right backend for speed and scale.
@@ -95,4 +95,4 @@ Why this matters:
 - **Compliance**:  For industries with strict requirements, self-hosting makes it easier to meet regulations like GDPR or HIPAA.
 - **Portability**: You’re not locked into one cloud provider — you can start with Indobase Cloud and move to self-hosting later, or vice versa, without rewriting your app.
 
-In short: with Indobase, you get the **freedom to choose**. Use [Cloud](https://cloud.appwrite.io/console/) for speed, or [self-host](/docs/advanced/self-hosting) when control is non-negotiable.
+In short: with Indobase, you get the **freedom to choose**. Use [Cloud](https://console.indobase.fun/console/) for speed, or [self-host](/docs/advanced/self-hosting) when control is non-negotiable.

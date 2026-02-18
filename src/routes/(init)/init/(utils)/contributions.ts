@@ -1,4 +1,4 @@
-import { APPWRITE_COL_INIT_ID, APPWRITE_DB_INIT_ID } from '$env/static/private';
+import { env as privateEnv } from '$env/dynamic/private';
 import { parseHTML } from 'linkedom';
 import { z } from 'zod';
 import { createInitServerClient } from './appwrite';
@@ -46,8 +46,8 @@ export const getTicketContributions = async (id: string) => {
         let matrix: number[][] = [];
 
         const { gh_user, contributions } = (await databases.getDocument(
-            APPWRITE_DB_INIT_ID,
-            APPWRITE_COL_INIT_ID,
+            privateEnv.APPWRITE_DB_INIT_ID,
+            privateEnv.APPWRITE_COL_INIT_ID,
             id
         )) as unknown as TicketData;
 
@@ -105,7 +105,7 @@ export const getTicketContributions = async (id: string) => {
             }
         }
 
-        await databases.updateDocument(APPWRITE_DB_INIT_ID, APPWRITE_COL_INIT_ID, id, {
+        await databases.updateDocument(privateEnv.APPWRITE_DB_INIT_ID, privateEnv.APPWRITE_COL_INIT_ID, id, {
             contributions: normalizeContributionMatrix(matrix).flat()
         });
 

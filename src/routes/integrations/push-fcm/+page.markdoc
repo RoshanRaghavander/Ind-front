@@ -1,4 +1,4 @@
-﻿---
+---
 layout: integration
 title: Push notifications with FCM
 description: Integrate Firebase Cloud Messaging (FCM) with Indobase to send push notifications to iOS, Android and web applications.
@@ -41,7 +41,7 @@ You must also verify that FCM has been enabled on your project by visiting the *
 
 ## Step 2: Add FCM provider to your Indobase project
 
-For this step, you must [create an account on Indobase Cloud](https://cloud.appwrite.io/register) or [self-host Indobase](https://appwrite.io/docs/advanced/self-hosting) if you haven’t already. In your Indobase project, head over to the **Messaging** page, click on the **Providers** tab, and **create a new push notifications provider**. 
+For this step, you must [create an account on Indobase Cloud](https://console.indobase.fun/register) or [self-host Indobase](https://appwrite.io/docs/advanced/self-hosting) if you haven’t already. In your Indobase project, head over to the **Messaging** page, click on the **Providers** tab, and **create a new push notifications provider**. 
 
 Select **FCM** and upload the JSON file you downloaded from Firebase.
 

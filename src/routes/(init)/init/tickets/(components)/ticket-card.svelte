@@ -133,8 +133,8 @@
                 <TicketUrl username={props.gh_user ?? ''} />
                 <div class="relative z-10 flex flex-1 flex-col rounded-xl bg-[#19191C] p-2">
                     <img
-                        src="/images/logos/appwrite.svg"
-                        alt="appwrite"
+                        src="/images/logos/indobase.svg"
+                        alt="Indobase"
                         class="mt-3 ml-2 h-4 w-auto self-start"
                     />
                     <div class="flex flex-1 items-center">

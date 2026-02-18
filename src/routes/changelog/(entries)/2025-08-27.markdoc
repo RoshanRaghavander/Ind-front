@@ -1,4 +1,4 @@
-﻿---
+---
 layout: changelog
 title: Email verification for Cloud accounts
 date: 2025-08-28
@@ -14,6 +14,6 @@ This change is aimed at:
 
 In preparation for this change, we encourage you and your team members to verify that your email addresses are correct and working so that you can complete the verification process when email verification becomes required.
 
-{% arrow_link href="https://cloud.appwrite.io/console/account" %}
+{% arrow_link href="https://console.indobase.fun/console/account" %}
 Check your account email
 {% /arrow_link %}

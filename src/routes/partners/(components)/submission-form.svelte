@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { PUBLIC_GROWTH_ENDPOINT } from '$env/static/public';
+    import { env as publicEnv } from '$env/dynamic/public';
     import { Button } from '$lib/components/ui';
     import { socials } from '$lib/constants';
     import { cn } from '$lib/utils/cn';
@@ -19,7 +19,13 @@
         error = undefined;
         submitting = true;
 
-        const response = await fetch(`${PUBLIC_GROWTH_ENDPOINT}/conversations/partner`, {
+        const endpoint = publicEnv.PUBLIC_GROWTH_ENDPOINT;
+        if (!endpoint) {
+            error = 'Growth endpoint is not configured';
+            submitting = false;
+            return;
+        }
+        const response = await fetch(`${endpoint}/conversations/partner`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: article
 title: Start with React Native
 description: Discover how to leverage Indobase's powerful backend to help you build React Native apps for iOS, Android and other native platforms.
@@ -25,7 +25,7 @@ cd my-app
 {% /section %}
 
 {% section #step-2 step=2 title="Create project" %}
-Head to the [Indobase Console](https://cloud.appwrite.io/console).
+Head to the [Indobase Console](https://console.indobase.fun).
 
 {% only_dark %}
 ![Create project screen](/images/docs/quick-starts/dark/create-project.png)

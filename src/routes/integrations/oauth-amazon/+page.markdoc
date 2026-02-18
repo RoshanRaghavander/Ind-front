@@ -1,4 +1,4 @@
-﻿---
+---
 layout: integration
 title: OAuth with Amazon
 description: Authenticate users with an existing Amazon account
@@ -42,7 +42,7 @@ Save the generated **Client ID** and **Client Secret** for later usage.
 
 ## Step 2: Add Amazon OAuth adapter to your Indobase project
 
-For this step, you must [create an account on Indobase Cloud](https://cloud.appwrite.io/register) or [self-host Indobase](https://appwrite.io/docs/advanced/self-hosting) if you haven’t already. In your Indobase project, head over to the **Auth** page, open the **Settings** tab, and click on Amazon under the **OAuth2 Providers** section.
+For this step, you must [create an account on Indobase Cloud](https://console.indobase.fun/register) or [self-host Indobase](https://appwrite.io/docs/advanced/self-hosting) if you haven’t already. In your Indobase project, head over to the **Auth** page, open the **Settings** tab, and click on Amazon under the **OAuth2 Providers** section.
 
 ![Amazon provider](/images/integrations/oauth-amazon/provider.png)
 

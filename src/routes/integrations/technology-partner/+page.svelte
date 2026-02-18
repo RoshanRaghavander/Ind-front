@@ -8,7 +8,7 @@
     import { anyify } from '$lib/utils/anyify';
     import Pink from './bg.png';
     import { getReferrerAndUtmSource } from '$lib/utils/utm';
-    import { PUBLIC_GROWTH_ENDPOINT } from '$env/static/public';
+    import { env as publicEnv } from '$env/dynamic/public';
     import { Button } from '$lib/components/ui';
 
     let email = '';
@@ -30,7 +30,13 @@
         error = undefined;
         submitting = true;
 
-        const response = await fetch(`${PUBLIC_GROWTH_ENDPOINT}/conversations/technology-partner`, {
+        const endpoint = publicEnv.PUBLIC_GROWTH_ENDPOINT;
+        if (!endpoint) {
+            error = 'Growth endpoint is not configured';
+            submitting = false;
+            return;
+        }
+        const response = await fetch(`${endpoint}/conversations/technology-partner`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

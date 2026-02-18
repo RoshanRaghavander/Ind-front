@@ -1,4 +1,4 @@
-﻿---
+---
 layout: tutorial
 title: Set up Indobase
 description: Import and initialize Indobase for your React Native application.
@@ -7,7 +7,7 @@ step: 3
 
 ## Create project {% #create-project %}
 
-Head to the [Indobase Console](https://cloud.appwrite.io/console).
+Head to the [Indobase Console](https://console.indobase.fun).
 
 {% only_dark %}
 ![Create project screen](/images/docs/quick-starts/dark/create-project.png)

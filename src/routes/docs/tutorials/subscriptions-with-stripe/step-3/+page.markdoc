@@ -1,11 +1,11 @@
-﻿---
+---
 layout: tutorial
 title: Create function
 description: Add paid app subscription plans to your app with Stripe and Indobase Functions.
 step: 3
 ---
 
-Head to the [Indobase Console](https://cloud.appwrite.io/console) and create a new project if you haven't already. If this is your first time using Indobase, you will be asked to sign up first.
+Head to the [Indobase Console](https://console.indobase.fun) and create a new project if you haven't already. If this is your first time using Indobase, you will be asked to sign up first.
 
 ### Create a new function {% #create-function %}
 Once inside your project overview, switch to the **Functions** page from the left sidebar. Under the **Templates** section, use the search bar and look for `subscriptions`. You will find the **Subscriptions with Stripe** template, which you can use by clicking the **Create function** button.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: integration
 title: Email with SendGrid
 description: Send customized emails to your users
@@ -42,7 +42,7 @@ Next, [create an API key](https://www.twilio.com/docs/sendgrid/ui/account-and-se
 
 ## Step 2: Add SendGrid provider to your Indobase project
 
-For this step, you must [create an account on Indobase Cloud](https://cloud.appwrite.io/register) or [self-host Indobase](https://appwrite.io/docs/advanced/self-hosting) if you haven’t already. In your Indobase project, head over to the **Messaging** page, click on the **Providers** tab, and **create a new Email provider**.
+For this step, you must [create an account on Indobase Cloud](https://console.indobase.fun/register) or [self-host Indobase](https://appwrite.io/docs/advanced/self-hosting) if you haven’t already. In your Indobase project, head over to the **Messaging** page, click on the **Providers** tab, and **create a new Email provider**.
 
 ![Setup email provider](/images/integrations/email-sendgrid/provider.png)
 

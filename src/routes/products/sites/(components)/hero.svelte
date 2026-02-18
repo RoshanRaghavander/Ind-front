@@ -1,12 +1,12 @@
 <script>
-    import { PUBLIC_APPWRITE_DASHBOARD } from '$env/static/public';
+    import { getAppwriteDashboardUrl } from '$lib/utils/dashboard';
     import Platforms from '$lib/components/marketing/platforms.svelte';
     import { cn } from '$lib/utils/cn';
 
     import Illustration from '../(assets)/images/illustration.png';
     import ProductHuntBadge from '../(assets)/images/producthunt-badge.svelte';
 
-    const DASHBOARD_URL = PUBLIC_APPWRITE_DASHBOARD || 'http://localhost:3000';
+    const DASHBOARD_URL = getAppwriteDashboardUrl();
 </script>
 
 <div

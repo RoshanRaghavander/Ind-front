@@ -31,10 +31,22 @@
         { minQuietPeriodMs: 2500 }
     );
 
-    let originalTicketData = $state({
-        name: data.ticket?.name ?? '',
-        title: data.ticket?.title ?? '',
-        sticker: data.ticket?.sticker
+    type TicketFormData = {
+        name: string;
+        title: string;
+        sticker: number | null;
+    };
+
+    let originalTicketData: TicketFormData = $state({
+        name: '',
+        title: '',
+        sticker: null
+    });
+
+    $effect(() => {
+        originalTicketData.name = data.ticket?.name ?? '';
+        originalTicketData.title = data.ticket?.title ?? '';
+        originalTicketData.sticker = data.ticket?.sticker ?? null;
     });
 
     let updatedTicketData = $derived({

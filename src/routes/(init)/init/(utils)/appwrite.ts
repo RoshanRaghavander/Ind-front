@@ -3,12 +3,12 @@ import { Client, Account, Databases } from 'node-appwrite';
 import type { RequestEvent } from '../$types';
 import { cookieKey } from './auth';
 import type { Cookies } from '@sveltejs/kit';
-import { APPWRITE_API_KEY_INIT } from '$env/static/private';
+import { env as privateEnv } from '$env/dynamic/private';
 
 export const createInitServerClient = () => {
     const endpoint = PUBLIC_APPWRITE_ENDPOINT ?? '';
     const projectId = PUBLIC_APPWRITE_PROJECT_INIT_ID ?? '';
-    const apiKey = APPWRITE_API_KEY_INIT ?? '';
+    const apiKey = privateEnv.APPWRITE_API_KEY_INIT ?? '';
 
     const client = new Client();
 

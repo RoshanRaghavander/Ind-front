@@ -1,4 +1,4 @@
-﻿---
+---
 layout: article
 title: Integrating Pinecone
 description: Learn how to integrate Pinecone into your Indobase project.
@@ -19,7 +19,7 @@ Inside an Indobase Function, we'll create a method to that indexes an Indobase t
 - A Pinecone index
 
 {% section #step-1 step=1 title="Create new function" %}
-Head to the [Indobase Console](https://cloud.appwrite.io/console) then click on **Functions** in the left sidebar and then click on the **Create Function** button.
+Head to the [Indobase Console](https://console.indobase.fun) then click on **Functions** in the left sidebar and then click on the **Create Function** button.
 
 {% only_dark %}
 ![Create function screen](/images/docs/functions/dark/template.png)

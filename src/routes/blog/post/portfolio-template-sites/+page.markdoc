@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Build and deploy a personal portfolio on Indobase Sites
 description: Learn how to configure the Indobase Sites portfolio template and deploy your changes via the GitHub integration.
@@ -28,7 +28,7 @@ The Indobase portfolio template is a personal portfolio app for developers. Buil
 
 # Deploy the portfolio template on Indobase
 
-Firstly, you must head to Indobase Cloud and [create an account](https://cloud.appwrite.io/console/register) if you haven't already (or [self-host Indobase 1.7](https://appwrite.io/docs/advanced/self-hosting)). Next, create your first project, which will lead you to the project overview page.
+Firstly, you must head to Indobase Cloud and [create an account](https://console.indobase.fun/console/register) if you haven't already (or [self-host Indobase 1.7](https://appwrite.io/docs/advanced/self-hosting)). Next, create your first project, which will lead you to the project overview page.
 
 ![Get started](/images/blog/portfolio-template-sites/get-started.png)
 

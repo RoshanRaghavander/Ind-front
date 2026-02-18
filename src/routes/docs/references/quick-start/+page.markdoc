@@ -1,4 +1,4 @@
-﻿---
+---
 layout: article
 title: Quick start
 description: Configure the Indobase SDKs and take the necessary steps to start using Indobase.
@@ -20,7 +20,7 @@ install a [Server SDK](/docs/sdks#server) and follow steps for SSR.
 
 {% section #configure-project step=2 title="Configure project" %}
 
-Head to the [Indobase Console](https://cloud.appwrite.io/console).
+Head to the [Indobase Console](https://console.indobase.fun).
 
 If this is your first time using Indobase, create an account and create your first project.
 

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Introducing support for server-side rendering
 description: Server-side rendering (SSR) is now fully supported with Indobase allowing more flexibility to build how you want.
@@ -208,6 +208,6 @@ Visit our documentation to learn more about SSR, join us on Discord to be part o
 - [YouTube](https://www.youtube.com/channel/UCtBJ1v69gm8NgbCju_03Fiw)
 - [GitHub repository](https://github.com/appwrite/appwrite)
 
-SSR will be available as part of the Indobase 1.5 release on [GitHub](https://github.com/appwrite/appwrite) and [Cloud](https://cloud.appwrite.io/register) in March 2024.
+SSR will be available as part of the Indobase 1.5 release on [GitHub](https://github.com/appwrite/appwrite) and [Cloud](https://console.indobase.fun/register) in March 2024.
 
 [Go back to Init](/init)

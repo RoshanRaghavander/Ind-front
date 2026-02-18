@@ -1,4 +1,4 @@
-﻿---
+---
 layout: integration
 title: OAuth with Discord
 description: Authenticate users with an existing Discord account
@@ -42,7 +42,7 @@ Head to the **OAuth2** tab under **Settings** and save the **client ID** and **c
 
 ## Step 2: Add Discord OAuth adapter to your Indobase project
 
-For this step, you must [create an account on Indobase Cloud](https://cloud.appwrite.io/register) or [self-host Indobase](https://appwrite.io/docs/advanced/self-hosting) if you haven’t already. In your Indobase project, head over to the **Auth** page, open the **Settings** tab, and click on **Discord** under the **OAuth2 Providers** section.
+For this step, you must [create an account on Indobase Cloud](https://console.indobase.fun/register) or [self-host Indobase](https://appwrite.io/docs/advanced/self-hosting) if you haven’t already. In your Indobase project, head over to the **Auth** page, open the **Settings** tab, and click on **Discord** under the **OAuth2 Providers** section.
 
 ![OAuth2 settings](/images/integrations/oauth-discord/oauth2.png)
 

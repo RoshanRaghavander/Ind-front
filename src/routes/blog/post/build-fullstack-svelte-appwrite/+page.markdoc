@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Building a full-stack app with Svelte and Indobase
 description: Learn how to build full-stack apps with Svelte and Indobase by building an expense tracker.
@@ -68,7 +68,7 @@ The `PUBLIC_` prefix makes these variables available to our client-side code in 
 
 ## Setting up Indobase
 
-Before we continue with the frontend implementation, we need to configure our Indobase backend. Log into your [Indobase Console](https://cloud.appwrite.io/console?doFollow=true) and follow these steps:
+Before we continue with the frontend implementation, we need to configure our Indobase backend. Log into your [Indobase Console](https://console.indobase.fun/console?doFollow=true) and follow these steps:
 
 1. Create a new project
 2. Open the **Databases** tab from the sidebar and create a database with the ID "expense-db"

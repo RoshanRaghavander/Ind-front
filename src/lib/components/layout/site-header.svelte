@@ -1,10 +1,10 @@
 <script lang="ts">
-    import { PUBLIC_APPWRITE_DASHBOARD } from '$env/static/public';
+    import { getAppwriteDashboardUrl } from '$lib/utils/dashboard';
     import { Button } from '../ui';
     import HamburgerMenu from './navigation/hamburger-menu.svelte';
     import PrimaryNav from './navigation/primary-nav.svelte';
 
-    const DASHBOARD_URL = PUBLIC_APPWRITE_DASHBOARD || 'http://localhost:3000/auth';
+    const DASHBOARD_URL = getAppwriteDashboardUrl();
 </script>
 
 <header
@@ -14,7 +14,7 @@
         <a href="/">
             <img
                 class="hidden dark:block"
-                src="/images/logos/appwrite.svg"
+                src="/images/logos/indobase.svg"
                 alt="Indobase"
                 height="24"
                 width="130"

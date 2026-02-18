@@ -1,4 +1,4 @@
-﻿---
+---
 layout: integration
 title: OAuth with Notion
 description: Authenticate users with an existing Notion account
@@ -42,7 +42,7 @@ From the **Configuration** tab, save the **OAuth Client ID** and **OAuth Client 
 
 ## Step 2: Add Notion OAuth adapter to your Indobase project
 
-For this step, you must [create an account on Indobase Cloud](https://cloud.appwrite.io/register) or [self-host Indobase](https://appwrite.io/docs/advanced/self-hosting) if you haven’t already. In your Indobase project, head over to the **Auth** page, open the **Settings** tab, and click on **Notion** under the **OAuth2 Providers** section.
+For this step, you must [create an account on Indobase Cloud](https://console.indobase.fun/register) or [self-host Indobase](https://appwrite.io/docs/advanced/self-hosting) if you haven’t already. In your Indobase project, head over to the **Auth** page, open the **Settings** tab, and click on **Notion** under the **OAuth2 Providers** section.
 
 ![Notion provider](/images/integrations/oauth-notion/provider.png)
 

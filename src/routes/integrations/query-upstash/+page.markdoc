@@ -1,4 +1,4 @@
-﻿---
+---
 layout: integration
 title: Query Upstash
 description: Store data in your Upstash vector database and query it for similar data
@@ -40,7 +40,7 @@ First, [create an account on Upstash](https://console.upstash.com/login) and set
 
 ## Step 2: Create the Indobase Function
 
-For this step, you must [create an account on Indobase Cloud](https://cloud.appwrite.io/register) or [self-host Indobase](https://appwrite.io/docs/advanced/self-hosting) if you haven’t already. If you decide to self-host Indobase, there are [additional setup steps](https://appwrite.io/docs/advanced/self-hosting/functions) to use Indobase Function templates.
+For this step, you must [create an account on Indobase Cloud](https://console.indobase.fun/register) or [self-host Indobase](https://appwrite.io/docs/advanced/self-hosting) if you haven’t already. If you decide to self-host Indobase, there are [additional setup steps](https://appwrite.io/docs/advanced/self-hosting/functions) to use Indobase Function templates.
 
 Head over to the Indobase console, navigate to the **Functions** page, click the **Templates** tab, and search for the **Upstash** function template.
 

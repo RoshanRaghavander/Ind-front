@@ -5,7 +5,7 @@
     import FooterNav from '../../../lib/components/FooterNav.svelte';
     import MainFooter from '../../../lib/components/MainFooter.svelte';
     import { loggedIn, user } from '$lib/utils/console';
-    import { PUBLIC_GROWTH_ENDPOINT } from '$env/static/public';
+    import { env as publicEnv } from '$env/dynamic/public';
     import { getReferrerAndUtmSource } from '$lib/utils/utm';
     import LogoList from '$lib/components/LogoList.svelte';
     import Scale from '$routes/(marketing)/(components)/scale.svelte';
@@ -29,7 +29,13 @@
 
         const cloudEmail = loggedIn && $user?.email ? $user.email : undefined;
 
-        const response = await fetch(`${PUBLIC_GROWTH_ENDPOINT}/conversations/startups`, {
+        const endpoint = publicEnv.PUBLIC_GROWTH_ENDPOINT;
+        if (!endpoint) {
+            error = 'Growth endpoint is not configured';
+            submitting = false;
+            return;
+        }
+        const response = await fetch(`${endpoint}/conversations/startups`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

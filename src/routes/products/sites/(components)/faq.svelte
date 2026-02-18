@@ -16,7 +16,7 @@
     items = [
         {
             question: `How do I get started with Sites?`,
-            answer: 'Head to the <a href="https://cloud.appwrite.io/" class="underline">Indobase Console</a> and find Indobase Sites in your project overview. The documentation provides <a href="/docs/products/sites/quick-start" class="underline">quick starts</a> to easily get started with your preferred framework. '
+            answer: 'Head to the <a href="https://console.indobase.fun/" class="underline">Indobase Console</a> and find Indobase Sites in your project overview. The documentation provides <a href="/docs/products/sites/quick-start" class="underline">quick starts</a> to easily get started with your preferred framework. '
         },
         {
             question: 'What does Indobase Sites cost?',

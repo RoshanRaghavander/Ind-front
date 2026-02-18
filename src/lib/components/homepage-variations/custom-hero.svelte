@@ -1,12 +1,12 @@
 <script lang="ts">
-    import { PUBLIC_APPWRITE_DASHBOARD } from '$env/static/public';
+    import { getAppwriteDashboardUrl } from '$lib/utils/dashboard';
     import { trackEvent } from '$lib/actions/analytics';
     import GradientText from '$lib/components/fancy/gradient-text.svelte';
     import { Button } from '$lib/components/ui';
     import { cn } from '$lib/utils/cn';
     import Dashboard from '$routes/(marketing)/(components)/dashboard.svelte';
 
-    const DASHBOARD_URL = PUBLIC_APPWRITE_DASHBOARD || 'http://localhost:3000';
+    const DASHBOARD_URL = getAppwriteDashboardUrl();
 
     const {
         title = 'Build like a team of hundreds',

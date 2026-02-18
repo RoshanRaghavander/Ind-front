@@ -1,4 +1,4 @@
-﻿---
+---
 layout: article
 title: Speech recognition with Hugging Face
 description: Implement speech recognition into your app with Indobase and Hugging Face.
@@ -15,7 +15,7 @@ This example uses the `openai/whisper-large-v3` from Hugging Face to perform spe
 - A [Hugging Face API key](https://huggingface.co/docs/api-inference/en/quicktour#get-your-api-token)
 
 {% section #step-1 step=1 title="Create new function" %}
-Head to the [Indobase Console](https://cloud.appwrite.io/console) then click on **Functions** in the left sidebar and then click on the **Create Function** button.
+Head to the [Indobase Console](https://console.indobase.fun) then click on **Functions** in the left sidebar and then click on the **Create Function** button.
 
 {% only_dark %}
 ![Create function screen](/images/docs/functions/dark/template.png)

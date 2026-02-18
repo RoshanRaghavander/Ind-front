@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Building a chat app with Indobase and Google Gemini
 description: Learn how to build a chat application using Indobase and the Google Gemini API.
@@ -529,7 +529,7 @@ This will return a prompt asking you to select the function(s) you want to deplo
 ✓  Success: Successfully pushed 1 functions.
 ```
 
-You can now navigate to your [Indobase cloud console](https://cloud.appwrite.io/console) > Projects (select your project) > Functions to see the deployed function. Click on the function to view its details, including the function URL.
+You can now navigate to your [Indobase cloud console](https://console.indobase.fun/console) > Projects (select your project) > Functions to see the deployed function. Click on the function to view its details, including the function URL.
 
 ![Screenshot of the function details in the Indobase console](/images/blog/build-a-chat-app-with-appwrite-and-gemini/appwrite-function-details.png)
 

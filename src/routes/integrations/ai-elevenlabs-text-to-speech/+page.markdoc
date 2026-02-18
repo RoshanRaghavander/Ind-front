@@ -1,4 +1,4 @@
-﻿---
+---
 layout: integration
 title: Text to speech with ElevenLabs
 description: Transform text into natural, human-like speech
@@ -42,7 +42,7 @@ First, you must [sign up for an ElevenLabs account](https://elevenlabs.io/app/si
 
 ## Step 2: Create the Indobase Site
 
-For this step, you must [create an account on Indobase Cloud](https://cloud.appwrite.io/register) or [self-host Indobase](/docs/advanced/self-hosting) if you haven’t already. If you decide to self-host Indobase, there are [additional setup steps](/docs/advanced/self-hosting/configuration/sites) to use Indobase Sites templates.
+For this step, you must [create an account on Indobase Cloud](https://console.indobase.fun/register) or [self-host Indobase](/docs/advanced/self-hosting) if you haven’t already. If you decide to self-host Indobase, there are [additional setup steps](/docs/advanced/self-hosting/configuration/sites) to use Indobase Sites templates.
 
 Head over to the Indobase console, navigate to the **Sites** page, click on **Create site** and select the **Clone a template** option, and search for the **Text-to-speech with ElevenLabs** site template.
 

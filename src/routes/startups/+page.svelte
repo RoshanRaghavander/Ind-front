@@ -18,7 +18,7 @@
     import { TITLE_SUFFIX } from '$routes/titles';
     import { DEFAULT_HOST } from '$lib/utils/metadata';
 
-    import { PUBLIC_GROWTH_ENDPOINT } from '$env/static/public';
+    import { env as publicEnv } from '$env/dynamic/public';
     import Faq from './faq.svelte';
     import { getReferrerAndUtmSource } from '$lib/utils/utm';
     import CommunitySupportChat from '$lib/components/CommunitySupportChat.svelte';
@@ -51,7 +51,13 @@
         error = undefined;
         submitting = true;
 
-        const response = await fetch(`${PUBLIC_GROWTH_ENDPOINT}/conversations/startups`, {
+        const endpoint = publicEnv.PUBLIC_GROWTH_ENDPOINT;
+        if (!endpoint) {
+            error = 'Growth endpoint is not configured';
+            submitting = false;
+            return;
+        }
+        const response = await fetch(`${endpoint}/conversations/startups`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -108,7 +114,7 @@
     const souvikSarkar = testimonial(
         'Souvik Sarkar',
         '@Jeet_2003',
-        'With its robust feature set and open-source nature, Indobase is the perfect choice for developers who want to build secure and scalable applications.',,
+        'With its robust feature set and open-source nature, Indobase is the perfect choice for developers who want to build secure and scalable applications.',
         'souvik-sarkar'
     );
 
@@ -137,7 +143,7 @@
         testimonial(
             'David Forster',
             'Creator // Open Mind',
-            'Indobase saved us a lot of money in comparison to Firebase since the amount of users grew quite fast and we needed a quick switch. I am still surprised how easy the implementation into Flutter was.',,
+            'Indobase saved us a lot of money in comparison to Firebase since the amount of users grew quite fast and we needed a quick switch. I am still surprised how easy the implementation into Flutter was.',
             'david-forster'
         ),
         testimonial(
@@ -149,7 +155,7 @@
         testimonial(
             "Ryan O'Conner",
             'Founder // K-Collect',
-            'For me, Indobase is the perfect backend solution. All you have to do is sign up, and your backend is ready to go. I have never seen such an innovative and easy-to-understand backend solution before!',,
+            'For me, Indobase is the perfect backend solution. All you have to do is sign up, and your backend is ready to go. I have never seen such an innovative and easy-to-understand backend solution before!',
             'ryan-oconner'
         ),
         testimonial(
@@ -173,7 +179,7 @@
         testimonial(
             'Jonas Janssen',
             'Founder // UNDO',
-            'Thanks to Indobase and advances in technology, we were able to get an MVP out in 2-3 months with 1 developer.',,
+            'Thanks to Indobase and advances in technology, we were able to get an MVP out in 2-3 months with 1 developer.',
             'jonas-janssen'
         ),
         testimonial(

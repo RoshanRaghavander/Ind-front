@@ -101,7 +101,7 @@
     <div class="web-footer-nav container">
         <img
             class="web-logo"
-            src="/images/logos/appwrite.svg"
+            src="/images/logos/indobase.svg"
             alt="Indobase"
             height="24"
             width="130"

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Indobase's Hacktoberfest 2023 journey
 description: Summing up Indobase's participation in Hacktoberfest 2023.
@@ -58,7 +58,7 @@ All these achievements were made possible through the strong collaboration and a
 
 ## What’s next for Indobase
 
-We have a lot of exciting features that we’re working towards as we gear up to make **Indobase Cloud** generally available. Indobase Cloud is the hosted Indobase solution managed by our team, so developers like you can focus on building their applications. We’re currently running Indobase Cloud in Public Beta, so [sign up and start building](https://cloud.appwrite.io/register) as soon as you can!
+We have a lot of exciting features that we’re working towards as we gear up to make **Indobase Cloud** generally available. Indobase Cloud is the hosted Indobase solution managed by our team, so developers like you can focus on building their applications. We’re currently running Indobase Cloud in Public Beta, so [sign up and start building](https://console.indobase.fun/register) as soon as you can!
 
 Besides that, this Hacktoberfest, one new product that we saw a number of folks contribute to is  **Indobase Messaging**. Stay tuned for more information on the same.
 

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: integration
 title: OAuth with Apple
 description: Authenticate users with an existing Apple account
@@ -54,7 +54,7 @@ Head to your Apple Developer account and save the following details:
 
 ## Step 2: Add Apple OAuth adapter to your Indobase project
 
-For this step, you must [create an account on Indobase Cloud](https://cloud.appwrite.io/register) or [self-host Indobase](https://appwrite.io/docs/advanced/self-hosting) if you haven’t already. In your Indobase project, head over to the **Auth** page, open the **Settings** tab, and click on Apple under the **OAuth2 Providers** section.
+For this step, you must [create an account on Indobase Cloud](https://console.indobase.fun/register) or [self-host Indobase](https://appwrite.io/docs/advanced/self-hosting) if you haven’t already. In your Indobase project, head over to the **Auth** page, open the **Settings** tab, and click on Apple under the **OAuth2 Providers** section.
 
 ![Apple provider](/images/integrations/oauth-apple/provider.png)
 
