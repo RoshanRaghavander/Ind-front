@@ -1,4 +1,4 @@
-import { PUBLIC_APPWRITE_ENDPOINT, PUBLIC_APPWRITE_PROJECT_INIT_ID } from '$env/static/public';
+import { env as publicEnv } from '$env/dynamic/public';
 import { Client, Account, Databases } from 'node-appwrite';
 import type { RequestEvent } from '../$types';
 import { cookieKey } from './auth';
@@ -6,8 +6,8 @@ import type { Cookies } from '@sveltejs/kit';
 import { env as privateEnv } from '$env/dynamic/private';
 
 export const createInitServerClient = () => {
-    const endpoint = PUBLIC_APPWRITE_ENDPOINT ?? '';
-    const projectId = PUBLIC_APPWRITE_PROJECT_INIT_ID ?? '';
+    const endpoint = publicEnv.PUBLIC_APPWRITE_ENDPOINT ?? '';
+    const projectId = publicEnv.PUBLIC_APPWRITE_PROJECT_INIT_ID ?? '';
     const apiKey = privateEnv.APPWRITE_API_KEY_INIT ?? '';
 
     const client = new Client();
@@ -27,8 +27,8 @@ export const createInitServerClient = () => {
 };
 
 export const createInitSessionClient = async (cookies: Cookies) => {
-    const endpoint = PUBLIC_APPWRITE_ENDPOINT ?? '';
-    const projectId = PUBLIC_APPWRITE_PROJECT_INIT_ID ?? '';
+    const endpoint = publicEnv.PUBLIC_APPWRITE_ENDPOINT ?? '';
+    const projectId = publicEnv.PUBLIC_APPWRITE_PROJECT_INIT_ID ?? '';
 
     if (!endpoint || !projectId) {
         return;

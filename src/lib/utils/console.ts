@@ -2,15 +2,13 @@ import { derived, writable } from 'svelte/store';
 import { browser } from '$app/environment';
 import { Account, Client, Teams } from '@appwrite.io/console';
 import { Query, type Models } from '@appwrite.io/console';
-import { PUBLIC_APPWRITE_ENDPOINT } from '$env/static/public';
+import { env as publicEnv } from '$env/dynamic/public';
 // import {PUBLIC_APPWRITE_ENDPOINT} from '$env/static/public';
 
 
 const client = new Client();
 
-const endpoint =
-    PUBLIC_APPWRITE_ENDPOINT ??
-    'https://cloud.appwrite.io/v1';
+const endpoint = publicEnv.PUBLIC_APPWRITE_ENDPOINT ?? 'https://cloud.appwrite.io/v1';
 
 // Guard for SSR
 if (endpoint) {

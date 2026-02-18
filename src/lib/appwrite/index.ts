@@ -1,10 +1,10 @@
-import { PUBLIC_APPWRITE_ENDPOINT, PUBLIC_APPWRITE_PROJECT_ID } from '$env/static/public';
+import { env as publicEnv } from '$env/dynamic/public';
 import { Client, Databases, Functions, Storage } from '@appwrite.io/console';
 
 export const client = new Client();
 
-const endpoint = PUBLIC_APPWRITE_ENDPOINT ?? '';
-const projectId = PUBLIC_APPWRITE_PROJECT_ID ?? '';
+const endpoint = publicEnv.PUBLIC_APPWRITE_ENDPOINT ?? '';
+const projectId = publicEnv.PUBLIC_APPWRITE_PROJECT_ID ?? '';
 
 if (endpoint && projectId) {
     client.setEndpoint(endpoint).setProject(projectId);
