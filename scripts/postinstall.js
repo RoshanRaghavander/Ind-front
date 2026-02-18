@@ -31,6 +31,32 @@ function fixEsbuildPermissions() {
   } catch (e) {
     console.warn('[postinstall] scan esbuild-* failed', e.message);
   }
+
+  // pnpm layout: node_modules/.pnpm/esbuild@x.y.z/node_modules/esbuild/bin/esbuild
+  try {
+    const pnpmDir = path.join(nm, '.pnpm');
+    if (fs.existsSync(pnpmDir)) {
+      const pkgs = fs.readdirSync(pnpmDir, { withFileTypes: true });
+      for (const pkg of pkgs) {
+        if (!pkg.isDirectory()) continue;
+        const pkgRoot = path.join(pnpmDir, pkg.name, 'node_modules');
+        const pnpmEsbuild = path.join(pkgRoot, 'esbuild', 'bin', 'esbuild');
+        chmodIfExists(pnpmEsbuild);
+        // platform-specific esbuild-* packages inside pnpm layout
+        try {
+          const sub = fs.readdirSync(pkgRoot, { withFileTypes: true });
+          for (const s of sub) {
+            if (s.isDirectory() && s.name.startsWith('esbuild-')) {
+              const p = path.join(pkgRoot, s.name, 'bin', 'esbuild');
+              chmodIfExists(p);
+            }
+          }
+        } catch {}
+      }
+    }
+  } catch (e) {
+    console.warn('[postinstall] pnpm esbuild scan failed', e.message);
+  }
 }
 
 function ensurePythonConfig() {
