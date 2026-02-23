@@ -45,7 +45,7 @@ export function displayHiringMessage() {
             'font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif; font-size: 14px;'
         );
         console.log(
-            '%cCheck out our open positions at https://appwrite.io/careers',
+            '%cCheck out our open positions at https://indobase.fun/careers',
             'font-family: monospace; color: #666;'
         );
     }

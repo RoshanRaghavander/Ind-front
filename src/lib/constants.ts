@@ -9,7 +9,7 @@ type SocialStats = {
 export const SOCIAL_STATS: SocialStats = {
     GITHUB: {
         STAT: '53K',
-        LINK: 'https://github.com/appwrite/appwrite',
+        LINK: 'https://github.com/indobase/indobase',
         EXTRA: {
             COMMITS: '27K+',
             PULL_REQUESTS: '4.7K+',
@@ -26,11 +26,11 @@ export const SOCIAL_STATS: SocialStats = {
     },
     TWITTER: {
         STAT: '127K+',
-        LINK: 'https://twitter.com/intent/follow?screen_name=appwrite'
+        LINK: 'https://twitter.com/intent/follow?screen_name=indobase'
     },
     YOUTUBE: {
         STAT: '13K+',
-        LINK: 'https://www.youtube.com/c/appwrite?sub_confirmation=1'
+        LINK: 'https://www.youtube.com/@indobase?sub_confirmation=1'
     }
 };
 
@@ -127,7 +127,7 @@ export const partnerCategoryDescriptions: SearchableCategory[] = [
     {
         slug: 'agency',
         heading: 'Agency',
-        description: 'Find an Appwrite Partner agency for your project'
+        description: 'Find an Indobase Partner agency for your project'
     }
 ];
 
@@ -162,46 +162,46 @@ export const socials: Array<Social> = [
     {
         icon: 'web-icon-discord',
         label: 'Discord',
-        link: 'https://appwrite.io/discord'
+        link: 'https://indobase.fun/discord'
     },
     {
         icon: 'web-icon-github',
         label: 'Github',
-        link: 'https://github.com/appwrite'
+        link: 'https://github.com/indobase'
     },
     {
         icon: 'web-icon-x',
         label: 'Twitter',
-        link: 'https://twitter.com/intent/follow?screen_name=appwrite'
+        link: 'https://twitter.com/intent/follow?screen_name=indobase'
     },
     {
         icon: 'web-icon-linkedin',
         label: 'LinkedIn',
-        link: 'https://linkedin.com/company/appwrite'
+        link: 'https://linkedin.com/company/indobase'
     },
     {
         icon: 'web-icon-youtube',
         label: 'YouTube',
-        link: 'https://youtube.com/c/appwrite?sub_confirmation=1'
+        link: 'https://youtube.com/@indobase?sub_confirmation=1'
     },
     {
         icon: 'web-icon-daily-dev',
         label: 'Daily.dev',
-        link: 'https://app.daily.dev/squads/appwrite'
+        link: 'https://app.daily.dev/squads/indobase'
     },
     {
         icon: 'web-icon-bluesky',
         label: 'Bluesky',
-        link: 'https://bsky.app/profile/appwrite.io'
+        link: 'https://bsky.app/profile/indobase.fun'
     },
     {
         icon: 'web-icon-tiktok',
         label: 'Tiktok',
-        link: 'https://tiktok.com/@appwrite'
+        link: 'https://tiktok.com/@indobase'
     },
     {
         icon: 'web-icon-instagram',
         label: 'Instagram',
-        link: 'https://instagram.com/appwrite.io'
+        link: 'https://instagram.com/indobase.fun'
     }
 ];

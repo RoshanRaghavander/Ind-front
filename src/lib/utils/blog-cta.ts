@@ -45,7 +45,7 @@ const AUTH_CTA: BlogCtaConfig = {
     heading: 'Customer identity without the hassle',
     description: 'Add secure authentication in minutes, not weeks.',
     label: 'Request a demo',
-    href: 'https://appwrite.io/contact-us/enterprise',
+    href: 'https://indobase.fun/contact-us/enterprise',
     event: 'blog-cta-auth-demo-btn-click',
     points: [
         'Built-in security and compliance',
@@ -110,7 +110,7 @@ const CONTRIBUTORS_CTA: BlogCtaConfig = {
     heading: 'Join the Indobase community',
     description: 'Contribute to open source and help shape the future of backend development.',
     label: 'Start contributing',
-    href: 'https://github.com/appwrite/appwrite',
+    href: 'https://github.com/indobase/indobase',
     event: 'blog-cta-contributors-btn-click',
     points: [
         'Open source and welcoming',

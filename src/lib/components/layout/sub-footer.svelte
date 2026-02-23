@@ -27,7 +27,7 @@
         <iframe
             class="status w-fit max-w-[230px]"
             title="Indobase Status"
-            src="https://status.appwrite.online/badge?theme=dark"
+            src="https://status.indobase.fun/badge?theme=dark"
             height="35"
             frameborder="0"
             scrolling="no"

@@ -2,7 +2,7 @@ You can create sites using the CLI without needing to access the Console.
 
 {% partial file="cli-disclaimer.md" /%}
 
-To deploy your site with the Appwrite CLI, use the `appwrite init sites` command to create a starter site and paste your code into the generated file and folder.
+To deploy your site with the Indobase CLI, use the `appwrite init sites` command to create a starter site and paste your code into the generated file and folder.
 
 ```sh
 appwrite init sites

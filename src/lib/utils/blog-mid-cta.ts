@@ -90,7 +90,7 @@ export const prepareBlogCtaState = ({
         ? (() => {
               const [point1, point2, point3, point4] = normalizePoints(callToAction.points);
               return {
-                  heading: callToAction.heading ?? 'Start building with Appwrite today',
+                  heading: callToAction.heading ?? 'Start building with Indobase today',
                   label: callToAction.label ?? 'Get started',
                   href: callToAction.href ?? callToAction.url ?? getAppwriteDashboardUrl(),
                   description: callToAction.description ?? '',

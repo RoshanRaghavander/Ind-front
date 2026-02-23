@@ -21,7 +21,7 @@
             Pick one of our many cloud regions or edges to meet your project's needs and reduce
             latency.
         </p>
-        <Button variant="secondary" href="/the-appwrite-network"
+        <Button variant="secondary" href="/the-indobase-network"
             >More about the Indobase Network</Button
         >
     </div>

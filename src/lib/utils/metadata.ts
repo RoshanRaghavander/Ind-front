@@ -1,6 +1,6 @@
 import type { AuthorData } from '$routes/blog/content';
 
-export const DEFAULT_HOST = 'https://indobase.io';
+export const DEFAULT_HOST = 'https://indobase.fun';
 export const DEFAULT_DESCRIPTION =
     'Indobase is an open-source platform for building applications at any scale, using your preferred programming languages and tools.';
 
@@ -21,13 +21,13 @@ export function getInlinedScriptTag(jsonSchema: string): string {
 }
 
 /**
- * Returns the JSON-LD schema for the Appwrite organization.
+ * Returns the JSON-LD schema for the Indobase organization.
  */
 export function organizationJsonSchema() {
     return JSON.stringify({
         '@context': 'https://schema.org',
         '@type': 'Organization',
-        url: 'https://indobase.io',
+        url: 'https://indobase.fun',
         sameAs: [
             'https://www.linkedin.com/company/indobase',
             'https://github.com/indobase/indobase',
@@ -38,12 +38,12 @@ export function organizationJsonSchema() {
         legalName: 'Indobase Technologies Ltd.',
         description:
             'A secure open-source backend server provides the core APIs required to build web and mobile applications. Indobase provides authentication, database, storage, functions, messaging, and advanced realtime capabilities.',
-        logo: 'https://appwrite.io/assets/logotype/indobase-white.png'
+        logo: 'https://indobase.fun/assets/logotype/indobase-white.png'
     });
 }
 
 /**
- * Returns the JSON-LD schema for the Appwrite software application.
+ * Returns the JSON-LD schema for the Indobase software application.
  */
 export function softwareAppSchema() {
     return JSON.stringify({
@@ -107,13 +107,13 @@ export function createBreadcrumbsSchema(articleInfo: {
                 '@type': 'ListItem',
                 position: 1,
                 name: 'Blog',
-                item: 'https://indobase.io/blog'
+                item: 'https://indobase.fun/blog'
             },
             {
                 '@type': 'ListItem',
                 position: 2,
                 name: articleInfo.category,
-                item: `https://indobase.io/blog?category=${articleInfo.category}`
+                item: `https://indobase.fun/blog?category=${articleInfo.category}`
             },
             {
                 '@type': 'ListItem',

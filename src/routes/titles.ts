@@ -1,4 +1,4 @@
-export const TITLE_SUFFIX = ' - Appwrite';
+export const TITLE_SUFFIX = ' - Indobase';
 export const DOCS_TITLE_SUFFIX = ' - Docs' + TITLE_SUFFIX;
 export const OVERVIEW_TITLE_SUFFIX = ' - Overview' + TITLE_SUFFIX;
 export const API_REFERENCE_TITLE_SUFFIX = ' API Reference' + DOCS_TITLE_SUFFIX;

@@ -100,7 +100,7 @@
         });
     }
 
-    const currentURL = `https://appwrite.io${page.url.pathname}`;
+    const currentURL = `https://indobase.fun${page.url.pathname}`;
 </script>
 
 <svelte:head>

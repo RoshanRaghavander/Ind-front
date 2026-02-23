@@ -109,7 +109,7 @@
                     {/if}
                     <li>
                         <a
-                            href={`https://github.com/appwrite/website/tree/main/src/routes${page.route.id}`}
+                            href={`https://github.com/indobase/indobase/tree/main/src/routes${page.route.id}`}
                             target="_blank"
                             rel="noopener noreferrer"
                             class="web-link flex items-baseline gap-1"

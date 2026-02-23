@@ -7,11 +7,11 @@
     const studies = [
         {
             logo: DevKind,
-            headline: 'DevKind reduced development time by 60% and lowered server costs by 40%',
-            blurb: 'A special thanks to Indobase for providing robust features and seamless functionality.',
-            name: 'Hassan Ahmed',
-            title: 'Engineer at DevKind',
-            avatar: '/images/testimonials/hassan.png',
+            headline: 'Why Indian startups choose Indobase to build and scale',
+            blurb: 'Indobase gives startups one reliable backend so they can ship in weeks, not months. It’s the best choice for founders who want to focus on customers, not servers.',
+            name: 'Sivakumar Gingee',
+            title: 'CEO, Indobase',
+            avatar: '/images/testimonials/phil.jpg',
             url: '#'
         },
         {

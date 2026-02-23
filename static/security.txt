@@ -1,4 +1,4 @@
-Contact: mailto://security@appwrite.io
+Contact: mailto://security@indobase.fun
 Expires: 2026-01-01T20:00:00.000Z
 Preferred-Languages: en
-Hiring: https://careers.appwrite.io/
+Hiring: https://careers.indobase.fun/

@@ -57,8 +57,8 @@
                                 </h2>
                                 <p class="text-description web-u-padding-block-end-40">
                                     Sign up to our company blog and get the latest insights from
-                                    Appwrite. Learn more about engineering, product design, building
-                                    community, and tips & tricks for using Appwrite.
+                                    Indobase. Learn more about engineering, product design, building
+                                    community, and tips & tricks for using Indobase.
                                 </p>
                             </section>
                         </div>

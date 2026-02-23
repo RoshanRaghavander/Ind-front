@@ -28,10 +28,10 @@
         <div class="mt-1 grid grid-cols-1 gap-y-4 md:grid-cols-3">
             <div>Copyright © {year} Indobase</div>
 
-            <iframe
+                <iframe
                 class="w-full md:w-fit md:max-w-[230px]"
                 title="Status"
-                src="https://status.appwrite.online/badge?theme=dark"
+                src="https://status.indobase.fun/badge?theme=dark"
                 height="35"
                 frameborder="0"
                 scrolling="no"
@@ -96,14 +96,14 @@
                 </li>
                 <li>
                     <a
-                        href="https://appwrite.online"
+                        href="https://status.indobase.fun"
                         target="_blank"
                         rel="noopener noreferrer"
-                        onclick={() => trackEvent(`footer-appwrite_status-click`)}>Status</a
+                        onclick={() => trackEvent(`footer-indobase_status-click`)}>Status</a
                     >
                 </li>
                 <!-- <li>
-					<a href="https://github.com/appwrite/appwrite/releases" target="_blank" rel="noopener noreferrer">Changelog</a>
+					<a href="https://github.com/indobase/indobase/releases" target="_blank" rel="noopener noreferrer">Changelog</a>
 				</li> -->
             </ul>
             <div class="web-main-footer-grid-1-column-4 web-main-footer-copyright">

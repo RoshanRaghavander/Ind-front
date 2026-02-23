@@ -655,7 +655,10 @@
         "link": "/policy/privacy",
         "redirect": "/privacy"
     },
-
+    {
+        "link": "/the-appwrite-network",
+        "redirect": "/the-indobase-network"
+    },
     {
         "link": "/case-studies",
         "redirect": "/customer-stories"

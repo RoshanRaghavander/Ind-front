@@ -101,8 +101,9 @@ const securityheaders: Handle = async ({ event, resolve }) => {
         'upgrade-insecure-requests': '',
         'connect-src': join([
             "'self'",
-            'https://*.appwrite.io',
-            'https://*.appwrite.org',
+            'https://*.indobase.fun',
+            'https://api.indobase.fun',
+            'https://console.indobase.fun',
             'https://*.posthog.com',
             'https://*.sentry.io',
             'https://*.plausible.io',
@@ -118,7 +119,7 @@ const securityheaders: Handle = async ({ event, resolve }) => {
         'frame-src': join([
             "'self'",
             'https://www.youtube.com',
-            'https://status.appwrite.online',
+            'https://status.indobase.fun',
             'https://www.youtube-nocookie.com',
             'https://player.vimeo.com',
             'https://hemsync.clickagy.com',
