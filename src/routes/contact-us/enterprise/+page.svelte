@@ -186,7 +186,7 @@
                                                     required
                                                     class="web-input-text w-full"
                                                     type="text"
-                                                    placeholder="Acme Corp"
+                                                    placeholder="Indobase Corp"
                                                     id="companyName"
                                                     bind:value={companyName}
                                                 />

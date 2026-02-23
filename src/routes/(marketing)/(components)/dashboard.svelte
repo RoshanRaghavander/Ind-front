@@ -44,7 +44,7 @@
                 />
                 <text x="55" y="32" fill="#EDEDF0" font-size="14" font-family="system-ui, sans-serif">indobase</text>
                 <text x="130" y="32" fill="#ADADB0" font-size="14" font-family="system-ui, sans-serif"> / </text>
-                <text x="150" y="32" fill="#D8D8DB" font-size="14" font-family="system-ui, sans-serif">Ame Corp</text>
+                <text x="150" y="32" fill="#D8D8DB" font-size="14" font-family="system-ui, sans-serif">Indobase Corp</text>
                 <text x="230" y="32" fill="#ADADB0" font-size="14" font-family="system-ui, sans-serif"> / </text>
                 <text x="250" y="32" fill="#D8D8DB" font-size="14" font-family="system-ui, sans-serif">First Indobase project</text>
             </svg>

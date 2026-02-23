@@ -86,7 +86,7 @@
                                 type="text"
                                 name="email"
                                 class="border-smooth text-eyebrow w-full rounded-lg border bg-[#19191C] px-3 py-2 tracking-tighter text-white"
-                                value="walter@acme.dev"
+                                value="walter@indobase.fun"
                                 disabled
                             />
                         </div>
