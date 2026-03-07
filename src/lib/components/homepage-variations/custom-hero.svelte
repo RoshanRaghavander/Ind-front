@@ -13,7 +13,7 @@
         subtitle = 'Indobase is an open-source, all-in-one development platform. Use built-in backend infrastructure and web hosting, all from a single place.',
         showDashboard = true,
         ctaLabel = 'Start building for free',
-        ctaHref = DASHBOARD_URL
+        ctaHref = '/waitlist'
     } = $props<{
         title?: string;
         subtitle?: string;
@@ -51,11 +51,10 @@
             <div class="mt-4 flex flex-col gap-2 lg:flex-row">
                 <Button
                     href={ctaHref}
-                    class="w-full! lg:w-fit! saffron-button"
+                    class="w-full! lg:w-fit!"
                     onclick={() => {
                         trackEvent(`main-get_started_btn_hero-click`);
                     }}>{ctaLabel}</Button>
-                >
             </div>
         </div>
 

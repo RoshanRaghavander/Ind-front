@@ -12,35 +12,71 @@
         tag?: string;
         subtitle?: string;
         event: string;
+        features: string[];
     }> = [
         {
-            name: 'Free',
-            price: '₹0',
-            description: 'A great fit for early ideas, experiments, and side projects.',
-            event: 'home-pricing-cards-free-click'
+            name: 'Start for Free',
+            price: '$0',
+            subtitle: ' / month',
+            description: 'Get started with:',
+            event: 'home-pricing-cards-free-click',
+            features: [
+                'Unlimited API requests',
+                '50,000 monthly active users',
+                '500 MB database size',
+                '5 GB egress',
+                '5 GB cached egress',
+                '1 GB file storage',
+                'Community support'
+            ]
         },
         {
-            name: 'Pro',
-            price: '₹1,999',
-            tag: 'Popular',
-            description:
-                'For growing products that need reliable infra, better limits, and support.',
-            subtitle: '/month',
-            event: 'home-pricing-cards-pro-click'
+            name: 'Get Started',
+            price: '$25',
+            subtitle: ' / month',
+            description: 'Everything in the Free Plan, plus:',
+            event: 'home-pricing-cards-pro-click',
+            features: [
+                '100,000 monthly active users',
+                '8 GB disk size per project',
+                '250 GB egress',
+                '250 GB cached egress',
+                '100 GB file storage',
+                'Email support',
+                'Daily backups stored for 7 days',
+                '7-day log retention'
+            ]
         },
         {
-            name: 'Scale',
-            price: '₹49,999',
-            description:
-                'For larger teams running mission-critical workloads and multi-region deployments.',
-            subtitle: '/month',
-            event: 'home-pricing-cards-scale-click'
+            name: 'Get Started',
+            price: '$599',
+            subtitle: ' / month',
+            description: 'Everything in the Pro Plan, plus:',
+            event: 'home-pricing-cards-scale-click',
+            features: [
+                'SOC2',
+                'Project-scoped and read-only access',
+                'HIPAA available as paid add-on',
+                'SSO for Supabase Dashboard',
+                'Priority email support & SLAs',
+                'Daily backups stored for 14 days',
+                '28-day log retention',
+                'Add Log Drains'
+            ]
         },
         {
-            name: 'Enterprise',
+            name: 'Custom',
             price: 'Custom',
-            description: 'For enterprises that need more power and premium support.',
-            event: 'home-pricing-cards-enterprise-click'
+            description: 'Enterprise features:',
+            event: 'home-pricing-cards-enterprise-click',
+            features: [
+                'Designated Support manager',
+                'Uptime SLAs',
+                'BYO Cloud supported',
+                '24x7x365 premium enterprise support',
+                'Private Slack channel',
+                'Custom Security Questionnaires'
+            ]
         }
     ];
 
@@ -50,11 +86,11 @@
 
     const { class: className }: PricingProps = $props();
 
-    const visiblePlans = SHOW_SCALE_PLAN ? plans : plans.filter((plan) => plan.name !== 'Scale');
+    const visiblePlans = plans;
 
     const gridCols = `lg:grid-cols-${visiblePlans.length}`;
 
-    const DASHBOARD_URL = getAppwriteDashboardUrl();
+    const DASHBOARD_URL = '/waitlist';
 </script>
 
 <div
@@ -101,8 +137,8 @@
         <div
             class="border-smooth divide-smooth grid min-h-75 w-full grid-cols-1 divide-y divide-dashed rounded-3xl border bg-white/2 backdrop-blur-lg md:grid-cols-2 md:gap-y-12 md:divide-y-0 md:px-4 md:py-8 {gridCols} lg:divide-x"
         >
-            {#each visiblePlans as { name, price, tag: label, subtitle, description, event }, index (`${name},${label},${index}`)}
-                {@const isEnterprise = name === 'Enterprise'}
+            {#each visiblePlans as { name, price, tag: label, subtitle, description, event, features }, index (`${name},${label},${index}`)}
+                {@const isEnterprise = name === 'Custom'}
                 <div class="flex h-full w-full grow flex-col gap-1 px-5 py-5 md:py-0">
                     <div class="flex items-center gap-2.5">
                         <span class="text-description text-secondary font-medium">{name}</span>
@@ -124,18 +160,26 @@
                             {/if}
                         </span>
 
-                        <p class="text-caption text-secondary mt-4 mb-0 block font-medium">
+                        <p class="text-caption text-secondary mt-4 mb-2 block font-medium">
                             {description}
                         </p>
+                        <ul class="flex flex-col gap-2 mt-4">
+                            {#each features as feature}
+                                <li class="text-caption text-secondary flex items-start gap-2">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent mt-0.5 flex-shrink-0"><path d="M20 6 9 17l-5-5"/></svg>
+                                    <span>{feature}</span>
+                                </li>
+                            {/each}
+                        </ul>
                     </div>
 
                     <Button
                         class="mt-8 mb-0 w-full!"
-                        variant={name === 'Pro' ? 'primary' : 'secondary'}
+                        variant={name === 'Custom' ? 'secondary' : 'primary'}
                         href={isEnterprise ? '/contact-us/enterprise' : DASHBOARD_URL}
                         onclick={() => {
                             trackEvent(event);
-                        }}>{isEnterprise ? 'Contact us' : 'Start building'}</Button
+                        }}>{isEnterprise ? 'Contact Us' : 'Get Started'}</Button
                     >
                 </div>
             {/each}
