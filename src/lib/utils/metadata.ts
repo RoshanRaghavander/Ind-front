@@ -5,12 +5,10 @@ export const DEFAULT_DESCRIPTION =
     'Indobase is an open-source platform for building applications at any scale, using your preferred programming languages and tools.';
 
 /**
- * Generates an Open Graph image URL with encoded title and description.
+ * Generates an Open Graph image URL.
  */
 export function buildOpenGraphImage(title: string, description: string): string {
-    return `https://og.appwrite.global/image.png?title=${encodeURIComponent(
-        title
-    )}&subtitle=${encodeURIComponent(description)}`;
+    return `${DEFAULT_HOST}/images/open-graph/website.png`;
 }
 
 /**
