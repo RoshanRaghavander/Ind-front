@@ -16,7 +16,7 @@
     }> = [
         {
             name: 'Free',
-            price: '$0',
+            price: '₹0',
             description: 'A great fit for passion projects and small applications.',
             buttonText: 'Get started',
             buttonLink: getAppwriteDashboardUrl('/register'),
@@ -25,7 +25,7 @@
         },
         {
             name: 'Pro',
-            price: '$25',
+            price: '₹2,499',
             variable: true,
             tag: 'Most Popular',
             description:
@@ -37,7 +37,7 @@
         },
         {
             name: 'Scale',
-            price: '$599',
+            price: '₹49,999',
             variable: true,
             description:
                 'For teams that handle more complex and large projects and need more control and support.',

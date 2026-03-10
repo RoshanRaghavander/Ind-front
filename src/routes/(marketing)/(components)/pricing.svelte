@@ -16,7 +16,7 @@
     }> = [
         {
             name: 'Start for Free',
-            price: '$0',
+            price: '₹0',
             subtitle: ' / month',
             description: 'Get started with:',
             event: 'home-pricing-cards-free-click',
@@ -32,7 +32,7 @@
         },
         {
             name: 'Get Started',
-            price: '$25',
+            price: '₹2,499',
             subtitle: ' / month',
             description: 'Everything in the Free Plan, plus:',
             event: 'home-pricing-cards-pro-click',
@@ -49,7 +49,7 @@
         },
         {
             name: 'Get Started',
-            price: '$599',
+            price: '₹49,999',
             subtitle: ' / month',
             description: 'Everything in the Pro Plan, plus:',
             event: 'home-pricing-cards-scale-click',
