@@ -1,43 +1,36 @@
-import { MongoClient } from 'mongodb';
-import { MONGODB_URI } from '$env/static/private';
+import mysql from 'mysql2/promise';
+import { env } from '$env/dynamic/private';
 
-if (!MONGODB_URI) {
-    throw new Error('Invalid/Missing environment variable: "MONGODB_URI"');
+if (!env.MYSQL_URI) {
+    throw new Error('Invalid/Missing environment variable: "MYSQL_URI"');
 }
 
-const uri = MONGODB_URI;
-const options = {};
-
-let client: MongoClient;
-let clientPromise: Promise<MongoClient>;
+let pool: mysql.Pool;
 
 export async function getDb() {
-    if (!clientPromise) {
-        if (process.env.NODE_ENV === 'development') {
-            // In development mode, use a global variable so that the value
-            // is preserved across module reloads caused by HMR (Hot Module Replacement).
-            let globalWithMongo = global as typeof globalThis & {
-                _mongoClientPromise?: Promise<MongoClient>;
-            };
+    if (!pool) {
+        pool = mysql.createPool({
+            uri: env.MYSQL_URI,
+            waitForConnections: true,
+            connectionLimit: 10,
+            queueLimit: 0
+        });
 
-            if (!globalWithMongo._mongoClientPromise) {
-                client = new MongoClient(uri, options);
-                globalWithMongo._mongoClientPromise = client.connect();
-            }
-            clientPromise = globalWithMongo._mongoClientPromise;
-        } else {
-            // In production mode, it's best to not use a global variable.
-            client = new MongoClient(uri, options);
-            clientPromise = client.connect();
+        // Initialize table if it doesn't exist
+        const connection = await pool.getConnection();
+        try {
+            await connection.execute(`
+                CREATE TABLE IF NOT EXISTS waitlist (
+                    id INT AUTO_INCREMENT PRIMARY KEY,
+                    name VARCHAR(255) NOT NULL,
+                    email VARCHAR(255) NOT NULL,
+                    company VARCHAR(255),
+                    createdAt DATETIME NOT NULL
+                )
+            `);
+        } finally {
+            connection.release();
         }
     }
-
-    const resolvedClient = await clientPromise;
-    // You can specify a database name here if it's not in the connection string
-    return resolvedClient.db("indobase");
-}
-
-export async function getWaitlistCollection() {
-    const db = await getDb();
-    return db.collection('waitlist');
+    return pool;
 }
