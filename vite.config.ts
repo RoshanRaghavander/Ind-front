@@ -47,6 +47,9 @@ export default defineConfig({
         sourcemap: false,
         reportCompressedSize: false
     },
+    ssr: {
+        external: ['mysql2']
+    },
     test: {
         include: ['src/**/*.{test,spec}.{js,ts}']
     },
