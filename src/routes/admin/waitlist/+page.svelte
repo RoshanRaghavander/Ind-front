@@ -67,15 +67,15 @@
                             };
                         }}
                     >
-                        <input type="hidden" name="id" value={editingEntry.id} />
+                        <input type="hidden" name="id" value={editingEntry!.id} />
                         <div class="col-span-3">
-                            <Input name="name" bind:value={editingEntry.name} class="h-8 text-sm" required />
+                            <Input name="name" bind:value={editingEntry!.name} class="h-8 text-sm" required />
                         </div>
                         <div class="col-span-3">
-                            <Input name="email" type="email" bind:value={editingEntry.email} class="h-8 text-sm" required />
+                            <Input name="email" type="email" bind:value={editingEntry!.email} class="h-8 text-sm" required />
                         </div>
                         <div class="col-span-2">
-                            <Input name="company" bind:value={editingEntry.company} class="h-8 text-sm" />
+                            <Input name="company" bind:value={editingEntry!.company} class="h-8 text-sm" />
                         </div>
                         <div class="col-span-2 text-secondary text-sm">
                             {new Date(entry.createdAt).toLocaleDateString()}

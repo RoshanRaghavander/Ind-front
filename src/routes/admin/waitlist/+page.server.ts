@@ -1,6 +1,5 @@
 import type { PageServerLoad, Actions } from './$types';
-import { getWaitlistCollection } from '$lib/server/db';
-import { ObjectId } from 'mongodb';
+import { getDb } from '$lib/server/db';
 import { fail, redirect } from '@sveltejs/kit';
 import { requireAdmin } from '$lib/server/auth';
 
@@ -9,12 +8,13 @@ export const load: PageServerLoad = async (event) => {
         throw redirect(303, '/admin/login');
     }
     try {
-        const collection = await getWaitlistCollection();
-        const entries = await collection.find({}).sort({ createdAt: -1 }).toArray();
+        const pool = await getDb();
+        const [rows] = await pool.execute('SELECT * FROM waitlist ORDER BY createdAt DESC');
+        const entries = rows as any[];
 
         return {
             waitlist: entries.map(entry => ({
-                id: entry._id.toString(),
+                id: entry.id.toString(),
                 name: entry.name,
                 email: entry.email,
                 company: entry.company,
@@ -40,8 +40,8 @@ export const actions: Actions = {
         if (!id || typeof id !== 'string') return fail(400, { missing: true });
 
         try {
-            const collection = await getWaitlistCollection();
-            await collection.deleteOne({ _id: new ObjectId(id) });
+            const pool = await getDb();
+            await pool.execute('DELETE FROM waitlist WHERE id = ?', [id]);
             return { success: true };
         } catch (e) {
             console.error(e);
@@ -62,16 +62,10 @@ export const actions: Actions = {
         if (!email || typeof email !== 'string') return fail(400, { missingEmail: true });
 
         try {
-            const collection = await getWaitlistCollection();
-            await collection.updateOne(
-                { _id: new ObjectId(id) },
-                {
-                    $set: {
-                        name,
-                        email,
-                        company: company ? String(company) : null,
-                    }
-                }
+            const pool = await getDb();
+            await pool.execute(
+                'UPDATE waitlist SET name = ?, email = ?, company = ? WHERE id = ?',
+                [name, email, company ? String(company) : null, id]
             );
             return { success: true };
         } catch (e) {
