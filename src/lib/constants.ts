@@ -162,7 +162,7 @@ export const socials: Array<Social> = [
     {
         icon: 'web-icon-discord',
         label: 'Discord',
-        link: 'https://indobase.fun/discord'
+        link: 'https://indobase.in/discord'
     },
     {
         icon: 'web-icon-github',

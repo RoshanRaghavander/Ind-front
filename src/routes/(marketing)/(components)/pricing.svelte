@@ -90,7 +90,7 @@
 
     const gridCols = `lg:grid-cols-${visiblePlans.length}`;
 
-    const DASHBOARD_URL = '/waitlist';
+    const DASHBOARD_URL = getAppwriteDashboardUrl();
 </script>
 
 <div

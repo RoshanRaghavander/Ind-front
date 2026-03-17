@@ -19,7 +19,7 @@
             price: '₹0',
             description: 'A great fit for passion projects and small applications.',
             buttonText: 'Get started',
-            buttonLink: getAppwriteDashboardUrl('/register'),
+            buttonLink: getAppwriteDashboardUrl(),
             buttonVariant: 'secondary',
             eventName: 'footer-plans-free-click'
         },
@@ -31,7 +31,7 @@
             description:
                 'For production applications that need powerful functionality and resources to scale.',
             buttonText: 'Start building',
-            buttonLink: getAppwriteDashboardUrl('/console?type=create&plan=tier-1'),
+            buttonLink: getAppwriteDashboardUrl(),
             buttonVariant: 'primary',
             eventName: 'footer-plans-pro-click'
         },
@@ -42,7 +42,7 @@
             description:
                 'For teams that handle more complex and large projects and need more control and support.',
             buttonText: 'Start building',
-            buttonLink: getAppwriteDashboardUrl('/console?type=create&plan=tier-2'),
+            buttonLink: getAppwriteDashboardUrl(),
             buttonVariant: 'secondary',
             eventName: 'footer-plans-scale-click'
         },

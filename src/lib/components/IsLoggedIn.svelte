@@ -14,7 +14,7 @@
 </script>
 
 <Button
-    href={offerButton ? 'https://apwr.dev/DCMWDSw' : '/waitlist'}
+    href={offerButton ? 'https://apwr.dev/DCMWDSw' : getAppwriteDashboardUrl()}
     event={offerButton ? 'main-claim_300_credits_btn_nav-click' : 'main-get_started_btn_nav-click'}
     class={cn('web-u-inline-width-100-percent-mobile', className)}
 >

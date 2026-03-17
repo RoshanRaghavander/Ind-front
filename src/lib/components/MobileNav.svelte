@@ -32,7 +32,7 @@
                 <IsLoggedIn class="flex-1" offerButton />
             {:else}
                 <Button
-                    href={getAppwriteDashboardUrl('/register')}
+                    href={getAppwriteDashboardUrl()}
                     variant="secondary"
                     class="flex-1"
                     event="mobile_nav-sign_up-click"

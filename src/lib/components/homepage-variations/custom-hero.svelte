@@ -13,7 +13,7 @@
         subtitle = 'Indobase is an open-source, all-in-one development platform. Use built-in backend infrastructure and web hosting, all from a single place.',
         showDashboard = true,
         ctaLabel = 'Start building for free',
-        ctaHref = '/waitlist'
+        ctaHref = getAppwriteDashboardUrl()
     } = $props<{
         title?: string;
         subtitle?: string;

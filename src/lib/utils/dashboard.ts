@@ -1,11 +1,11 @@
 import { getUtmSourceForLink } from '$lib/utils/utm';
 import { env as publicEnv } from '$env/dynamic/public';
 
-const DEFAULT_BASE = 'https://console.indobase.fun';
+const DEFAULT_BASE = 'https://studio.indobase.in';
 const ENV_BASE = (publicEnv.PUBLIC_APPWRITE_DASHBOARD || DEFAULT_BASE).replace(/\/$/, '');
 const DASHBOARD_BASE = ENV_BASE.startsWith('http://localhost') ? DEFAULT_BASE : ENV_BASE;
 
-export function getAppwriteDashboardUrl(path = ''): string {
+export function getAppwriteDashboardUrl(path = '/dashboard/sign-in'): string {
     const utmParams = getUtmSourceForLink();
 
     const base = DASHBOARD_BASE;

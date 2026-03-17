@@ -78,7 +78,7 @@ export const variationConfigs: Record<VariationKey, HomepageVariationConfig> = {
         pageTitle: 'Indobase - All-in-one Cloud Platform',
         slug: '/all-in-one-cloud-offer',
         ctaLabel: 'Claim your $300 Credits',
-        ctaHref: 'https://console.indobase.fun/console/login?code=sites300',
+        ctaHref: 'https://studio.indobase.in/dashboard/sign-in?code=sites300',
         ...baseConfig
     }
 };
