@@ -22,7 +22,7 @@
         >
 
         <PrimaryNav class="hidden md:block" />
-        <Button href={DASHBOARD_URL} class="hidden! md:flex!">Start building for free</Button>
+        <Button href="/waitlist" class="hidden! md:flex!">Start building for free</Button>
 
         <HamburgerMenu class="block md:hidden" />
     </div>

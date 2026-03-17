@@ -28,18 +28,16 @@
         <div class="mt-1 grid grid-cols-1 gap-y-4 md:grid-cols-3">
             <div>Copyright © {year} Indobase</div>
 
-                <iframe
-                class="w-full md:w-fit md:max-w-[230px]"
-                title="Status"
-                src="https://status.indobase.fun/badge?theme=dark"
-                height="35"
-                frameborder="0"
-                scrolling="no"
-                style:color-scheme="none"
-                style:margin-top="-4px"
-            ></iframe>
-
             <ul class="flex gap-4 text-right md:justify-end">
+                <li>
+                    <a
+                        class="web-link"
+                        href="https://status.indobase.fun"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onclick={() => trackEvent(`footer-indobase_status-click`)}>Status</a
+                    >
+                </li>
                 <li>
                     <a
                         class="web-link"

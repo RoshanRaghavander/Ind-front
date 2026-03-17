@@ -1,7 +1,7 @@
 <script lang="ts">
     import { getAppwriteDashboardUrl } from '$lib/utils/dashboard';
     import { trackEvent } from '$lib/actions/analytics';
-    import AppwriteIn100Seconds from '$lib/components/AppwriteIn100Seconds.svelte';
+
     import GradientText from '$lib/components/fancy/gradient-text.svelte';
     import { Button } from '$lib/components/ui';
     import { cn } from '$lib/utils/cn';
@@ -48,13 +48,11 @@
 
             <div class="mt-4 flex flex-col gap-2 lg:flex-row">
                 <Button
-                    href={DASHBOARD_URL}
+                    href="/waitlist"
                     class="w-full! lg:w-fit!"
                     onclick={() => {
                         trackEvent(`main-get_started_btn_hero-click`);
-                    }}>Start building for free</Button
-                >
-                <AppwriteIn100Seconds />
+                    }}>Start building for free</Button>
             </div>
         </div>
         <Dashboard />

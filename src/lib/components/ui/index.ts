@@ -9,3 +9,5 @@ export { default as InlineTag } from './inline-tag.svelte';
 export { default as Icon, type IconType } from './icon';
 export { default as Select } from './select.svelte';
 export { default as BadgeTransparent } from './badge-transparent.svelte';
+export { default as Input } from './input.svelte';
+export { default as TextArea } from './TextArea.svelte';

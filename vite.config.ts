@@ -43,9 +43,15 @@ export default defineConfig({
     css: {
         devSourcemap: !isProd
     },
+    ssr: {
+        external: ['mysql2', 'mysql2/promise']
+    },
     build: {
         sourcemap: false,
-        reportCompressedSize: false
+        reportCompressedSize: false,
+        rollupOptions: {
+            external: ['mysql2/promise']
+        }
     },
     test: {
         include: ['src/**/*.{test,spec}.{js,ts}']
