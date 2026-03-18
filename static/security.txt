@@ -1,4 +1,4 @@
-Contact: mailto://security@indobase.fun
+Contact: mailto://security@indobase.in
 Expires: 2026-01-01T20:00:00.000Z
 Preferred-Languages: en
-Hiring: https://careers.indobase.fun/
+Hiring: https://careers.indobase.in/
