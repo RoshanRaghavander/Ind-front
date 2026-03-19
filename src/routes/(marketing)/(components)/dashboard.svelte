@@ -34,8 +34,8 @@
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
             >
-                <circle cx="21" cy="27" r="5" fill="#FFB703" />
-                <circle cx="35" cy="27" r="5" fill="#FB8500" />
+                <circle cx="18" cy="27" r="6" fill="#FF9933" />
+                <circle cx="34" cy="27" r="3.5" fill="#FF9933" />
                 <text x="55" y="32" fill="#EDEDF0" font-size="14" font-family="system-ui, sans-serif">indobase</text>
                 <text x="130" y="32" fill="#ADADB0" font-size="14" font-family="system-ui, sans-serif"> / </text>
                 <text x="150" y="32" fill="#D8D8DB" font-size="14" font-family="system-ui, sans-serif">Indobase Corp</text>
@@ -230,8 +230,8 @@
                             fill="white"
                             fill-opacity="0.08"
                         />
-                        <circle cx="111" cy="42" r="5" fill="#FFB703" />
-                        <circle cx="125" cy="42" r="5" fill="#FB8500" />
+                        <circle cx="108" cy="42" r="6" fill="#FF9933" />
+                        <circle cx="124" cy="42" r="3.5" fill="#FF9933" />
                         <text x="145" y="47" fill="#EDEDF0" font-size="14" font-weight="600" font-family="system-ui, sans-serif">indobase</text>
                         <rect
                             x="123.719"

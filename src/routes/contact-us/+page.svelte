@@ -78,9 +78,10 @@
     <meta name="twitter:card" content="summary_large_image" />
 </svelte:head>
 
-<div class="absolute" style="pointer-events:none;">
-    <enhanced:img src="./bg.png" alt="" />
-</div>
+<div
+    class="animate-lighting absolute top-0 left-0 -z-10 h-screen w-[200vw] -translate-x-[25%] translate-y-8 rotate-25 overflow-hidden blur-3xl md:w-full"
+    style="pointer-events:none; background-image: radial-gradient(ellipse 390px 50px at 10% 30%, rgba(254, 149, 103, 0.2) 0%, rgba(254, 149, 103, 0) 70%), radial-gradient(ellipse 1100px 170px at 15% 40%, rgba(255, 153, 51, 0.08) 0%, rgba(255, 153, 51, 0) 70%), radial-gradient(ellipse 1200px 180px at 30% 30%, rgba(255, 153, 51, 0.08) 0%, rgba(255, 153, 51, 0) 70%); background-position: 0% 0%;"
+></div>
 
 <Main>
     <div class="web-big-padding-section">
