@@ -140,15 +140,15 @@
                     class="web-logo web-u-only-dark"
                     src="/images/logos/indobase.svg"
                     alt="indobase"
-                    height="24"
-                    width="130"
+                    height="32"
+                    width="173"
                 />
                 <img
                     class="web-logo web-u-only-light"
                     src="/images/logos/indobase-light.svg"
                     alt="indobase"
-                    height="24"
-                    width="130"
+                    height="32"
+                    width="173"
                 />
             </a>
         </div>
@@ -181,15 +181,15 @@
                         class="web-logo web-u-only-dark"
                         src="/images/logos/indobase.svg"
                         alt="indobase"
-                        height="24"
-                        width="130"
+                        height="32"
+                        width="173"
                     />
                     <img
                         class="web-logo web-u-only-light"
                         src="/images/logos/indobase-light.svg"
                         alt="indobase"
-                        height="24"
-                        width="130"
+                        height="32"
+                        width="173"
                     />
                 </a>
                 {#if !hideNavigation}

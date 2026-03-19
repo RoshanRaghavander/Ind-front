@@ -16,8 +16,8 @@
                 class="hidden dark:block"
                 src="/images/logos/indobase.svg"
                 alt="Indobase"
-                height="24"
-                width="130"
+                height="32"
+                width="173"
             /></a
         >
 
