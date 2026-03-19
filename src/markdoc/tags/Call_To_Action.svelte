@@ -1,9 +1,7 @@
 <script lang="ts">
-    import { getAppwriteDashboardUrl } from '$lib/utils/dashboard';
+    import { PUBLIC_APPWRITE_DASHBOARD } from '$env/static/public';
     import { Button } from '$lib/components/ui';
     import { cn } from '$lib/utils/cn';
-
-    const DASHBOARD_URL = getAppwriteDashboardUrl();
 
     interface Props {
         title?: string;
@@ -18,14 +16,14 @@
     }
 
     const {
-        title = 'Start building with Indobase today',
+        title = 'Start building with indobase today',
         description = 'Build with the frameworks and languages you want.',
         point1 = 'Built in security',
         point2 = 'Scalable infrastructure',
         point3 = 'No vendor lock in',
         point4 = 'Highly customizable backend',
         cta = 'Get started',
-        url = DASHBOARD_URL,
+        url = PUBLIC_APPWRITE_DASHBOARD,
         event = undefined
     }: Props = $props();
 

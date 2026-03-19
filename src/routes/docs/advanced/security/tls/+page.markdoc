@@ -1,0 +1,19 @@
+---
+layout: article
+title: TLS
+description: indobase helps keep the web secure by generating TLS (Transport Layer Security) certificates for all user and generated domains.
+---
+
+indobase generates TLS certificates to ensure your API traffic is appropriately encrypted. The certificate authority used depends on your deployment type:
+
+- **Self-hosted deployments** use [Let's Encrypt](https://letsencrypt.org/), an open source and not-for-profit certificate authority provided by the Internet Security Research Group (ISRG) that secures more than 363 million websites.
+- **indobase Cloud** uses [Certainly](https://docs.fastly.com/products/certainly), Fastly's certificate authority, for Sites and Functions.
+
+TLS certificates are generated for all of the following.
+- indobase products and endpoints, like Databases, Storage, Authentication, Functions, Messaging, and all other endpoints.
+- [Custom domains](/docs/advanced/platform/custom-domains) that you configure for your indobase projects.
+- [Domains for indobase Functions](/docs/products/functions/domains), generated or user provided.
+- [Domains for indobase Sites](/docs/products/sites/domains), generated or user provided.
+
+TLS certificates are crucial to ensure all connections between your apps and indobase Cloud are encrypted.
+This protects your users from attack vectors like man-in-the-middle and eavesdropping attacks.

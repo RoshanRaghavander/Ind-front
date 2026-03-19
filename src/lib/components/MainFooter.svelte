@@ -52,13 +52,6 @@
                         onclick={() => trackEvent(`footer-privacy-click`)}>Privacy</a
                     >
                 </li>
-                <li>
-                    <a
-                        class="web-link"
-                        href="/privacy"
-                        onclick={() => trackEvent(`footer-cookies-click`)}>Cookies</a
-                    >
-                </li>
             </ul>
         </div>
     </footer>
@@ -98,6 +91,18 @@
                         target="_blank"
                         rel="noopener noreferrer"
                         onclick={() => trackEvent(`footer-indobase_status-click`)}>Status</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="/terms"
+                        onclick={() => trackEvent(`footer-terms_docs-click`)}>Terms</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="/privacy"
+                        onclick={() => trackEvent(`footer-privacy_docs-click`)}>Privacy</a
                     >
                 </li>
                 <!-- <li>

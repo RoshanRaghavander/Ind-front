@@ -95,10 +95,9 @@
     });
 
     $: navLinks = [
+        { label: 'Docs', href: '/docs' },
         { label: 'Pricing', href: '/pricing' },
         { label: 'Contact', href: '/contact-us' },
-        { label: 'Terms', href: '/terms' },
-        { label: 'Privacy', href: '/privacy' },
         { label: 'Enterprise', href: '/contact-us/enterprise' }
     ];
 

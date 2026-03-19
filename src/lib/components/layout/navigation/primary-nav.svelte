@@ -18,7 +18,7 @@
         { label: 'Products', menu: ProductMenu },
         {
             label: 'Docs',
-            menu: ProductMenu
+            href: '/docs'
         },
         {
             label: 'Pricing',

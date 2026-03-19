@@ -33,11 +33,11 @@
             scrolling="no"
             style:color-scheme="none"
         ></iframe>
-
-        <ul class="flex gap-4">
-            <li><a class="web-link" href="/terms">Terms</a></li>
-            <li><a class="web-link" href="/privacy">Privacy</a></li>
-            <li><a class="web-link" href="/privacy">Cookies</a></li>
-        </ul>
     </div>
+
+    <ul class="flex gap-4">
+        <li><a class="web-link" href="/terms">Terms</a></li>
+        <li><a class="web-link" href="/privacy">Privacy</a></li>
+        <li><a class="web-link" href="/cookies">Cookies</a></li>
+    </ul>
 </footer>

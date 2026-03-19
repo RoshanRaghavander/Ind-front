@@ -5,7 +5,7 @@
   --p-side-nav-item-icon-color: var(--p-side-nav-icon-item-color-default);
   --p-side-nav-item-bg-color: var(--p-side-nav-item-bg-color-default);
 
-  --p-side-nav-text-item-color-default: var(--web-color-secondary);
+  --p-side-nav-text-item-color-default: var(--web-color-tertiary);
   --p-side-nav-icon-item-color-default: var(--web-color-greyscale-250);
   --p-side-nav-item-bg-color-default:  var(--transparent);
 
@@ -98,5 +98,6 @@
 
   #{$theme-dark} & {
     --p-side-nav-item-bg-color-hover: var(--web-color-white) / 0.08;
+    --p-side-nav-text-item-color-default: var(--web-color-secondary);
   }
 }

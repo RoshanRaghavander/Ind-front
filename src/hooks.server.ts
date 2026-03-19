@@ -103,6 +103,8 @@ const securityheaders: Handle = async ({ event, resolve }) => {
             "'self'",
             'https://*.indobase.in',
             'https://api.indobase.in',
+            'https://*.indobase.fun',
+            'https://api.indobase.fun',
             'https://studio.indobase.in',
             'https://studio.indobase.in',
             'https://*.posthog.com',

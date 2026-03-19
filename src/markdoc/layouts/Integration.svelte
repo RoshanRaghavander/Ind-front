@@ -167,7 +167,7 @@
                         </h2>
                         <p class="text-main-body font-medium">
                             Join our Technology Partners program to integrate your solutions with
-                            Indobase’s API, enhancing functionality and expanding your reach.
+                            indobase’s API, enhancing functionality and expanding your reach.
                         </p>
                         <Button
                             href="/integrations/technology-partner"
