@@ -7,6 +7,7 @@
     import Realtime from './(animations)/realtime.svelte';
     import Sites from './(animations)/sites.svelte';
     import Storage from './(animations)/storage.svelte';
+    import Indobase from './(animations)/indobase.svelte';
 
     const build = [
         {
@@ -123,7 +124,7 @@
         <Storage />
         <Functions />
         <Messaging />
-        <Realtime />
+        <Indobase />
         <Sites />
     </div>
 </div>
