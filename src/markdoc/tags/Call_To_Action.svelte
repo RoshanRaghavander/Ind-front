@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { PUBLIC_APPWRITE_DASHBOARD } from '$env/static/public';
+    import { getAppwriteDashboardUrl } from '$lib/utils/dashboard';
     import { Button } from '$lib/components/ui';
     import { cn } from '$lib/utils/cn';
 
@@ -23,7 +23,7 @@
         point3 = 'No vendor lock in',
         point4 = 'Highly customizable backend',
         cta = 'Get started',
-        url = PUBLIC_APPWRITE_DASHBOARD,
+        url = getAppwriteDashboardUrl(),
         event = undefined
     }: Props = $props();
 
