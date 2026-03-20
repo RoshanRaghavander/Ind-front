@@ -181,16 +181,6 @@
             </div>
             <div class="web-main-header-end">
                 <div class="flex gap-2">
-                    <Button
-                        variant="text"
-                        href={SOCIAL_STATS.GITHUB.LINK}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <Icon name="star" aria-hidden="true"></Icon>
-                        <span class="text">Star on GitHub</span>
-                        <InlineTag>{SOCIAL_STATS.GITHUB.STAT}</InlineTag>
-                    </Button>
                     <IsLoggedIn />
                 </div>
             </div>

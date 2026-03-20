@@ -32,7 +32,7 @@
         },
         {
             label: 'Compliance',
-            description: 'We adhere to all needed compliance: GDPR, HIPAA, CCPA, SOC-2.',
+            description: 'We adhere to all needed compliance: DPDA, HIPAA, CCPA, SOC-2.',
             icon: '/images/icons/gradients/eu.svg'
         },
         {

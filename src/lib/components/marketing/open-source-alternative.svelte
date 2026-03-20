@@ -5,7 +5,6 @@
     import customization from './(assets)/icons/customization.svg';
     import transparency from './(assets)/icons/transparency.svg';
     import DiscordLink from '../shared/discord-link.svelte';
-    import GithubStats from '../shared/github-stats.svelte';
     import type { SvelteHTMLElements } from 'svelte/elements';
     import { cn } from '$lib/utils/cn';
     import { onMount } from 'svelte';
@@ -83,7 +82,6 @@
             <div
                 class="mx-auto mt-2 flex w-full flex-col items-center justify-center gap-2 md:flex-row"
             >
-                <GithubStats class="w-full! md:w-fit!" />
                 <DiscordLink class="w-full! md:w-fit!" />
             </div>
         </div>

@@ -31,8 +31,8 @@
             href: '/pricing'
         },
         {
-            label: 'GDPR',
-            description: 'Safeguard user data and privacy with provided GDPR regulations.',
+            label: 'DPDA',
+            description: 'Safeguard user data and privacy with provided DPDA regulations.',
             icon: '/images/icons/gradients/star.svg',
             href: '/pricing'
         },
