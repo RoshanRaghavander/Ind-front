@@ -1,7 +1,0 @@
-﻿
-> indobase-website@0.0.1 check C:\Users\ASUS\Desktop\indobase\Ind-front
-> svelte-kit sync && svelte-check --tsconfig ./tsconfig.json
-
-Loading svelte-check in workspace: c:\Users\ASUS\Desktop\indobase\Ind-front
-Getting Svelte diagnostics...
-

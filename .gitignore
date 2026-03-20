@@ -24,5 +24,12 @@ terraform/**/**/*.tfstate*
 /.cache
 /test-results
 
+# Temporary Scripts and Logs
+*.ps1
+*.log
+*.txt
+check_output.txt
+check_output_utf8.txt
+
 # Sentry Config File
 .env.sentry-build-plugin
