@@ -13,7 +13,7 @@ Create a new file in the `src/` directory called `middleware.js`:
 // src/middleware.js
 
 import { defineMiddleware } from "astro:middleware";
-import { createSessionClient } from "./server/appwrite";
+import { createSessionClient } from "./server/indobase";
 
 export const onRequest = defineMiddleware(async ({ request, locals }, next) => {
   try {

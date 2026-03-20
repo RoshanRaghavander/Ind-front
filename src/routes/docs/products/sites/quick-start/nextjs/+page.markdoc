@@ -10,7 +10,7 @@ description: Learn how to setup and deploy Next.js apps on indobase Sites.
 indobase Sites fully supports Next.js out of the box. Unlike other non-Vercel hosting services, the indobase Edge runs in a container-based environment for Node.js (and soon Bun as well), managed by a control plane that automatically scales your app as needed. This means all Next.js features work without any extra configuration or the OpenNext adapter.
 {% /info %}
 
-First, you must either create a Next.js app or setup the [Next.js starter template](https://github.com/appwrite/templates-for-sites).
+First, you must either create a Next.js app or setup the [Next.js starter template](https://github.com/indobase/templates-for-sites).
 
 Open your terminal, and run the following command.
 
@@ -22,7 +22,7 @@ Push this project to a [GitHub repository](https://github.com/new).
 {% /section %}
 
 {% section #step-2 step=2 title="Create indobase project" %}
-Head to the [Appwrite Console](https://cloud.appwrite.io).
+Head to the [Indobase Console](https://cloud.indobase.io).
 
 {% only_dark %}
 ![Create indobase project](/images/docs/quick-starts/dark/create-project.png)

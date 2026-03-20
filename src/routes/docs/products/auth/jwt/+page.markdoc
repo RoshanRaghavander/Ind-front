@@ -27,7 +27,7 @@ You can generate a JWT like this on a [Client SDK](/docs/sdks#client).
 import { Client, Account } from "appwrite";
 
 const client = new Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>');                 // Your project ID
 
 const account = new Account(client);
@@ -35,10 +35,10 @@ const account = new Account(client);
 const user = await account.createJWT();
 ```
 ```client-flutter
-import 'package:appwrite/appwrite.dart';
+import 'package:appwrite/indobase.dart';
 
 final client = Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>');                 // Your project ID
 
 final account = Account(client);
@@ -49,7 +49,7 @@ final jwt = await account.createJWT();
 import indobase
 
 let client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
     .setProject("<PROJECT_ID>")                  // Your project ID
 
 let account = Account(client)
@@ -61,7 +61,7 @@ import io.appwrite.Client
 import io.appwrite.services.Account
 
 val client = Client(context)
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
     .setProject("<PROJECT_ID>")                  // Your project ID
 
 val account = Account(client)
@@ -85,7 +85,7 @@ Use JWTs tokens like this in a [Server SDK](/docs/sdks#server).
 const { Client } = require('node-appwrite');
 
 const client = new Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>')                  // Your project ID
     .setJWT('eyJJ9.eyJ...886ca');                // Your secret JSON Web Token
 ```
@@ -94,18 +94,18 @@ const client = new Client()
 use indobase\Client;
 
 $client = (new Client())
-    ->setEndpoint('https://<REGION>.cloud.appwrite.io/v1')            // Your API Endpoint
+    ->setEndpoint('https://<REGION>.cloud.indobase.io/v1')            // Your API Endpoint
     ->setProject('<PROJECT_ID>')                             // Your project ID
     ->setJWT('eyJJ9.eyJ...886ca');                           // Your secret JSON Web Token
 ```
 
 ```python
-from appwrite.client import Client
+from indobase.client import Client
 
 client = Client()
 
 (client
-  .set_endpoint('https://<REGION>.cloud.appwrite.io/v1') # Your API Endpoint
+  .set_endpoint('https://<REGION>.cloud.indobase.io/v1') # Your API Endpoint
   .set_project('<PROJECT_ID>')                  # Your project ID
   .set_jwt('eyJJ9.eyJ...886ca')                 # Your secret JSON Web Token
 )
@@ -114,10 +114,10 @@ client = Client()
 ```ruby
 require 'appwrite'
 
-include Appwrite
+include Indobase
 
 client = Client.new
-    .set_endpoint('https://<REGION>.cloud.appwrite.io/v1')   # Your API Endpoint
+    .set_endpoint('https://<REGION>.cloud.indobase.io/v1')   # Your API Endpoint
     .set_project('<PROJECT_ID>')                    # Your project ID
     .set_jwt('eyJJ9.eyJ...886ca')                   # Your secret JSON Web Token
 ```
@@ -126,7 +126,7 @@ client = Client.new
 import { Client } from "npm:node-appwrite";
 
 let client = new Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')    // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1')    // Your API Endpoint
     .setProject('<PROJECT_ID>')                     // Your project ID
     .setJWT('eyJJ9.eyJ...886ca');                   // Your secret JSON Web Token
 ```
@@ -135,7 +135,7 @@ let client = new Client()
 import 'package:dart_appwrite/dart_appwrite.dart';
 
 final client = Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')    // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1')    // Your API Endpoint
     .setProject('<PROJECT_ID>')                     // Your project ID
     .setJWT('eyJJ9.eyJ...886ca');                   // Your secret JSON Web Token
 ```
@@ -144,16 +144,16 @@ final client = Client()
 import io.appwrite.Client
 
 val client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")    // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1")    // Your API Endpoint
     .setProject("<PROJECT_ID>")                     // Your project ID
     .setJWT("eyJJ9.eyJ...886ca")                    // Your secret JSON Web Token
 ```
 
 ```swift
-import Appwrite
+import Indobase
 
 let client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")    // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1")    // Your API Endpoint
     .setProject("<PROJECT_ID>")                     // Your project ID
     .setJWT("eyJJ9.eyJ...886ca")                    // Your secret JSON Web Token
 ```
@@ -162,7 +162,7 @@ let client = Client()
 using indobase;
 
 var client = new Client()
-    .SetEndpoint("https://<REGION>.cloud.appwrite.io/v1")    // Your API Endpoint
+    .SetEndpoint("https://<REGION>.cloud.indobase.io/v1")    // Your API Endpoint
     .SetProject("<PROJECT_ID>")                     // Your project ID
     .SetJWT("eyJJ9.eyJ...886ca");                   // Your secret JSON Web Token
 ```
@@ -194,7 +194,7 @@ If you're authenticated on the client-side as `user-a` and created a JWT `'eyJJ9
 const { Client } = require('node-appwrite');
 
 const client = new Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>')                  // Your project ID
     .setJWT('eyJJ9.eyJ...886ca');                // Your secret JSON Web Token
 
@@ -210,7 +210,7 @@ const rows = await tablesDB.listRows({
 use indobase\Client;
 
 $client = (new Client())
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')            // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1')            // Your API Endpoint
     .setProject('<PROJECT_ID>')                           // Your project ID
     .setJWT('eyJJ9.eyJ...886ca');                          // Your secret JSON Web Tokens
 
@@ -223,12 +223,12 @@ $rows = $tablesDB->listRows(
 // ... More code to manipulate the results
 ```
 ```python
-from appwrite.client import Client
+from indobase.client import Client
 
 client = Client()
 
 (client
-  .set_endpoint('https://<REGION>.cloud.appwrite.io/v1')              # Your API Endpoint
+  .set_endpoint('https://<REGION>.cloud.indobase.io/v1')              # Your API Endpoint
   .set_project('<PROJECT_ID>')                             # Your project ID
   .set_jwt('eyJJ9.eyJ...886ca')                             # Your secret JSON Web Token
 )
@@ -244,10 +244,10 @@ rows = tablesDB.list_rows(
 ```ruby
 require 'appwrite'
 
-include Appwrite
+include Indobase
 
 client = Client.new
-    .set_endpoint('https://<REGION>.cloud.appwrite.io/v1')            # Your API Endpoint
+    .set_endpoint('https://<REGION>.cloud.indobase.io/v1')            # Your API Endpoint
     .set_project('<PROJECT_ID>')                           # Your project ID
     .set_jwt('eyJJ9.eyJ...886ca')                           # Your secret JSON Web Token
 
@@ -263,7 +263,7 @@ rows = tablesDB.list_rows(
 import { Client } from "npm:node-appwrite";
 
 let client = new Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')    // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1')    // Your API Endpoint
     .setProject('<PROJECT_ID>')                     // Your project ID
     .setJWT('eyJJ9.eyJ...886ca');                   // Your secret JSON Web Token
 
@@ -279,7 +279,7 @@ let rows = await tablesDB.listRows({
 import 'package:dart_appwrite/dart_appwrite.dart';
 
 final client = Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')    // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1')    // Your API Endpoint
     .setProject('<PROJECT_ID>')                     // Your project ID
     .setJWT('eyJJ9.eyJ...886ca');                   // Your secret JSON Web Token
 
@@ -295,7 +295,7 @@ final rows = await tablesDB.listRows(
 import io.appwrite.Client
 
 val client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")    // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1")    // Your API Endpoint
     .setProject("<PROJECT_ID>")                     // Your project ID
     .setJWT("eyJJ9.eyJ...886ca")                    // Your secret JSON Web Token
 
@@ -308,10 +308,10 @@ val rows = tablesDB.listRows(
 // ... More code to manipulate the results
 ```
 ```swift
-import Appwrite
+import Indobase
 
 let client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")    // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1")    // Your API Endpoint
     .setProject("<PROJECT_ID>")                     // Your project ID
     .setJWT("eyJJ9.eyJ...886ca")                    // Your secret JSON Web Token
     
@@ -329,7 +329,7 @@ using indobase.Services;
 using indobase.Models;
 
 var client = new Client()
-    .SetEndpoint("https://<REGION>.cloud.appwrite.io/v1")    // Your API Endpoint
+    .SetEndpoint("https://<REGION>.cloud.indobase.io/v1")    // Your API Endpoint
     .SetProject("<PROJECT_ID>")                     // Your project ID
     .SetJWT("eyJJ9.eyJ...886ca");                   // Your secret JSON Web Token
 
@@ -372,7 +372,7 @@ If the same request is made where the [Server SDK](/docs/sdks#server)'s `client`
 const { Client } = require('node-appwrite');
 
 const client = new Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>')                  // Your project ID
     .setKey('98fd4...a2ad2');                    // Your secret API key
 
@@ -389,7 +389,7 @@ const rows = await tablesDB.listRows({
 use indobase\Client;
 
 $client = (new Client())
-    ->setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    ->setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     ->setProject('<PROJECT_ID>')                  // Your project ID
     ->setKey('98fd4...a2ad2');                    // Your secret API key
 
@@ -403,11 +403,11 @@ $rows = $tablesDB->listRows(
 ```
 
 ```python
-from appwrite.client import Client
+from indobase.client import Client
 
 client = Client()
 (client
-    .set_endpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .set_endpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .set_project('<PROJECT_ID>')                  // Your project ID
     .set_key('98fd4...a2ad2')                     // Your secret API key
 )
@@ -423,10 +423,10 @@ rows = tablesDB.list_rows(
 ```ruby
 require 'appwrite'
 
-include Appwrite
+include Indobase
 
 client = Client.new
-    .set_endpoint('https://<REGION>.cloud.appwrite.io/v1') # Your API Endpoint
+    .set_endpoint('https://<REGION>.cloud.indobase.io/v1') # Your API Endpoint
     .set_project('<PROJECT_ID>')                  # Your project ID
     .set_key('98fd4...a2ad2')                     # Your secret API key
 
@@ -442,7 +442,7 @@ rows = tablesDB.list_rows(
 import { Client } from "npm:node-appwrite";
 
 let client = new Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>')                  // Your project ID
     .setKey('98fd4...a2ad2');                    // Your secret API key
 
@@ -458,7 +458,7 @@ let rows = await tablesDB.listRows({
 import 'package:dart_appwrite/dart_appwrite.dart';
 
 final client = Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>')                  // Your project ID
     .setKey('98fd4...a2ad2');                    // Your secret API key
 
@@ -474,7 +474,7 @@ final rows = await tablesDB.listRows(
 import io.appwrite.Client
 
 val client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
     .setProject("<PROJECT_ID>")                  // Your project ID
     .setKey('98fd4...a2ad2');                    // Your secret API key
 
@@ -487,10 +487,10 @@ val rows = tablesDB.listRows(
 // ... More code to manipulate the results
 ```
 ```swift
-import Appwrite
+import Indobase
 
 let client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
     .setProject("<PROJECT_ID>")                  // Your project ID
     .setKey('98fd4...a2ad2');                    // Your secret API key
 
@@ -508,7 +508,7 @@ using indobase.Services;
 using indobase.Models;
 
 var client = new Client()
-    .SetEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+    .SetEndpoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
     .SetProject("<PROJECT_ID>")                  // Your project ID
     .SetKey('98fd4...a2ad2');                    // Your secret API key
 

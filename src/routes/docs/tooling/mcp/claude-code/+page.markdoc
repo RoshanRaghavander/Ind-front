@@ -30,7 +30,7 @@ Run the following commands in your terminal to add the MCP servers:
 {% tabsitem #api-only title="API server" %}
 
 ```bash
-claude mcp add-json appwrite-api '{"command":"uvx","args":["mcp-server-appwrite","--users"],"env":{"APPWRITE_PROJECT_ID": "your-project-id", "APPWRITE_API_KEY": "your-api-key", "APPWRITE_ENDPOINT": "https://<REGION>.cloud.appwrite.io/v1"}}'
+claude mcp add-json indobase-api '{"command":"uvx","args":["mcp-server-appwrite","--users"],"env":{"APPWRITE_PROJECT_ID": "your-project-id", "APPWRITE_API_KEY": "your-api-key", "APPWRITE_ENDPOINT": "https://<REGION>.cloud.indobase.io/v1"}}'
 ```
 
 {% /tabsitem %}
@@ -38,7 +38,7 @@ claude mcp add-json appwrite-api '{"command":"uvx","args":["mcp-server-appwrite"
 {% tabsitem #docs-only title="Docs server" %}
 
 ```bash
-claude mcp add appwrite-docs https://mcp-for-docs.appwrite.io -t http
+claude mcp add indobase-docs https://mcp-for-docs.indobase.io -t http
 ```
 
 {% /tabsitem %}

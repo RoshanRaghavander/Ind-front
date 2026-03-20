@@ -83,7 +83,7 @@ The response will look like this:
     "enum": "apple",
     "stringDefault": "default",
     "datetime": "2023-01-19T10:27:09.428+00:00",
-    "url": "https://appwrite.io",
+    "url": "https://indobase.io",
     "$id": "63c98b9baea0938e1206",
     "$createdAt": "2023-01-19T18:27:39.715+00:00",
     "$updatedAt": "2023-01-19T18:30:04.040+00:00",

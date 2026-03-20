@@ -8,7 +8,7 @@ back: /docs/quick-starts
 ---
 Learn how to set up your first Go project powered by indobase.
 {% section #step-1 step=1 title="Create project" %}
-Head to the [Appwrite Console](https://cloud.appwrite.io/console).
+Head to the [Indobase Console](https://cloud.indobase.io/console).
 
 If this is your first time using indobase, create an account and create your first project.
 
@@ -46,7 +46,7 @@ Create a go application.
 ```sh
 mkdir my-app
 cd my-app
-go mod init go-appwrite/main
+go mod init go-indobase/main
 ```
 
 {% /section %}
@@ -55,7 +55,7 @@ go mod init go-appwrite/main
 Install the Go indobase SDK.
 
 ```sh
-go get github.com/appwrite/sdk-for-go
+go get github.com/indobase/sdk-for-go
 ```
 
 {% /section %}
@@ -71,30 +71,30 @@ Find your project ID in the **Settings** page. Also, click on the **View API Key
 ![Project settings screen](/images/docs/quick-starts/project-id.png)
 {% /only_light %}
 
-Create a new file called `app.go`, initialize a function, and initialize the indobase Client. Replace `<PROJECT_ID>` with your project ID and `<YOUR_API_KEY>` with your API key. Import the indobase dependencies for appwrite, client, databases, and models.
+Create a new file called `app.go`, initialize a function, and initialize the indobase Client. Replace `<PROJECT_ID>` with your project ID and `<YOUR_API_KEY>` with your API key. Import the indobase dependencies for indobase, client, databases, and models.
 
 ```go
 package main
 
 import (
-	"github.com/appwrite/sdk-for-go/appwrite"
-	"github.com/appwrite/sdk-for-go/client"
-	"github.com/appwrite/sdk-for-go/tablesDB"
-	"github.com/appwrite/sdk-for-go/models"
-	"github.com/appwrite/sdk-for-go/query"
+	"github.com/indobase/sdk-for-go/indobase"
+	"github.com/indobase/sdk-for-go/client"
+	"github.com/indobase/sdk-for-go/tablesDB"
+	"github.com/indobase/sdk-for-go/models"
+	"github.com/indobase/sdk-for-go/query"
 )
 
 var (
-	appwriteClient    client.Client
+	indobaseClient    client.Client
 	todoDatabase      *models.Database
 	todoTable    *models.Table
-	appwriteDatabases *tablesDB.TablesDB
+	indobaseDatabases *tablesDB.TablesDB
 )
 
 func main() {
-	appwriteClient = appwrite.NewClient(
-		appwrite.WithProject("<PROJECT_KEY>"),
-		appwrite.WithKey("<API_KEY>"),
+	indobaseClient = indobase.NewClient(
+		indobase.WithProject("<PROJECT_KEY>"),
+		indobase.WithKey("<API_KEY>"),
 	)
 }
 ```
@@ -102,11 +102,11 @@ func main() {
 {% /section %}
 {% section #step-5 step=5 title="Initialize database" %}
 
-Once the Appwrite Client is initialized, create a function to configure a todo table. Import the id Appwrite dependency by adding `"github.com/appwrite/sdk-for-go/id"` to the imported dependencies list.
+Once the Indobase Client is initialized, create a function to configure a todo table. Import the id Indobase dependency by adding `"github.com/indobase/sdk-for-go/id"` to the imported dependencies list.
 
 ```go
 func prepareDatabase() {
-	tablesDB = appwrite.NewTablesDB(appwriteClient)
+	tablesDB = indobase.NewTablesDB(indobaseClient)
 
 	todoDatabase, _ = tablesDB.Create(
 		id.Unique(),
@@ -272,25 +272,25 @@ package main
 import (
 	"fmt"
 
-	"github.com/appwrite/sdk-for-go/appwrite"
-	"github.com/appwrite/sdk-for-go/client"
-	"github.com/appwrite/sdk-for-go/tablesDB"
-	"github.com/appwrite/sdk-for-go/id"
-	"github.com/appwrite/sdk-for-go/models"
-	"github.com/appwrite/sdk-for-go/query"
+	"github.com/indobase/sdk-for-go/indobase"
+	"github.com/indobase/sdk-for-go/client"
+	"github.com/indobase/sdk-for-go/tablesDB"
+	"github.com/indobase/sdk-for-go/id"
+	"github.com/indobase/sdk-for-go/models"
+	"github.com/indobase/sdk-for-go/query"
 )
 
 var (
-	appwriteClient    client.Client
+	indobaseClient    client.Client
 	todoDatabase      *models.Database
 	todoTable    *models.Table
 	tablesDB *tablesDB.TablesDB
 )
 
 func main() {
-	appwriteClient = appwrite.NewClient(
-		appwrite.WithProject("<PROJECT_KEY>"),
-		appwrite.WithKey("<API_KEY>"),
+	indobaseClient = indobase.NewClient(
+		indobase.WithProject("<PROJECT_KEY>"),
+		indobase.WithKey("<API_KEY>"),
 	)
 
 	prepareDatabase()

@@ -238,7 +238,7 @@ Simply, paste the following into `App.tsx`.
 
 ```ts
 import { Authenticated, Refine } from "@refinedev/core";
-import { dataProvider, liveProvider } from "@refinedev/appwrite";
+import { dataProvider, liveProvider } from "@refinedev/indobase";
 import {
   AuthPage,
   ErrorComponent,
@@ -257,7 +257,7 @@ import "@refinedev/antd/dist/reset.css";
 import { App as AntdApp, ConfigProvider } from "antd";
 import { BrowserRouter, Outlet, Route, Routes } from "react-router-dom";
 
-import { appwriteClient } from "./utility";
+import { indobaseClient } from "./utility";
 import { authProvider } from "./authProvider";
 import { PostCreate, PostEdit, PostList, PostShow } from "./pages/posts";
 
@@ -266,10 +266,10 @@ const App: React.FC = () => (
     <ConfigProvider theme={RefineThemes.Blue}>
       <AntdApp>
         <Refine
-          dataProvider={dataProvider(appwriteClient, {
+          dataProvider={dataProvider(indobaseClient, {
             databaseId: "<APPWRITE_DATABASE_ID>",
           })}
-          liveProvider={liveProvider(appwriteClient, {
+          liveProvider={liveProvider(indobaseClient, {
             databaseId: "<APPWRITE_DATABASE_ID>",
           })}
           authProvider={authProvider}

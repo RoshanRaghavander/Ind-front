@@ -38,7 +38,7 @@ type indobaseDeprecated = {
 };
 
 type indobaseOperationObject = OpenAPIV3.OperationObject & {
-    'x-appwrite': {
+    'x-indobase': {
         method: string;
         group?: string;
         weight: number;
@@ -187,7 +187,7 @@ function filterRequestBodyProperties(
 }
 
 /**
- * Checks if a method has additional methods in x-appwrite.methods
+ * Checks if a method has additional methods in x-indobase.methods
  */
 function hasAdditionalMethods(
     method: OpenAPIV3.OperationObject | undefined,
@@ -195,8 +195,8 @@ function hasAdditionalMethods(
 ): method is indobaseOperationObject {
     return !!(
         method?.tags?.includes(service) &&
-        typeof (method as indobaseOperationObject)['x-appwrite'] === 'object' &&
-        Array.isArray((method as indobaseOperationObject)['x-appwrite']?.methods)
+        typeof (method as indobaseOperationObject)['x-indobase'] === 'object' &&
+        Array.isArray((method as indobaseOperationObject)['x-indobase']?.methods)
     );
 }
 
@@ -212,8 +212,8 @@ function* processAdditionalMethods(
     value: OpenAPIV3.OperationObject | indobaseOperationObject;
     url: string;
 }> {
-    const appwriteMethod = method as indobaseOperationObject;
-    const additionalMethods = appwriteMethod['x-appwrite'].methods!;
+    const indobaseMethod = method as indobaseOperationObject;
+    const additionalMethods = indobaseMethod['x-indobase'].methods!;
 
     for (const additionalMethod of additionalMethods) {
         // Skip methods where public is false
@@ -231,14 +231,14 @@ function* processAdditionalMethods(
                     method.requestBody,
                     additionalMethod.parameters
                 ),
-                'x-appwrite': {
-                    ...appwriteMethod['x-appwrite'],
+                'x-indobase': {
+                    ...indobaseMethod['x-indobase'],
                     method: additionalMethod.name,
                     demo: additionalMethod.demo,
                     public: additionalMethod.public
                 },
                 responses: {
-                    ...appwriteMethod.responses,
+                    ...indobaseMethod.responses,
                     [additionalMethod.responses[0].code]:
                         additionalMethod.responses[0].code === 204
                             ? { description: 'No Content' }
@@ -272,7 +272,7 @@ function* iterateAllMethods(
         // Handle non-additional methods
         if (methods?.get?.tags?.includes(service) && !hasAdditionalMethods(methods.get, service)) {
             const operation = methods.get as indobaseOperationObject;
-            if (operation['x-appwrite']?.public !== false) {
+            if (operation['x-indobase']?.public !== false) {
                 yield { method: OpenAPIV3.HttpMethods.GET, value: methods.get, url };
             }
         }
@@ -281,13 +281,13 @@ function* iterateAllMethods(
             !hasAdditionalMethods(methods.post, service)
         ) {
             const operation = methods.post as indobaseOperationObject;
-            if (operation['x-appwrite']?.public !== false) {
+            if (operation['x-indobase']?.public !== false) {
                 yield { method: OpenAPIV3.HttpMethods.POST, value: methods.post, url };
             }
         }
         if (methods?.put?.tags?.includes(service) && !hasAdditionalMethods(methods.put, service)) {
             const operation = methods.put as indobaseOperationObject;
-            if (operation['x-appwrite']?.public !== false) {
+            if (operation['x-indobase']?.public !== false) {
                 yield { method: OpenAPIV3.HttpMethods.PUT, value: methods.put, url };
             }
         }
@@ -296,7 +296,7 @@ function* iterateAllMethods(
             !hasAdditionalMethods(methods.patch, service)
         ) {
             const operation = methods.patch as indobaseOperationObject;
-            if (operation['x-appwrite']?.public !== false) {
+            if (operation['x-indobase']?.public !== false) {
                 yield { method: OpenAPIV3.HttpMethods.PATCH, value: methods.patch, url };
             }
         }
@@ -305,7 +305,7 @@ function* iterateAllMethods(
             !hasAdditionalMethods(methods.delete, service)
         ) {
             const operation = methods.delete as indobaseOperationObject;
-            if (operation['x-appwrite']?.public !== false) {
+            if (operation['x-indobase']?.public !== false) {
                 yield { method: OpenAPIV3.HttpMethods.DELETE, value: methods.delete, url };
             }
         }
@@ -502,8 +502,8 @@ export async function getService(
         const path = isAndroid
             ? `/node_modules/@appwrite.io/specs/examples/${version}/${
                   isAndroidServer ? 'server-kotlin' : 'client-android'
-              }/${isAndroidJava ? 'java' : 'kotlin'}/${operation['x-appwrite']?.demo}`
-            : `/node_modules/@appwrite.io/specs/examples/${version}/${platform}/examples/${operation['x-appwrite']?.demo}`;
+              }/${isAndroidJava ? 'java' : 'kotlin'}/${operation['x-indobase']?.demo}`
+            : `/node_modules/@appwrite.io/specs/examples/${version}/${platform}/examples/${operation['x-indobase']?.demo}`;
 
         if (!(path in examples)) {
             continue;
@@ -512,8 +512,8 @@ export async function getService(
         const demo = (await examples[path]()) as unknown as string;
 
         data.methods.push({
-            id: operation['x-appwrite'].method,
-            group: operation['x-appwrite'].group,
+            id: operation['x-indobase'].method,
+            group: operation['x-indobase'].group,
             demo: typeof demo === 'string' ? stripMarkdownCodeFence(demo) : '',
             title: operation.summary ?? '',
             description: operation.description ?? '',
@@ -521,20 +521,20 @@ export async function getService(
             responses: responses ?? [],
             method,
             url,
-            'rate-limit': operation['x-appwrite']['rate-limit'],
-            'rate-time': operation['x-appwrite']['rate-time'],
-            'rate-key': operation['x-appwrite']['rate-key']
+            'rate-limit': operation['x-indobase']['rate-limit'],
+            'rate-time': operation['x-indobase']['rate-time'],
+            'rate-key': operation['x-indobase']['rate-key']
         });
     }
 
-    // Sort methods by weight from x-appwrite metadata
+    // Sort methods by weight from x-indobase metadata
     data.methods.sort((a, b) => {
         const aPath = api.paths[a.url] as OpenAPIV3.PathItemObject;
         const bPath = api.paths[b.url] as OpenAPIV3.PathItemObject;
         const aMethod = a.method.toLowerCase() as Lowercase<OpenAPIV3.HttpMethods>;
         const bMethod = b.method.toLowerCase() as Lowercase<OpenAPIV3.HttpMethods>;
-        const aWeight = (aPath?.[aMethod] as indobaseOperationObject)?.['x-appwrite']?.weight ?? 0;
-        const bWeight = (bPath?.[bMethod] as indobaseOperationObject)?.['x-appwrite']?.weight ?? 0;
+        const aWeight = (aPath?.[aMethod] as indobaseOperationObject)?.['x-indobase']?.weight ?? 0;
+        const bWeight = (bPath?.[bMethod] as indobaseOperationObject)?.['x-indobase']?.weight ?? 0;
         return aWeight - bWeight;
     });
 

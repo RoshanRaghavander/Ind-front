@@ -89,8 +89,8 @@ After creating your app, you'll have to configure the following environment vari
 For example, see below.
 
 ```bash
-_APP_DOMAIN=appwrite.example.com
-_APP_DOMAIN_TARGET=appwrite.example.com
+_APP_DOMAIN=indobase.example.com
+_APP_DOMAIN_TARGET=indobase.example.com
 _APP_DOMAIN_FUNCTIONS=functions.example.com
 _APP_VCS_GITHUB_APP_NAME=my-github-app
 _APP_VCS_GITHUB_PRIVATE_KEY="-----BEGIN RSA PRIVATE KEY-----\nMIIEogIBAAKCAQEAuT8f3lo/X83hfvb0ZN/KD2pl86o/jl3ywKrkj/PQZBmtEv/z\nIugE//sfFoHWc4cizkcji+n3FNU+GEdvMioKuJlPBqPTY8hAbVn7R0geZLpDV/rs\n[...]\n-----END RSA PRIVATE KEY-----"

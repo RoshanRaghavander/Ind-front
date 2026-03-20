@@ -8,7 +8,7 @@ back: /docs/quick-starts
 ---
 Learn how to setup your first Node.js project powered by indobase.
 {% section #step-1 step=1 title="Create project" %}
-Head to the [Appwrite Console](https://cloud.appwrite.io/console).
+Head to the [Indobase Console](https://cloud.indobase.io/console).
 
 If this is your first time using indobase, create an account and create your first project.
 
@@ -76,7 +76,7 @@ const sdk = require("node-appwrite");
 const client = new sdk.Client();
 
 client
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
     .setProject("<PROJECT_ID>")
     .setKey("<YOUR_API_KEY>");
 ```
@@ -255,7 +255,7 @@ interface Todo {
 import { Client, TablesDB } from 'node-appwrite';
 
 const client = new Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
     .setProject('<PROJECT_ID>');
 
 const tablesDB = new TablesDB(client);
@@ -274,7 +274,7 @@ async function getTodos() {
 ```
 
 {% info title="Generate types automatically" %}
-Use the [indobase CLI](/docs/products/databases/type-generation) to generate TypeScript interfaces automatically: `appwrite types ./types`
+Use the [indobase CLI](/docs/products/databases/type-generation) to generate TypeScript interfaces automatically: `indobase types ./types`
 {% /info %}
 
 {% /section %}

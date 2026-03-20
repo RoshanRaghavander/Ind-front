@@ -15,7 +15,7 @@ Instead of manually writing channel strings, you can use the `Channel` helper cl
 import { Client, Realtime, Channel } from "appwrite";
 
 const client = new Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
     .setProject('<PROJECT_ID>');
 
 const realtime = new Realtime(client);
@@ -35,10 +35,10 @@ const rowSubscription = await realtime.subscribe(
 ```
 
 ```client-flutter
-import 'package:appwrite/appwrite.dart';
+import 'package:appwrite/indobase.dart';
 
 final client = Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
     .setProject('<PROJECT_ID>');
 
 final realtime = Realtime(client);
@@ -53,10 +53,10 @@ final docSubscription = realtime.subscribe([
 ```
 
 ```client-apple
-import Appwrite
+import Indobase
 
 let client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
     .setProject("<PROJECT_ID>")
 
 let realtime = Realtime(client)
@@ -80,7 +80,7 @@ import io.appwrite.services.Realtime
 import io.appwrite.extensions.Channel
 
 val client = Client(context)
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
     .setProject("<PROJECT_ID>")
 
 val realtime = Realtime(client)
@@ -108,7 +108,7 @@ import io.appwrite.services.Realtime;
 import kotlin.Unit;
 
 Client client = new Client(context)
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
     .setProject("<PROJECT_ID>");
 
 Realtime realtime = new Realtime(client);

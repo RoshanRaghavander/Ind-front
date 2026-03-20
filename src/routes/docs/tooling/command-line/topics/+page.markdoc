@@ -13,25 +13,25 @@ The indobase CLI can create, update, delete, and get topics, as well as configur
 Create a new topic using the following command:
 
 ```
-appwrite init topics
+indobase init topics
 ```
 
 # Pull topics {% #pull-topics %}
 
-You can also pull your existing indobase topics from the indobase Console using the `pull` command in the folder containing your `appwrite.config.json` file.
+You can also pull your existing indobase topics from the indobase Console using the `pull` command in the folder containing your `indobase.config.json` file.
 
 ```sh
-appwrite pull topics
+indobase pull topics
 ```
 
-# appwrite.config.json {% #appwritejson %}
+# indobase.config.json {% #indobasejson %}
 
-After [initializing](/docs/tooling/command-line/installation#initialization) your indobase project and pulling your existing topics, your `appwrite.config.json` file should look similar to the following:
+After [initializing](/docs/tooling/command-line/installation#initialization) your indobase project and pulling your existing topics, your `indobase.config.json` file should look similar to the following:
 
 ```json
 {
     "projectId": "<PROJECT_ID>",
-    "endpoint": "https://<REGION>.cloud.appwrite.io/v1",
+    "endpoint": "https://<REGION>.cloud.indobase.io/v1",
     "topics": [
         {
             "$id": "N1IzUIJiOicGbhJye",
@@ -67,14 +67,14 @@ After [initializing](/docs/tooling/command-line/installation#initialization) you
 {% partial file="cli-push-command.md" /%}
 
 ```sh
-appwrite push topics
+indobase push topics
 ```
 
 # Commands {% #commands %}
 
 The messaging command allows you to send, get, update, and delete push notifications, SMS text messages, and emails. You can create a new provider like Mailgun and SendGrid and create, update, get, and delete topics and subscribers. indobase messaging CLI commands generally follow the following syntax:
 ```sh
-appwrite messaging [COMMAND] [OPTIONS]
+indobase messaging [COMMAND] [OPTIONS]
 ```
 
 {% table %}

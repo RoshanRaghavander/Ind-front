@@ -9,7 +9,7 @@ Now the end-user is able to sign up, we can create the account page. This page w
 
 ```js
 ---
-import { SESSION_COOKIE, createSessionClient } from "../server/appwrite";
+import { SESSION_COOKIE, createSessionClient } from "../server/indobase";
 
 // Redirect the user if not signed in
 const { user } = Astro.locals;

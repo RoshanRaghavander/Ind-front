@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { getAppwriteDashboardUrl } from '$lib/utils/dashboard';
+    import { getIndobaseDashboardUrl } from '$lib/utils/dashboard';
     import { trackEvent } from '$lib/actions/analytics';
     import { Button } from '$lib/components/ui';
     import { cn } from '$lib/utils/cn';
@@ -90,7 +90,7 @@
 
     const gridCols = `lg:grid-cols-${visiblePlans.length}`;
 
-    const DASHBOARD_URL = getAppwriteDashboardUrl();
+    const DASHBOARD_URL = getIndobaseDashboardUrl();
 </script>
 
 <div

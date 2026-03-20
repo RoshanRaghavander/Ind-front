@@ -244,7 +244,7 @@ const client = new sdk.Client();
 const messaging = new sdk.Messaging(client);
 
 client
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>')                 // Your project ID
     .setKey('919c2d18fb5d4...a2ae413da83346ad2') // Your secret API key
 ;
@@ -279,7 +279,7 @@ let client = new sdk.Client();
 let messaging = new sdk.Messaging(client);
 
 client
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>')                 // Your project ID
     .setKey('919c2d18fb5d4...a2ae413da83346ad2') // Your secret API key
 ;
@@ -314,7 +314,7 @@ use indobase\Services\Messaging;
 $client = new Client();
 
 $client
-    ->setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    ->setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     ->setProject('<PROJECT_ID>')                 // Your project ID
     ->setKey('919c2d18fb5d4...a2ae413da83346ad2') // Your secret API key
 ;
@@ -343,13 +343,13 @@ $result = $messaging->createPush(
 );
 ```
 ```python
-from appwrite.client import Client
-from appwrite.services.messaging import Messaging
+from indobase.client import Client
+from indobase.services.messaging import Messaging
 
 client = Client()
 
 (client
-  .set_endpoint('https://<REGION>.cloud.appwrite.io/v1') # Your API Endpoint
+  .set_endpoint('https://<REGION>.cloud.indobase.io/v1') # Your API Endpoint
   .set_project('<PROJECT_ID>')                 # Your project ID
   .set_key('919c2d18fb5d4...a2ae413da83346ad2') # Your secret API key
 )
@@ -380,10 +380,10 @@ result = messaging.create_push(
 ```ruby
 require 'appwrite'
 
-include Appwrite
+include Indobase
 
 client = Client.new
-    .set_endpoint('https://<REGION>.cloud.appwrite.io/v1') # Your API Endpoint
+    .set_endpoint('https://<REGION>.cloud.indobase.io/v1') # Your API Endpoint
     .set_project('<PROJECT_ID>')                 # Your project ID
     .set_key('919c2d18fb5d4...a2ae413da83346ad2') # Your secret API key
 
@@ -418,7 +418,7 @@ using indobase.Services;
 using indobase.Models;
 
 var client = new Client()
-    .SetEndPoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+    .SetEndPoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
     .SetProject("<PROJECT_ID>")                  // Your project ID
     .SetKey("919c2d18fb5d4...a2ae413da83346ad2"); // Your secret API key
 
@@ -455,7 +455,7 @@ void main() async {                               // Init SDK
   Messaging messaging = Messaging(client);
 
   client
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>')                 // Your project ID
     .setKey('919c2d18fb5d4...a2ae413da83346ad2') // Your secret API key
   ;
@@ -495,7 +495,7 @@ import io.appwrite.coroutines.CoroutineCallback;
 import io.appwrite.services.Messaging;
 
 Client client = new Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
     .setProject("<PROJECT_ID>")                  // Your project ID
     .setKey("919c2d18fb5d4...a2ae413da83346ad2"); // Your secret API key
 
@@ -533,7 +533,7 @@ import io.appwrite.coroutines.CoroutineCallback;
 import io.appwrite.services.Messaging;
 
 Client client = new Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
     .setProject("<PROJECT_ID>")                  // Your project ID
     .setKey("919c2d18fb5d4...a2ae413da83346ad2"); // Your secret API key
 
@@ -566,10 +566,10 @@ messaging.createPush(
 );
 ```
 ```swift
-import Appwrite
+import Indobase
 
 let client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
     .setProject("<PROJECT_ID>")                 // Your project ID
     .setKey("919c2d18fb5d4...a2ae413da83346ad2") // Your secret API key
 
@@ -614,7 +614,7 @@ const client = new sdk.Client();
 const messaging = new sdk.Messaging(client);
 
 client
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>')                 // Your project ID
     .setKey('919c2d18fb5d4...a2ae413da83346ad2') // Your secret API key
 ;
@@ -642,7 +642,7 @@ let client = new sdk.Client();
 let messaging = new sdk.Messaging(client);
 
 client
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>')                 // Your project ID
     .setKey('919c2d18fb5d4...a2ae413da83346ad2') // Your secret API key
 ;
@@ -670,7 +670,7 @@ use indobase\Services\Messaging;
 $client = new Client();
 
 $client
-    ->setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    ->setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     ->setProject('<PROJECT_ID>')                 // Your project ID
     ->setKey('919c2d18fb5d4...a2ae413da83346ad2') // Your secret API key
 ;
@@ -692,13 +692,13 @@ $result = $messaging->createEmail(
 );
 ```
 ```python
-from appwrite.client import Client
-from appwrite.services.messaging import Messaging
+from indobase.client import Client
+from indobase.services.messaging import Messaging
 
 client = Client()
 
 (client
-  .set_endpoint('https://<REGION>.cloud.appwrite.io/v1') # Your API Endpoint
+  .set_endpoint('https://<REGION>.cloud.indobase.io/v1') # Your API Endpoint
   .set_project('<PROJECT_ID>')                 # Your project ID
   .set_key('919c2d18fb5d4...a2ae413da83346ad2') # Your secret API key
 )
@@ -722,10 +722,10 @@ result = messaging.create_email(
 ```ruby
 require 'appwrite'
 
-include Appwrite
+include Indobase
 
 client = Client.new
-    .set_endpoint('https://<REGION>.cloud.appwrite.io/v1') # Your API Endpoint
+    .set_endpoint('https://<REGION>.cloud.indobase.io/v1') # Your API Endpoint
     .set_project('<PROJECT_ID>')                 # Your project ID
     .set_key('919c2d18fb5d4...a2ae413da83346ad2') # Your secret API key
 
@@ -753,7 +753,7 @@ using indobase.Services;
 using indobase.Models;
 
 var client = new Client()
-    .SetEndPoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+    .SetEndPoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
     .SetProject("<PROJECT_ID>")                  // Your project ID
     .SetKey("919c2d18fb5d4...a2ae413da83346ad2"); // Your secret API key
 
@@ -782,7 +782,7 @@ void main() {                                    // Init SDK
   Messaging messaging = Messaging(client);
 
   client
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>')                 // Your project ID
     .setKey('919c2d18fb5d4...a2ae413da83346ad2') // Your secret API key
   ;
@@ -815,7 +815,7 @@ import io.appwrite.coroutines.CoroutineCallback;
 import io.appwrite.services.Messaging;
 
 Client client = new Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
     .setProject("<PROJECT_ID>")                  // Your project ID
     .setKey("919c2d18fb5d4...a2ae413da83346ad2"); // Your secret API key
 
@@ -849,7 +849,7 @@ import io.appwrite.coroutines.CoroutineCallback;
 import io.appwrite.services.Messaging;
 
 Client client = new Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
     .setProject("<PROJECT_ID>")                  // Your project ID
     .setKey("919c2d18fb5d4...a2ae413da83346ad2"); // Your secret API key
 
@@ -878,10 +878,10 @@ messaging.createEmail(
 );
 ```
 ```swift
-import Appwrite
+import Indobase
 
 let client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
     .setProject("<PROJECT_ID>")                 // Your project ID
     .setKey("919c2d18fb5d4...a2ae413da83346ad2") // Your secret API key
 
@@ -919,7 +919,7 @@ const client = new sdk.Client();
 const messaging = new sdk.Messaging(client);
 
 client
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>')                 // Your project ID
     .setKey('919c2d18fb5d4...a2ae413da83346ad2') // Your secret API key
 ;
@@ -943,7 +943,7 @@ let client = new sdk.Client();
 let messaging = new sdk.Messaging(client);
 
 client
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>')                 // Your project ID
     .setKey('919c2d18fb5d4...a2ae413da83346ad2') // Your secret API key
 ;
@@ -967,7 +967,7 @@ use indobase\Services\Messaging;
 $client = new Client();
 
 $client
-    ->setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    ->setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     ->setProject('<PROJECT_ID>')                 // Your project ID
     ->setKey('919c2d18fb5d4...a2ae413da83346ad2') // Your secret API key
 ;
@@ -985,13 +985,13 @@ $result = $messaging->createSms(
 );
 ```
 ```python
-from appwrite.client import Client
-from appwrite.services.messaging import Messaging
+from indobase.client import Client
+from indobase.services.messaging import Messaging
 
 client = Client()
 
 (client
-  .set_endpoint('https://<REGION>.cloud.appwrite.io/v1') # Your API Endpoint
+  .set_endpoint('https://<REGION>.cloud.indobase.io/v1') # Your API Endpoint
   .set_project('<PROJECT_ID>')                 # Your project ID
   .set_key('919c2d18fb5d4...a2ae413da83346ad2') # Your secret API key
 )
@@ -1011,10 +1011,10 @@ result = messaging.create_sms(
 ```ruby
 require 'appwrite'
 
-include Appwrite
+include Indobase
 
 client = Client.new
-    .set_endpoint('https://<REGION>.cloud.appwrite.io/v1') # Your API Endpoint
+    .set_endpoint('https://<REGION>.cloud.indobase.io/v1') # Your API Endpoint
     .set_project('<PROJECT_ID>')                 # Your project ID
     .set_key('919c2d18fb5d4...a2ae413da83346ad2') # Your secret API key
 
@@ -1038,7 +1038,7 @@ using indobase.Services;
 using indobase.Models;
 
 var client = new Client()
-    .SetEndPoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+    .SetEndPoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
     .SetProject("<PROJECT_ID>")                  // Your project ID
     .SetKey("919c2d18fb5d4...a2ae413da83346ad2"); // Your secret API key
 
@@ -1063,7 +1063,7 @@ void main() {                                    // Init SDK
   Messaging messaging = Messaging(client);
 
   client
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>')                 // Your project ID
     .setKey('919c2d18fb5d4...a2ae413da83346ad2') // Your secret API key
   ;
@@ -1092,7 +1092,7 @@ import io.appwrite.coroutines.CoroutineCallback;
 import io.appwrite.services.Messaging;
 
 Client client = new Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
     .setProject("<PROJECT_ID>")                  // Your project ID
     .setKey("919c2d18fb5d4...a2ae413da83346ad2"); // Your secret API key
 
@@ -1122,7 +1122,7 @@ import io.appwrite.coroutines.CoroutineCallback;
 import io.appwrite.services.Messaging;
 
 Client client = new Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
     .setProject("<PROJECT_ID>")                  // Your project ID
     .setKey("919c2d18fb5d4...a2ae413da83346ad2"); // Your secret API key
 
@@ -1147,10 +1147,10 @@ messaging.createSms(
 );
 ```
 ```swift
-import Appwrite
+import Indobase
 
 let client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
     .setProject("<PROJECT_ID>")                 // Your project ID
     .setKey("919c2d18fb5d4...a2ae413da83346ad2") // Your secret API key
 

@@ -31,7 +31,7 @@ In the same file, implement the following.
 
 ```js
 ---
-import { SESSION_COOKIE, createAdminClient } from "../server/appwrite";
+import { SESSION_COOKIE, createAdminClient } from "../server/indobase";
 import { ID } from "node-appwrite";
 
 // ... existing javascript

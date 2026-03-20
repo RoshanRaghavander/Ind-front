@@ -237,7 +237,7 @@ indobase SDKs also support GraphQL in addition to the REST services.
 import { Client, Graphql } from "appwrite";
 
 const client = new Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your Appwrite Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your Indobase Endpoint
     .setProject('<PROJECT_ID>');                // Your project ID
 
 const graphql = new Graphql(client);
@@ -271,10 +271,10 @@ mutation.then(response => {
 });
 ```
 ```client-flutter
-import 'package:appwrite/appwrite.dart';
+import 'package:appwrite/indobase.dart';
 
 final client = Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your Appwrite Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your Indobase Endpoint
     .setProject('<PROJECT_ID>');               // Your project ID
 
 final graphql = Graphql(client);
@@ -308,10 +308,10 @@ mutation.then((response) {
 });
 ```
 ```client-apple
-import Appwrite
+import Indobase
 
 let client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
     .setProject("<PROJECT_ID>")                // Your project ID
 
 let graphql = Graphql(client)
@@ -352,7 +352,7 @@ import io.appwrite.Client
 import io.appwrite.services.Graphql
 
 val client = Client(context)
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
     .setProject("<PROJECT_ID>")                // Your project ID
 
 val graphql = Graphql(client)
@@ -381,7 +381,7 @@ try {
     ))
 
     Log.d(javaClass.name, response)
-} catch (ex: AppwriteException) {
+} catch (ex: IndobaseException) {
     ex.printStackTrace()
 }
 ```

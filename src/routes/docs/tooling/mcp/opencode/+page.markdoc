@@ -44,7 +44,7 @@ Use the following configuration in your `opencode.json` file to use the indobase
       "environment": {
         "APPWRITE_PROJECT_ID": "your-project-id",
         "APPWRITE_API_KEY": "your-api-key",
-        "APPWRITE_ENDPOINT": "https://<REGION>.cloud.appwrite.io/v1"
+        "APPWRITE_ENDPOINT": "https://<REGION>.cloud.indobase.io/v1"
       }
     }
   }
@@ -64,10 +64,10 @@ Use the following configuration in your `opencode.json` file to use the indobase
 {
   "$schema": "https://opencode.ai/config.json",
   "mcp": {
-    "appwrite-docs": {
+    "indobase-docs": {
       "type": "remote",
       "enabled": true,
-      "url": "https://mcp-for-docs.appwrite.io"
+      "url": "https://mcp-for-docs.indobase.io"
     }
   }
 }

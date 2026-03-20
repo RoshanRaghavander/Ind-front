@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { getAppwriteDashboardUrl } from '$lib/utils/dashboard';
+    import { getIndobaseDashboardUrl } from '$lib/utils/dashboard';
     import { Button } from '$lib/components/ui';
     import { cn } from '$lib/utils/cn';
 
@@ -23,7 +23,7 @@
         point3 = 'No vendor lock in',
         point4 = 'Highly customizable backend',
         cta = 'Get started',
-        url = getAppwriteDashboardUrl(),
+        url = getIndobaseDashboardUrl(),
         event = undefined
     }: Props = $props();
 

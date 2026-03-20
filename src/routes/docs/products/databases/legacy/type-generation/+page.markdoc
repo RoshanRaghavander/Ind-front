@@ -6,20 +6,20 @@ description: Generate types from your indobase database schema. Learn how to use
 
 The indobase CLI provides a simple way to generate types based on your indobase database schema. This feature is particularly useful for developers who want to ensure type safety in their applications by generating type definitions that match their database collections and attributes.
 
-To generate types, the CLI reads the database schema from your project's `appwrite.json` file and generates type definitions for each collection.
+To generate types, the CLI reads the database schema from your project's `indobase.json` file and generates type definitions for each collection.
 
 ## Generating types
 
 First, ensure you have the [indobase CLI](/docs/tooling/command-line/installation#getting-started) installed and your project is [initialised](/docs/tooling/command-line/installation#initialization). Then, run the following command in your terminal to pull collections from your indobase project:
 
 ```bash
-appwrite pull collections
+indobase pull collections
 ```
 
 To generate types, you can use the indobase CLI command:
 
 ```bash
-appwrite types [options] <output-directory>
+indobase types [options] <output-directory>
 ```
 
 The following options are currently available:
@@ -31,7 +31,7 @@ The following options are currently available:
 
 ## Example usage
 
-Suppose you want to generate types for a collection with data on books with the following schema from your `appwrite.json` file:
+Suppose you want to generate types for a collection with data on books with the following schema from your `indobase.json` file:
 
 ```json
 {
@@ -118,7 +118,7 @@ Here's how you can generate types for this collection across all supported langu
 Run the following command in your terminal:
 
 ```bash
-appwrite types --language ts ./types
+indobase types --language ts ./types
 ```
 
 This will generate the following types in the `./types` sub-directory of your project:
@@ -146,7 +146,7 @@ export type Books = Models.Document & {
 Run the following command in your terminal:
 
 ```bash
-appwrite types --language js ./types
+indobase types --language js ./types
 ```
 
 This will generate the following types in the `./types` sub-directory of your project:
@@ -173,7 +173,7 @@ This will generate the following types in the `./types` sub-directory of your pr
 Run the following command in your terminal:
 
 ```bash
-appwrite types --language java ./types
+indobase types --language java ./types
 ```
 
 This will generate the following types in the `./types` sub-directory of your project:
@@ -300,7 +300,7 @@ public class Books {
 Run the following command in your terminal:
 
 ```bash
-appwrite types --language php ./types
+indobase types --language php ./types
 ```
 
 This will generate the following types in the `./types` sub-directory of your project:
@@ -388,7 +388,7 @@ class Books {
 Run the following command in your terminal:
 
 ```bash
-appwrite types --language dart ./types
+indobase types --language dart ./types
 ```
 
 This will generate the following types in the `./types` sub-directory of your project:
@@ -445,7 +445,7 @@ class Books {
 Run the following command in your terminal:
 
 ```bash
-appwrite types --language kotlin ./types
+indobase types --language kotlin ./types
 ```
 
 This will generate the following types in the `./types` sub-directory of your project:
@@ -473,7 +473,7 @@ data class Books(
 Run the following command in your terminal:
 
 ```bash
-appwrite types --language swift ./types
+indobase types --language swift ./types
 ```
 
 This will generate the following types in the `./types` sub-directory of your project:

@@ -64,8 +64,8 @@ X-indobase-Project: <PROJECT_ID>
 You can find the cookies used to persist the new session in the response headers.
 
 ```json
-Set-Cookie: a_session_61e71ec784ab035f7259_legacy=eyJ0...aSJ9; expires=Tue, 19-Dec-2023 21:26:51 GMT; path=/; domain=.cloud.appwrite.io; secure; httponly
-Set-Cookie: a_session_61e71ec784ab035f7259=eyJ0...aSJ9; expires=Tue, 19-Dec-2023 21:26:51 GMT; path=/; domain=.cloud.appwrite.io; secure; httponly; samesite=None
+Set-Cookie: a_session_61e71ec784ab035f7259_legacy=eyJ0...aSJ9; expires=Tue, 19-Dec-2023 21:26:51 GMT; path=/; domain=.cloud.indobase.io; secure; httponly
+Set-Cookie: a_session_61e71ec784ab035f7259=eyJ0...aSJ9; expires=Tue, 19-Dec-2023 21:26:51 GMT; path=/; domain=.cloud.indobase.io; secure; httponly; samesite=None
 ```
 
 These cookies are used in subsequent requests to authenticate the user.
@@ -371,4 +371,4 @@ indobase's REST APIs are protected by the same rate limit policies, just like wh
 
 indobase provides a full REST API specification in the OpenAPI 3 and Swagger 2 formats every release. These can be accessed through indobase's GitHub repository and rendered using a variety of parsers and tools.
 
-[Find the REST API specification for your Appwrite version](https://github.com/appwrite/appwrite/tree/master/app/config/specs).
+[Find the REST API specification for your Indobase version](https://github.com/indobase/indobase/tree/master/app/config/specs).

@@ -6,7 +6,7 @@ description: Get started with indobase Databases. Follow a step-by-step guide to
 
 
 {% section #create-database step=1 title="Create database" %}
-Head to your [indobase Console](https://cloud.appwrite.io/console/) and create a database and name it `Oscar`.
+Head to your [indobase Console](https://cloud.indobase.io/console/) and create a database and name it `Oscar`.
 Optionally, add a custom database ID.
 {% /section %}
 
@@ -34,7 +34,7 @@ Then, in the `My books` table, copy the table ID, and replace `<TABLE_ID>`.
 import { Client, ID, TablesDB } from "appwrite";
 
 const client = new Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
     .setProject('<PROJECT_ID>');
 
 const tablesDB = new TablesDB(client);
@@ -53,11 +53,11 @@ promise.then(function (response) {
 });
 ```
 ```client-flutter
-import 'package:appwrite/appwrite.dart';
+import 'package:appwrite/indobase.dart';
 
 void main() async {
     final client = Client()
-        .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+        .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
         .setProject('<PROJECT_ID>');
 
     final tablesDB = TablesDB(client);
@@ -80,7 +80,7 @@ import indobaseModels
 
 func main() async throws {
     let client = Client()
-        .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+        .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
         .setProject("<PROJECT_ID>")
 
     let tablesDB = TablesDB(client)
@@ -103,7 +103,7 @@ import io.appwrite.services.TablesDB
 
 suspend fun main() {
     val client = Client(applicationContext)
-        .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+        .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
         .setProject("<PROJECT_ID>")
 
     val tablesDB = TablesDB(client)
@@ -116,7 +116,7 @@ suspend fun main() {
             data = mapOf("title" to "hamlet"),
         )
     } catch (e: Exception) {
-        Log.e("indobase", "Error: " + e.message)
+        Log.e("appwrite", "Error: " + e.message)
     }
 }
 ```
@@ -147,7 +147,7 @@ Like the previous step, replace `<PROJECT_ID>`, `<DATABASE_ID>`, and `<TABLE_ID>
 import { Client, Query, TablesDB } from "appwrite";
 
 const client = new Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
     .setProject("<PROJECT_ID>")
 
 const tablesDB = new TablesDB(client);
@@ -167,11 +167,11 @@ promise.then(function (response) {
 });
 ```
 ```client-flutter
-import 'package:appwrite/appwrite.dart';
+import 'package:appwrite/indobase.dart';
 
 void main() async {
     final client = Client()
-        .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+        .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
         .setProject("<PROJECT_ID>")
 
     final tablesDB = TablesDB(client);
@@ -184,18 +184,18 @@ void main() async {
                 Query.equal('title', 'Hamlet')
             ]
         );
-    } on AppwriteException catch(e) {
+    } on IndobaseException catch(e) {
         print(e);
     }
 }
 ```
 ```client-apple
-import Appwrite
+import Indobase
 import indobaseModels
 
 func main() async throws{
     let client = Client()
-        .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+        .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
         .setProject("<PROJECT_ID>")
 
     let tablesDB = TablesDB(client)
@@ -220,7 +220,7 @@ import io.appwrite.services.TablesDB
 
 suspend fun main() {
     val client = Client(applicationContext)
-        .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+        .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
         .setProject("<PROJECT_ID>")
 
     val tablesDB = TablesDB(client)
@@ -233,8 +233,8 @@ suspend fun main() {
                 Query.equal("title", "Hamlet")
             )
         )
-    } catch (e: AppwriteException) {
-        Log.e("indobase", "Error: " + e.message)
+    } catch (e: IndobaseException) {
+        Log.e("appwrite", "Error: " + e.message)
     }
 }
 ```
@@ -267,10 +267,10 @@ try {
     )
 
     for (book in books.rows) {
-        Log.d("indobase", "Book: ${book.title} by ${book.author}")
+        Log.d("appwrite", "Book: ${book.title} by ${book.author}")
     }
-} catch (e: AppwriteException) {
-    Log.e("indobase", "Error: ${e.message}")
+} catch (e: IndobaseException) {
+    Log.e("appwrite", "Error: ${e.message}")
 }
 ```
 ```client-apple
@@ -325,7 +325,7 @@ try {
 {% /multicode %}
 
 {% info title="Automatic type generation" %}
-You can automatically generate type definitions for your tables using the [indobase CLI type generation](/docs/products/databases/type-generation) feature. Run `appwrite types collection` to generate models for your collections.
+You can automatically generate type definitions for your tables using the [indobase CLI type generation](/docs/products/databases/type-generation) feature. Run `indobase types collection` to generate models for your collections.
 {% /info %}
 
 ### Model methods
@@ -339,7 +339,7 @@ val book = books.rows.first()
 
 // Convert to Map for debugging or manual manipulation
 val bookMap = book.toMap()
-Log.d("indobase", bookMap.toString())
+Log.d("appwrite", bookMap.toString())
 
 // Create model from Map
 val bookData = mapOf(

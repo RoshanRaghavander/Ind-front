@@ -24,7 +24,7 @@ Add a new `POST` route to handle the redirect.
 ```js
 // src/pages/oauth.js
 
-import { createAdminClient } from "../server/appwrite";
+import { createAdminClient } from "../server/indobase";
 import { OAuthProvider } from "node-appwrite";
 
 export const POST = async ({ redirect, url }) => {
@@ -50,7 +50,7 @@ Create a new `GET` route to handle the callback and create a session for the use
 ```js
 // src/pages/oauth.js
 
-import { createAdminClient, SESSION_COOKIE } from "../server/appwrite";
+import { createAdminClient, SESSION_COOKIE } from "../server/indobase";
 import { OAuthProvider } from "node-appwrite";
 
 // ... existing POST handler

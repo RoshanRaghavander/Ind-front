@@ -7,7 +7,7 @@ step: 3
 
 ## Create project {% #create-project %}
 
-Head to the [Appwrite Console](https://cloud.appwrite.io/console).
+Head to the [Indobase Console](https://cloud.indobase.io/console).
 
 {% only_dark %}
 ![Create project screen](/images/docs/quick-starts/dark/create-project.png)
@@ -40,21 +40,21 @@ To use indobase in our Refine app, we'll need to find our project ID. Find your 
 ![Project settings screen](/images/docs/quick-starts/project-id.png)
 {% /only_light %}
 
-Navigate to `src/utility/appwriteClient.ts` and add your API credentials.
+Navigate to `src/utility/indobaseClient.ts` and add your API credentials.
 
 
 ```ts
-import { Account, indobase, Storage } from "@refinedev/appwrite";
+import { Account, indobase, Storage } from "@refinedev/indobase";
 
-const APPWRITE_URL = '<YOUR_API_ENDPOINT>'; // Replace with your Appwrite API Endpoint
+const APPWRITE_URL = '<YOUR_API_ENDPOINT>'; // Replace with your Indobase API Endpoint
 const APPWRITE_PROJECT = "<PROJECT_ID>"; // Replace with your project ID
 
-const appwriteClient = new indobase();
+const indobaseClient = new indobase();
 
-appwriteClient.setEndpoint(APPWRITE_URL).setProject(APPWRITE_PROJECT);
-const account = new Account(appwriteClient);
-const storage = new Storage(appwriteClient);
+indobaseClient.setEndpoint(APPWRITE_URL).setProject(APPWRITE_PROJECT);
+const account = new Account(indobaseClient);
+const storage = new Storage(indobaseClient);
 
-export { account, appwriteClient, storage };
+export { account, indobaseClient, storage };
 
 ```

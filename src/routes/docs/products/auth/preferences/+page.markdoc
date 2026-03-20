@@ -21,7 +21,7 @@ Use the `updatePrefs` method to store user preferences as a JSON object.
 import { Client, Account } from "appwrite";
 
 const client = new Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>');                 // Your project ID
 
 const account = new Account(client);
@@ -35,10 +35,10 @@ promise.then(function (response) {
 });
 ```
 ```client-flutter
-import 'package:appwrite/appwrite.dart';
+import 'package:appwrite/indobase.dart';
 
 final client = Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>');                 // Your project ID
 
 final account = Account(client);
@@ -54,7 +54,7 @@ final user = await account.updatePrefs(
 import indobase
 
 let client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
     .setProject("<PROJECT_ID>")                  // Your project ID
 
 let account = Account(client)
@@ -71,7 +71,7 @@ import io.appwrite.Client
 import io.appwrite.services.Account
 
 val client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
     .setProject("<PROJECT_ID>")                  // Your project ID
 
 val account = Account(client)
@@ -107,7 +107,7 @@ Retrieve stored preferences with the `getPrefs` method.
 import { Client, Account } from "appwrite";
 
 const client = new Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>');                 // Your project ID
 
 const account = new Account(client);
@@ -121,10 +121,10 @@ promise.then(function (response) {
 });
 ```
 ```client-flutter
-import 'package:appwrite/appwrite.dart';
+import 'package:appwrite/indobase.dart';
 
 final client = Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>');                 // Your project ID
 
 final account = Account(client);
@@ -136,7 +136,7 @@ import io.appwrite.Client
 import io.appwrite.services.Account
 
 val client = Client(context)
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
     .setProject("<PROJECT_ID>")                  // Your project ID
 
 val account = Account(client)
@@ -144,10 +144,10 @@ val account = Account(client)
 val prefs = account.getPrefs()
 ```
 ```client-apple
-import Appwrite
+import Indobase
 
 let client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
     .setProject("<PROJECT_ID>")                  // Your project ID
 
 let account = Account(client)
@@ -182,7 +182,7 @@ Store team-wide settings using the `updatePrefs` method with a team ID.
 import { Client, Teams } from "appwrite";
 
 const client = new Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>');                 // Your project ID
 
 const teams = new Teams(client);
@@ -203,10 +203,10 @@ promise.then(function (response) {
 });
 ```
 ```client-flutter
-import 'package:appwrite/appwrite.dart';
+import 'package:appwrite/indobase.dart';
 
 final client = Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>');                 // Your project ID
 
 final teams = Teams(client);
@@ -221,10 +221,10 @@ final team = await teams.updatePrefs(
 );
 ```
 ```client-apple
-import Appwrite
+import Indobase
 
 let client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
     .setProject("<PROJECT_ID>")                  // Your project ID
 
 let teams = Teams(client)
@@ -243,7 +243,7 @@ import io.appwrite.Client
 import io.appwrite.services.Teams
 
 val client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
     .setProject("<PROJECT_ID>")                  // Your project ID
 
 val teams = Teams(client)
@@ -268,7 +268,7 @@ Fetch team preferences by passing a team ID to the `getPrefs` method.
 import { Client, Teams } from "appwrite";
 
 const client = new Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>');                 // Your project ID
 
 const teams = new Teams(client);
@@ -282,10 +282,10 @@ promise.then(function (prefs) {
 });
 ```
 ```client-flutter
-import 'package:appwrite/appwrite.dart';
+import 'package:appwrite/indobase.dart';
 
 final client = Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>');                 // Your project ID
 
 final teams = Teams(client);
@@ -295,10 +295,10 @@ final prefs = await teams.getPrefs(
 );
 ```
 ```client-apple
-import Appwrite
+import Indobase
 
 let client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
     .setProject("<PROJECT_ID>")                  // Your project ID
 
 let teams = Teams(client)
@@ -312,7 +312,7 @@ import io.appwrite.Client
 import io.appwrite.services.Teams
 
 val client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
     .setProject("<PROJECT_ID>")                  // Your project ID
 
 val teams = Teams(client)

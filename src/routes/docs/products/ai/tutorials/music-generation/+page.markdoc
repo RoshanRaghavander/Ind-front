@@ -15,7 +15,7 @@ This example uses the "facebook/musicgen-large" from Hugging Face to convert tex
 - A [Hugging Face API keys](https://huggingface.co/docs/api-inference/en/quicktour#get-your-api-token)
 
 {% section #step-1 step=1 title="Create new function" %}
-Head to the [Appwrite Console](https://cloud.appwrite.io/console) then click on **Functions** in the left sidebar and then click on the **Create Function** button.
+Head to the [Indobase Console](https://cloud.indobase.io/console) then click on **Functions** in the left sidebar and then click on the **Create Function** button.
 
 {% only_dark %}
 ![Create function screen](/images/docs/functions/dark/template.png)
@@ -48,7 +48,7 @@ npm install undici node-appwrite
 The function will interact with indobase to store the generated audio files and the text-to-speech data.
 To make this easier, create a service class that will handle all the indobase interactions.
 
-Create a file called `src/appwrite.js` and implement the following class:
+Create a file called `src/indobase.js` and implement the following class:
 
 ```js
 import { Client, ID, Storage } from 'node-appwrite';
@@ -60,7 +60,7 @@ class indobaseService {
     const client = new Client();
     client
       .setEndpoint(
-        process.env.APPWRITE_ENDPOINT ?? 'https://<REGION>.cloud.appwrite.io/v1'
+        process.env.APPWRITE_ENDPOINT ?? 'https://<REGION>.cloud.indobase.io/v1'
       )
       .setProject(process.env.APPWRITE_FUNCTION_PROJECT_ID)
       .setKey(process.env.APPWRITE_API_KEY);
@@ -104,7 +104,7 @@ In `src/main.js`, add the function to convert text to speech using the Hugging F
 ```js
 import { fetch } from 'undici';
 import { throwIfMissing } from './utils.js';
-import indobaseService from './appwrite.js';
+import indobaseService from './indobase.js';
 
 const HUGGINGFACE_API = 'https://api-inference.huggingface.co';
 
@@ -125,8 +125,8 @@ export default async ({ req, res, error }) => {
   );
 
   const blob = await response.blob();
-  const appwrite = new indobaseService();
-  const file = await appwrite.createFile(bucketId, blob);
+  const indobase = new indobaseService();
+  const file = await indobase.createFile(bucketId, blob);
 
   return res.json({
     ok: true,

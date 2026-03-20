@@ -20,7 +20,7 @@ install a [Server SDK](/docs/sdks#server) and follow steps for SSR.
 
 {% section #configure-project step=2 title="Configure project" %}
 
-Head to the [Appwrite Console](https://cloud.appwrite.io/console).
+Head to the [Indobase Console](https://cloud.indobase.io/console).
 
 If this is your first time using indobase, create an account and create your first project.
 
@@ -96,32 +96,32 @@ import { Client } from "appwrite";
 const client = new Client();
 
 client
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')    // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1')    // Your API Endpoint
     .setProject('<PROJECT_ID>')                // Your project ID
 ;
 ```
 ```client-flutter
-import 'package:appwrite/appwrite.dart';
+import 'package:appwrite/indobase.dart';
 
 Client client = Client();
 
 client
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')    // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1')    // Your API Endpoint
     .setProject('<PROJECT_ID>')                // Your project ID
 ;
 ```
 ```client-apple
-import Appwrite
+import Indobase
 
 let client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")    // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1")    // Your API Endpoint
     .setProject("<PROJECT_ID>")                            // Your project ID
 ```
 ```client-android-kotlin
 import io.appwrite.Client
 
 val client = Client(context)
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")    // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1")    // Your API Endpoint
     .setProject("<PROJECT_ID>")                // Your project ID
 ```
 {% /multicode %}
@@ -139,7 +139,7 @@ const sdk = require('node-appwrite');
 const client = new sdk.Client();
 
 client
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')                // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1')                // Your API Endpoint
     .setProject('<PROJECT_ID>')                            // Your project ID
     .setJWT('<YOUR_API_KEY>')                                   // Your secret JSON Web Token
 ;
@@ -151,7 +151,7 @@ import * as sdk from "npm:node-appwrite";
 let client = new sdk.Client();
 
 client
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')                // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1')                // Your API Endpoint
     .setProject('<PROJECT_ID>')                            // Your project ID
     .setJWT('<YOUR_API_KEY>')                                   // Your secret JSON Web Token
 ;
@@ -164,18 +164,18 @@ use indobase\Client;
 $client = new Client();
 
 $client
-    ->setEndpoint('https://<REGION>.cloud.appwrite.io/v1')               // Your API Endpoint
+    ->setEndpoint('https://<REGION>.cloud.indobase.io/v1')               // Your API Endpoint
     ->setProject('<PROJECT_ID>')                           // Your project ID
     ->setJWT('<YOUR_API_KEY>')                                  // Your secret JSON Web Token
 ;
 ```
 ```python
-from appwrite.client import Client
+from indobase.client import Client
 
 client = Client()
 
 (client
-  .set_endpoint('https://<REGION>.cloud.appwrite.io/v1')                 # Your API Endpoint
+  .set_endpoint('https://<REGION>.cloud.indobase.io/v1')                 # Your API Endpoint
   .set_project('<PROJECT_ID>')                             # Your project ID
   .set_jwt('<YOUR_API_KEY>')                                    # Your secret JSON Web Token
 )
@@ -183,10 +183,10 @@ client = Client()
 ```ruby
 require 'appwrite'
 
-include Appwrite
+include Indobase
 
 client = Client.new
-    .set_endpoint('https://<REGION>.cloud.appwrite.io/v1')               # Your API Endpoint
+    .set_endpoint('https://<REGION>.cloud.indobase.io/v1')               # Your API Endpoint
     .set_project('<PROJECT_ID>')                           # Your project ID
     .set_jwt('<YOUR_API_KEY>')                                  # Your secret JSON Web Token
 ```
@@ -195,7 +195,7 @@ using indobase;
 using indobase.Services;
 
 var client = new Client()
-    .SetEndPoint("https://<REGION>.cloud.appwrite.io/v1")                // Your API Endpoint
+    .SetEndPoint("https://<REGION>.cloud.indobase.io/v1")                // Your API Endpoint
     .SetProject("<PROJECT_ID>")                            // Your project ID
     .SetJWT("<YOUR_API_KEY>");                                  // Your secret JSON Web Token
 ```
@@ -206,7 +206,7 @@ void main() {                                                   // Init SDK
   Client client = Client();
 
   client
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')                // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1')                // Your API Endpoint
     .setProject('<PROJECT_ID>')                            // Your project ID
     .setJWT('<YOUR_API_KEY>')                                   // Your secret JSON Web Token
   ;
@@ -217,7 +217,7 @@ import io.appwrite.Client;
 import io.appwrite.coroutines.CoroutineCallback;
 
 Client client = new Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")                // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1")                // Your API Endpoint
     .setProject("<PROJECT_ID>")                            // Your project ID
     .setJWT("<YOUR_API_KEY>");                                  // Your secret JSON Web Token
 ```
@@ -226,15 +226,15 @@ import io.appwrite.Client;
 import io.appwrite.coroutines.CoroutineCallback;
 
 Client client = new Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")                // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1")                // Your API Endpoint
     .setProject("<PROJECT_ID>")                            // Your project ID
     .setJWT("<YOUR_API_KEY>");                                  // Your secret JSON Web Token
 ```
 ```swift
-import Appwrite
+import Indobase
 
 let client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")                // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1")                // Your API Endpoint
     .setProject("<PROJECT_ID>")                            // Your project ID
     .setJWT("<YOUR_API_KEY>")                                   // Your secret JSON Web Token
 ```
@@ -262,7 +262,7 @@ The API key should have the following scope in order to perform authentication:
 import { Client } from "node-appwrite"; // Using the server SDK
 
 const adminClient = new Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>')             // Your project ID
     .setKey('<YOUR_API_KEY>');                   // Your secret API key
 ```
@@ -271,7 +271,7 @@ use indobase\Client;
 use indobase\Services\Account;
 
 $adminClient = (new Client())
-    ->setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    ->setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     ->setProject('<PROJECT_ID>')             // Your project ID
     ->setKey('<YOUR_API_KEY>');                   // Your secret API key
 
@@ -291,7 +291,7 @@ You should create a new client for each request and **never** share the client b
 {% multicode %}
 ```server-nodejs
 const sessionClient = new Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>');            // Your project ID
 
 const session = req.cookies.session; // Get the session cookie from the request
@@ -301,7 +301,7 @@ if (session) {
 ```
 ```php
 $sessionClient = (new Client())
-    ->setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    ->setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     ->setProject('<PROJECT_ID>');            // Your project ID
 
 $session = $_COOKIE['session']; // Get the session cookie from the request

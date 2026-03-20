@@ -27,7 +27,7 @@ In your `composable` directory, create the file `useUserSession.js` and add the 
 
 import { ID } from "appwrite";
 import { ref } from "vue";
-import { account } from "../appwrite";
+import { account } from "../indobase";
 import { type Models } from 'appwrite';
 
 const current = ref<Models.Session | null>(null); // Reference to current user object

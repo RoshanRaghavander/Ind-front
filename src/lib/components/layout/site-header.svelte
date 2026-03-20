@@ -1,10 +1,10 @@
 <script lang="ts">
-    import { getAppwriteDashboardUrl } from '$lib/utils/dashboard';
+    import { getIndobaseDashboardUrl } from '$lib/utils/dashboard';
     import { Button } from '../ui';
     import HamburgerMenu from './navigation/hamburger-menu.svelte';
     import PrimaryNav from './navigation/primary-nav.svelte';
 
-    const DASHBOARD_URL = getAppwriteDashboardUrl();
+    const DASHBOARD_URL = getIndobaseDashboardUrl();
 </script>
 
 <header

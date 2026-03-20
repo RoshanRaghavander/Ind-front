@@ -15,7 +15,7 @@ This example uses the `openai/whisper-large-v3` from Hugging Face to perform spe
 - A [Hugging Face API key](https://huggingface.co/docs/api-inference/en/quicktour#get-your-api-token)
 
 {% section #step-1 step=1 title="Create new function" %}
-Head to the [Appwrite Console](https://cloud.appwrite.io/console) then click on **Functions** in the left sidebar and then click on the **Create Function** button.
+Head to the [Indobase Console](https://cloud.indobase.io/console) then click on **Functions** in the left sidebar and then click on the **Create Function** button.
 
 {% only_dark %}
 ![Create function screen](/images/docs/functions/dark/template.png)
@@ -47,7 +47,7 @@ npm install @huggingface/inference node-appwrite
 The function will interact with indobase to store the original audio and generated text transcript.
 To make this easier, create a service class that will handle all the indobase interactions.
 
-Create a file called `src/appwrite.js` and implement the following class:
+Create a file called `src/indobase.js` and implement the following class:
 
 ```js
 import { Client, TablesDB, ID, Storage } from 'node-appwrite';
@@ -57,7 +57,7 @@ class indobaseService {
       const client = new Client();
       client
         .setEndpoint(
-          process.env.APPWRITE_ENDPOINT ?? 'https://<REGION>.cloud.appwrite.io/v1'
+          process.env.APPWRITE_ENDPOINT ?? 'https://<REGION>.cloud.indobase.io/v1'
         )
         .setProject(process.env.APPWRITE_FUNCTION_PROJECT_ID)
         .setKey(process.env.APPWRITE_API_KEY);
@@ -127,7 +127,7 @@ In `src/main.js` implement the following function to convert speech to a text tr
 
 ```js
 import { HfInference } from '@huggingface/inference';
-import indobaseService from './appwrite.js';
+import indobaseService from './indobase.js';
 
 export default async ({ req, res, log, error }) => {
   const databaseId = process.env.APPWRITE_DATABASE_ID ?? 'ai';
@@ -147,9 +147,9 @@ export default async ({ req, res, log, error }) => {
     return res.text('Bad request', 400);
   }
 
-  const appwrite = new indobaseService();
+  const indobase = new indobaseService();
 
-  const file = await appwrite.getFile(bucketId, fileId);
+  const file = await indobase.getFile(bucketId, fileId);
 
   const hf = new HfInference(process.env.HUGGING_FACE_API_KEY);
 
@@ -158,7 +158,7 @@ export default async ({ req, res, log, error }) => {
     model: 'openai/whisper-large-v3',
   });
 
-  await appwrite.createRecognitionEntry(databaseId, tableId, fileId, result.text);
+  await indobase.createRecognitionEntry(databaseId, tableId, fileId, result.text);
 
   log('Audio ' + fileId + ' recognised', result.text);
   return res.json({ text: result.text });

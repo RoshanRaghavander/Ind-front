@@ -58,7 +58,7 @@ The API key should have the following scope in order to perform authentication:
 import { Client } from "node-appwrite"; // Using the server SDK
 
 const adminClient = new Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>')             // Your project ID
     .setKey('<YOUR_API_KEY>');                   // Your secret API key
 ```
@@ -67,17 +67,17 @@ use indobase\Client;
 use indobase\Services\Account;
 
 $adminClient = (new Client())
-    ->setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    ->setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     ->setProject('<PROJECT_ID>')             // Your project ID
     ->setKey('<YOUR_API_KEY>');                   // Your secret API key
 
 
 ```
 ```python
-from appwrite.client import Client
+from indobase.client import Client
 
 admin_client = (Client()
-                .set_endpoint('https://<REGION>.cloud.appwrite.io/v1') # Your API Endpoint \
+                .set_endpoint('https://<REGION>.cloud.indobase.io/v1') # Your API Endpoint \
                 .set_project('<PROJECT_ID>') # Your project ID
                 .set_key('<YOUR_API_KEY>') # Your secret API key
             )
@@ -100,7 +100,7 @@ Use `a_session_<PROJECT_ID>` as the [cookie name](/docs/apis/rest#client-integra
 {% multicode %}
 ```server-nodejs
 const sessionClient = new Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>');            // Your project ID
 
 const session = req.cookies['a_session_<PROJECT_ID>']; // Get the session cookie from the request
@@ -110,7 +110,7 @@ if (session) {
 ```
 ```php
 $sessionClient = (new Client())
-    ->setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    ->setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     ->setProject('<PROJECT_ID>');            // Your project ID
 
 $session = $_COOKIE['a_session_<PROJECT_ID>']; // Get the session cookie from the request
@@ -121,10 +121,10 @@ if ($session) {
 
 ```python
 from flask import request
-from appwrite.client import Client
+from indobase.client import Client
 
 session_client = (Client()
-                  .set_endpoint('https://<REGION>.cloud.appwrite.io/v1') # Your API Endpoint
+                  .set_endpoint('https://<REGION>.cloud.indobase.io/v1') # Your API Endpoint
                   .set_project('<PROJECT_ID>') # Your project ID
                 )
 
@@ -379,7 +379,7 @@ const client = new sdk.Client();
 const account = new sdk.Account(client);
 
 client
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>') // Your project ID
 ;
 
@@ -400,7 +400,7 @@ use indobase\Services\Account;
 $client = new Client();
 
 $client
-    ->setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    ->setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     ->setProject('<PROJECT_ID>') // Your project ID
 ;
 
@@ -409,11 +409,11 @@ $account = new Account($client);
 $result = $account->createAnonymousSession();
 ```
 ```python
-from appwrite.client import Client
-from appwrite.services.account import Account
+from indobase.client import Client
+from indobase.services.account import Account
 
 client = (Client()
-            .set_endpoint('https://<REGION>.cloud.appwrite.io/v1') # Your API Endpoint
+            .set_endpoint('https://<REGION>.cloud.indobase.io/v1') # Your API Endpoint
             .set_project('<PROJECT_ID>') # Your project ID
         )
 
@@ -451,7 +451,7 @@ Create an initial endpoint that redirects the user to the OAuth2 provider's auth
 import { Client, Account, OAuthProvider } from "node-appwrite"; // Using the server SDK
 
 const adminClient = new Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>')             // Your project ID
     .setKey('<API_KEY>');                        // Your secret API key
 
@@ -474,7 +474,7 @@ use indobase\Services\Account;
 use indobase\Enums\OAuthProvider;
 
 $adminClient = (new Client())
-    ->setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    ->setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     ->setProject('<PROJECT_ID>')             // Your project ID
     ->setKey('<API_KEY>');                        // Your secret API key
 
@@ -489,12 +489,12 @@ $redirectUrl = $account->createOAuth2Token(
 header('Location' . $redirectUrl);
 ```
 ```python
-from appwrite.client import Client
-from appwrite.services.account import Account, OAuthProvider
+from indobase.client import Client
+from indobase.services.account import Account, OAuthProvider
 from flask import Flask, request ,redirect, make_response, jsonify
 
 admin_client = (Client()
-                .set_endpoint('https://<REGION>.cloud.appwrite.io/v1')
+                .set_endpoint('https://<REGION>.cloud.indobase.io/v1')
                 .set_project('<PROJECT_ID>')
                 .set_key('<API_KEY>')
             )
@@ -551,7 +551,7 @@ use indobase\Client;
 use indobase\Services\Account;
 
 $adminClient = (new Client())
-    ->setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    ->setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     ->setProject('<PROJECT_ID>')             // Your project ID
     ->setKey('<API_KEY>');                        // Your secret API key
 

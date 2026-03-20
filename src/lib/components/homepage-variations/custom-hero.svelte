@@ -1,19 +1,19 @@
 <script lang="ts">
-    import { getAppwriteDashboardUrl } from '$lib/utils/dashboard';
+    import { getIndobaseDashboardUrl } from '$lib/utils/dashboard';
     import { trackEvent } from '$lib/actions/analytics';
     import GradientText from '$lib/components/fancy/gradient-text.svelte';
     import { Button } from '$lib/components/ui';
     import { cn } from '$lib/utils/cn';
     import Dashboard from '$routes/(marketing)/(components)/dashboard.svelte';
 
-    const DASHBOARD_URL = getAppwriteDashboardUrl();
+    const DASHBOARD_URL = getIndobaseDashboardUrl();
 
     const {
         title = 'Build like a team of hundreds',
         subtitle = 'Indobase is an open-source, all-in-one development platform. Use built-in backend infrastructure and web hosting, all from a single place.',
         showDashboard = true,
         ctaLabel = 'Start building for free',
-        ctaHref = getAppwriteDashboardUrl()
+        ctaHref = getIndobaseDashboardUrl()
     } = $props<{
         title?: string;
         subtitle?: string;

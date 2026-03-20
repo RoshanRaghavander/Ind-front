@@ -15,7 +15,7 @@ Retrieve a country flag icon by its [ISO 3166-1](https://en.wikipedia.org/wiki/I
 import { Client, Avatars, Flag } from "appwrite";
 
 const client = new Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
     .setProject('<PROJECT_ID>');
 
 const avatars = new Avatars(client);
@@ -29,10 +29,10 @@ const result = avatars.getFlag({
 console.log(result); // Resource URL
 ```
 ```client-flutter
-import 'package:appwrite/appwrite.dart';
+import 'package:appwrite/indobase.dart';
 
 final client = Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
     .setProject('<PROJECT_ID>');
 
 final avatars = Avatars(client);
@@ -49,10 +49,10 @@ Future result = avatars.getFlag(
 });
 ```
 ```client-apple
-import Appwrite
+import Indobase
 
 let client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
     .setProject("<PROJECT_ID>")
 
 let avatars = Avatars(client)
@@ -69,7 +69,7 @@ import io.appwrite.services.Avatars
 import io.appwrite.enums.Flag
 
 val client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
     .setProject("<PROJECT_ID>")
 
 val avatars = Avatars(client)
@@ -81,10 +81,10 @@ val result = avatars.getFlag(
 )
 ```
 ```client-react-native
-import { Client, Avatars } from 'react-native-appwrite';
+import { Client, Avatars } from 'react-native-indobase';
 
 const client = new Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
     .setProject('<PROJECT_ID>');
 
 const avatars = new Avatars(client);
@@ -139,7 +139,7 @@ const frFlag = avatars.getFlag({
 });
 ```
 ```client-flutter
-import 'package:appwrite/appwrite.dart';
+import 'package:appwrite/indobase.dart';
 
 // United States
 Future usFlag = avatars.getFlag(
@@ -163,7 +163,7 @@ Future frFlag = avatars.getFlag(
 );
 ```
 ```client-apple
-import Appwrite
+import Indobase
 
 // United States
 let usFlag = try await avatars.getFlag(

@@ -32,13 +32,13 @@ const account = new Account(client);
 const avatars = new Avatars(client);
 
 client
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>') // Your project ID
 ;
 ```
 
 ```client-flutter
-import 'package:appwrite/appwrite.dart';
+import 'package:appwrite/indobase.dart';
 
 void main() { // Init SDK
   Client client = Client();
@@ -46,7 +46,7 @@ void main() { // Init SDK
   Avatars avatars = Avatars(client);
 
   client
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>')             // Your project ID
   ;
 }
@@ -56,7 +56,7 @@ void main() { // Init SDK
 import indobase
 
 let client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
     .setProject("<PROJECT_ID>") // Your project ID
 
 let account = Account(client)
@@ -68,7 +68,7 @@ import io.appwrite.Client
 import io.appwrite.services.Account
 
 val client = Client(context)
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
     .setProject("<PROJECT_ID>") // Your project ID
 
 val account = Account(client)
@@ -130,7 +130,7 @@ account.createMfaRecoveryCodes(new CoroutineCallback<>((result, error) -> {
         return;
     }
 
-    Log.d("indobase", result.recoveryCodes.toString());
+    Log.d("appwrite", result.recoveryCodes.toString());
 }));
 ```
 {% /multicode %}
@@ -184,7 +184,7 @@ account.updateEmail(
             return;
         }
 
-        Log.d("indobase", result.toString());
+        Log.d("appwrite", result.toString());
     })
 );
 ```
@@ -231,7 +231,7 @@ account.createVerification(
             return;
         }
 
-        Log.d("indobase", result.toString());
+        Log.d("appwrite", result.toString());
     })
 );
 ```
@@ -283,7 +283,7 @@ account.updateVerification(
             return;
         }
 
-        Log.d("indobase", result.toString());
+        Log.d("appwrite", result.toString());
     })
 );
 ```
@@ -335,7 +335,7 @@ account.updatePhone(
             return;
         }
 
-        Log.d("indobase", result.toString());
+        Log.d("appwrite", result.toString());
     })
 );
 ```
@@ -369,7 +369,7 @@ account.createPhoneVerification(new CoroutineCallback<>((result, error) -> {
         return;
     }
 
-    Log.d("indobase", result.toString());
+    Log.d("appwrite", result.toString());
 }));
 ```
 {% /multicode %}
@@ -416,7 +416,7 @@ account.updatePhoneVerification(
             return;
         }
 
-        Log.d("indobase", result.toString());
+        Log.d("appwrite", result.toString());
     })
 );
 ```
@@ -468,7 +468,7 @@ account.createMfaAuthenticator(
             return;
         }
 
-        Log.d("indobase", result.toString());
+        Log.d("appwrite", result.toString());
     })
 );
 ```
@@ -549,7 +549,7 @@ avatars.getQR(
             return;
         }
 
-        Log.d("indobase", result.toString());
+        Log.d("appwrite", result.toString());
     })
 );
 ```
@@ -601,7 +601,7 @@ account.updateMfaAuthenticator(
             return;
         }
 
-        Log.d("indobase", result.toString());
+        Log.d("appwrite", result.toString());
     })
 );
 ```
@@ -745,7 +745,7 @@ result.then((response) {
 ```client-apple
 do {
     let response = try await account.get()
-} catch let error as AppwriteException {
+} catch let error as IndobaseException {
     print(error.message)
     if error.type == "user_more_factors_required" {
         // redirect to perform MFA
@@ -759,7 +759,7 @@ do {
 try {
     val response = account.get()
     println(response)
-} catch (error: AppwriteException) {
+} catch (error: IndobaseException) {
     println(error.message)
     if (error.type == "user_more_factors_required") {
         // redirect to perform MFA

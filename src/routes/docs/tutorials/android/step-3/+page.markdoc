@@ -7,7 +7,7 @@ step: 3
 
 ## Create project {% #create-project %}
 
-Head to the [Appwrite Console](https://cloud.appwrite.io/console).
+Head to the [Indobase Console](https://cloud.indobase.io/console).
 
 {% only_dark %}
 ![Create project screen](/images/docs/quick-starts/dark/create-project.png)
@@ -51,7 +51,7 @@ import android.content.Context
 import io.appwrite.Client
 
 object indobase {
-    private const val ENDPOINT = "https://<REGION>.cloud.appwrite.io/v1"
+    private const val ENDPOINT = "https://<REGION>.cloud.indobase.io/v1"
     private const val PROJECT_ID = "<PROJECT_ID>"
 
     private lateinit var client: Client

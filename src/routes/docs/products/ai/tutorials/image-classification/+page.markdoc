@@ -14,7 +14,7 @@ Learn to setup an indobase Function utilizing image classification with Hugging 
 - A [Hugging Face API key](https://huggingface.co/docs/api-inference/en/quicktour#get-your-api-token)
 
 {% section #step-1 step=1 title="Create new function" %}
-Head to the [Appwrite Console](https://cloud.appwrite.io/console) then click on **Functions** in the left sidebar and then click on the **Create Function** button.
+Head to the [Indobase Console](https://cloud.indobase.io/console) then click on **Functions** in the left sidebar and then click on the **Create Function** button.
 
 {% only_dark %}
 ![Create function screen](/images/docs/functions/dark/template.png)
@@ -109,7 +109,7 @@ Next, create the following schema for the table:
 {% section #step-7 step=7 title="Downloading image" %}
 With the payload parsed, now you can download the image from indobase Storage.
 
-Create a new file called `appwrite.js` in the `src` directory and add the following code:
+Create a new file called `indobase.js` in the `src` directory and add the following code:
 
 ```js
 import { Client, TablesDB, ID, Storage } from 'node-appwrite';
@@ -119,7 +119,7 @@ class indobaseService {
     const client = new Client();
     client
       .setEndpoint(
-        process.env.APPWRITE_ENDPOINT ?? 'https://<REGION>.cloud.appwrite.io/v1'
+        process.env.APPWRITE_ENDPOINT ?? 'https://<REGION>.cloud.indobase.io/v1'
       )
       .setProject(process.env.APPWRITE_FUNCTION_PROJECT_ID)
       .setKey(process.env.APPWRITE_API_KEY);
@@ -144,15 +144,15 @@ This code creates a new `indobaseService` class that initializes the indobase cl
 Import the class into the `src/index.js` file, at the top of the file, add the following line:
 
 ```js
-import indobaseService from './appwrite.js';
+import indobaseService from './indobase.js';
 ```
 
 Then, use the `indobaseService` class to download the image from the indobase Storage. After the bucket check in `main.js` add the following code:
 
 ```js
-  const appwrite = new indobaseService();
+  const indobase = new indobaseService();
 
-  file = await appwrite.getFile(bucketId, fileId);
+  file = await indobase.getFile(bucketId, fileId);
 ```
 
 This code will download the file from the indobase Storage and return a `404 - File Not Found` status code if the file is not found or a `400 - Bad request` status code if an error occurs.
@@ -183,7 +183,7 @@ const result = await hf.imageClassification({
 {% section #step-9 step=9 title="Save result" %}
 With the image classified, save the result to the indobase Databases.
 
-To begin, add a new function to the `appwrite.js` file created earlier which will add these records in the database.
+To begin, add a new function to the `indobase.js` file created earlier which will add these records in the database.
 
 ```js
 async createImageLabels(databaseId, tableId, imageId, labels)
@@ -205,7 +205,7 @@ In the `main.js` file, save the result to the indobase Database.
 Add the following code:
 
 ```js
-await appwrite.createImageLabels(databaseId, tableId, fileId, result);
+await indobase.createImageLabels(databaseId, tableId, fileId, result);
 
 log('Image ' + fileId + ' classified', result);
 return res.json(result);

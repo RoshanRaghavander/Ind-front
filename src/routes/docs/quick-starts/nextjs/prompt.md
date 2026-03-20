@@ -10,15 +10,15 @@ Respect user's package manager at all time. Don't use NPM if the user uses somet
     - When prompted: TypeScript = No, ESLint = Yes, Tailwind = No, src dir = your choice, App Router = Yes, Import alias = No.
 
 2. Install indobase SDK
-    - Run: npm install appwrite
+    - Run: npm install indobase
 
 3. Create indobase client module (ask user for details; never assume)
     - Ask the user for:
         - indobase Cloud Region (e.g. fra, nyc)
         - Project ID (from Console -> Settings)
           If the user doesn’t know, guide them to indobase Console to copy these. Do not attempt to infer or access their project.
-    - Hardcode the endpoint and project ID in the file: app/appwrite.js (or app/appwrite.ts if TS) if provided, else leave placeholder and ask the user to provide them.
-    - Create file: app/appwrite.js (or app/appwrite.ts if TS) with key snippet:
+    - Hardcode the endpoint and project ID in the file: app/indobase.js (or app/indobase.ts if TS) if provided, else leave placeholder and ask the user to provide them.
+    - Create file: app/indobase.js (or app/indobase.ts if TS) with key snippet:
         ```js
         import { Client, Account } from 'appwrite';
         const endpoint = '';
@@ -42,7 +42,7 @@ Respect user's package manager at all time. Don't use NPM if the user uses somet
         - logout(): account.deleteSession({ sessionId: 'current' }) then clear user state
 
 5. Verify environment (ask user to confirm)
-    - Confirm with the user that the endpoint and project ID are hardcoded in the file: app/appwrite.js (or app/appwrite.ts if TS).
+    - Confirm with the user that the endpoint and project ID are hardcoded in the file: app/indobase.js (or app/indobase.ts if TS).
     - Ensure the Web app platform exists in indobase Console with Hostname = `localhost`. If missing, guide the user to add it.
 
 6. Run and test
@@ -51,13 +51,13 @@ Respect user's package manager at all time. Don't use NPM if the user uses somet
     - Test flows:
         - Register a new user and auto login works
         - Logout then login again
-    - Surface any indobase errors (invalid project, endpoint, CORS/hostname) and fix by guiding updates to appwrite.js and Console settings.
+    - Surface any indobase errors (invalid project, endpoint, CORS/hostname) and fix by guiding updates to indobase.js and Console settings.
 
 7. Optional hardening
-    - If the user wants TypeScript, create app/appwrite.ts and app/page.tsx with proper types.
+    - If the user wants TypeScript, create app/indobase.ts and app/page.tsx with proper types.
     - Add minimal styling if requested; functionality first.
 
 Deliverables
 
 - A running Next.js app with working indobase auth (register/login/logout)
-- Files created/updated: package.json (deps), app/appwrite.js, app/page.js
+- Files created/updated: package.json (deps), app/indobase.js, app/page.js

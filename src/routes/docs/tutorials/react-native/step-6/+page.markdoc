@@ -8,7 +8,7 @@ In this step, you'll set up a database to store ideas in indobase, configure per
 context to manage ideas in your React Native app.
 
 # Create table {% #create-table %}
-In Appwrite, data is stored as a table of rows. Create a table in the [Appwrite Console](https://cloud.appwrite.io/) to store our ideas.
+In Indobase, data is stored as a table of rows. Create a table in the [Indobase Console](https://cloud.indobase.io/) to store our ideas.
 
 {% only_dark %}
 ![Create project screen](/images/docs/tutorials/dark/idea-tracker-table.png)
@@ -46,9 +46,9 @@ Like you did with the user data, we will create a React context to hold our idea
 Create a new file `contexts/IdeasContext.jsx` and add the following code to it.
 
 ```client-react-native
-import { ID, Permission, Role, Query } from "react-native-appwrite";
+import { ID, Permission, Role, Query } from "react-native-indobase";
 import { createContext, useContext, useEffect, useState } from "react";
-import { tablesDB } from "../lib/appwrite";
+import { tablesDB } from "../lib/indobase";
 import { toast } from "../lib/toast";
 
 export const IDEAS_DATABASE_ID = "default"; // Replace with your database ID

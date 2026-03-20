@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { storage } from '$lib/appwrite';
+    import { storage } from '$lib/indobase';
     import Image from '../nodes/Image.svelte';
 
     interface Props {

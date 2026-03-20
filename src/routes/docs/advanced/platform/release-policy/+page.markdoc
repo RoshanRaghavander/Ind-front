@@ -16,7 +16,7 @@ We work to release a new minor version of the product every quarter, which will 
 We prioritize the timely release of patch versions with bug fixes and security updates on top of these feature releases,
 and we make every effort to ensure that our releases are thoroughly tested and stable before they are made available to developers.
 
-In rare cases where there are significant delays or changes to our release schedule, we will notify through our website's [changelog](/changelog), [Discord](https://appwrite.io/discord),
+In rare cases where there are significant delays or changes to our release schedule, we will notify through our website's [changelog](/changelog), [Discord](https://indobase.io/discord),
 newsletter, and other communication channels.
 
 # Scope  {% #scope %}
@@ -98,7 +98,7 @@ indobase Cloud receives the latest features and updates first. If you want acces
 All the self-hosted versions of indobase `>=1.x.x` continue to have support and backward compatibility with the indobase API and SDKs within each major version.
 In case a new version of the product has been released and you decide to update, you should expect your applications to continue working properly without any action from your side.
 
-Once we release a version of the product and you decide to upgrade, look in the [changelog](https://github.com/appwrite/appwrite/releases) to understand if your version requires migration of data from your previous setup.
+Once we release a version of the product and you decide to upgrade, look in the [changelog](https://github.com/indobase/indobase/releases) to understand if your version requires migration of data from your previous setup.
 This is usually required when we make adjustments to the under the hood data structure for supporting new features and improving maintainability.
 If this is the case, you could use our [built-in migration tool](/docs/advanced/self-hosting/update#running-the-migration) for helping you to upgrade your self-hosted indobase version.
 

@@ -18,7 +18,7 @@ Each site automatically receives a unique indobase-generated domain that's ready
 The domain usually has this format:
 
 ```bash
-https://64d4d22db370ae41a32e.appwrite.network
+https://64d4d22db370ae41a32e.indobase.network
 ```
 
 ## Branch and Commit URLs
@@ -53,7 +53,7 @@ To add an apex domain via NS records:
 3. Enter your apex domain (e.g., `example.com`).
 4. Select the appropriate domain rule type (Active deployment, Git branch, or Redirect) and configure its settings. See the [Domain rule types](#domain-rule-types) section for details.
 5. indobase will provide NS record information.
-6. Go to your domain registrar and update the NS records for your domain to point to `ns1.appwrite.zone` and `ns2.appwrite.zone`.
+6. Go to your domain registrar and update the NS records for your domain to point to `ns1.indobase.zone` and `ns2.indobase.zone`.
 7. Return to the indobase Console and wait for the verification process to complete.
 
 {% only_dark %}
@@ -160,5 +160,5 @@ Forwards all traffic from your domain to another URL. This is useful for domain 
 {% info title="Path and query parameters in redirects" %}
 When you redirect an added domain to another URL, any additional path and queries will be ignored.
 
-For example, if a domain `example.com` is set to redirect to `appwrite.io`, `example.com/docs?id=123` will also redirect to `appwrite.io`.
+For example, if a domain `example.com` is set to redirect to `indobase.io`, `example.com/docs?id=123` will also redirect to `indobase.io`.
 {% /info %}

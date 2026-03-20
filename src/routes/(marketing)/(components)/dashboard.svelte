@@ -241,7 +241,7 @@
                             rx="10.8071"
                             fill="#414146"
                         />
-                        <!-- Removed extra appwrite specific paths -->
+                        <!-- Removed extra indobase specific paths -->
                     </svg>
                 </div>
                 <div class="relative z-10 ml-[7.5rem] flex flex-col gap-4">

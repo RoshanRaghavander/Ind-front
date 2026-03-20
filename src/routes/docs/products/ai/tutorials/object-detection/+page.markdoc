@@ -14,7 +14,7 @@ Learn to setup an indobase Function utilizing object detection with Hugging Face
 - A [Hugging Face API key](https://huggingface.co/docs/api-inference/en/quicktour#get-your-api-token)
 
 {% section #step-1 step=1 title="Create a new function" %}
-Head to the [Appwrite Console](https://cloud.appwrite.io/console) then click on **Functions** in the left sidebar and then click on the **Create Function** button.
+Head to the [Indobase Console](https://cloud.indobase.io/console) then click on **Functions** in the left sidebar and then click on the **Create Function** button.
 
 {% only_dark %}
 ![Create function screen](/images/docs/functions/dark/template.png)
@@ -92,7 +92,7 @@ Note down the bucket ID so we can add it as an environment variable later.
    title="Downloading the image using indobase Storage" %}
 With the payload parsed, you can now download the image from the indobase Storage.
 
-Create a new file in the `src` directory called `appwrite.js` and add the following code:
+Create a new file in the `src` directory called `indobase.js` and add the following code:
 
 ```js
 import { Client, TablesDB, ID, Storage } from 'node-appwrite';
@@ -102,7 +102,7 @@ class indobaseService {
     const client = new Client();
     client
       .setEndpoint(
-        process.env.APPWRITE_ENDPOINT ?? 'https://<REGION>.cloud.appwrite.io/v1'
+        process.env.APPWRITE_ENDPOINT ?? 'https://<REGION>.cloud.indobase.io/v1'
       )
       .setProject(process.env.APPWRITE_FUNCTION_PROJECT_ID)
       .setKey(process.env.APPWRITE_API_KEY);
@@ -127,15 +127,15 @@ This code creates a new `indobaseService` class that initializes the indobase cl
 Import the class into the `src/index.js` file, at the top of the file, add the following line:
 
 ```js
-import indobaseService from './appwrite.js';
+import indobaseService from './indobase.js';
 ```
 
 Then, we can use the `indobaseService` class to download the image from the indobase Storage. After the bucket check within `main.js` add the following code:
 
 ```js
-  const appwrite = new indobaseService();
+  const indobase = new indobaseService();
 
-  const file = await appwrite.getFile(bucketId, fileId);
+  const file = await indobase.getFile(bucketId, fileId);
 ```
 
 This code will download the file from the indobase Storage and return a `404 - File Not Found` status code if the file is not found or a `400 - Bad request` status code if an error occurs.
@@ -184,7 +184,7 @@ Both of these columns should be `required` with `image` having the size of `256`
 {% section #step-8 step=8 title="Saving the object detection result" %}
 With the image classified, we can now save the result to the indobase Database.
 
-To begin with we're going to add a new function to the `appwrite.js` file we created earlier which will create these records in the database.
+To begin with we're going to add a new function to the `indobase.js` file we created earlier which will create these records in the database.
 
 ```js
 async createImageLabels(databaseId, tableId, imageId, labels)
@@ -208,7 +208,7 @@ Next, using the function we just added we can save the object detection result t
 Add the following code:
 
 ```js
-await appwrite.createImageLabels(databaseId, tableId, fileId, result);
+await indobase.createImageLabels(databaseId, tableId, fileId, result);
 
 log('Image ' + fileId + ' detected', result);
 return res.json(result);

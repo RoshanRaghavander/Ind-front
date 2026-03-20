@@ -48,7 +48,7 @@ You can create file tokens programmatically using a [Server SDK](/docs/reference
 const sdk = require('node-appwrite');
 
 const client = new sdk.Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<YOUR_PROJECT_ID>') // Your project ID
     .setKey('<YOUR_API_KEY>'); // Your secret API key
 
@@ -62,11 +62,11 @@ const result = await tokens.createFileToken(
 ```
 
 ```server-python
-from appwrite.client import Client
-from appwrite.services.tokens import Tokens
+from indobase.client import Client
+from indobase.services.tokens import Tokens
 
 client = Client()
-client.set_endpoint('https://<REGION>.cloud.appwrite.io/v1') # Your API Endpoint
+client.set_endpoint('https://<REGION>.cloud.indobase.io/v1') # Your API Endpoint
 client.set_project('<YOUR_PROJECT_ID>') # Your project ID
 client.set_key('<YOUR_API_KEY>') # Your secret API key
 
@@ -83,7 +83,7 @@ result = tokens.create_file_token(
 import 'package:dart_appwrite/dart_appwrite.dart';
 
 Client client = Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<YOUR_PROJECT_ID>') // Your project ID
     .setKey('<YOUR_API_KEY>'); // Your secret API key
 
@@ -103,7 +103,7 @@ use indobase\Client;
 use indobase\Services\Tokens;
 
 $client = (new Client())
-    ->setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    ->setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     ->setProject('<YOUR_PROJECT_ID>') // Your project ID
     ->setKey('<YOUR_API_KEY>'); // Your secret API key
 
@@ -119,10 +119,10 @@ $result = $tokens->createFileToken(
 ```server-ruby
 require 'appwrite'
 
-include Appwrite
+include Indobase
 
 client = Client.new
-    .set_endpoint('https://<REGION>.cloud.appwrite.io/v1') # Your API Endpoint
+    .set_endpoint('https://<REGION>.cloud.indobase.io/v1') # Your API Endpoint
     .set_project('<YOUR_PROJECT_ID>') # Your project ID
     .set_key('<YOUR_API_KEY>') # Your secret API key
 
@@ -141,7 +141,7 @@ using indobase.Models;
 using indobase.Services;
 
 Client client = new Client()
-    .SetEndPoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+    .SetEndPoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
     .SetProject("<YOUR_PROJECT_ID>") // Your project ID
     .SetKey("<YOUR_API_KEY>"); // Your secret API key
 
@@ -158,7 +158,7 @@ ResourceToken result = await tokens.CreateFileToken(
 import { Client, Tokens } from "npm:node-appwrite";
 
 const client = new Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<YOUR_PROJECT_ID>') // Your project ID
     .setKey('<YOUR_API_KEY>'); // Your secret API key
 
@@ -176,14 +176,14 @@ package main
 
 import (
     "fmt"
-    "github.com/appwrite/sdk-for-go/client"
-    "github.com/appwrite/sdk-for-go/tokens"
+    "github.com/indobase/sdk-for-go/client"
+    "github.com/indobase/sdk-for-go/tokens"
 )
 
 func main() {
     client := client.NewClient()
 
-    client.SetEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+    client.SetEndpoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
     client.SetProject("<YOUR_PROJECT_ID>") // Your project ID
     client.SetKey("<YOUR_API_KEY>") // Your secret API key
 
@@ -203,10 +203,10 @@ func main() {
 ```
 
 ```server-swift
-import Appwrite
+import Indobase
 
 let client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
     .setProject("<YOUR_PROJECT_ID>") // Your project ID
     .setKey("<YOUR_API_KEY>") // Your secret API key
 
@@ -225,7 +225,7 @@ import io.appwrite.coroutines.CoroutineCallback
 import io.appwrite.services.Tokens
 
 val client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
     .setProject("<YOUR_PROJECT_ID>") // Your project ID
     .setKey("<YOUR_API_KEY>") // Your secret API key
 
@@ -244,7 +244,7 @@ import io.appwrite.coroutines.CoroutineCallback;
 import io.appwrite.services.Tokens;
 
 Client client = new Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
     .setProject("<YOUR_PROJECT_ID>") // Your project ID
     .setKey("<YOUR_API_KEY>"); // Your secret API key
 
@@ -285,7 +285,7 @@ mutation {
 
 ```server-rest
 POST /v1/tokens/buckets/{bucketId}/files/{fileId} HTTP/1.1
-Host: cloud.appwrite.io
+Host: cloud.indobase.io
 Content-Type: application/json
 X-indobase-Response-Format: 1.7.0
 X-indobase-Project: <YOUR_PROJECT_ID>
@@ -328,7 +328,7 @@ You can list all file tokens programmatically using a [Server SDK](/docs/referen
 const sdk = require('node-appwrite');
 
 const client = new sdk.Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<YOUR_PROJECT_ID>') // Your project ID
     .setKey('<YOUR_API_KEY>'); // Your secret API key
 
@@ -342,11 +342,11 @@ const result = await tokens.list(
 ```
 
 ```server-python
-from appwrite.client import Client
-from appwrite.services.tokens import Tokens
+from indobase.client import Client
+from indobase.services.tokens import Tokens
 
 client = Client()
-client.set_endpoint('https://<REGION>.cloud.appwrite.io/v1') # Your API Endpoint
+client.set_endpoint('https://<REGION>.cloud.indobase.io/v1') # Your API Endpoint
 client.set_project('<YOUR_PROJECT_ID>') # Your project ID
 client.set_key('<YOUR_API_KEY>') # Your secret API key
 
@@ -363,7 +363,7 @@ result = tokens.list(
 import 'package:dart_appwrite/dart_appwrite.dart';
 
 Client client = Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<YOUR_PROJECT_ID>') // Your project ID
     .setKey('<YOUR_API_KEY>'); // Your secret API key
 
@@ -383,7 +383,7 @@ use indobase\Client;
 use indobase\Services\Tokens;
 
 $client = (new Client())
-    ->setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    ->setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     ->setProject('<YOUR_PROJECT_ID>') // Your project ID
     ->setKey('<YOUR_API_KEY>'); // Your secret API key
 
@@ -399,10 +399,10 @@ $result = $tokens->list(
 ```server-ruby
 require 'appwrite'
 
-include Appwrite
+include Indobase
 
 client = Client.new
-    .set_endpoint('https://<REGION>.cloud.appwrite.io/v1') # Your API Endpoint
+    .set_endpoint('https://<REGION>.cloud.indobase.io/v1') # Your API Endpoint
     .set_project('<YOUR_PROJECT_ID>') # Your project ID
     .set_key('<YOUR_API_KEY>') # Your secret API key
 
@@ -421,7 +421,7 @@ using indobase.Models;
 using indobase.Services;
 
 Client client = new Client()
-    .SetEndPoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+    .SetEndPoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
     .SetProject("<YOUR_PROJECT_ID>") // Your project ID
     .SetKey("<YOUR_API_KEY>"); // Your secret API key
 
@@ -438,7 +438,7 @@ ResourceTokenList result = await tokens.List(
 import { Client, Tokens } from "npm:node-appwrite";
 
 const client = new Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<YOUR_PROJECT_ID>') // Your project ID
     .setKey('<YOUR_API_KEY>'); // Your secret API key
 
@@ -456,14 +456,14 @@ package main
 
 import (
     "fmt"
-    "github.com/appwrite/sdk-for-go/client"
-    "github.com/appwrite/sdk-for-go/tokens"
+    "github.com/indobase/sdk-for-go/client"
+    "github.com/indobase/sdk-for-go/tokens"
 )
 
 func main() {
     client := client.NewClient()
 
-    client.SetEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+    client.SetEndpoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
     client.SetProject("<YOUR_PROJECT_ID>") // Your project ID
     client.SetKey("<YOUR_API_KEY>") // Your secret API key
 
@@ -483,10 +483,10 @@ func main() {
 ```
 
 ```server-swift
-import Appwrite
+import Indobase
 
 let client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
     .setProject("<YOUR_PROJECT_ID>") // Your project ID
     .setKey("<YOUR_API_KEY>") // Your secret API key
 
@@ -505,7 +505,7 @@ import io.appwrite.coroutines.CoroutineCallback
 import io.appwrite.services.Tokens
 
 val client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
     .setProject("<YOUR_PROJECT_ID>") // Your project ID
     .setKey("<YOUR_API_KEY>") // Your secret API key
 
@@ -524,7 +524,7 @@ import io.appwrite.coroutines.CoroutineCallback;
 import io.appwrite.services.Tokens;
 
 Client client = new Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
     .setProject("<YOUR_PROJECT_ID>") // Your project ID
     .setKey("<YOUR_API_KEY>"); // Your secret API key
 
@@ -547,7 +547,7 @@ tokens.list(
 
 ```server-rest
 GET /v1/tokens/buckets/{bucketId}/files/{fileId} HTTP/1.1
-Host: cloud.appwrite.io
+Host: cloud.indobase.io
 X-indobase-Response-Format: 1.7.0
 X-indobase-Project: <YOUR_PROJECT_ID>
 X-indobase-Key: <YOUR_API_KEY>
@@ -637,7 +637,7 @@ tokens.get(
 
 ```server-rest
 GET /v1/tokens/{tokenId} HTTP/1.1
-Host: cloud.appwrite.io
+Host: cloud.indobase.io
 X-indobase-Response-Format: 1.7.0
 X-indobase-Project: <YOUR_PROJECT_ID>
 X-indobase-Key: <YOUR_API_KEY>
@@ -676,7 +676,7 @@ You can update file token expiry programmatically using a [Server SDK](/docs/ref
 const sdk = require('node-appwrite');
 
 const client = new sdk.Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<YOUR_PROJECT_ID>') // Your project ID
     .setKey('<YOUR_API_KEY>'); // Your secret API key
 
@@ -689,11 +689,11 @@ const result = await tokens.update(
 ```
 
 ```server-python
-from appwrite.client import Client
-from appwrite.services.tokens import Tokens
+from indobase.client import Client
+from indobase.services.tokens import Tokens
 
 client = Client()
-client.set_endpoint('https://<REGION>.cloud.appwrite.io/v1') # Your API Endpoint
+client.set_endpoint('https://<REGION>.cloud.indobase.io/v1') # Your API Endpoint
 client.set_project('<YOUR_PROJECT_ID>') # Your project ID
 client.set_key('<YOUR_API_KEY>') # Your secret API key
 
@@ -709,7 +709,7 @@ result = tokens.update(
 import 'package:dart_appwrite/dart_appwrite.dart';
 
 Client client = Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<YOUR_PROJECT_ID>') // Your project ID
     .setKey('<YOUR_API_KEY>'); // Your secret API key
 
@@ -728,7 +728,7 @@ use indobase\Client;
 use indobase\Services\Tokens;
 
 $client = (new Client())
-    ->setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    ->setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     ->setProject('<YOUR_PROJECT_ID>') // Your project ID
     ->setKey('<YOUR_API_KEY>'); // Your secret API key
 
@@ -743,10 +743,10 @@ $result = $tokens->update(
 ```server-ruby
 require 'appwrite'
 
-include Appwrite
+include Indobase
 
 client = Client.new
-    .set_endpoint('https://<REGION>.cloud.appwrite.io/v1') # Your API Endpoint
+    .set_endpoint('https://<REGION>.cloud.indobase.io/v1') # Your API Endpoint
     .set_project('<YOUR_PROJECT_ID>') # Your project ID
     .set_key('<YOUR_API_KEY>') # Your secret API key
 
@@ -764,7 +764,7 @@ using indobase.Models;
 using indobase.Services;
 
 Client client = new Client()
-    .SetEndPoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+    .SetEndPoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
     .SetProject("<YOUR_PROJECT_ID>") // Your project ID
     .SetKey("<YOUR_API_KEY>"); // Your secret API key
 
@@ -780,7 +780,7 @@ ResourceToken result = await tokens.Update(
 import { Client, Tokens } from "npm:node-appwrite";
 
 const client = new Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<YOUR_PROJECT_ID>') // Your project ID
     .setKey('<YOUR_API_KEY>'); // Your secret API key
 
@@ -797,14 +797,14 @@ package main
 
 import (
     "fmt"
-    "github.com/appwrite/sdk-for-go/client"
-    "github.com/appwrite/sdk-for-go/tokens"
+    "github.com/indobase/sdk-for-go/client"
+    "github.com/indobase/sdk-for-go/tokens"
 )
 
 func main() {
     client := client.NewClient()
 
-    client.SetEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+    client.SetEndpoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
     client.SetProject("<YOUR_PROJECT_ID>") // Your project ID
     client.SetKey("<YOUR_API_KEY>") // Your secret API key
 
@@ -823,10 +823,10 @@ func main() {
 ```
 
 ```server-swift
-import Appwrite
+import Indobase
 
 let client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
     .setProject("<YOUR_PROJECT_ID>") // Your project ID
     .setKey("<YOUR_API_KEY>") // Your secret API key
 
@@ -844,7 +844,7 @@ import io.appwrite.coroutines.CoroutineCallback
 import io.appwrite.services.Tokens
 
 val client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
     .setProject("<YOUR_PROJECT_ID>") // Your project ID
     .setKey("<YOUR_API_KEY>") // Your secret API key
 
@@ -862,7 +862,7 @@ import io.appwrite.coroutines.CoroutineCallback;
 import io.appwrite.services.Tokens;
 
 Client client = new Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
     .setProject("<YOUR_PROJECT_ID>") // Your project ID
     .setKey("<YOUR_API_KEY>"); // Your secret API key
 
@@ -901,7 +901,7 @@ mutation {
 
 ```server-rest
 PATCH /v1/tokens/{tokenId} HTTP/1.1
-Host: cloud.appwrite.io
+Host: cloud.indobase.io
 Content-Type: application/json
 X-indobase-Response-Format: 1.7.0
 X-indobase-Project: <YOUR_PROJECT_ID>
@@ -943,7 +943,7 @@ You can delete a file token programmatically using a [Server SDK](/docs/referenc
 const sdk = require('node-appwrite');
 
 const client = new sdk.Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<YOUR_PROJECT_ID>') // Your project ID
     .setKey('<YOUR_API_KEY>'); // Your secret API key
 
@@ -955,11 +955,11 @@ const result = await tokens.delete(
 ```
 
 ```server-python
-from appwrite.client import Client
-from appwrite.services.tokens import Tokens
+from indobase.client import Client
+from indobase.services.tokens import Tokens
 
 client = Client()
-client.set_endpoint('https://<REGION>.cloud.appwrite.io/v1') # Your API Endpoint
+client.set_endpoint('https://<REGION>.cloud.indobase.io/v1') # Your API Endpoint
 client.set_project('<YOUR_PROJECT_ID>') # Your project ID
 client.set_key('<YOUR_API_KEY>') # Your secret API key
 
@@ -974,7 +974,7 @@ result = tokens.delete(
 import 'package:dart_appwrite/dart_appwrite.dart';
 
 Client client = Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<YOUR_PROJECT_ID>') // Your project ID
     .setKey('<YOUR_API_KEY>'); // Your secret API key
 
@@ -992,7 +992,7 @@ use indobase\Client;
 use indobase\Services\Tokens;
 
 $client = (new Client())
-    ->setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    ->setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     ->setProject('<YOUR_PROJECT_ID>') // Your project ID
     ->setKey('<YOUR_API_KEY>'); // Your secret API key
 
@@ -1006,10 +1006,10 @@ $result = $tokens->delete(
 ```server-ruby
 require 'appwrite'
 
-include Appwrite
+include Indobase
 
 client = Client.new
-    .set_endpoint('https://<REGION>.cloud.appwrite.io/v1') # Your API Endpoint
+    .set_endpoint('https://<REGION>.cloud.indobase.io/v1') # Your API Endpoint
     .set_project('<YOUR_PROJECT_ID>') # Your project ID
     .set_key('<YOUR_API_KEY>') # Your secret API key
 
@@ -1026,7 +1026,7 @@ using indobase.Models;
 using indobase.Services;
 
 Client client = new Client()
-    .SetEndPoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+    .SetEndPoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
     .SetProject("<YOUR_PROJECT_ID>") // Your project ID
     .SetKey("<YOUR_API_KEY>"); // Your secret API key
 
@@ -1041,7 +1041,7 @@ await tokens.Delete(
 import { Client, Tokens } from "npm:node-appwrite";
 
 const client = new Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<YOUR_PROJECT_ID>') // Your project ID
     .setKey('<YOUR_API_KEY>'); // Your secret API key
 
@@ -1057,14 +1057,14 @@ package main
 
 import (
     "fmt"
-    "github.com/appwrite/sdk-for-go/client"
-    "github.com/appwrite/sdk-for-go/tokens"
+    "github.com/indobase/sdk-for-go/client"
+    "github.com/indobase/sdk-for-go/tokens"
 )
 
 func main() {
     client := client.NewClient()
 
-    client.SetEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+    client.SetEndpoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
     client.SetProject("<YOUR_PROJECT_ID>") // Your project ID
     client.SetKey("<YOUR_API_KEY>") // Your secret API key
 
@@ -1082,10 +1082,10 @@ func main() {
 ```
 
 ```server-swift
-import Appwrite
+import Indobase
 
 let client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
     .setProject("<YOUR_PROJECT_ID>") // Your project ID
     .setKey("<YOUR_API_KEY>") // Your secret API key
 
@@ -1102,7 +1102,7 @@ import io.appwrite.coroutines.CoroutineCallback
 import io.appwrite.services.Tokens
 
 val client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
     .setProject("<YOUR_PROJECT_ID>") // Your project ID
     .setKey("<YOUR_API_KEY>") // Your secret API key
 
@@ -1119,7 +1119,7 @@ import io.appwrite.coroutines.CoroutineCallback;
 import io.appwrite.services.Tokens;
 
 Client client = new Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
     .setProject("<YOUR_PROJECT_ID>") // Your project ID
     .setKey("<YOUR_API_KEY>"); // Your secret API key
 
@@ -1150,7 +1150,7 @@ mutation {
 
 ```server-rest
 DELETE /v1/tokens/{tokenId} HTTP/1.1
-Host: cloud.appwrite.io
+Host: cloud.indobase.io
 Content-Type: application/json
 X-indobase-Response-Format: 1.7.0
 X-indobase-Project: <YOUR_PROJECT_ID>

@@ -6,7 +6,7 @@ description: Learn how to setup and deploy React apps on indobase Sites.
 
 {% section #step-1 step=1 title="Create React app" %}
 
-First, you must either create a React app or setup the [React starter template](https://github.com/appwrite/templates-for-sites).
+First, you must either create a React app or setup the [React starter template](https://github.com/indobase/templates-for-sites).
 
 Open your terminal, and run the following command.
 
@@ -18,7 +18,7 @@ Push this project to a [GitHub repository](https://github.com/new).
 {% /section %}
 
 {% section #step-2 step=2 title="Create indobase project" %}
-Head to the [Appwrite Console](https://cloud.appwrite.io).
+Head to the [Indobase Console](https://cloud.indobase.io).
 
 {% only_dark %}
 ![Create indobase project](/images/docs/quick-starts/dark/create-project.png)

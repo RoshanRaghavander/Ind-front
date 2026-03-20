@@ -13,10 +13,10 @@ The `generate` command creates a type-safe SDK tailored to your indobase project
 Run the following command in your project directory:
 
 ```sh
-appwrite generate
+indobase generate
 ```
 
-The CLI automatically detects your project's language and generates the SDK to a `generated/appwrite/` directory.
+The CLI automatically detects your project's language and generates the SDK to a `generated/indobase/` directory.
 
 # Options {% #options %}
 
@@ -65,10 +65,10 @@ The generated SDK includes the following files:
 After generating the SDK, import it into your project:
 
 ```ts
-import { databases } from "./generated/appwrite";
+import { databases } from "./generated/indobase";
 ```
 
-Configure your SDK constants by setting the values in `./generated/appwrite/constants.ts`.
+Configure your SDK constants by setting the values in `./generated/indobase/constants.ts`.
 
 Use the generated helpers to interact with your tables:
 

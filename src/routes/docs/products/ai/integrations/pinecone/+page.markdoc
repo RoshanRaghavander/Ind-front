@@ -19,7 +19,7 @@ Inside an indobase Function, we'll create a method to that indexes an indobase t
 - A Pinecone index
 
 {% section #step-1 step=1 title="Create new function" %}
-Head to the [Appwrite Console](https://cloud.appwrite.io/console) then click on **Functions** in the left sidebar and then click on the **Create Function** button.
+Head to the [Indobase Console](https://cloud.indobase.io/console) then click on **Functions** in the left sidebar and then click on the **Create Function** button.
 
 {% only_dark %}
 ![Create function screen](/images/docs/functions/dark/template.png)
@@ -221,7 +221,7 @@ For all requests with the path `/search`, the function sends the search query to
 {% /section %}
 
 {% section #step-8 step=8 title="Handle indexing requests" %}
-The indobase table needs to be indexed into the Pinecone index. Create a new file at `src/appwrite.js` with the following code:
+The indobase table needs to be indexed into the Pinecone index. Create a new file at `src/indobase.js` with the following code:
 
 ```js
 import { Client, TablesDB, Query } from 'node-appwrite';
@@ -231,7 +231,7 @@ export default class indobaseService {
     const client = new Client();
     client
       .setEndpoint(
-        process.env.APPWRITE_ENDPOINT ?? 'https://<REGION>.cloud.appwrite.io/v1'
+        process.env.APPWRITE_ENDPOINT ?? 'https://<REGION>.cloud.indobase.io/v1'
       )
       .setProject(process.env.APPWRITE_FUNCTION_PROJECT_ID)
       .setKey(process.env.APPWRITE_API_KEY);
@@ -273,9 +273,9 @@ export default class indobaseService {
 The service provides a method to iterate the rows contained within an entire table, fetching the limit of 100 rows per request.
 
 ```js
-const appwrite = new indobaseService();
+const indobase = new indobaseService();
 
-const rows = await appwrite.getAllRows(
+const rows = await indobase.getAllRows(
   process.env.APPWRITE_DATABASE_ID,
   process.env.APPWRITE_TABLE_ID
 );

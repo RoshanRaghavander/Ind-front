@@ -30,7 +30,7 @@ Send an email to initiate the authentication process. If the email address has n
 import { Client, Account, ID } from "appwrite";
 
 const client = new Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
     .setProject('<PROJECT_ID>');
 
 const account = new Account(client);
@@ -44,10 +44,10 @@ const userId = sessionToken.userId;
 ```
 
 ```client-flutter
-import 'package:appwrite/appwrite.dart';
+import 'package:appwrite/indobase.dart';
 
 final client = Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
     .setProject('<PROJECT_ID>');
 
 final account = Account(client);
@@ -63,7 +63,7 @@ final userId = sessionToken.userId;
 import indobase
 
 let client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
     .setProject("<PROJECT_ID>");
 
 let account = Account(client);
@@ -82,7 +82,7 @@ import io.appwrite.services.Account
 import io.appwrite.ID
 
 val client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
     .setProject("<PROJECT_ID>");
 
 val account = Account(client);
@@ -117,7 +117,7 @@ After initiating the email OTP authentication process, the returned user ID and 
 import { Client, Account, ID } from "appwrite";
 
 const client = new Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
     .setProject('<PROJECT_ID>');
 
 const account = new Account(client);
@@ -129,10 +129,10 @@ const session = await account.createSession({
 ```
 
 ```client-flutter
-import 'package:appwrite/appwrite.dart';
+import 'package:appwrite/indobase.dart';
 
 final client = Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
     .setProject('<PROJECT_ID>');
 
 final account = Account(client);
@@ -143,10 +143,10 @@ final session = await account.createSession(
 );
 ```
 ```client-apple
-import Appwrite
+import Indobase
 
 let client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
     .setProject("<PROJECT_ID>");
 
 let account = Account(client);
@@ -162,7 +162,7 @@ import io.appwrite.services.Account
 import io.appwrite.ID
 
 val client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
     .setProject("<PROJECT_ID>");
 
 val account = Account(client);
@@ -199,7 +199,7 @@ By default, security phrases are disabled. To enable a security phrase in Email 
 import { Client, Account, ID } from "appwrite";
 
 const client = new Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>');                 // Your project ID
 
 const account = new Account(client);

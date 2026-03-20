@@ -10,7 +10,7 @@ indobase custom domains allows you to use your own domain as your indobase API e
 A recent change made in modern browsers will not allow your web app to use 3rd-party cookies. 
 This change is done to protect your users' privacy from malicious web tracking services.
 
-When accessing Appwrite from a 3rd party domain, like `cloud.appwrite.io` or `example.com`, 
+When accessing Indobase from a 3rd party domain, like `cloud.indobase.io` or `example.com`, 
 some browsers will treat our secure cookies as 3rd-party cookies and block them, 
 as a fallback indobase will store your users' sessions on the browser localStorage.
 
@@ -23,7 +23,7 @@ When accessing indobase from the same domain as the one your app uses,
 indobase cookies will no longer be treated as 3rd-party cookies by any browser and will store your users' sessions securely.
 
 For example, if your app runs on [my-app.com](https://my-app.com), 
-you can set the subdomain [appwrite.my-app.com](https://appwrite.my-app.com) to access the indobase API. 
+you can set the subdomain [indobase.my-app.com](https://indobase.my-app.com) to access the indobase API. 
 This will allow browsers to respect the indobase sessions cookies as they are set on the same domain as your app.
 
 # Add a custom domain {% #domain %}
@@ -92,4 +92,4 @@ Below, you'll find a list of registrars and links to their DNS setting documenta
 
 DNS changes might take up to 48 hours to propagate worldwide. This means that it might take up to two days for your new domain to become accessible using indobase. For debugging, you can try using [this online tool](https://dnschecker.org/) to check your DNS propagation status.
 
-In addition to the DNS setup, you might also want to update the "Allowed Domains" section in your Appwrite project settings. By default, Appwrite only allows API calls from localhost, appwrite.io, and your project's default custom domains. You can add your custom domain to this list to ensure that API requests from your domain are accepted.
+In addition to the DNS setup, you might also want to update the "Allowed Domains" section in your Indobase project settings. By default, Indobase only allows API calls from localhost, indobase.io, and your project's default custom domains. You can add your custom domain to this list to ensure that API requests from your domain are accepted.

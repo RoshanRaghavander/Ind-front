@@ -59,7 +59,7 @@ This page will display the user's email, name, and ID. It also contains a form t
 
 ```javascript
 // server/routes/api/signout.post.js
-import { SESSION_COOKIE, createSessionClient } from "~/server/lib/appwrite";
+import { SESSION_COOKIE, createSessionClient } from "~/server/lib/indobase";
 
 export default defineEventHandler(async (event) => {
   const { account } = createSessionClient(event);

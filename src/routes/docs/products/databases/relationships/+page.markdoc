@@ -91,7 +91,7 @@ A relationship column with the key `reviews` is added to the movies table, and a
 const { Client, TablesDB } = require('node-appwrite');
 
 const client = new Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>');               // Your project ID
 
 const tablesDB = new TablesDB(client);
@@ -114,7 +114,7 @@ use \indobase\Client;
 use \indobase\Services\TablesDB;
 
 $client = (new Client())
-    ->setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    ->setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     ->setProject('<PROJECT_ID>');               // Your project ID
 
 $tablesDB = new TablesDB($client);
@@ -133,11 +133,11 @@ $tables->createRelationshipColumn(
 
 
 ```python
-from appwrite.client import Client
-from appwrite.services.tables_db import TablesDB
+from indobase.client import Client
+from indobase.services.tables_db import TablesDB
 
 client = (Client()
-    .set_endpoint('https://<REGION>.cloud.appwrite.io/v1')     # Your API Endpoint
+    .set_endpoint('https://<REGION>.cloud.indobase.io/v1')     # Your API Endpoint
     .set_project('<PROJECT_ID>'))                   # Your project ID
 
 tablesDB = TablesDB(client)
@@ -161,7 +161,7 @@ require 'appwrite'
 include indobase
 
 client = Client.new
-    .set_endpoint('https://<REGION>.cloud.appwrite.io/v1')# Your API Endpoint
+    .set_endpoint('https://<REGION>.cloud.indobase.io/v1')# Your API Endpoint
     .set_project('<PROJECT_ID>')               # Your project ID
 
 tablesDB = TablesDB.new(client)
@@ -183,7 +183,7 @@ tablesDB.create_relationship_column(
 import { Client, TablesDB } from "npm:node-appwrite";
 
 const client = new Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
     .setProject("<PROJECT_ID>");               // Your project ID
 
 const tablesDB = new TablesDB(client);
@@ -202,10 +202,10 @@ tablesDB.createRelationshipColumn(
 
 
 ```dart
-import 'package:appwrite/appwrite.dart';
+import 'package:appwrite/indobase.dart';
 
 final client = Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>');               // Your project ID
 
 final tablesDB = TablesDB(client);
@@ -228,7 +228,7 @@ import io.appwrite.Client
 import io.appwrite.services.TablesDB
 
 val client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
     .setProject("<PROJECT_ID>")                // Your project ID
 
 val tablesDB = TablesDB(client)
@@ -247,10 +247,10 @@ tablesDB.createRelationshipColumn(
 
 
 ```swift
-import Appwrite
+import Indobase
 
 let client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
     .setProject("<PROJECT_ID>")                // Your project ID
 
 let tablesDB = TablesDB(client)
@@ -273,7 +273,7 @@ using indobase;
 using indobase.Services;
 
 var client = new Client()
-    .SetEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+    .SetEndpoint("https://<REGION>.cloud.indobase.io/v1")
     .SetProject("<PROJECT_ID>");
 
 var tablesDB = new TablesDB(client);
@@ -305,7 +305,7 @@ You can create both the **parent** and **child** at once in a relationship by ne
 const { Client, ID, TablesDB } = require('node-appwrite');
 
 const client = new Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>');               // Your project ID
 
 const tablesDB = new TablesDB(client);
@@ -326,10 +326,10 @@ await tablesDB.createRow({
 ```
 
 ```dart
-import 'package:appwrite/appwrite.dart';
+import 'package:appwrite/indobase.dart';
 
 final client = Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')  // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1')  // Your API Endpoint
     .setProject('<PROJECT_ID>');                // Your project ID
 
 final tablesDB = TablesDB(client);
@@ -350,10 +350,10 @@ await tablesDB.createRow(
 ```
 
 ```swift
-import Appwrite
+import Indobase
 
 let client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
     .setProject("<PROJECT_ID>")                // Your project ID
 
 let tablesDB = TablesDB(client: client)
@@ -379,7 +379,7 @@ import io.appwrite.services.TablesDB
 import io.appwrite.ID
 
 val client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
     .setProject("<PROJECT_ID>")                // Your project ID
 
 val tablesDB = TablesDB(client)
@@ -414,7 +414,7 @@ Here's an example connecting reviews to a movie.
 const { Client, ID, TablesDB } = require('node-appwrite');
 
 const client = new Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>');               // Your project ID
 
 await tablesDB.createRow({
@@ -433,10 +433,10 @@ await tablesDB.createRow({
 ```
 
 ```dart
-import 'package:appwrite/appwrite.dart';
+import 'package:appwrite/indobase.dart';
 
 final client = Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint    
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint    
     .setProject('<PROJECT_ID>');               // Your project ID  
 
 final tablesDB = TablesDB(client);
@@ -457,10 +457,10 @@ await tablesDB.createRow(
 ```
 
 ```swift
-import Appwrite
+import Indobase
 
 let client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint        
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint        
     .setProject("<PROJECT_ID>")                // Your project ID      
 
 let tablesDB = TablesDB(client: client)
@@ -486,7 +486,7 @@ import io.appwrite.services.TablesDB
 import io.appwrite.ID
 
 val client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint    
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint    
     .setProject("<PROJECT_ID>")                // Your project ID  
 
 val tablesDB = TablesDB(client)
@@ -520,7 +520,7 @@ Use the format `relationshipKey.field` to reference fields on related rows.
 const { Client, TablesDB, Query } = require('node-appwrite');
 
 const client = new Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>');               // Your project ID
 
 const tablesDB = new TablesDB(client);
@@ -535,10 +535,10 @@ await tablesDB.listRows({
 ```
 
 ```dart
-import 'package:appwrite/appwrite.dart';
+import 'package:appwrite/indobase.dart';
 
 final client = Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
     .setProject('<PROJECT_ID>');
 
 final tablesDB = TablesDB(client);
@@ -553,10 +553,10 @@ await tablesDB.listRows(
 ```
 
 ```swift
-import Appwrite
+import Indobase
 
 let client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
     .setProject("<PROJECT_ID>")
 
 let tablesDB = TablesDB(client)
@@ -576,7 +576,7 @@ import io.appwrite.services.TablesDB
 import io.appwrite.Query
 
 val client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
     .setProject("<PROJECT_ID>")
 
 val tablesDB = TablesDB(client)
@@ -605,7 +605,7 @@ Relationships can be updated by updating the relationship column.
 const { Client, TablesDB } = require('node-appwrite');
 
 const client = new Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>');               // Your project ID
 
 const tablesDB = new TablesDB(client);
@@ -626,10 +626,10 @@ await tablesDB.updateRow(
 ```
 
 ```dart
-import 'package:appwrite/appwrite.dart';
+import 'package:appwrite/indobase.dart';
 
 final client = Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
     .setProject('<PROJECT_ID>');
 
 final tablesDB = TablesDB(client);
@@ -650,10 +650,10 @@ await tablesDB.updateRow(
 ```
 
 ```swift
-import Appwrite
+import Indobase
 
 let client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
     .setProject("<PROJECT_ID>")
 
 let tablesDB = TablesDB(client: client)
@@ -678,7 +678,7 @@ import io.appwrite.Client
 import io.appwrite.services.TablesDB
 
 val client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
     .setProject("<PROJECT_ID>")
 
 val tablesDB = TablesDB(client)
@@ -724,7 +724,7 @@ If the on-delete behavior is **cascade**, deleting the parent rows also deletes 
 const { Client, TablesDB } = require('node-appwrite');
 
 const client = new Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>');               // Your project ID
 
 const tablesDB = new TablesDB(client);
@@ -737,10 +737,10 @@ await tablesDB.deleteRow(
 ```
 
 ```dart
-import 'package:appwrite/appwrite.dart';
+import 'package:appwrite/indobase.dart';
 
 final client = Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
     .setProject('<PROJECT_ID>');
 
 final tablesDB = TablesDB(client);
@@ -753,10 +753,10 @@ await tablesDB.deleteRow(
 ```
 
 ```swift
-import Appwrite
+import Indobase
 
 let client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
     .setProject("<PROJECT_ID>")
 
 let tablesDB = TablesDB(client: client)
@@ -773,7 +773,7 @@ import io.appwrite.Client
 import io.appwrite.services.TablesDB
 
 val client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
     .setProject("<PROJECT_ID>")
 
 val tablesDB = TablesDB(client)
@@ -799,7 +799,7 @@ You can also provide explicit permissions to the child row if they should be **d
 const { Client, ID, TablesDB } = require('node-appwrite');
 
 const client = new Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>');               // Your project ID
 
 const tablesDB = new TablesDB(client);
@@ -824,10 +824,10 @@ await tablesDB.createRow(
 );
 ```
 ```dart
-import 'package:appwrite/appwrite.dart';
+import 'package:appwrite/indobase.dart';
 
 final client = Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
     .setProject('<PROJECT_ID>');
 
 final tablesDB = TablesDB(client);
@@ -852,10 +852,10 @@ await tablesDB.createRow(
 );
 ```
 ```swift
-import Appwrite
+import Indobase
 
 let client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
     .setProject("<PROJECT_ID>")
 
 let tablesDB = TablesDB(client: client)
@@ -880,10 +880,10 @@ tablesDB.createRow(
 );
 ```
 ```kotlin
-import Appwrite
+import Indobase
 
 let client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
     .setProject("<PROJECT_ID>")
 
 let tablesDB = TablesDB(client: client)

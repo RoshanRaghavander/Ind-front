@@ -9,7 +9,7 @@ docker compose up -d
 You can verify if the changes have been successfully applied by running this command:
 
 ```sh
-docker compose exec appwrite vars
+docker compose exec indobase vars
 ```
 
 {% /info %}

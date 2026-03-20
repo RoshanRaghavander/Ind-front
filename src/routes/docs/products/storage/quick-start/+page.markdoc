@@ -23,7 +23,7 @@ To upload a file, add this to your app. For web apps, you can use the File objec
   import { Client, Storage, ID } from "appwrite";
 
   const client = new Client()
-      .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+      .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
       .setProject('<PROJECT_ID>');
 
   const storage = new Storage(client);
@@ -46,7 +46,7 @@ To upload a file, add this to your app. For web apps, you can use the File objec
   const { InputFile } = require('node-appwrite/file');
 
   const client = new sdk.Client()
-      .setEndpoint('https://cloud.appwrite.io/v1')
+      .setEndpoint('https://cloud.indobase.io/v1')
       .setProject('<PROJECT_ID>')
       .setKey('<API_KEY>');
 
@@ -61,11 +61,11 @@ To upload a file, add this to your app. For web apps, you can use the File objec
   ```
 
   ```client-flutter
-  import 'package:appwrite/appwrite.dart';
+  import 'package:appwrite/indobase.dart';
 
   void main() { // Init SDK
     final client = Client()
-      .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+      .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
       .setProject('<PROJECT_ID>');
 
     final storage = Storage(client);
@@ -82,7 +82,7 @@ To upload a file, add this to your app. For web apps, you can use the File objec
 
   func main() async throws {
       let client = Client()
-        .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+        .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
         .setProject("<PROJECT_ID>")
 
       let storage = Storage(client)
@@ -103,7 +103,7 @@ To upload a file, add this to your app. For web apps, you can use the File objec
 
   suspend fun main() {
       val client = Client(applicationContext)
-          .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+          .setEndpoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
           .setProject("<PROJECT_ID>") // Your project ID
 
       val storage = Storage(client)
@@ -117,10 +117,10 @@ To upload a file, add this to your app. For web apps, you can use the File objec
   ```
 
   ```client-react-native
-  import { Client, Storage, ID } from 'react-native-appwrite';
+  import { Client, Storage, ID } from 'react-native-indobase';
 
   const client = new Client()
-      .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+      .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
       .setProject('<PROJECT_ID>');
 
   const storage = new Storage(client);
@@ -181,7 +181,7 @@ const client = new Client();
 const storage = new Storage(client);
 
 client
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>') // Your project ID
 ;
 
@@ -193,14 +193,14 @@ const result = storage.getFileDownload({
 console.log(result); // Resource URL
 ```
 ```client-flutter
-import 'package:appwrite/appwrite.dart';
+import 'package:appwrite/indobase.dart';
 
 void main() { // Init SDK
   Client client = Client();
   Storage storage = Storage(client);
 
   client
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>') // Your project ID
   ;
   // downloading file
@@ -231,11 +231,11 @@ FutureBuilder(
 );
 ```
 ```client-apple
-import Appwrite
+import Indobase
 
 func main() async throws {
     let client = Client()
-      .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+      .setEndpoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
       .setProject("<PROJECT_ID>") // Your project ID
     let storage = Storage(client)
     let byteBuffer = try await storage.getFileDownload(
@@ -260,7 +260,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val client = Client(applicationContext)
-            .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+            .setEndpoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
             .setProject("<PROJECT_ID>") // Your project ID
 
         val storage = Storage(client)
@@ -275,10 +275,10 @@ class MainActivity : AppCompatActivity() {
 ```
 
 ```client-react-native
-import { Client, Storage } from 'react-native-appwrite';
+import { Client, Storage } from 'react-native-indobase';
 
 const client = new Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
     .setProject('<PROJECT_ID>');
 
 const storage = new Storage(client);

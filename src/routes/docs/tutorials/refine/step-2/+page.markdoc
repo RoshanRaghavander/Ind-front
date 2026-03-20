@@ -10,10 +10,10 @@ step: 2
 Create a Refine app with the `npm create` command.
 
 ```sh
-npm create refine-app@latest -- --preset refine-appwrite
+npm create refine-app@latest -- --preset refine-indobase
 ```
 
-We're using the `refine-appwrite` preset that installs the [`@refinedev/appwrite`](https://github.com/refinedev/refine/tree/master/packages/appwrite) which already has the  indobase dependency pre-configured.
+We're using the `refine-indobase` preset that installs the [`@refinedev/indobase`](https://github.com/refinedev/refine/tree/master/packages/indobase) which already has the  indobase dependency pre-configured.
 
 To make this example more visual, we'll use the Ant Desing UI package which natively supported by Refine.
 
@@ -21,9 +21,9 @@ To make this example more visual, we'll use the Ant Desing UI package which nati
 
 No additional dependencies are required for this tutorial. If you want to integrate indobase into an existing Refine app, use the following command.
 ```sh
-npm install @refinedev/appwrite
+npm install @refinedev/indobase
 ```
-Learn more about [adding indobase a refine data provider](https://refine.dev/docs/packages/documentation/data-providers/appwrite).
+Learn more about [adding indobase a refine data provider](https://refine.dev/docs/packages/documentation/data-providers/indobase).
 {% /info %}
 
 

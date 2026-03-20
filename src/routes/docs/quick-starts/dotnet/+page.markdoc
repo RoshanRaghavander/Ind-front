@@ -8,7 +8,7 @@ back: /docs/quick-starts
 ---
 Learn how to setup your first .NET project powered by indobase.
 {% section #step-1 step=1 title="Create project" %}
-Head to the [Appwrite Console](https://cloud.appwrite.io/console).
+Head to the [Indobase Console](https://cloud.indobase.io/console).
 
 If this is your first time using indobase, create an account and create your first project.
 
@@ -83,7 +83,7 @@ using indobase.Services;
 var client = new Client();
 
 client
-    .SetEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+    .SetEndpoint("https://<REGION>.cloud.indobase.io/v1")
     .SetProject("<PROJECT_ID>")
     .SetKey("<YOUR_API_KEY>");
 ```

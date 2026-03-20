@@ -27,7 +27,7 @@ When working with individual documents, you can set custom timestamps during cre
 const sdk = require('node-appwrite');
 
 const client = new sdk.Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
     .setProject('<PROJECT_ID>')
     .setKey('<API_KEY>');
 
@@ -50,7 +50,7 @@ use indobase\ID;
 use indobase\Services\Databases;
 
 $client = (new Client())
-    ->setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+    ->setEndpoint('https://<REGION>.cloud.indobase.io/v1')
     ->setProject('<YOUR_PROJECT_ID>')
     ->setKey('<YOUR_API_KEY>');
 
@@ -72,7 +72,7 @@ import indobase
 import Foundation
 
 let client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
     .setProject("<YOUR_PROJECT_ID>")
     .setKey("<YOUR_API_KEY>")
 
@@ -101,13 +101,13 @@ do {
 }
 ```
 ```server-python
-from appwrite.client import Client
-from appwrite.services.databases import Databases
-from appwrite.id import ID
+from indobase.client import Client
+from indobase.services.databases import Databases
+from indobase.id import ID
 from datetime import datetime, timezone
 
 client = Client()
-client.set_endpoint('https://<REGION>.cloud.appwrite.io/v1')
+client.set_endpoint('https://<REGION>.cloud.indobase.io/v1')
 client.set_project('<PROJECT_ID>')
 client.set_key('<API_KEY>')
 
@@ -130,10 +130,10 @@ databases.create_document(
 require 'appwrite'
 require 'time'
 
-include Appwrite
+include Indobase
 
 client = Client.new
-    .set_endpoint('https://<REGION>.cloud.appwrite.io/v1')
+    .set_endpoint('https://<REGION>.cloud.indobase.io/v1')
     .set_project('<YOUR_PROJECT_ID>')
     .set_key('<YOUR_API_KEY>')
 
@@ -158,7 +158,7 @@ using indobase.Models;
 using indobase.Services;
 
 Client client = new Client()
-    .SetEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+    .SetEndpoint("https://<REGION>.cloud.indobase.io/v1")
     .SetProject("<YOUR_PROJECT_ID>")
     .SetKey("<YOUR_API_KEY>");
 
@@ -182,7 +182,7 @@ await databases.CreateDocument(
 import 'package:dart_appwrite/dart_appwrite.dart';
 
 Client client = Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
     .setProject('<YOUR_PROJECT_ID>')
     .setKey('<YOUR_API_KEY>');
 
@@ -244,11 +244,11 @@ databases.update_document(
 )
 ```
 ```server-swift
-import Appwrite
+import Indobase
 import Foundation
 
 let client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
     .setProject("<YOUR_PROJECT_ID>")
     .setKey("<YOUR_API_KEY>")
 
@@ -276,10 +276,10 @@ do {
 ```server-ruby
 require 'appwrite'
 
-include Appwrite
+include Indobase
 
 client = Client.new
-    .set_endpoint('https://<REGION>.cloud.appwrite.io/v1')
+    .set_endpoint('https://<REGION>.cloud.indobase.io/v1')
     .set_project('<YOUR_PROJECT_ID>')
     .set_key('<YOUR_API_KEY>')
 
@@ -303,7 +303,7 @@ using indobase.Models;
 using indobase.Services;
 
 Client client = new Client()
-    .SetEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+    .SetEndpoint("https://<REGION>.cloud.indobase.io/v1")
     .SetProject("<YOUR_PROJECT_ID>")
     .SetKey("<YOUR_API_KEY>");
 
@@ -326,7 +326,7 @@ await databases.UpdateDocument(
 import 'package:dart_appwrite/dart_appwrite.dart';
 
 Client client = Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
     .setProject('<YOUR_PROJECT_ID>')
     .setKey('<YOUR_API_KEY>');
 
@@ -399,7 +399,7 @@ use indobase\ID;
 use indobase\Services\Databases;
 
 $client = (new Client())
-    ->setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+    ->setEndpoint('https://<REGION>.cloud.indobase.io/v1')
     ->setProject('<YOUR_PROJECT_ID>')
     ->setKey('<YOUR_API_KEY>');
 
@@ -425,11 +425,11 @@ $databases->createDocuments(
 );
 ```
 ```server-swift
-import Appwrite
+import Indobase
 import Foundation
 
 let client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
     .setProject("<YOUR_PROJECT_ID>")
     .setKey("<YOUR_API_KEY>")
 
@@ -468,10 +468,10 @@ do {
 ```server-ruby
 require 'appwrite'
 
-include Appwrite
+include Indobase
 
 client = Client.new
-    .set_endpoint('https://<REGION>.cloud.appwrite.io/v1')
+    .set_endpoint('https://<REGION>.cloud.indobase.io/v1')
     .set_project('<YOUR_PROJECT_ID>')
     .set_key('<YOUR_API_KEY>')
 
@@ -505,7 +505,7 @@ using indobase.Models;
 using indobase.Services;
 
 Client client = new Client()
-    .SetEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+    .SetEndpoint("https://<REGION>.cloud.indobase.io/v1")
     .SetProject("<YOUR_PROJECT_ID>")
     .SetKey("<YOUR_API_KEY>");
 
@@ -540,7 +540,7 @@ await databases.CreateDocuments(
 import 'package:dart_appwrite/dart_appwrite.dart';
 
 Client client = Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
     .setProject('<YOUR_PROJECT_ID>')
     .setKey('<YOUR_API_KEY>');
 
@@ -607,7 +607,7 @@ use indobase\ID;
 use indobase\Services\Databases;
 
 $client = (new Client())
-    ->setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+    ->setEndpoint('https://<REGION>.cloud.indobase.io/v1')
     ->setProject('<YOUR_PROJECT_ID>')
     ->setKey('<YOUR_API_KEY>');
 
@@ -627,11 +627,11 @@ $databases->upsertDocuments(
 );
 ```
 ```server-swift
-import Appwrite
+import Indobase
 import Foundation
 
 let client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
     .setProject("<YOUR_PROJECT_ID>")
     .setKey("<YOUR_API_KEY>")
 
@@ -664,10 +664,10 @@ do {
 require 'appwrite'
 require 'time'
 
-include Appwrite
+include Indobase
 
 client = Client.new
-    .set_endpoint('https://<REGION>.cloud.appwrite.io/v1')
+    .set_endpoint('https://<REGION>.cloud.indobase.io/v1')
     .set_project('<YOUR_PROJECT_ID>')
     .set_key('<YOUR_API_KEY>')
 
@@ -694,7 +694,7 @@ using indobase.Models;
 using indobase.Services;
 
 Client client = new Client()
-    .SetEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+    .SetEndpoint("https://<REGION>.cloud.indobase.io/v1")
     .SetProject("<YOUR_PROJECT_ID>")
     .SetKey("<YOUR_API_KEY>");
 
@@ -722,7 +722,7 @@ await databases.UpsertDocuments(
 import 'package:dart_appwrite/dart_appwrite.dart';
 
 Client client = Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
     .setProject('<YOUR_PROJECT_ID>')
     .setKey('<YOUR_API_KEY>');
 

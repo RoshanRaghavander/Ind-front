@@ -40,7 +40,7 @@ The scope is provider-specific and can be found in the provider's documentation.
 import { Client, Account, OAuthProvider } from "appwrite";
 
 const client = new Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>');                 // Your project ID
 
 const account = new Account(client);
@@ -66,7 +66,7 @@ For Android, add the following activity inside the `<application>` tag in your `
     <action android:name="android.intent.action.VIEW" />
     <category android:name="android.intent.category.DEFAULT" />
     <category android:name="android.intent.category.BROWSABLE" />
-    <data android:scheme="appwrite-callback-<PROJECT_ID>" />
+    <data android:scheme="indobase-callback-<PROJECT_ID>" />
   </intent-filter>
 </activity>
 ```
@@ -74,11 +74,11 @@ For Android, add the following activity inside the `<application>` tag in your `
 No other configuration is required for iOS.
 
 ```client-flutter
-import 'package:appwrite/appwrite.dart';
+import 'package:appwrite/indobase.dart';
 import 'package:appwrite/enums.dart';
 
 final client = Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>');               // Your project ID
 
 final account = Account(client);
@@ -104,7 +104,7 @@ For Apple, add the following URL scheme to your `Info.plist`.
     <string>io.appwrite</string>
     <key>CFBundleURLSchemes</key>
     <array>
-        <string>appwrite-callback-<PROJECT_ID></string>
+        <string>indobase-callback-<PROJECT_ID></string>
     </array>
 </dict>
 </array>
@@ -114,7 +114,7 @@ If you're using UIKit, you'll also need to add a hook to your `SceneDelegate.swi
 ```client-apple
 func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
     guard let url = URLContexts.first?.url,
-        url.absoluteString.contains("appwrite-callback") else {
+        url.absoluteString.contains("indobase-callback") else {
         return
     }
     WebAuthComponent.handleIncomingCookie(from: url)
@@ -126,7 +126,7 @@ import indobase
 import indobaseEnums
 
 let client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
     .setProject("<PROJECT_ID>")                // Your project ID
 
 let account = Account(client)
@@ -150,7 +150,7 @@ Replace `<PROJECT_ID>` with your actual indobase project ID.
     <action android:name="android.intent.action.VIEW" />
     <category android:name="android.intent.category.DEFAULT" />
     <category android:name="android.intent.category.BROWSABLE" />
-    <data android:scheme="appwrite-callback-<PROJECT_ID>" />
+    <data android:scheme="indobase-callback-<PROJECT_ID>" />
   </intent-filter>
 </activity>
 ```
@@ -160,7 +160,7 @@ import io.appwrite.services.Account
 import io.appwrite.enums.OAuthProvider
 
 val client = Client(context)                     // Activity or application context
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
     .setProject("<PROJECT_ID>")                  // Your project ID
 
 val account = Account(client)
@@ -174,12 +174,12 @@ account.createOAuth2Session(
 {% /tabsitem %}
 
 {% tabsitem #react-native title="React Native" %}
-If using Expo, set the URL scheme to `appwrite-callback-<PROJECT_ID>` in your `app.json` file.
+If using Expo, set the URL scheme to `indobase-callback-<PROJECT_ID>` in your `app.json` file.
 
 ```json
 {
   "expo": {
-    "scheme": "appwrite-callback-<PROJECT_ID>"
+    "scheme": "indobase-callback-<PROJECT_ID>"
   }
 }
 ```
@@ -192,7 +192,7 @@ import { makeRedirectUri } from 'expo-auth-session'
 import * as WebBrowser from 'expo-web-browser';
 
 const client = new Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>');                          // Your project ID
 
 const account = new Account(client);
@@ -200,7 +200,7 @@ const account = new Account(client);
 // Create deep link that works across Expo environments
 // Ensure localhost is used for the hostname to validation error for success/failure URLs
 const deepLink = new URL(makeRedirectUri({ preferLocalhost: true }));
-const scheme = `${deepLink.protocol}//`; // e.g. 'exp://' or 'appwrite-callback-<PROJECT_ID>://'
+const scheme = `${deepLink.protocol}//`; // e.g. 'exp://' or 'indobase-callback-<PROJECT_ID>://'
 
 // Start OAuth flow
 const loginUrl = await account.createOAuth2Token({
@@ -260,10 +260,10 @@ console.log(session.providerAccessToken);
 ```
 
 ```client-flutter
-import 'package:appwrite/appwrite.dart';
+import 'package:appwrite/indobase.dart';
 
 final client = Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>');               // Your project ID
 
 final account = Account(client);
@@ -278,10 +278,10 @@ print(session.providerUid);
 print(session.providerAccessToken);
 ```
 ```client-apple
-import Appwrite
+import Indobase
 
 let client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
     .setProject("<PROJECT_ID>") // Your project ID
 
 let account = Account(client)
@@ -300,7 +300,7 @@ import io.appwrite.Client
 import io.appwrite.services.Account
 
 val client = Client(context)
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
     .setProject("<PROJECT_ID>") // Your project ID
 
 val account = Account(client)
@@ -351,10 +351,10 @@ promise.then(function (response) {
 });
 ```
 ```client-flutter
-import 'package:appwrite/appwrite.dart';
+import 'package:appwrite/indobase.dart';
 
 final client = Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>');                // Your project ID
 
 Account account = Account(client);
@@ -364,10 +364,10 @@ final result = await account.updateSession(
 );
 ```
 ```client-apple
-import Appwrite
+import Indobase
 
 let client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
     .setProject("<PROJECT_ID>") // Your project ID
 
 let account = Account(client)
@@ -381,7 +381,7 @@ import io.appwrite.Client
 import io.appwrite.services.Account
 
 val client = Client(context)
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
     .setProject("<PROJECT_ID>")                 // Your project ID
 
 val account = Account(client)

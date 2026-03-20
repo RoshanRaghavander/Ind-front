@@ -33,7 +33,7 @@ Here's how you can do so programmatically:
 import { Client, TablesDB, Operator } from "appwrite";
 
 const client = new Client()
-  .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+  .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
   .setProject('<YOUR_PROJECT_ID>');
 
 const tablesDB = new TablesDB(client);
@@ -52,7 +52,7 @@ const sdk = require('node-appwrite');
 
 const client = new sdk.Client();
 client
-  .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+  .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
   .setProject('<YOUR_PROJECT_ID>')
   .setKey('<YOUR_API_KEY>');
 
@@ -68,11 +68,11 @@ const result = await tablesDB.updateRow({
 });
 ```
 ```client-flutter
-import 'package:appwrite/appwrite.dart';
+import 'package:appwrite/indobase.dart';
 
 void main() async {
   final client = Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
     .setProject('<YOUR_PROJECT_ID>');
 
   final tablesDB = TablesDB(client);
@@ -97,7 +97,7 @@ import indobaseModels
 
 func main() async throws {
   let client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
     .setProject("<YOUR_PROJECT_ID>")
 
   let tablesDB = TablesDB(client)
@@ -123,7 +123,7 @@ import io.appwrite.Operator
 
 suspend fun main() {
   val client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
     .setProject("<YOUR_PROJECT_ID>")
 
   val tablesDB = TablesDB(client)
@@ -143,18 +143,18 @@ package main
 
 import (
   "log"
-  "github.com/appwrite/sdk-for-go/appwrite"
-  operator "github.com/appwrite/sdk-for-go/operator"
+  "github.com/indobase/sdk-for-go/indobase"
+  operator "github.com/indobase/sdk-for-go/operator"
 )
 
 func main() {
-  client := appwrite.NewClient(
-    appwrite.WithEndpoint("https://<REGION>.cloud.appwrite.io/v1"),
-    appwrite.WithProject("<YOUR_PROJECT_ID>"),
-    appwrite.WithKey("<YOUR_API_KEY>"),
+  client := indobase.NewClient(
+    indobase.WithEndpoint("https://<REGION>.cloud.indobase.io/v1"),
+    indobase.WithProject("<YOUR_PROJECT_ID>"),
+    indobase.WithKey("<YOUR_API_KEY>"),
   )
 
-  tablesDB := appwrite.NewTablesDB(client)
+  tablesDB := indobase.NewTablesDB(client)
 
   _, err := tablesDB.UpdateRow(
     "<DATABASE_ID>",
@@ -177,7 +177,7 @@ use indobase\Services\TablesDB;
 use indobase\Operator;
 
 $client = (new Client())
-  ->setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+  ->setEndpoint('https://<REGION>.cloud.indobase.io/v1')
   ->setProject('<YOUR_PROJECT_ID>')
   ->setKey('<YOUR_API_KEY>');
 
@@ -191,13 +191,13 @@ $result = $tablesDB->updateRow(
 );
 ```
 ```server-python
-from appwrite.client import Client
-from appwrite.services.tables_db import TablesDB
-from appwrite.operator import Operator
+from indobase.client import Client
+from indobase.services.tables_db import TablesDB
+from indobase.operator import Operator
 
 client = Client()
 (client
-  .set_endpoint('https://<REGION>.cloud.appwrite.io/v1')
+  .set_endpoint('https://<REGION>.cloud.indobase.io/v1')
   .set_project('<YOUR_PROJECT_ID>')
   .set_key('<YOUR_API_KEY>'))
 
@@ -215,7 +215,7 @@ using indobase;
 using indobase.Services;
 
 var client = new Client()
-  .SetEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+  .SetEndpoint("https://<REGION>.cloud.indobase.io/v1")
   .SetProject("<YOUR_PROJECT_ID>")
   .SetKey("<YOUR_API_KEY>");
 
@@ -234,12 +234,12 @@ await tablesDB.UpdateRow(
 ```server-ruby
 require 'appwrite'
 
-include Appwrite
+include Indobase
 
 client = Client.new()
 
 client
-  .set_endpoint('https://<REGION>.cloud.appwrite.io/v1')
+  .set_endpoint('https://<REGION>.cloud.indobase.io/v1')
   .set_project('<YOUR_PROJECT_ID>')
   .set_key('<YOUR_API_KEY>')
 
@@ -260,7 +260,7 @@ import io.appwrite.Operator;
 import java.util.*;
 
 Client client = new Client()
-  .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+  .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
   .setProject("<YOUR_PROJECT_ID>")
   .setKey("<YOUR_API_KEY>");
 
@@ -1071,7 +1071,7 @@ This example demonstrates using the `increment` operator to atomically increase 
 import { Client, TablesDB, Operator } from "appwrite";
 
 const client = new Client()
-  .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+  .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
   .setProject('<YOUR_PROJECT_ID>');
 
 const tablesDB = new TablesDB(client);
@@ -1090,7 +1090,7 @@ const sdk = require('node-appwrite');
 
 const client = new sdk.Client();
 client
-  .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+  .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
   .setProject('<YOUR_PROJECT_ID>')
   .setKey('<YOUR_API_KEY>');
 
@@ -1106,11 +1106,11 @@ const result = await tablesDB.updateRow({
 });
 ```
 ```client-flutter
-import 'package:appwrite/appwrite.dart';
+import 'package:appwrite/indobase.dart';
 
 void main() async {
   final client = Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
     .setProject('<YOUR_PROJECT_ID>');
 
   final tablesDB = TablesDB(client);
@@ -1124,18 +1124,18 @@ void main() async {
             'upvotes': Operator.increment(1)
         },
     );
-  } on AppwriteException catch (e) {
+  } on IndobaseException catch (e) {
     print(e);
   }
 }
 ```
 ```client-apple
-import Appwrite
+import Indobase
 import indobaseModels
 
 func main() async throws {
   let client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
     .setProject("<YOUR_PROJECT_ID>")
 
   let tablesDB = TablesDB(client)
@@ -1161,7 +1161,7 @@ import io.appwrite.Operator
 
 suspend fun main() {
   val client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
     .setProject("<YOUR_PROJECT_ID>")
 
   val tablesDB = TablesDB(client)
@@ -1181,18 +1181,18 @@ package main
 
 import (
   "log"
-  "github.com/appwrite/sdk-for-go/appwrite"
-  operator "github.com/appwrite/sdk-for-go/operator"
+  "github.com/indobase/sdk-for-go/indobase"
+  operator "github.com/indobase/sdk-for-go/operator"
 )
 
 func main() {
-  client := appwrite.NewClient(
-    appwrite.WithEndpoint("https://<REGION>.cloud.appwrite.io/v1"),
-    appwrite.WithProject("<YOUR_PROJECT_ID>"),
-    appwrite.WithKey("<YOUR_API_KEY>"),
+  client := indobase.NewClient(
+    indobase.WithEndpoint("https://<REGION>.cloud.indobase.io/v1"),
+    indobase.WithProject("<YOUR_PROJECT_ID>"),
+    indobase.WithKey("<YOUR_API_KEY>"),
   )
 
-  tablesDB := appwrite.NewTablesDB(client)
+  tablesDB := indobase.NewTablesDB(client)
 
   _, err := tablesDB.UpdateRow(
     "<DATABASE_ID>",
@@ -1215,7 +1215,7 @@ use indobase\Services\TablesDB;
 use indobase\Operator;
 
 $client = (new Client())
-  ->setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+  ->setEndpoint('https://<REGION>.cloud.indobase.io/v1')
   ->setProject('<YOUR_PROJECT_ID>')
   ->setKey('<YOUR_API_KEY>');
 
@@ -1229,13 +1229,13 @@ $result = $tablesDB->updateRow(
 );
 ```
 ```server-python
-from appwrite.client import Client
-from appwrite.services.tables_db import TablesDB
-from appwrite.operator import Operator
+from indobase.client import Client
+from indobase.services.tables_db import TablesDB
+from indobase.operator import Operator
 
 client = Client()
 (client
-  .set_endpoint('https://<REGION>.cloud.appwrite.io/v1')
+  .set_endpoint('https://<REGION>.cloud.indobase.io/v1')
   .set_project('<YOUR_PROJECT_ID>')
   .set_key('<YOUR_API_KEY>'))
 
@@ -1253,7 +1253,7 @@ using indobase;
 using indobase.Services;
 
 var client = new Client()
-  .SetEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+  .SetEndpoint("https://<REGION>.cloud.indobase.io/v1")
   .SetProject("<YOUR_PROJECT_ID>")
   .SetKey("<YOUR_API_KEY>");
 
@@ -1272,12 +1272,12 @@ await tablesDB.UpdateRow(
 ```server-ruby
 require 'appwrite'
 
-include Appwrite
+include Indobase
 
 client = Client.new()
 
 client
-  .set_endpoint('https://<REGION>.cloud.appwrite.io/v1')
+  .set_endpoint('https://<REGION>.cloud.indobase.io/v1')
   .set_project('<YOUR_PROJECT_ID>')
   .set_key('<YOUR_API_KEY>')
 
@@ -1298,7 +1298,7 @@ import io.appwrite.Operator;
 import java.util.*;
 
 Client client = new Client()
-  .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+  .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
   .setProject("<YOUR_PROJECT_ID>")
   .setKey("<YOUR_API_KEY>");
 
@@ -1329,7 +1329,7 @@ This example demonstrates using the `arrayAppend` operator to add a new book to 
 import { Client, TablesDB, Operator } from "appwrite";
 
 const client = new Client()
-  .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+  .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
   .setProject('<YOUR_PROJECT_ID>');
 
 const tablesDB = new TablesDB(client);
@@ -1348,7 +1348,7 @@ const sdk = require('node-appwrite');
 
 const client = new sdk.Client();
 client
-  .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+  .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
   .setProject('<YOUR_PROJECT_ID>')
   .setKey('<YOUR_API_KEY>');
 
@@ -1364,11 +1364,11 @@ const result = await tablesDB.updateRow({
 });
 ```
 ```client-flutter
-import 'package:appwrite/appwrite.dart';
+import 'package:appwrite/indobase.dart';
 
 void main() async {
   final client = Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
     .setProject('<YOUR_PROJECT_ID>');
 
   final tablesDB = TablesDB(client);
@@ -1382,18 +1382,18 @@ void main() async {
             'books': Operator.arrayAppend(['The Great Gatsby'])
         },
     );
-  } on AppwriteException catch (e) {
+  } on IndobaseException catch (e) {
     print(e);
   }
 }
 ```
 ```client-apple
-import Appwrite
+import Indobase
 import indobaseModels
 
 func main() async throws {
   let client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
     .setProject("<YOUR_PROJECT_ID>")
 
   let tablesDB = TablesDB(client)
@@ -1419,7 +1419,7 @@ import io.appwrite.Operator
 
 suspend fun main() {
   val client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
     .setProject("<YOUR_PROJECT_ID>")
 
   val tablesDB = TablesDB(client)
@@ -1439,18 +1439,18 @@ package main
 
 import (
   "log"
-  "github.com/appwrite/sdk-for-go/appwrite"
-  operator "github.com/appwrite/sdk-for-go/operator"
+  "github.com/indobase/sdk-for-go/indobase"
+  operator "github.com/indobase/sdk-for-go/operator"
 )
 
 func main() {
-  client := appwrite.NewClient(
-    appwrite.WithEndpoint("https://<REGION>.cloud.appwrite.io/v1"),
-    appwrite.WithProject("<YOUR_PROJECT_ID>"),
-    appwrite.WithKey("<YOUR_API_KEY>"),
+  client := indobase.NewClient(
+    indobase.WithEndpoint("https://<REGION>.cloud.indobase.io/v1"),
+    indobase.WithProject("<YOUR_PROJECT_ID>"),
+    indobase.WithKey("<YOUR_API_KEY>"),
   )
 
-  tablesDB := appwrite.NewTablesDB(client)
+  tablesDB := indobase.NewTablesDB(client)
 
   _, err := tablesDB.UpdateRow(
     "<DATABASE_ID>",
@@ -1473,7 +1473,7 @@ use indobase\Services\TablesDB;
 use indobase\Operator;
 
 $client = (new Client())
-  ->setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+  ->setEndpoint('https://<REGION>.cloud.indobase.io/v1')
   ->setProject('<YOUR_PROJECT_ID>')
   ->setKey('<YOUR_API_KEY>');
 
@@ -1487,13 +1487,13 @@ $result = $tablesDB->updateRow(
 );
 ```
 ```server-python
-from appwrite.client import Client
-from appwrite.services.tables_db import TablesDB
-from appwrite.operator import Operator
+from indobase.client import Client
+from indobase.services.tables_db import TablesDB
+from indobase.operator import Operator
 
 client = Client()
 (client
-  .set_endpoint('https://<REGION>.cloud.appwrite.io/v1')
+  .set_endpoint('https://<REGION>.cloud.indobase.io/v1')
   .set_project('<YOUR_PROJECT_ID>')
   .set_key('<YOUR_API_KEY>'))
 
@@ -1511,7 +1511,7 @@ using indobase;
 using indobase.Services;
 
 var client = new Client()
-  .SetEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+  .SetEndpoint("https://<REGION>.cloud.indobase.io/v1")
   .SetProject("<YOUR_PROJECT_ID>")
   .SetKey("<YOUR_API_KEY>");
 
@@ -1530,12 +1530,12 @@ await tablesDB.UpdateRow(
 ```server-ruby
 require 'appwrite'
 
-include Appwrite
+include Indobase
 
 client = Client.new()
 
 client
-  .set_endpoint('https://<REGION>.cloud.appwrite.io/v1')
+  .set_endpoint('https://<REGION>.cloud.indobase.io/v1')
   .set_project('<YOUR_PROJECT_ID>')
   .set_key('<YOUR_API_KEY>')
 
@@ -1556,7 +1556,7 @@ import io.appwrite.Operator;
 import java.util.*;
 
 Client client = new Client()
-  .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+  .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
   .setProject("<YOUR_PROJECT_ID>")
   .setKey("<YOUR_API_KEY>");
 
@@ -1587,7 +1587,7 @@ This example demonstrates using the `dateAddDays` operator to set a scheduled de
 import { Client, TablesDB, Operator } from "appwrite";
 
 const client = new Client()
-  .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+  .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
   .setProject('<YOUR_PROJECT_ID>');
 
 const tablesDB = new TablesDB(client);
@@ -1606,7 +1606,7 @@ const sdk = require('node-appwrite');
 
 const client = new sdk.Client();
 client
-  .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+  .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
   .setProject('<YOUR_PROJECT_ID>')
   .setKey('<YOUR_API_KEY>');
 
@@ -1622,11 +1622,11 @@ const result = await tablesDB.updateRow({
 });
 ```
 ```client-flutter
-import 'package:appwrite/appwrite.dart';
+import 'package:appwrite/indobase.dart';
 
 void main() async {
   final client = Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
     .setProject('<YOUR_PROJECT_ID>');
 
   final tablesDB = TablesDB(client);
@@ -1640,18 +1640,18 @@ void main() async {
             'scheduledDeletion': Operator.dateAddDays(30)
         },
     );
-  } on AppwriteException catch (e) {
+  } on IndobaseException catch (e) {
     print(e);
   }
 }
 ```
 ```client-apple
-import Appwrite
+import Indobase
 import indobaseModels
 
 func main() async throws {
   let client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
     .setProject("<YOUR_PROJECT_ID>")
 
   let tablesDB = TablesDB(client)
@@ -1677,7 +1677,7 @@ import io.appwrite.Operator
 
 suspend fun main() {
   val client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
     .setProject("<YOUR_PROJECT_ID>")
 
   val tablesDB = TablesDB(client)
@@ -1697,18 +1697,18 @@ package main
 
 import (
   "log"
-  "github.com/appwrite/sdk-for-go/appwrite"
-  operator "github.com/appwrite/sdk-for-go/operator"
+  "github.com/indobase/sdk-for-go/indobase"
+  operator "github.com/indobase/sdk-for-go/operator"
 )
 
 func main() {
-  client := appwrite.NewClient(
-    appwrite.WithEndpoint("https://<REGION>.cloud.appwrite.io/v1"),
-    appwrite.WithProject("<YOUR_PROJECT_ID>"),
-    appwrite.WithKey("<YOUR_API_KEY>"),
+  client := indobase.NewClient(
+    indobase.WithEndpoint("https://<REGION>.cloud.indobase.io/v1"),
+    indobase.WithProject("<YOUR_PROJECT_ID>"),
+    indobase.WithKey("<YOUR_API_KEY>"),
   )
 
-  tablesDB := appwrite.NewTablesDB(client)
+  tablesDB := indobase.NewTablesDB(client)
 
   _, err := tablesDB.UpdateRow(
     "<DATABASE_ID>",
@@ -1731,7 +1731,7 @@ use indobase\Services\TablesDB;
 use indobase\Operator;
 
 $client = (new Client())
-  ->setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+  ->setEndpoint('https://<REGION>.cloud.indobase.io/v1')
   ->setProject('<YOUR_PROJECT_ID>')
   ->setKey('<YOUR_API_KEY>');
 
@@ -1745,13 +1745,13 @@ $result = $tablesDB->updateRow(
 );
 ```
 ```server-python
-from appwrite.client import Client
-from appwrite.services.tables_db import TablesDB
-from appwrite.operator import Operator
+from indobase.client import Client
+from indobase.services.tables_db import TablesDB
+from indobase.operator import Operator
 
 client = Client()
 (client
-  .set_endpoint('https://<REGION>.cloud.appwrite.io/v1')
+  .set_endpoint('https://<REGION>.cloud.indobase.io/v1')
   .set_project('<YOUR_PROJECT_ID>')
   .set_key('<YOUR_API_KEY>'))
 
@@ -1769,7 +1769,7 @@ using indobase;
 using indobase.Services;
 
 var client = new Client()
-  .SetEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+  .SetEndpoint("https://<REGION>.cloud.indobase.io/v1")
   .SetProject("<YOUR_PROJECT_ID>")
   .SetKey("<YOUR_API_KEY>");
 
@@ -1788,12 +1788,12 @@ await tablesDB.UpdateRow(
 ```server-ruby
 require 'appwrite'
 
-include Appwrite
+include Indobase
 
 client = Client.new()
 
 client
-  .set_endpoint('https://<REGION>.cloud.appwrite.io/v1')
+  .set_endpoint('https://<REGION>.cloud.indobase.io/v1')
   .set_project('<YOUR_PROJECT_ID>')
   .set_key('<YOUR_API_KEY>')
 
@@ -1814,7 +1814,7 @@ import io.appwrite.Operator;
 import java.util.*;
 
 Client client = new Client()
-  .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+  .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
   .setProject("<YOUR_PROJECT_ID>")
   .setKey("<YOUR_API_KEY>");
 
@@ -1845,7 +1845,7 @@ This example demonstrates combining multiple operators (`increment` and `dateSet
 import { Client, TablesDB, Operator } from "appwrite";
 
 const client = new Client()
-  .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+  .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
   .setProject('<YOUR_PROJECT_ID>');
 
 const tablesDB = new TablesDB(client);
@@ -1873,7 +1873,7 @@ const sdk = require('node-appwrite');
 
 const client = new sdk.Client();
 client
-  .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+  .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
   .setProject('<YOUR_PROJECT_ID>')
   .setKey('<YOUR_API_KEY>');
 
@@ -1898,11 +1898,11 @@ await tablesDB.updateRow({
 await tablesDB.updateTransaction(tx.$id, 'commit');
 ```
 ```client-flutter
-import 'package:appwrite/appwrite.dart';
+import 'package:appwrite/indobase.dart';
 
 void main() async {
   final client = Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
     .setProject('<YOUR_PROJECT_ID>');
 
   final tablesDB = TablesDB(client);
@@ -1925,18 +1925,18 @@ void main() async {
 
     // Commit the transaction
     await tablesDB.updateTransaction(tx.$id, 'commit');
-  } on AppwriteException catch (e) {
+  } on IndobaseException catch (e) {
     print(e);
   }
 }
 ```
 ```client-apple
-import Appwrite
+import Indobase
 import indobaseModels
 
 func main() async throws {
   let client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
     .setProject("<YOUR_PROJECT_ID>")
 
   let tablesDB = TablesDB(client)
@@ -1974,7 +1974,7 @@ import io.appwrite.Operator
 
 suspend fun main() {
   val client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
     .setProject("<YOUR_PROJECT_ID>")
 
   val tablesDB = TablesDB(client)
@@ -2003,18 +2003,18 @@ package main
 
 import (
   "log"
-  "github.com/appwrite/sdk-for-go/appwrite"
-  operator "github.com/appwrite/sdk-for-go/operator"
+  "github.com/indobase/sdk-for-go/indobase"
+  operator "github.com/indobase/sdk-for-go/operator"
 )
 
 func main() {
-  client := appwrite.NewClient(
-    appwrite.WithEndpoint("https://<REGION>.cloud.appwrite.io/v1"),
-    appwrite.WithProject("<YOUR_PROJECT_ID>"),
-    appwrite.WithKey("<YOUR_API_KEY>"),
+  client := indobase.NewClient(
+    indobase.WithEndpoint("https://<REGION>.cloud.indobase.io/v1"),
+    indobase.WithProject("<YOUR_PROJECT_ID>"),
+    indobase.WithKey("<YOUR_API_KEY>"),
   )
 
-  tablesDB := appwrite.NewTablesDB(client)
+  tablesDB := indobase.NewTablesDB(client)
 
   // Create a transaction
   tx, err := tablesDB.CreateTransaction()
@@ -2052,7 +2052,7 @@ use indobase\Services\TablesDB;
 use indobase\Operator;
 
 $client = (new Client())
-  ->setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+  ->setEndpoint('https://<REGION>.cloud.indobase.io/v1')
   ->setProject('<YOUR_PROJECT_ID>')
   ->setKey('<YOUR_API_KEY>');
 
@@ -2077,13 +2077,13 @@ $result = $tablesDB->updateRow(
 $tablesDB->updateTransaction($tx['$id'], 'commit');
 ```
 ```server-python
-from appwrite.client import Client
-from appwrite.services.tables_db import TablesDB
-from appwrite.operator import Operator
+from indobase.client import Client
+from indobase.services.tables_db import TablesDB
+from indobase.operator import Operator
 
 client = Client()
 (client
-  .set_endpoint('https://<REGION>.cloud.appwrite.io/v1')
+  .set_endpoint('https://<REGION>.cloud.indobase.io/v1')
   .set_project('<YOUR_PROJECT_ID>')
   .set_key('<YOUR_API_KEY>'))
 
@@ -2112,7 +2112,7 @@ using indobase;
 using indobase.Services;
 
 var client = new Client()
-  .SetEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+  .SetEndpoint("https://<REGION>.cloud.indobase.io/v1")
   .SetProject("<YOUR_PROJECT_ID>")
   .SetKey("<YOUR_API_KEY>");
 
@@ -2140,12 +2140,12 @@ await tablesDB.UpdateTransaction(tx.Id, "commit");
 ```server-ruby
 require 'appwrite'
 
-include Appwrite
+include Indobase
 
 client = Client.new()
 
 client
-  .set_endpoint('https://<REGION>.cloud.appwrite.io/v1')
+  .set_endpoint('https://<REGION>.cloud.indobase.io/v1')
   .set_project('<YOUR_PROJECT_ID>')
   .set_key('<YOUR_API_KEY>')
 
@@ -2177,7 +2177,7 @@ import io.appwrite.Operator;
 import java.util.*;
 
 Client client = new Client()
-  .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+  .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
   .setProject("<YOUR_PROJECT_ID>")
   .setKey("<YOUR_API_KEY>");
 
@@ -2233,7 +2233,7 @@ This example demonstrates using `createOperations` to update multiple rows acros
 import { Client, TablesDB, Operator } from "appwrite";
 
 const client = new Client()
-  .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+  .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
   .setProject('<YOUR_PROJECT_ID>');
 
 const tablesDB = new TablesDB(client);
@@ -2275,7 +2275,7 @@ const sdk = require('node-appwrite');
 
 const client = new sdk.Client();
 client
-  .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+  .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
   .setProject('<YOUR_PROJECT_ID>')
   .setKey('<YOUR_API_KEY>');
 
@@ -2314,11 +2314,11 @@ await tablesDB.createOperations({
 await tablesDB.updateTransaction(tx.$id, 'commit');
 ```
 ```client-flutter
-import 'package:appwrite/appwrite.dart';
+import 'package:appwrite/indobase.dart';
 
 void main() async {
   final client = Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
     .setProject('<YOUR_PROJECT_ID>');
 
   final tablesDB = TablesDB(client);
@@ -2355,18 +2355,18 @@ void main() async {
 
     // Commit the transaction
     await tablesDB.updateTransaction(tx.$id, 'commit');
-  } on AppwriteException catch (e) {
+  } on IndobaseException catch (e) {
     print(e);
   }
 }
 ```
 ```client-apple
-import Appwrite
+import Indobase
 import indobaseModels
 
 func main() async throws {
   let client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
     .setProject("<YOUR_PROJECT_ID>")
 
   let tablesDB = TablesDB(client)
@@ -2418,7 +2418,7 @@ import io.appwrite.Operator
 
 suspend fun main() {
   val client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
     .setProject("<YOUR_PROJECT_ID>")
 
   val tablesDB = TablesDB(client)
@@ -2461,18 +2461,18 @@ package main
 
 import (
   "log"
-  "github.com/appwrite/sdk-for-go/appwrite"
-  operator "github.com/appwrite/sdk-for-go/operator"
+  "github.com/indobase/sdk-for-go/indobase"
+  operator "github.com/indobase/sdk-for-go/operator"
 )
 
 func main() {
-  client := appwrite.NewClient(
-    appwrite.WithEndpoint("https://<REGION>.cloud.appwrite.io/v1"),
-    appwrite.WithProject("<YOUR_PROJECT_ID>"),
-    appwrite.WithKey("<YOUR_API_KEY>"),
+  client := indobase.NewClient(
+    indobase.WithEndpoint("https://<REGION>.cloud.indobase.io/v1"),
+    indobase.WithProject("<YOUR_PROJECT_ID>"),
+    indobase.WithKey("<YOUR_API_KEY>"),
   )
 
-  tablesDB := appwrite.NewTablesDB(client)
+  tablesDB := indobase.NewTablesDB(client)
 
   // Create a transaction
   tx, err := tablesDB.CreateTransaction()
@@ -2524,7 +2524,7 @@ use indobase\Services\TablesDB;
 use indobase\Operator;
 
 $client = (new Client())
-  ->setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+  ->setEndpoint('https://<REGION>.cloud.indobase.io/v1')
   ->setProject('<YOUR_PROJECT_ID>')
   ->setKey('<YOUR_API_KEY>');
 
@@ -2563,13 +2563,13 @@ $tablesDB->createOperations(
 $tablesDB->updateTransaction($tx['$id'], 'commit');
 ```
 ```server-python
-from appwrite.client import Client
-from appwrite.services.tables_db import TablesDB
-from appwrite.operator import Operator
+from indobase.client import Client
+from indobase.services.tables_db import TablesDB
+from indobase.operator import Operator
 
 client = Client()
 (client
-  .set_endpoint('https://<REGION>.cloud.appwrite.io/v1')
+  .set_endpoint('https://<REGION>.cloud.indobase.io/v1')
   .set_project('<YOUR_PROJECT_ID>')
   .set_key('<YOUR_API_KEY>'))
 
@@ -2612,7 +2612,7 @@ using indobase;
 using indobase.Services;
 
 var client = new Client()
-  .SetEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+  .SetEndpoint("https://<REGION>.cloud.indobase.io/v1")
   .SetProject("<YOUR_PROJECT_ID>")
   .SetKey("<YOUR_API_KEY>");
 
@@ -2660,12 +2660,12 @@ await tablesDB.UpdateTransaction(tx.Id, "commit");
 ```server-ruby
 require 'appwrite'
 
-include Appwrite
+include Indobase
 
 client = Client.new()
 
 client
-  .set_endpoint('https://<REGION>.cloud.appwrite.io/v1')
+  .set_endpoint('https://<REGION>.cloud.indobase.io/v1')
   .set_project('<YOUR_PROJECT_ID>')
   .set_key('<YOUR_API_KEY>')
 
@@ -2711,7 +2711,7 @@ import io.appwrite.Operator;
 import java.util.*;
 
 Client client = new Client()
-  .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+  .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
   .setProject("<YOUR_PROJECT_ID>")
   .setKey("<YOUR_API_KEY>");
 

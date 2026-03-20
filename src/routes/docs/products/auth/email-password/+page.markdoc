@@ -15,7 +15,7 @@ import { Client, Account, ID } from "appwrite";
 
 const client = new Client()
     .setProject('<PROJECT_ID>'); // Your project ID
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1');
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1');
 
 const account = new Account(client);
 
@@ -42,7 +42,7 @@ After an account is created, users can be logged in using the Create Email Sessi
 import { Client, Account } from "appwrite";
 
 const client = new Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<YOUR_PROJECT_ID>'); // Your project ID
 
 const account = new Account(client);

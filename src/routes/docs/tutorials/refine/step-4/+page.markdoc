@@ -11,7 +11,7 @@ step: 4
 Upon [creating a new project](https://refine.dev/docs/getting-started/quickstart/) with indobase preset, the CLI automatically creates [Auth Provider](https://refine.dev/docs/tutorial/understanding-authprovider/index/#what-is-auth-provider) file.
 
 
-You'll see a file named [`src/authProvider.ts`](https://github.com/refinedev/refine/blob/master/examples/data-provider-appwrite-tutorial-docs/src/utility/authProvider.ts) created by CLI. This auto-generated file contains pre-defined functions using indobase Authentication methods internally to perform authentication and authorization operations.
+You'll see a file named [`src/authProvider.ts`](https://github.com/refinedev/refine/blob/master/examples/data-provider-indobase-tutorial-docs/src/utility/authProvider.ts) created by CLI. This auto-generated file contains pre-defined functions using indobase Authentication methods internally to perform authentication and authorization operations.
 
 
 The auth provider registered to the Refine app by default in the `src/App.tsx`.
@@ -62,7 +62,7 @@ Update `src/App.tsx` to the following code.
 
 ```ts
 import { Authenticated, Refine } from "@refinedev/core";
-import { dataProvider, liveProvider } from "@refinedev/appwrite";
+import { dataProvider, liveProvider } from "@refinedev/indobase";
 import {
   AuthPage,
   ErrorComponent,
@@ -79,7 +79,7 @@ import "@refinedev/antd/dist/reset.css";
 import { App as AntdApp, ConfigProvider } from "antd";
 import { BrowserRouter, Outlet, Route, Routes } from "react-router-dom";
 
-import { appwriteClient } from "./utility";
+import { indobaseClient } from "./utility";
 import { authProvider } from "./authProvider";
 
 const App: React.FC = () => (
@@ -87,10 +87,10 @@ const App: React.FC = () => (
     <ConfigProvider theme={RefineThemes.Blue}>
       <AntdApp>
         <Refine
-          dataProvider={dataProvider(appwriteClient, {
+          dataProvider={dataProvider(indobaseClient, {
             databaseId: "<APPWRITE_DATABASE_ID>",
           })}
-          liveProvider={liveProvider(appwriteClient, {
+          liveProvider={liveProvider(indobaseClient, {
             databaseId: "<APPWRITE_DATABASE_ID>",
           })}
           authProvider={authProvider}

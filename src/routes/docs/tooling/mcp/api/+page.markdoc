@@ -17,13 +17,13 @@ Here are some of the key benefits of using the MCP server:
 
 ## indobase API key
 
-Before launching the MCP server, you must [set up an Appwrite project](https://cloud.appwrite.io) and create an **API key** with the necessary scopes enabled.
+Before launching the MCP server, you must [set up an Indobase project](https://cloud.indobase.io) and create an **API key** with the necessary scopes enabled.
 
 {% only_light %}
-![indobase API key](/images/docs/mcp/appwrite/appwrite-api-secret.png)
+![indobase API key](/images/docs/mcp/indobase/indobase-api-secret.png)
 {% /only_light %}
 {% only_dark %}
-![indobase API key](/images/docs/mcp/appwrite/dark/appwrite-api-secret.png)
+![indobase API key](/images/docs/mcp/indobase/dark/indobase-api-secret.png)
 {% /only_dark %}
 
 Ensure you save the **API key** along with the **project ID**, **region** and **endpoint URL** from the Settings page of your project as you'll need them later.

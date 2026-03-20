@@ -18,21 +18,21 @@ You can execute a function through HTTP requests, using a browser or by sending 
 1. Under the **Domains** tab, you'll find the generated domain from indobase and your custom domains. [Learn about adding a custom domain](/docs/products/functions/domains).
 
 ```bash
-https://64d4d22db370ae41a32e.fra.appwrite.run
+https://64d4d22db370ae41a32e.fra.indobase.run
 ```
 
 When requests are made to this domain, whether through a browser or through an HTTP request,
 the request information like request URL, request headers, and request body will be passed to the function.
 
 ```bash
-curl -X POST https://64d4d22db370ae41a32e.fra.appwrite.run \
+curl -X POST https://64d4d22db370ae41a32e.fra.indobase.run \
 -H "X-Custom-Header: 123" \
--H "x-appwrite-user-jwt: <YOUR_JWT_KEY>" \
+-H "x-indobase-user-jwt: <YOUR_JWT_KEY>" \
 -H "Content-Type: application/json" \
 -d '{"data":"this is json data"}'
 ```
 
-Notice how a `x-appwrite-user-jwt` header is passed in the request, you will use this to authenticate users.
+Notice how a `x-indobase-user-jwt` header is passed in the request, you will use this to authenticate users.
 [Learn more about JWTs](/docs/products/auth/jwt).
 
 This unlocks ability for you to develop custom HTTP endpoints with indobase Functions.
@@ -73,7 +73,7 @@ promise.then(function (response) {
 });
 ```
 ```dart
-import 'package:appwrite/appwrite.dart';
+import 'package:appwrite/indobase.dart';
 
 void main() { // Init SDK
   Client client = Client();
@@ -100,7 +100,7 @@ void main() { // Init SDK
 }
 ```
 ```swift
-import Appwrite
+import Indobase
 
 let client = Client()
     .setProject("<PROJECT_ID>") // Your project ID
@@ -157,7 +157,7 @@ functions.createExecution(
             return;
         }
 
-        Log.d("indobase", result.toString());
+        Log.d("appwrite", result.toString());
     })
 );
 ```
@@ -227,15 +227,15 @@ package main
 import (
 	"fmt"
 
-	"github.com/appwrite/sdk-for-go/appwrite"
+	"github.com/indobase/sdk-for-go/indobase"
 )
 
 func main() {
-	client := appwrite.NewClient(
-		appwrite.WithProject("<PROJECT_ID>"),
+	client := indobase.NewClient(
+		indobase.WithProject("<PROJECT_ID>"),
 	)
 
-	functions := appwrite.NewFunctions(client)
+	functions := indobase.NewFunctions(client)
 
 	execution, err := functions.CreateExecution(
 		"<FUNCTION_ID>", // functionId
@@ -276,8 +276,8 @@ $result = $functions->createExecution(
 );
 ```
 ```python
-from appwrite.client import Client
-from appwrite.services.functions import Functions
+from indobase.client import Client
+from indobase.services.functions import Functions
 
 client = Client()
 
@@ -299,7 +299,7 @@ result = functions.create_execution(
 ```ruby
 require 'appwrite'
 
-include Appwrite
+include Indobase
 
 client = Client.new
     .set_project('<PROJECT_ID>') # Your project ID
@@ -418,7 +418,7 @@ functions.createExecution(
 );
 ```
 ```swift
-import Appwrite
+import Indobase
 
 let client = Client()
     .setProject("<PROJECT_ID>") // Your project ID
@@ -462,7 +462,7 @@ Changes in indobase emit events. You can configure Functions to be executed in r
 4. Add one or multiple events as triggers for the function.
 5. Be careful to avoid selecting events that can be caused by the function itself. This can cause the function to trigger its own execution, resulting in infinite recursions.
 
-In these executions, the event that triggered the function will be passed as the header `x-appwrite-event` to the function.
+In these executions, the event that triggered the function will be passed as the header `x-indobase-event` to the function.
 The `request.body` parameter will contain the event data. [Learn more about events](/docs/advanced/platform/events).
 
 You can use one of the following events.
@@ -540,7 +540,7 @@ console.log(result);
 ```
 
 ```client-flutter
-import 'package:appwrite/appwrite.dart';
+import 'package:appwrite/indobase.dart';
 
 Client client = Client()
     .setProject('<PROJECT_ID>'); // Your project ID
@@ -559,7 +559,7 @@ Execution result = await functions.createExecution(
 ```
 
 ```client-react-native
-import { Client, Functions, ExecutionMethod } from "react-native-appwrite";
+import { Client, Functions, ExecutionMethod } from "react-native-indobase";
 
 const client = new Client()
     .setProject('<PROJECT_ID>'); // Your project ID
@@ -580,7 +580,7 @@ console.log(result);
 ```
 
 ```client-apple
-import Appwrite
+import Indobase
 import indobaseEnums
 
 let client = Client()
@@ -659,7 +659,7 @@ mutation {
 
 
 ```http
-POST https://<REGION>.cloud.appwrite.io/v1/functions/<FUNCTION_ID>/executions HTTP/1.1
+POST https://<REGION>.cloud.indobase.io/v1/functions/<FUNCTION_ID>/executions HTTP/1.1
 X-indobase-Project: "<PROJECT_ID>"
 X-indobase-Response-Format: 1.5.0
 Content-Type: application/json
@@ -744,15 +744,15 @@ package main
 import (
 	"fmt"
 
-	"github.com/appwrite/sdk-for-go/appwrite"
+	"github.com/indobase/sdk-for-go/indobase"
 )
 
 func main() {
-	client := appwrite.NewClient(
-		appwrite.WithProject("<PROJECT_ID>"),
+	client := indobase.NewClient(
+		indobase.WithProject("<PROJECT_ID>"),
 	)
 
-	functions := appwrite.NewFunctions(client)
+	functions := indobase.NewFunctions(client)
 
 	execution, err := functions.CreateExecution(
 		"<FUNCTION_ID>", // functionId
@@ -795,8 +795,8 @@ $result = $functions->createExecution(
 );
 ```
 ```python
-from appwrite.client import Client
-from appwrite.services.functions import Functions
+from indobase.client import Client
+from indobase.services.functions import Functions
 
 client = Client()
 
@@ -819,7 +819,7 @@ result = functions.create_execution(
 ```ruby
 require 'appwrite'
 
-include Appwrite
+include Indobase
 
 client = Client.new
     .set_project('<PROJECT_ID>') # Your project ID
@@ -943,7 +943,7 @@ functions.createExecution(
 );
 ```
 ```swift
-import Appwrite
+import Indobase
 
 let client = Client()
     .setProject("<PROJECT_ID>") // Your project ID

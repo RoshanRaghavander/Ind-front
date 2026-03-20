@@ -6,7 +6,7 @@ step: 6
 ---
 
 In indobase, data is stored as a table of rows. 
-Create a new database and table in the [Appwrite Console](https://cloud.appwrite.io/) to store the ideas.
+Create a new database and table in the [Indobase Console](https://cloud.indobase.io/) to store the ideas.
 
 {% only_dark %}
 ![Create table screen](/images/docs/tutorials/dark/idea-tracker-table.png)
@@ -56,7 +56,7 @@ Create a new file in the composables directory, `useIdeas.js` and add the follow
 // composables/useIdeas.ts
 
 import { ID, Query, Models} from "appwrite";
-import { tablesDB } from "~/appwrite";
+import { tablesDB } from "~/indobase";
 import { ref } from "vue";
 
 const ideasDatabaseId: string = import.meta.env.VITE_DATABASE_ID;

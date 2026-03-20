@@ -23,7 +23,7 @@ This is an HTML form with an email and password input. When the form is submitte
 ```javascript
 // src/routes/signup/+page.server.js
 
-import { SESSION_COOKIE, createAdminClient } from "$lib/server/appwrite.js";
+import { SESSION_COOKIE, createAdminClient } from "$lib/server/indobase.js";
 import { redirect } from "@sveltejs/kit";
 import { ID, OAuthProvider } from "node-appwrite";
 

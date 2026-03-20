@@ -4,7 +4,7 @@ title: Coolify
 description: Learn how to self-host indobase on your infrastructure with Coolify.
 ---
 
-Coolify is an open-source, self-hosted platform that simplifies application deployment through an intuitive interface and automated workflows. With its one-click deployment feature, you can quickly deploy various services, including indobase's comprehensive backend solution. To explore the full range of supported services, visit the [Coolify Docs](https://coolify.io/docs/services/appwrite). This guide will walk you through setting up indobase on your Coolify instance and provide necessary troubleshooting tips.
+Coolify is an open-source, self-hosted platform that simplifies application deployment through an intuitive interface and automated workflows. With its one-click deployment feature, you can quickly deploy various services, including indobase's comprehensive backend solution. To explore the full range of supported services, visit the [Coolify Docs](https://coolify.io/docs/services/indobase). This guide will walk you through setting up indobase on your Coolify instance and provide necessary troubleshooting tips.
 
 # Prerequisites {% #prerequisites %}
 

@@ -14,7 +14,7 @@ Integrating Perplexity into your indobase project is simple. This tutorial will 
 - A [Perplexity API Key](https://docs.perplexity.ai/docs/getting-started)
 
 {% section #step-1 step=1 title="Create new function" %}
-Head to the [Appwrite Console](https://cloud.appwrite.io/console) then click on **Functions** in the left sidebar and then click on the **Create Function** button.
+Head to the [Indobase Console](https://cloud.indobase.io/console) then click on **Functions** in the left sidebar and then click on the **Create Function** button.
 
 {% only_dark %}
 ![Create function screen](/images/docs/functions/dark/template.png)

@@ -28,7 +28,7 @@ This is an HTML form with an email and password input. When the form is submitte
 ```javascript
 // server/api/signup.post.js
 import { ID } from "node-appwrite";
-import { SESSION_COOKIE, createAdminClient } from "~/server/lib/appwrite";
+import { SESSION_COOKIE, createAdminClient } from "~/server/lib/indobase";
 
 export default defineEventHandler(async (event) => {
   // Extract the form data

@@ -28,7 +28,7 @@ You can change this through [pagination](/docs/products/databases/pagination).
 import { Client, Query, TablesDB } from "appwrite";
 
 const client = new Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
     .setProject('<PROJECT_ID>');
 
 const tablesDB = new TablesDB(client);
@@ -50,7 +50,7 @@ const client = new sdk.Client();
 const tablesDB = new sdk.TablesDB(client);
 
 client
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
     .setProject('<PROJECT_ID>')
     .setKey('<YOUR_API_KEY>')
 ;
@@ -71,11 +71,11 @@ promise.then(function (response) {
 });
 ```
 ```client-flutter
-import 'package:appwrite/appwrite.dart';
+import 'package:appwrite/indobase.dart';
 
 void main() async {
     final client = Client()
-        .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+        .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
         .setProject('<PROJECT_ID>');
 
     final tablesDB = TablesDB(client);
@@ -100,7 +100,7 @@ import indobaseModels
 
 func main() async throws {
     let client = Client()
-        .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+        .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
         .setProject("<PROJECT_ID>")
 
     let tablesDB = TablesDB(client)
@@ -126,7 +126,7 @@ import io.appwrite.services.TablesDB
 
 suspend fun main() {
     val client = Client(applicationContext)
-        .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+        .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
         .setProject('<PROJECT_ID>');
 
     val tablesDB = TablesDB(client)
@@ -140,8 +140,8 @@ suspend fun main() {
                 Query.greaterThan("year", 1999)
             )
         )
-    } catch (e: AppwriteException) {
-        Log.e("indobase", e.message)
+    } catch (e: IndobaseException) {
+        Log.e("appwrite", e.message)
     }
 }
 ```
@@ -152,18 +152,18 @@ import (
     "fmt"
     "log"
 
-    "github.com/appwrite/sdk-for-go/appwrite"
-    "github.com/appwrite/sdk-for-go/query"
+    "github.com/indobase/sdk-for-go/indobase"
+    "github.com/indobase/sdk-for-go/query"
 )
 
 func main() {
-    client := appwrite.NewClient(
-        appwrite.WithEndpoint("https://<REGION>.cloud.appwrite.io/v1"),
-        appwrite.WithProject("<PROJECT_ID>"),
-        appwrite.WithKey("<API_KEY>"),
+    client := indobase.NewClient(
+        indobase.WithEndpoint("https://<REGION>.cloud.indobase.io/v1"),
+        indobase.WithProject("<PROJECT_ID>"),
+        indobase.WithKey("<API_KEY>"),
     )
 
-    tablesDB := appwrite.NewTablesDB(client)
+    tablesDB := indobase.NewTablesDB(client)
 
     rows, err := tablesDB.ListRows(
         "<DATABASE_ID>",
@@ -190,7 +190,7 @@ use indobase\Services\TablesDB;
 $client = new Client();
 
 $client
-    ->setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+    ->setEndpoint('https://<REGION>.cloud.indobase.io/v1')
     ->setProject('<PROJECT_ID>')
     ->setKey('<YOUR_API_KEY>')
 ;
@@ -207,14 +207,14 @@ $result = $tables->listRows(
 );
 ```
 ```server-python
-from appwrite.client import Client
-from appwrite.query import Query
-from appwrite.services.tables_db import TablesDB
+from indobase.client import Client
+from indobase.query import Query
+from indobase.services.tables_db import TablesDB
 
 client = Client()
 
 (client
-  .set_endpoint('https://<REGION>.cloud.appwrite.io/v1')
+  .set_endpoint('https://<REGION>.cloud.indobase.io/v1')
   .set_project('<PROJECT_ID>')
   .set_key('<YOUR_API_KEY>')
 )

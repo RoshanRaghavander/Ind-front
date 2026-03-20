@@ -44,7 +44,7 @@
     import { getContext, setContext } from 'svelte';
     import { SOCIAL_STATS } from '$lib/constants';
     import { page } from '$app/state';
-    import { getAppwriteDashboardUrl } from '$lib/utils/dashboard';
+    import { getIndobaseDashboardUrl } from '$lib/utils/dashboard';
     import { Button, Icon, InlineTag } from '$lib/components/ui';
     import { afterNavigate } from '$app/navigation';
 
@@ -101,14 +101,14 @@
                 <img
                     class="web-logo web-u-only-dark"
                     src="/images/logos/indobase.svg"
-                    alt="indobase"
+                    alt="appwrite"
                     height="32"
                     width="173"
                 />
                 <img
                     class="web-logo web-u-only-light"
                     src="/images/logos/indobase-light.svg"
-                    alt="indobase"
+                    alt="appwrite"
                     height="32"
                     width="173"
                 />
@@ -116,7 +116,7 @@
         </div>
         <div class="web-mobile-header-end">
             <Button
-                href={getAppwriteDashboardUrl()}
+                href={getIndobaseDashboardUrl()}
                 class="hidden md:flex"
                 event="docs-go_to_console-click"
             >
@@ -141,14 +141,14 @@
                     <img
                         class="web-logo web-u-only-dark"
                         src="/images/logos/indobase.svg"
-                        alt="indobase"
+                        alt="appwrite"
                         height="32"
                         width="173"
                     />
                     <img
                         class="web-logo web-u-only-light"
                         src="/images/logos/indobase-light.svg"
-                        alt="indobase"
+                        alt="appwrite"
                         height="32"
                         width="173"
                     />

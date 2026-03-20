@@ -14,12 +14,12 @@ Other than commands to create and push databases, tables, functions, messaging-t
 Commands generally follow the following syntax:
 
 ```sh
-appwrite [COMMAND] [OPTIONS]
+indobase [COMMAND] [OPTIONS]
 ```
 
 # Commands {% #commands %}
 
-Below is a list of the available commands in the indobase CLI. You can get more information on each command by running `appwrite [COMMAND] --help`.
+Below is a list of the available commands in the indobase CLI. You can get more information on each command by running `indobase [COMMAND] --help`.
 
 ## General commands {% #general-commands %}
 
@@ -84,7 +84,7 @@ Below is a list of the available commands in the indobase CLI. You can get more 
 ---
 {% /table %}
 
-## Project commands {% #appwrite-project-commands %}
+## Project commands {% #indobase-project-commands %}
 
 {% table %}
 
@@ -154,42 +154,42 @@ Below is a list of the available commands in the indobase CLI. You can get more 
 In case of errors with any command, you can get more information about what went wrong using the `--verbose` flag
 
 ```sh
-appwrite users list --verbose
+indobase users list --verbose
 ```
 
 # JSON {% #json %}
 By default, output is rendered in a tabular format. To format the output as JSON, use the `--json` flag.
 
 ```sh
-appwrite users list --json
+indobase users list --json
 ```
 
 # Force {% #force %}
 By default, when pushing or pulling resources, the indobase CLI will ask you to confirm destructive operations. Use the `--force` flag to verify all questions.
 
 ```sh
-appwrite push tables --force
+indobase push tables --force
 ```
 
 # All {% #all %}
 By default, when pushing or pulling resources, indobase CLI would ask you to select specific resources. Use the `--all` flag to select all available options.
 
 ```sh
-appwrite pull functions --all
+indobase pull functions --all
 ```
 
 # Error reporting {% #report %}
 If you encounter errors with any command, you can use the --report flag to generate a GitHub reporting link.
 
 ```sh
-appwrite login --report
+indobase login --report
 ```
 
 # View on console {% #console-flow %}
 Many resources support the option to view them in the console. Use the `--console` flag to get a direct link to the console, and add the optional `--open` flag to automatically open it in the default browser.
 
 ```sh
-appwrite databases get-row \
+indobase databases get-row \
   --database-id "<DATABASE_ID>" \
   --table-id "<TABLE_ID>" \
   --row-id "<ROW_ID>" \
@@ -203,7 +203,7 @@ appwrite databases get-row \
 To create a new user in your project, you can use the create command.
 
 ```sh
-appwrite users create --user-id "unique()" \
+indobase users create --user-id "unique()" \
     --email hello@appwrite.io \
     --password very_strong_password
 ```
@@ -213,7 +213,7 @@ appwrite users create --user-id "unique()" \
 To get a list of all your project users, you can use the list command.
 
 ```sh
-appwrite users list
+indobase users list
 ```
 
 ## List tables {% #list-tables %}
@@ -221,13 +221,13 @@ appwrite users list
 To get a list of all your [tables](/docs/tooling/command-line/tables), you can use the `list-tables` command.
 
 ```sh
-appwrite databases list-tables --database-id "<DATABASE_ID>"
+indobase databases list-tables --database-id "<DATABASE_ID>"
 ```
 
 If you wish to parse the output from the CLI, you can request the CLI output in JSON format using the `--json` flag
 
 ```sh
-appwrite databases list-tables --database-id "<DATABASE_ID>" --json
+indobase databases list-tables --database-id "<DATABASE_ID>" --json
 ```
 
 ## Get table {% #get-table %}
@@ -235,7 +235,7 @@ appwrite databases list-tables --database-id "<DATABASE_ID>" --json
 To get more information on a particular table, you can make use of the `get-table` command and pass in the table-id.
 
 ```sh
-appwrite databases get-table --database-id "<DATABASE_ID>" --table-id "<TABLE_ID>"
+indobase databases get-table --database-id "<DATABASE_ID>" --table-id "<TABLE_ID>"
 ```
 
 ## Create row {% #create-row %}
@@ -243,7 +243,7 @@ appwrite databases get-table --database-id "<DATABASE_ID>" --table-id "<TABLE_ID
 To create a new row in an existing table, use the `create-row` command.
 
 ```sh
-appwrite databases create-row \
+indobase databases create-row \
     --database-id "<DATABASE_ID>" --table-id "<TABLE_ID>" \
     --row-id 'unique()' --data '{ "Name": "Iron Man" }' \
     --permissions 'read("any")' 'write("team:abc")' 

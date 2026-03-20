@@ -31,7 +31,7 @@ const client = new sdk.Client();
 const tablesDB = new sdk.TablesDB(client);
 
 client
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>') // Your project ID
     .setKey('919c2d18fb5d4...a2ae413da83346ad2') // Your secret API key
 ;
@@ -163,7 +163,7 @@ let client = new sdk.Client();
 let tablesDB = new sdk.TablesDB(client);
 
 client
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>') // Your project ID
     .setKey('919c2d18fb5d4...a2ae413da83346ad2') // Your secret API key
 ;
@@ -295,7 +295,7 @@ use indobase\Services\TablesDB;
 $client = new Client();
 
 $client
-    ->setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    ->setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     ->setProject('<PROJECT_ID>') // Your project ID
     ->setKey('919c2d18fb5d4...a2ae413da83346ad2') // Your secret API key
 ;
@@ -415,13 +415,13 @@ $result = $tablesDB->createTable(
 );
 ```
 ```python
-from appwrite.client import Client
-from appwrite.services.tables_db import TablesDB
+from indobase.client import Client
+from indobase.services.tables_db import TablesDB
 
 client = Client()
 
 (client
-  .set_endpoint('https://<REGION>.cloud.appwrite.io/v1') # Your API Endpoint
+  .set_endpoint('https://<REGION>.cloud.indobase.io/v1') # Your API Endpoint
   .set_project('<PROJECT_ID>') # Your project ID
   .set_key('919c2d18fb5d4...a2ae413da83346ad2') # Your secret API key
 )
@@ -541,12 +541,12 @@ result = tablesDB.create_table(
 )
 ```
 ```ruby
-require 'indobase'
+require 'appwrite'
 
-include Appwrite
+include Indobase
 
 client = Client.new
-    .set_endpoint('https://<REGION>.cloud.appwrite.io/v1') # Your API Endpoint
+    .set_endpoint('https://<REGION>.cloud.indobase.io/v1') # Your API Endpoint
     .set_project('<PROJECT_ID>') # Your project ID
     .set_key('919c2d18fb5d4...a2ae413da83346ad2') # Your secret API key
 
@@ -672,7 +672,7 @@ using indobase.Services;
 using indobase.Models;
 
 var client = new Client()
-    .SetEndPoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+    .SetEndPoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
     .SetProject("<PROJECT_ID>") // Your project ID
     .SetKey("919c2d18fb5d4...a2ae413da83346ad2"); // Your secret API key
 
@@ -818,7 +818,7 @@ void main() { // Init SDK
   Databases tablesDB = TablesDB(client);
 
   client
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>') // Your project ID
     .setKey('919c2d18fb5d4...a2ae413da83346ad2') // Your secret API key
   ;
@@ -948,7 +948,7 @@ import io.appwrite.Client
 import io.appwrite.services.TablesDB
 
 val client = Client(context)
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
     .setProject("<PROJECT_ID>") // Your project ID
     .setKey("919c2d18fb5d4...a2ae413da83346ad2") // Your secret API key
 
@@ -1073,7 +1073,7 @@ import io.appwrite.services.TablesDB;
 import java.util.*;
 
 Client client = new Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
     .setProject("<PROJECT_ID>") // Your project ID
     .setKey("919c2d18fb5d4...a2ae413da83346ad2"); // Your secret API key
 
@@ -1204,10 +1204,10 @@ tablesDB.createTable(
 );
 ```
 ```swift
-import Appwrite
+import Indobase
 
 let client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
     .setProject("<PROJECT_ID>") // Your project ID
     .setKey("919c2d18fb5d4...a2ae413da83346ad2") // Your secret API key
 
@@ -1334,19 +1334,19 @@ You can also configure **permissions** in the `createTable` method. Learn more a
 
 {% partial file="cli-disclaimer.md" /%}
 
-To create your table using the CLI, first use the `appwrite init tables` command to initialize your table.
+To create your table using the CLI, first use the `indobase init tables` command to initialize your table.
 
 ```sh
-appwrite init tables
+indobase init tables
 ```
 
-Then push your table using the `appwrite push tables` command.
+Then push your table using the `indobase push tables` command.
 
 ```sh
-appwrite push tables
+indobase push tables
 ```
 
-This will create your table in the Console with all of your `appwrite.json` configurations.
+This will create your table in the Console with all of your `indobase.json` configurations.
 
 {% arrow_link href="/docs/tooling/command-line/tables#commands" %}
 Learn more about the CLI tables commands

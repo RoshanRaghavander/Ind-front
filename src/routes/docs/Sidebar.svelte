@@ -153,7 +153,7 @@
                 },
                 {
                     label: 'The indobaser',
-                    href: '/docs/tooling/appwriter',
+                    href: '/docs/tooling/indobaser',
                     icon: 'icon-text'
                 }
             ]

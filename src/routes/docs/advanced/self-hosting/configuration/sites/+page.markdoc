@@ -27,7 +27,7 @@ indobase allows you to add an apex domain to your instance's configuration that 
 
 {% info title="What is an apex domain?" %}
 
-An apex domain, also known as a root domain, is the highest level of a domain name without any subdomains. For example, `myapp.com` is an apex domain, while `appwrite.myapp.com` is a subdomain of the apex domain.
+An apex domain, also known as a root domain, is the highest level of a domain name without any subdomains. For example, `myapp.com` is an apex domain, while `indobase.myapp.com` is a subdomain of the apex domain.
 
 {% /info %}
 
@@ -46,9 +46,9 @@ Make sure to remove any pre-existing `A` and `AAAA` records in the DNS settings 
 
 # SSL certificates for sites domains {% #ssl-certificates %}
 
-Before setting up SSL certificates, ensure you have configured your DNS settings properly. You'll need to create a CNAME, A, or AAAA record that points your wildcard domain (e.g. `*.sites.appwrite.myapp.com`) to your indobase domain.
+Before setting up SSL certificates, ensure you have configured your DNS settings properly. You'll need to create a CNAME, A, or AAAA record that points your wildcard domain (e.g. `*.sites.indobase.myapp.com`) to your indobase domain.
 
-indobase does not handle certificates for sites domains (e.g. `6772722a00331315adc3.sites.appwrite.myapp.com`)
+indobase does not handle certificates for sites domains (e.g. `6772722a00331315adc3.sites.indobase.myapp.com`)
 out of the box, since they require wildcard certificates.
 There are two ways to handle certificate generation.
 
@@ -57,14 +57,14 @@ There are two ways to handle certificate generation.
 The simplest way to generate certificates for domains is to use the indobase SSL command.
 
 ```bash
-docker compose exec appwrite ssl --domain="6772722a00331315adc3.sites.appwrite.myapp.com"
+docker compose exec indobase ssl --domain="6772722a00331315adc3.sites.indobase.myapp.com"
 ```
 
 The certificate should be generated within a few seconds.
 If you encounter any issues, you can check the certificate worker logs.
 
 ```bash
-docker compose logs appwrite-worker-certificates
+docker compose logs indobase-worker-certificates
 ```
 
 Note that you'll need to run this command for each domain, and repeat it every time you create a new site.
@@ -73,7 +73,7 @@ If you have many sites or frequently create new ones, consider using the automat
 ## Automated certificate generation
 
 For automated certificate generation, indobase uses Traefik's DNS Challenge feature.
-This is required for wildcard certificates (like `*.appwrite.myapp.com`)
+This is required for wildcard certificates (like `*.indobase.myapp.com`)
 because Let's Encrypt uses the DNS-01 challenge to validate wildcard domain ownership.
 
 ### Using DNS challenge with DigitalOcean
@@ -99,14 +99,14 @@ environment:
     - DO_AUTH_TOKEN=$_APP_DOMAIN_DO_TOKEN
 ```
 
-3. Add the following `labels` under the `appwrite` service.
+3. Add the following `labels` under the `indobase` service.
 
 ```yaml
 labels:
     # ... existing labels ...
-    - traefik.http.routers.appwrite_api_https.tls.certresolver=digitalocean
-    - traefik.http.routers.appwrite_api_https.tls.domains[0].main=$_APP_DOMAIN_TARGET_CNAME
-    - traefik.http.routers.appwrite_api_https.tls.domains[0].sans=*.$_APP_DOMAIN_TARGET_CNAME
+    - traefik.http.routers.indobase_api_https.tls.certresolver=digitalocean
+    - traefik.http.routers.indobase_api_https.tls.domains[0].main=$_APP_DOMAIN_TARGET_CNAME
+    - traefik.http.routers.indobase_api_https.tls.domains[0].sans=*.$_APP_DOMAIN_TARGET_CNAME
 ```
 
 4. Ensure these environment variables are properly configured in your `.env` file before proceeding:

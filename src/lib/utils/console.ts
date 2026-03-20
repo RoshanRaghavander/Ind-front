@@ -96,34 +96,34 @@ export async function isProUser() {
 
 export const sdk = { client, account };
 
-export type AppwriteUser = Models.User<Models.Preferences>;
-function isAppwriteUser(user: unknown): user is AppwriteUser {
+export type IndobaseUser = Models.User<Models.Preferences>;
+function isIndobaseUser(user: unknown): user is IndobaseUser {
     return typeof user === 'object' && user !== null && '$id' in user;
 }
 
-export async function getAppwriteUser(): Promise<AppwriteUser | null> {
+export async function getIndobaseUser(): Promise<IndobaseUser | null> {
     return await account
         .get()
         .then((res) => res)
         .catch(() => null);
 }
 
-function createAppwriteUser() {
-    const { subscribe, set: _set } = writable<AppwriteUser | null>(null);
+function createIndobaseUser() {
+    const { subscribe, set: _set } = writable<IndobaseUser | null>(null);
 
-    function set(v: AppwriteUser | null) {
+    function set(v: IndobaseUser | null) {
         if (v) {
-            localStorage.setItem('appwrite:user', JSON.stringify(v));
+            localStorage.setItem('indobase:user', JSON.stringify(v));
         } else {
-            localStorage.removeItem('appwrite:user');
+            localStorage.removeItem('indobase:user');
         }
         _set(v);
     }
 
     if (browser) {
-        const localUser = JSON.parse(localStorage.getItem('appwrite:user') ?? 'null');
-        if (isAppwriteUser(localUser)) _set(localUser);
-        getAppwriteUser().then((res) => {
+        const localUser = JSON.parse(localStorage.getItem('indobase:user') ?? 'null');
+        if (isIndobaseUser(localUser)) _set(localUser);
+        getIndobaseUser().then((res) => {
             set(res);
         });
     }
@@ -133,5 +133,5 @@ function createAppwriteUser() {
     };
 }
 
-export const user = createAppwriteUser();
+export const user = createIndobaseUser();
 export const loggedIn = derived(user, ($user) => $user !== null);

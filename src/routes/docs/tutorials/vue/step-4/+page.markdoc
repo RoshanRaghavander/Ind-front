@@ -14,7 +14,7 @@ Create a new file `src/lib/stores/user.js` and add the following code to it.
 
 ```client-web
 import { ID } from "appwrite";
-import { account } from "../appwrite";
+import { account } from "../indobase";
 import { reactive } from "vue";
 
 export const user = reactive({

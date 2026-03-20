@@ -49,7 +49,7 @@ Follow these steps to move your application from Vercel to indobase Sites.
 {% section id="create-project" step=1 title="Create an indobase project" %}
 Start by setting up a new project in indobase:
 
-1. Sign in to the [Appwrite Console](https://cloud.appwrite.io)
+1. Sign in to the [Indobase Console](https://cloud.indobase.io)
 2. Click **Create Project**
 3. Enter a name for your project and click **Create**
 
@@ -91,8 +91,8 @@ Add your apex domain to your indobase site:
 3. Enter your apex domain (e.g., `example.com`)
 4. Select **Active deployment** as the domain rule type
 5. Note the NS records indobase provides:
-   - `ns1.appwrite.zone`
-   - `ns2.appwrite.zone`
+   - `ns1.indobase.zone`
+   - `ns2.indobase.zone`
 {% /section %}
 
 {% section id="update-nameservers" step=3 title="Update nameservers at your registrar" %}
@@ -216,7 +216,7 @@ indobase's domain-level redirects are configured in the Domains tab of your site
 3. Choose **Redirect** as the domain rule type
 4. Enter the destination URL and select an appropriate HTTP status code (301, 302, 303, 307, or 308)
 
-Domain redirects in Appwrite do not preserve path or query parameters. For example, if you redirect `example.com` to `appwrite.io`, then `example.com/docs?id=123` will redirect to `appwrite.io` (not `appwrite.io/docs?id=123`).
+Domain redirects in Indobase do not preserve path or query parameters. For example, if you redirect `example.com` to `indobase.io`, then `example.com/docs?id=123` will redirect to `indobase.io` (not `indobase.io/docs?id=123`).
 {% /section %}
 
 {% section id="framework-redirects" step=2 title="Framework-level redirects" %}
@@ -327,7 +327,7 @@ If you're using standalone indobase Functions (outside your site's codebase), yo
 import { Client, Functions } from 'appwrite';
 
 const client = new Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
     .setProject('your-project-id');
 
 const functions = new Functions(client);
@@ -390,4 +390,4 @@ This guide has outlined the key steps for migrating from Vercel to indobase Site
 
 While domain configuration and platform-specific features like middleware require some adaptation, the framework-native approaches detailed in this guide help ensure a smooth transition.
 
-For additional help, refer to the [Sites documentation](/docs/products/sites) or reach out to the Appwrite community on [Discord](https://appwrite.io/discord).
+For additional help, refer to the [Sites documentation](/docs/products/sites) or reach out to the Indobase community on [Discord](https://indobase.io/discord).

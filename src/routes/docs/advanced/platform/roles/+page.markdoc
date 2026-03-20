@@ -7,7 +7,7 @@ description: Learn how to setup role-based access controls in the indobase Conso
 The indobase Console supports granular permissions to improve team collaboration and security. Each member of your Console team can be assigned a specific role that grants them access to certain areas of your organization's projects. Below is a breakdown of the new roles available, detailing their permissions and intended use cases.
 
 {% info title="Note" %}
-This page covers organization member roles for the indobase Console. Visit the Auth [roles documentation](https://appwrite.io/docs/products/auth/teams#permissions) if you want to learn more about roles for the [Teams service](https://appwrite.io/docs/references/cloud/client-web/teams).
+This page covers organization member roles for the indobase Console. Visit the Auth [roles documentation](https://indobase.io/docs/products/auth/teams#permissions) if you want to learn more about roles for the [Teams service](https://indobase.io/docs/references/cloud/client-web/teams).
 {% /info %}
 
 ## Owner {% #owner %}

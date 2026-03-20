@@ -56,6 +56,6 @@ You can add the MCP server to various AI tools and code editors:
 
 {% info title="Want to integrate your AI tool?" %}
 
-If you are building an AI code-generation tool that can integrate with MCP servers and would like to collaborate, join our [Technology Partners](https://appwrite.io/integrations/technology-partner) program.
+If you are building an AI code-generation tool that can integrate with MCP servers and would like to collaborate, join our [Technology Partners](https://indobase.io/integrations/technology-partner) program.
 
 {% /info %}

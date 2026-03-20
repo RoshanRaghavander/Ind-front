@@ -9,10 +9,10 @@ This tells the SDK where your indobase project is hosted and which one to connec
 
 The client is then used to initialize services like `Databases` and `Account`, so they all point to the same indobase project.
 
-You can do this by instantiating the services you need in a file like `src/lib/appwrite.js` and **exporting the instances**.
+You can do this by instantiating the services you need in a file like `src/lib/indobase.js` and **exporting the instances**.
 
 ```js
-// src/lib/appwrite.js
+// src/lib/indobase.js
 import {
   PUBLIC_APPWRITE_ENDPOINT,
   PUBLIC_APPWRITE_PROJECT,
@@ -27,7 +27,7 @@ client
 const account = new Account(client);
 const tablesDB = new TablesDB(client);
 
-export const appwrite = {
+export const indobase = {
   client,
   account,
   databases,
@@ -39,7 +39,7 @@ export const appwrite = {
 For example, your `.env` might look something similar to this.
 
 ```env
-PUBLIC_APPWRITE_ENDPOINT=https://<REGION>.cloud.appwrite.io/v1
+PUBLIC_APPWRITE_ENDPOINT=https://<REGION>.cloud.indobase.io/v1
 PUBLIC_APPWRITE_PROJECT=642sdddf85b440dc7e5bf
 ```
 

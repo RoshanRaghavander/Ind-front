@@ -22,7 +22,7 @@ indobase handles the email delivery with built-in templates and localization sup
 import { Client, Teams } from "appwrite";
 
 const client = new Client()
-    .setEndpoint('https://cloud.appwrite.io/v1')
+    .setEndpoint('https://cloud.indobase.io/v1')
     .setProject('<PROJECT_ID>');
 
 const teams = new Teams(client);
@@ -38,10 +38,10 @@ const membership = await teams.createMembership(
 );
 ```
 ```client-flutter
-import 'package:appwrite/appwrite.dart';
+import 'package:appwrite/indobase.dart';
 
 final client = Client()
-    .setEndpoint('https://cloud.appwrite.io/v1')
+    .setEndpoint('https://cloud.indobase.io/v1')
     .setProject('<PROJECT_ID>');
 
 final teams = Teams(client);
@@ -58,7 +58,7 @@ final membership = await teams.createMembership(
 import indobase
 
 let client = Client()
-    .setEndpoint("https://cloud.appwrite.io/v1") // Your API Endpoint
+    .setEndpoint("https://cloud.indobase.io/v1") // Your API Endpoint
     .setProject("<PROJECT_ID>") // Your project ID
 
 let teams = Teams(client)
@@ -76,7 +76,7 @@ import io.appwrite.Client
 import io.appwrite.services.Teams
 
 val client = Client(context)
-    .setEndpoint("https://cloud.appwrite.io/v1") // Your API Endpoint
+    .setEndpoint("https://cloud.indobase.io/v1") // Your API Endpoint
     .setProject("<PROJECT_ID>") // Your project ID
 
 val teams = Teams(client)
@@ -104,7 +104,7 @@ For client-side email invites, users must accept the invitation to join the team
 import { Client, Teams } from "appwrite";
 
 const client = new Client()
-    .setEndpoint('https://cloud.appwrite.io/v1')
+    .setEndpoint('https://cloud.indobase.io/v1')
     .setProject('<PROJECT_ID>');
 
 const teams = new Teams(client);
@@ -118,10 +118,10 @@ const response = await teams.updateMembershipStatus(
 );
 ```
 ```client-flutter
-import 'package:appwrite/appwrite.dart';
+import 'package:appwrite/indobase.dart';
 
 final client = Client()
-    .setEndpoint('https://cloud.appwrite.io/v1')
+    .setEndpoint('https://cloud.indobase.io/v1')
     .setProject('<PROJECT_ID>');
 
 final teams = Teams(client);
@@ -135,10 +135,10 @@ final response = await teams.updateMembershipStatus(
 );
 ```
 ```client-apple
-import Appwrite
+import Indobase
 
 let client = Client()
-    .setEndpoint("https://cloud.appwrite.io/v1")
+    .setEndpoint("https://cloud.indobase.io/v1")
     .setProject("<PROJECT_ID>")
 
 let teams = Teams(client)
@@ -156,7 +156,7 @@ import io.appwrite.Client
 import io.appwrite.services.Teams
 
 val client = Client(context)
-    .setEndpoint("https://cloud.appwrite.io/v1")
+    .setEndpoint("https://cloud.indobase.io/v1")
     .setProject("<PROJECT_ID>")
 
 val teams = Teams(client)
@@ -186,7 +186,7 @@ Since memberships are created directly, users gain immediate access without wait
 const sdk = require('node-appwrite');
 
 const client = new sdk.Client()
-    .setEndpoint('https://cloud.appwrite.io/v1')
+    .setEndpoint('https://cloud.indobase.io/v1')
     .setProject('<PROJECT_ID>')
     .setKey('<API_KEY>');
 
@@ -201,11 +201,11 @@ const membership = await teams.createMembership(
 );
 ```
 ```server-python
-from appwrite.client import Client
-from appwrite.services.teams import Teams
+from indobase.client import Client
+from indobase.services.teams import Teams
 
 client = Client()
-client.set_endpoint('https://cloud.appwrite.io/v1')
+client.set_endpoint('https://cloud.indobase.io/v1')
 client.set_project('<PROJECT_ID>')
 client.set_key('<API_KEY>')
 
@@ -220,10 +220,10 @@ membership = teams.create_membership(
 )
 ```
 ```server-swift
-import Appwrite
+import Indobase
 
 let client = Client()
-    .setEndpoint("https://cloud.appwrite.io/v1") // Your API Endpoint
+    .setEndpoint("https://cloud.indobase.io/v1") // Your API Endpoint
     .setProject("<PROJECT_ID>") // Your project ID
     .setKey("<API_KEY>") // Your secret API key
 
@@ -242,7 +242,7 @@ import io.appwrite.Client
 import io.appwrite.services.Teams
 
 val client = Client()
-    .setEndpoint("https://cloud.appwrite.io/v1") // Your API Endpoint
+    .setEndpoint("https://cloud.indobase.io/v1") // Your API Endpoint
     .setProject("<PROJECT_ID>") // Your project ID
     .setKey("<API_KEY>") // Your secret API key
 
@@ -274,7 +274,7 @@ To check membership status client-side, first list the teams and then get the me
 import { Client, Teams } from "appwrite";
 
 const client = new Client()
-    .setEndpoint('https://cloud.appwrite.io/v1')
+    .setEndpoint('https://cloud.indobase.io/v1')
     .setProject('<PROJECT_ID>');
 
 const teams = new Teams(client);
@@ -298,10 +298,10 @@ if (userMembership) {
 }
 ```
 ```client-flutter
-import 'package:appwrite/appwrite.dart';
+import 'package:appwrite/indobase.dart';
 
 final client = Client()
-    .setEndpoint('https://cloud.appwrite.io/v1')
+    .setEndpoint('https://cloud.indobase.io/v1')
     .setProject('<PROJECT_ID>');
 
 final teams = Teams(client);
@@ -326,10 +326,10 @@ if (userMembership != null) {
 }
 ```
 ```client-apple
-import Appwrite
+import Indobase
 
 let client = Client()
-    .setEndpoint("https://cloud.appwrite.io/v1")
+    .setEndpoint("https://cloud.indobase.io/v1")
     .setProject("<PROJECT_ID>")
 
 let teams = Teams(client)
@@ -353,7 +353,7 @@ import io.appwrite.Client
 import io.appwrite.services.Teams
 
 val client = Client(context)
-    .setEndpoint("https://cloud.appwrite.io/v1")
+    .setEndpoint("https://cloud.indobase.io/v1")
     .setProject("<PROJECT_ID>")
 
 val teams = Teams(client)
@@ -386,7 +386,7 @@ Server-side requires iterating through teams and memberships since the data isn'
 const sdk = require('node-appwrite');
 
 const client = new sdk.Client()
-    .setEndpoint('https://cloud.appwrite.io/v1')
+    .setEndpoint('https://cloud.indobase.io/v1')
     .setProject('<PROJECT_ID>')
     .setKey('<API_KEY>');
 
@@ -414,11 +414,11 @@ for (const team of teamsList.teams) {
 }
 ```
 ```server-python
-from appwrite.client import Client
-from appwrite.services.teams import Teams
+from indobase.client import Client
+from indobase.services.teams import Teams
 
 client = Client()
-client.set_endpoint('https://cloud.appwrite.io/v1')
+client.set_endpoint('https://cloud.indobase.io/v1')
 client.set_project('<PROJECT_ID>')
 client.set_key('<API_KEY>')
 
@@ -443,10 +443,10 @@ for team in teams_list['teams']:
         print(f"Roles: {user_membership['roles']}")
 ```
 ```server-swift
-import Appwrite
+import Indobase
 
 let client = Client()
-    .setEndpoint("https://cloud.appwrite.io/v1")
+    .setEndpoint("https://cloud.indobase.io/v1")
     .setProject("<PROJECT_ID>")
     .setKey("<API_KEY>")
 
@@ -474,7 +474,7 @@ import io.appwrite.Client
 import io.appwrite.services.Teams
 
 val client = Client()
-    .setEndpoint("https://cloud.appwrite.io/v1")
+    .setEndpoint("https://cloud.indobase.io/v1")
     .setProject("<PROJECT_ID>")
     .setKey("<API_KEY>")
 
@@ -510,7 +510,7 @@ Team owners can remove members or users can leave teams:
 import { Client, Teams } from "appwrite";
 
 const client = new Client()
-    .setEndpoint('https://cloud.appwrite.io/v1')
+    .setEndpoint('https://cloud.indobase.io/v1')
     .setProject('<PROJECT_ID>');
 
 const teams = new Teams(client);
@@ -521,10 +521,10 @@ await teams.deleteMembership(
 );
 ```
 ```client-flutter
-import 'package:appwrite/appwrite.dart';
+import 'package:appwrite/indobase.dart';
 
 final client = Client()
-    .setEndpoint('https://cloud.appwrite.io/v1')
+    .setEndpoint('https://cloud.indobase.io/v1')
     .setProject('<PROJECT_ID>');
 
 final teams = Teams(client);
@@ -535,10 +535,10 @@ await teams.deleteMembership(
 );
 ```
 ```client-apple
-import Appwrite
+import Indobase
 
 let client = Client()
-    .setEndpoint("https://cloud.appwrite.io/v1")
+    .setEndpoint("https://cloud.indobase.io/v1")
     .setProject("<PROJECT_ID>")
 
 let teams = Teams(client)
@@ -553,7 +553,7 @@ import io.appwrite.Client
 import io.appwrite.services.Teams
 
 val client = Client(context)
-    .setEndpoint("https://cloud.appwrite.io/v1")
+    .setEndpoint("https://cloud.indobase.io/v1")
     .setProject("<PROJECT_ID>")
 
 val teams = Teams(client)
@@ -578,7 +578,7 @@ You can assign roles when creating a membership or update them later. Note that 
 import { Client, Teams } from "appwrite"
 
 const client = new Client()
-    .setEndpoint('https://cloud.appwrite.io/v1')
+    .setEndpoint('https://cloud.indobase.io/v1')
     .setProject('<PROJECT_ID>')
 
 const teams = new Teams(client)
@@ -591,10 +591,10 @@ await teams.updateMembership(
 )
 ```
 ```client-flutter
-import 'package:appwrite/appwrite.dart'
+import 'package:appwrite/indobase.dart'
 
 final client = Client()
-    .setEndpoint('https://cloud.appwrite.io/v1')
+    .setEndpoint('https://cloud.indobase.io/v1')
     .setProject('<PROJECT_ID>')
 
 final teams = Teams(client)
@@ -607,10 +607,10 @@ await teams.updateMembership(
 )
 ```
 ```client-apple
-import Appwrite
+import Indobase
 
 let client = Client()
-    .setEndpoint("https://cloud.appwrite.io/v1")
+    .setEndpoint("https://cloud.indobase.io/v1")
     .setProject("<PROJECT_ID>")
 
 let teams = Teams(client)
@@ -627,7 +627,7 @@ import io.appwrite.Client
 import io.appwrite.services.Teams
 
 val client = Client(context)
-    .setEndpoint("https://cloud.appwrite.io/v1")
+    .setEndpoint("https://cloud.indobase.io/v1")
     .setProject("<PROJECT_ID>")
 
 val teams = Teams(client)
@@ -650,7 +650,7 @@ You can verify if a user has specific roles:
 import { Client, Teams } from "appwrite"
 
 const client = new Client()
-    .setEndpoint('https://cloud.appwrite.io/v1')
+    .setEndpoint('https://cloud.indobase.io/v1')
     .setProject('<PROJECT_ID>')
 
 const teams = new Teams(client)
@@ -665,10 +665,10 @@ const membership = response.memberships.find(m => m.userId === '<USER_ID>')
 const isAdmin = membership?.roles.includes('admin') ?? false
 ```
 ```client-flutter
-import 'package:appwrite/appwrite.dart'
+import 'package:appwrite/indobase.dart'
 
 final client = Client()
-    .setEndpoint('https://cloud.appwrite.io/v1')
+    .setEndpoint('https://cloud.indobase.io/v1')
     .setProject('<PROJECT_ID>')
 
 final teams = Teams(client)
@@ -686,10 +686,10 @@ final membership = response.memberships.firstWhere(
 final isAdmin = membership?.roles.contains('admin') ?? false
 ```
 ```client-apple
-import Appwrite
+import Indobase
 
 let client = Client()
-    .setEndpoint("https://cloud.appwrite.io/v1")
+    .setEndpoint("https://cloud.indobase.io/v1")
     .setProject("<PROJECT_ID>")
 
 let teams = Teams(client)
@@ -708,7 +708,7 @@ import io.appwrite.Client
 import io.appwrite.services.Teams
 
 val client = Client(context)
-    .setEndpoint("https://cloud.appwrite.io/v1")
+    .setEndpoint("https://cloud.indobase.io/v1")
     .setProject("<PROJECT_ID>")
 
 val teams = Teams(client)

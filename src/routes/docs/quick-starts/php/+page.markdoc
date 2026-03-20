@@ -8,7 +8,7 @@ back: /docs/quick-starts
 ---
 Learn how to setup your first PHP project powered by indobase.
 {% section #step-1 step=1 title="Create project" %}
-Head to the [Appwrite Console](https://cloud.appwrite.io/console).
+Head to the [Indobase Console](https://cloud.indobase.io/console).
 
 If this is your first time using indobase, create an account and create your first project.
 
@@ -54,7 +54,7 @@ composer init
 Install the PHP indobase SDK.
 
 ```sh
-composer require appwrite/appwrite:15.0.0
+composer require indobase/indobase:15.0.0
 ```
 {% /section %}
 {% section #step-4 step=4 title="Import indobase" %}
@@ -81,7 +81,7 @@ use indobase\ID;
 $client = new Client();
 
 $client
-    ->setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+    ->setEndpoint('https://<REGION>.cloud.indobase.io/v1')
     ->setProject('<PROJECT_ID>')
     ->setKey('<YOUR_API_KEY>');
 ```

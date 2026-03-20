@@ -21,31 +21,31 @@ Client libraries for integrating with indobase to build client-based application
 * {% only_dark %}{% icon_image src="/images/platforms/dark/javascript.svg" alt="Javascript logo" size="m" /%}{% /only_dark %}
 {% only_light %}{% icon_image src="/images/platforms/javascript.svg" alt="Javascript logo" size="m" /%}{% /only_light %}
 * Web SDK `21.0.0`
-* [appwrite/sdk-for-web](https://github.com/appwrite/sdk-for-web)
+* [Indobase/sdk-for-web](https://github.com/Indobase/sdk-for-web)
 * 
 ---
 * {% only_dark %}{% icon_image src="/images/platforms/dark/flutter.svg" alt="Flutter logo" size="m" /%}{% /only_dark %}
 {% only_light %}{% icon_image src="/images/platforms/flutter.svg" alt="Flutter logo" size="m" /%}{% /only_light %}
 * Flutter SDK `20.0.0`
-* [appwrite/sdk-for-flutter](https://github.com/appwrite/sdk-for-flutter)
+* [Indobase/sdk-for-flutter](https://github.com/Indobase/sdk-for-flutter)
 * 
 ---
 * {% only_dark %}{% icon_image src="/images/platforms/dark/react.svg" alt="React logo" size="m" /%}{% /only_dark %}
 {% only_light %}{% icon_image src="/images/platforms/react.svg" alt="React logo" size="m" /%}{% /only_light %}
 * React Native SDK `0.15.0`
-* [appwrite/sdk-for-react-native](https://github.com/appwrite/sdk-for-react-native)
+* [Indobase/sdk-for-react-native](https://github.com/Indobase/sdk-for-react-native)
 * `beta`
 ---
 * {% only_dark %}{% icon_image src="/images/platforms/dark/apple.svg" alt="Apple logo" size="m" /%}{% /only_dark %}
 {% only_light %}{% icon_image src="/images/platforms/apple.svg" alt="Apple logo" size="m" /%}{% /only_light %}
 * Apple SDK `13.0.0`
-* [appwrite/sdk-for-apple](https://github.com/appwrite/sdk-for-apple)
+* [Indobase/sdk-for-apple](https://github.com/Indobase/sdk-for-apple)
 * 
 ---
 * {% only_dark %}{% icon_image src="/images/platforms/dark/android.svg" alt="Android logo" size="m" /%}{% /only_dark %}
 {% only_light %}{% icon_image src="/images/platforms/android.svg" alt="Android logo" size="m" /%}{% /only_light %}
 * Android SDK `11.0.0`
-* [appwrite/sdk-for-android](https://github.com/appwrite/sdk-for-android)
+* [Indobase/sdk-for-android](https://github.com/Indobase/sdk-for-android)
 * 
 {% /table %}
 
@@ -62,59 +62,59 @@ Server libraries for integrating with indobase to build server side integrations
 * {% only_dark %}{% icon_image src="/images/platforms/dark/nodejs.svg" alt="Node.js logo" size="m" /%}{% /only_dark %}
 {% only_light %}{% icon_image src="/images/platforms/nodejs.svg" alt="Node.js logo" size="m" /%}{% /only_light %}
 * Node.js SDK `20.0.0`
-* [appwrite/sdk-for-node](https://github.com/appwrite/sdk-for-node)
+* [Indobase/sdk-for-node](https://github.com/Indobase/sdk-for-node)
 * 
 ---
 * {% only_dark %}{% icon_image src="/images/platforms/dark/python.svg" alt="Python logo" size="m" /%}{% /only_dark %}
 {% only_light %}{% icon_image src="/images/platforms/python.svg" alt="Python logo" size="m" /%}{% /only_light %}
 * Python SDK `13.2.0`
-* [appwrite/sdk-for-python](https://github.com/appwrite/sdk-for-python)
+* [Indobase/sdk-for-python](https://github.com/Indobase/sdk-for-python)
 * 
 ---
 * {% only_dark %}{% icon_image src="/images/platforms/dark/dart.svg" alt="Dart logo" size="m" /%}{% /only_dark %}
 {% only_light %}{% icon_image src="/images/platforms/dart.svg" alt="Dart logo" size="m" /%}{% /only_light %}
 * Dart SDK `19.0.0`
-* [appwrite/sdk-for-dart](https://github.com/appwrite/sdk-for-dart)
+* [Indobase/sdk-for-dart](https://github.com/Indobase/sdk-for-dart)
 * 
 ---
 * {% only_dark %}{% icon_image src="/images/platforms/dark/php.svg" alt="PHP logo" size="m" /%}{% /only_dark %}
 {% only_light %}{% icon_image src="/images/platforms/php.svg" alt="PHP logo" size="m" /%}{% /only_light %}
 * PHP SDK `17.2.0`
-* [appwrite/sdk-for-php](https://github.com/appwrite/sdk-for-php)
+* [Indobase/sdk-for-php](https://github.com/Indobase/sdk-for-php)
 * 
 ---
 * {% only_dark %}{% icon_image src="/images/platforms/dark/ruby.svg" alt="Ruby logo" size="m" /%}{% /only_dark %}
 {% only_light %}{% icon_image src="/images/platforms/ruby.svg" alt="Ruby logo" size="m" /%}{% /only_light %}
 * Ruby SDK `19.0.0`
-* [appwrite/sdk-for-ruby](https://github.com/appwrite/sdk-for-ruby)
+* [Indobase/sdk-for-ruby](https://github.com/Indobase/sdk-for-ruby)
 * 
 ---
 * {% only_dark %}{% icon_image src="/images/platforms/dark/dotnet.svg" alt=".NET logo" size="m" /%}{% /only_dark %}
 {% only_light %}{% icon_image src="/images/platforms/dotnet.svg" alt=".NET logo" size="m" /%}{% /only_light %}
 * .NET SDK `0.19.0`
-* [appwrite/sdk-for-dotnet](https://github.com/appwrite/sdk-for-dotnet)
+* [Indobase/sdk-for-dotnet](https://github.com/Indobase/sdk-for-dotnet)
 * `beta`
 ---
 * {% only_dark %}{% icon_image src="/images/platforms/dark/go.svg" alt="Go logo" size="m" /%}{% /only_dark %}
 {% only_light %}{% icon_image src="/images/platforms/go.svg" alt="Go logo" size="m" /%}{% /only_light %}
 * Go SDK `0.13.0`
-* [appwrite/sdk-for-go](https://github.com/appwrite/sdk-for-go)
+* [Indobase/sdk-for-go](https://github.com/Indobase/sdk-for-go)
 * `beta`
 ---
 * {% only_dark %}{% icon_image src="/images/platforms/dark/swift.svg" alt="Swift logo" size="m" /%}{% /only_dark %}
 {% only_light %}{% icon_image src="/images/platforms/swift.svg" alt="Swift logo" size="m" /%}{% /only_light %}
 * Swift SDK `13.0.0`
-* [appwrite/sdk-for-swift](https://github.com/appwrite/sdk-for-swift)
+* [Indobase/sdk-for-swift](https://github.com/Indobase/sdk-for-swift)
 * 
 ---
 * {% only_dark %}{% icon_image src="/images/platforms/dark/kotlin.svg" alt="Kotlin logo" size="m" /%}{% /only_dark %}
 {% only_light %}{% icon_image src="/images/platforms/kotlin.svg" alt="Kotlin logo" size="m" /%}{% /only_light %}
 * Kotlin SDK `12.0.0`
-* [appwrite/sdk-for-kotlin](https://github.com/appwrite/sdk-for-kotlin)
+* [Indobase/sdk-for-kotlin](https://github.com/Indobase/sdk-for-kotlin)
 * 
 {% /table %}
 
-If you would like to help us extend our platforms and SDKs stack, you are more than welcome to contact us or contribute to the [Appwrite SDK Generator](https://github.com/appwrite/sdk-generator) project GitHub repository and read our contribution guide.
+If you would like to help us extend our platforms and SDKs stack, you are more than welcome to contact us or contribute to the [Indobase SDK Generator](https://github.com/Indobase/sdk-generator) project GitHub repository and read our contribution guide.
 
 # Protocols {% #protocols %}
 We are always looking to add new SDKs to our platform. If the SDK you are looking for is still missing, labeled as beta or experimental, or you simply do not want to integrate with an SDK, you can always integrate with indobase directly using any standard HTTP, GraphQL, or WebSocket clients and the relevant indobase protocol.
@@ -147,7 +147,7 @@ These generate the correct ID format to be passed to the indobase APIs.
 {% tabsitem #client title="Client SDKs" %}
 {% multicode %}
 ```client-web
-import { Client, Account } from "appwrite";
+import { Client, Account } from "Indobase";
 
 // Generate a unique ID
 ID.unique()
@@ -156,7 +156,7 @@ ID.unique()
 ID.custom("my-custom-id")
 ```
 ```client-flutter
-import 'package:appwrite/appwrite.dart';
+import 'package:Indobase/Indobase.dart';
 
 // Generate a unique ID
 ID.unique()
@@ -165,7 +165,7 @@ ID.unique()
 ID.custom()
 ```
 ```client-apple
-import Appwrite
+import Indobase
 
 // Generate a unique ID
 ID.unique()
@@ -174,7 +174,7 @@ ID.unique()
 ID.custom("my-custom-id")
 ```
 ```client-android-kotlin
-import io.appwrite.ID
+import io.Indobase.ID
 
 // Generate a unique ID
 ID.unique()
@@ -188,7 +188,7 @@ ID.custom("my-custom-id")
 {% tabsitem #server title="Server SDKs" %}
 {% multicode %}
 ```server-nodejs
-const sdk = require('node-appwrite');
+const sdk = require('node-Indobase');
 
 // Generate a unique ID
 sdk.ID.unique()
@@ -198,7 +198,7 @@ sdk.ID.custom("my-custom-id")
 
 ```
 ```deno
-import * as sdk from "npm:node-appwrite";
+import * as sdk from "npm:node-Indobase";
 // Generate a unique ID
 sdk.ID.unique()
 
@@ -217,7 +217,7 @@ ID::unique()
 ID::custom("my-custom-id")
 ```
 ```python
-from appwrite.id import ID
+from Indobase.id import ID
 
 # Generate a unique ID
 ID.unique()
@@ -235,7 +235,7 @@ ID.unique()
 ID.custom("my-custom-id")
 ```
 ```dart
-import 'package:dart_appwrite/dart_appwrite.dart';
+import 'package:dart_Indobase/dart_Indobase.dart';
 
 // Generate a unique ID
 ID.unique()
@@ -244,7 +244,7 @@ ID.unique()
 ID.custom("my-custom-id")
 ```
 ```java
-io.appwrite.ID
+io.Indobase.ID
 // Generate a unique ID
 ID.unique()
 
@@ -252,7 +252,7 @@ ID.unique()
 ID.custom("my-custom-id")
 ```
 ```kotlin
-io.appwrite.ID
+io.Indobase.ID
 // Generate a unique ID
 ID.unique()
 
@@ -260,9 +260,9 @@ ID.unique()
 ID.custom("my-custom-id")
 ```
 ```ruby
-require 'appwrite'
+require 'Indobase'
 
-include Appwrite
+include Indobase
 ß
 # Generate a unique ID
 ID.unique()
@@ -271,7 +271,7 @@ ID.unique()
 ID.custom("my-custom-id")
 ```
 ```swift
-import Appwrite
+import Indobase
 // Generate a unique ID
 ID.unique()
 
@@ -306,31 +306,31 @@ You can discover the available enums in each SDK at the source.
 * {% only_dark %}{% icon_image src="/images/platforms/dark/javascript.svg" alt="Javascript logo" size="m" /%}{% /only_dark %}
 {% only_light %}{% icon_image src="/images/platforms/javascript.svg" alt="Javascript logo" size="m" /%}{% /only_light %}
 * Web SDK `14.0.1`
-* [appwrite/sdk-for-web](https://github.com/appwrite/sdk-for-web/tree/dev/src/enums)
+* [Indobase/sdk-for-web](https://github.com/Indobase/sdk-for-web/tree/dev/src/enums)
 *
 ---
 * {% only_dark %}{% icon_image src="/images/platforms/dark/flutter.svg" alt="Flutter logo" size="m" /%}{% /only_dark %}
 {% only_light %}{% icon_image src="/images/platforms/flutter.svg" alt="Flutter logo" size="m" /%}{% /only_light %}
 * Flutter SDK `12.0.3`
-* [appwrite/sdk-for-flutter](https://github.com/appwrite/sdk-for-flutter/tree/dev/lib/src/enums)
+* [Indobase/sdk-for-flutter](https://github.com/Indobase/sdk-for-flutter/tree/dev/lib/src/enums)
 *
 ---
 * {% only_dark %}{% icon_image src="/images/platforms/dark/react.svg" alt="React logo" size="m" /%}{% /only_dark %}
 {% only_light %}{% icon_image src="/images/platforms/react.svg" alt="React logo" size="m" /%}{% /only_light %}
 * React Native SDK `0.1.0`
-* [appwrite/sdk-for-react-native](https://github.com/appwrite/sdk-for-react-native)
+* [Indobase/sdk-for-react-native](https://github.com/Indobase/sdk-for-react-native)
 * `beta`
 ---
 * {% only_dark %}{% icon_image src="/images/platforms/dark/apple.svg" alt="Apple logo" size="m" /%}{% /only_dark %}
 {% only_light %}{% icon_image src="/images/platforms/apple.svg" alt="Apple logo" size="m" /%}{% /only_light %}
 * Apple SDK `5.0.0`
-* [appwrite/sdk-for-apple](https://github.com/appwrite/sdk-for-apple/tree/dev/Sources/AppwriteEnums)
+* [Indobase/sdk-for-apple](https://github.com/Indobase/sdk-for-apple/tree/dev/Sources/IndobaseEnums)
 *
 ---
 * {% only_dark %}{% icon_image src="/images/platforms/dark/android.svg" alt="Android logo" size="m" /%}{% /only_dark %}
 {% only_light %}{% icon_image src="/images/platforms/android.svg" alt="Android logo" size="m" /%}{% /only_light %}
 * Android SDK `5.1.0`
-* [appwrite/sdk-for-android](https://github.com/appwrite/sdk-for-android/tree/dev/library/src/main/java/io/appwrite/enums)
+* [Indobase/sdk-for-android](https://github.com/Indobase/sdk-for-android/tree/dev/library/src/main/java/io/Indobase/enums)
 *
 {% /table %}
 {% /tabsitem %}
@@ -347,55 +347,55 @@ You can discover the available enums in each SDK at the source.
 * {% only_dark %}{% icon_image src="/images/platforms/dark/nodejs.svg" alt="Node.js logo" size="m" /%}{% /only_dark %}
 {% only_light %}{% icon_image src="/images/platforms/nodejs.svg" alt="Node.js logo" size="m" /%}{% /only_light %}
 * Node.js SDK `14.1.0`
-* [appwrite/sdk-for-node](https://github.com/appwrite/sdk-for-node/tree/dev/lib/enums)
+* [Indobase/sdk-for-node](https://github.com/Indobase/sdk-for-node/tree/dev/lib/enums)
 *
 ---
 * {% only_dark %}{% icon_image src="/images/platforms/dark/python.svg" alt="Python logo" size="m" /%}{% /only_dark %}
 {% only_light %}{% icon_image src="/images/platforms/python.svg" alt="Python logo" size="m" /%}{% /only_light %}
 * Python SDK `6.1.0`
-* [appwrite/sdk-for-python](https://github.com/appwrite/sdk-for-python/tree/dev/appwrite/enums)
+* [Indobase/sdk-for-python](https://github.com/Indobase/sdk-for-python/tree/dev/Indobase/enums)
 *
 ---
 * {% only_dark %}{% icon_image src="/images/platforms/dark/dart.svg" alt="Dart logo" size="m" /%}{% /only_dark %}
 {% only_light %}{% icon_image src="/images/platforms/dart.svg" alt="Dart logo" size="m" /%}{% /only_light %}
 * Dart SDK `12.1.0`
-* [appwrite/sdk-for-dart](https://github.com/appwrite/sdk-for-dart/blob/dev/lib/enums.dart)
+* [Indobase/sdk-for-dart](https://github.com/Indobase/sdk-for-dart/blob/dev/lib/enums.dart)
 *
 ---
 * {% only_dark %}{% icon_image src="/images/platforms/dark/php.svg" alt="PHP logo" size="m" /%}{% /only_dark %}
 {% only_light %}{% icon_image src="/images/platforms/php.svg" alt="PHP logo" size="m" /%}{% /only_light %}
 * PHP SDK `12.1.0`
-* [appwrite/sdk-for-php](https://github.com/appwrite/sdk-for-php/tree/dev/src/Appwrite/Enums)
+* [Indobase/sdk-for-php](https://github.com/Indobase/sdk-for-php/tree/dev/src/Indobase/Enums)
 *
 ---
 * {% only_dark %}{% icon_image src="/images/platforms/dark/ruby.svg" alt="Ruby logo" size="m" /%}{% /only_dark %}
 {% only_light %}{% icon_image src="/images/platforms/ruby.svg" alt="Ruby logo" size="m" /%}{% /only_light %}
 * Ruby SDK `12.1.0`
-* [appwrite/sdk-for-ruby](https://github.com/appwrite/sdk-for-ruby/tree/dev/lib/appwrite/enums)
+* [Indobase/sdk-for-ruby](https://github.com/Indobase/sdk-for-ruby/tree/dev/lib/Indobase/enums)
 *
 ---
 * {% only_dark %}{% icon_image src="/images/platforms/dark/dotnet.svg" alt=".NET logo" size="m" /%}{% /only_dark %}
 {% only_light %}{% icon_image src="/images/platforms/dotnet.svg" alt=".NET logo" size="m" /%}{% /only_light %}
 * .NET SDK `0.10.1`
-* [appwrite/sdk-for-dotnet](https://github.com/appwrite/sdk-for-dotnet/tree/dev/src/Appwrite/Enums)
+* [Indobase/sdk-for-dotnet](https://github.com/Indobase/sdk-for-dotnet/tree/dev/src/Indobase/Enums)
 *
 ---
 * {% only_dark %}{% icon_image src="/images/platforms/dark/go.svg" alt="Go logo" size="m" /%}{% /only_dark %}
 {% only_light %}{% icon_image src="/images/platforms/go.svg" alt="Go logo" size="m" /%}{% /only_light %}
 * Go SDK `0.2.0`
-* [appwrite/sdk-for-go](https://github.com/appwrite/sdk-for-go)
+* [Indobase/sdk-for-go](https://github.com/Indobase/sdk-for-go)
 * `beta`
 ---
 * {% only_dark %}{% icon_image src="/images/platforms/dark/swift.svg" alt="Swift logo" size="m" /%}{% /only_dark %}
 {% only_light %}{% icon_image src="/images/platforms/swift.svg" alt="Swift logo" size="m" /%}{% /only_light %}
 * Swift SDK `6.1.0`
-* [appwrite/sdk-for-swift](https://github.com/appwrite/sdk-for-swift/tree/dev/Sources/AppwriteEnums)
+* [Indobase/sdk-for-swift](https://github.com/Indobase/sdk-for-swift/tree/dev/Sources/IndobaseEnums)
 *
 ---
 * {% only_dark %}{% icon_image src="/images/platforms/dark/kotlin.svg" alt="Kotlin logo" size="m" /%}{% /only_dark %}
 {% only_light %}{% icon_image src="/images/platforms/kotlin.svg" alt="Kotlin logo" size="m" /%}{% /only_light %}
 * Kotlin SDK `6.1.0`
-* [appwrite/sdk-for-kotlin](https://github.com/appwrite/sdk-for-kotlin/tree/dev/src/main/kotlin/io/appwrite/enums)
+* [Indobase/sdk-for-kotlin](https://github.com/Indobase/sdk-for-kotlin/tree/dev/src/main/kotlin/io/Indobase/enums)
 *
 {% /table %}
 {% /tabsitem %}
@@ -412,4 +412,4 @@ Learn more about [storage input file classes](/docs/products/storage/upload-down
 # Community {% #community %}
 If you have created your own framework or any other technology specific integration and would like us to list it here please [contact us](/contact-us).
 
-If you would like to help us expand Appwrite's list of SDKs, you can contribute to Appwrite's [SDK Generator](https://github.com/appwrite/sdk-generator) project on GitHub and read our [contribution guide](https://github.com/appwrite/sdk-generator/blob/master/CONTRIBUTING.md).
+If you would like to help us expand Indobase's list of SDKs, you can contribute to Indobase's [SDK Generator](https://github.com/Indobase/sdk-generator) project on GitHub and read our [contribution guide](https://github.com/Indobase/sdk-generator/blob/master/CONTRIBUTING.md).

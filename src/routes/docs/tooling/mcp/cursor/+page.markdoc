@@ -36,7 +36,7 @@ Update the `mcp.json` file to include the API server:
 ```json
 {
     "mcpServers": {
-        "appwrite-api": {
+        "indobase-api": {
             "command": "uvx",
             "args": [
                 "mcp-server-appwrite",
@@ -45,7 +45,7 @@ Update the `mcp.json` file to include the API server:
             "env": {
                 "APPWRITE_API_KEY": "your-api-key",
                 "APPWRITE_PROJECT_ID": "your-project-id",
-                "APPWRITE_ENDPOINT": "https://<REGION>.cloud.appwrite.io/v1"
+                "APPWRITE_ENDPOINT": "https://<REGION>.cloud.indobase.io/v1"
             }
         }
     }
@@ -66,11 +66,11 @@ Update the `mcp.json` file to include the docs server:
 ```json
 {
   "mcpServers": {
-    "appwrite-docs": {
+    "indobase-docs": {
       "command": "npx",
       "args": [
         "mcp-remote",
-        "https://mcp-for-docs.appwrite.io"
+        "https://mcp-for-docs.indobase.io"
       ]
     }
   }

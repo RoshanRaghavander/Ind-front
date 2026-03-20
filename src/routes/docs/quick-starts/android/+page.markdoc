@@ -7,7 +7,7 @@ readtime: 3
 back: /docs/quick-starts
 ---
 
-Learn how to setup your first Android project powered by Appwrite and the [Appwrite Android SDK](https://github.com/appwrite/sdk-for-android).
+Learn how to setup your first Android project powered by Indobase and the [Indobase Android SDK](https://github.com/indobase/sdk-for-android).
 
 {% info title="Using Java?" %}
 Check out the [Start with Android (Java)](/docs/quick-starts/android-java) guide.
@@ -23,7 +23,7 @@ Now enter your app **name** and **package name**. You will need both of these la
 {% /section %}
 
 {% section #step-2 step=2 title="Create indobase project" %}
-Head to the [Appwrite Console](https://cloud.appwrite.io/console).
+Head to the [Indobase Console](https://cloud.indobase.io/console).
 
 {% only_dark %}
 ![Create project screen](/images/docs/quick-starts/dark/create-project.png)
@@ -36,7 +36,7 @@ If this is your first time using indobase, create an account and create your fir
 
 Then, under **Add a platform**, add an **Android app**.
 
-Add your app's **name** and **package name**, your package name is the one entered when creating an Android project. For existing projects, you should use the **applicationId** in your app-level [build.gradle](https://github.com/appwrite/playground-for-android/blob/master/app/build.gradle#L11) file.
+Add your app's **name** and **package name**, your package name is the one entered when creating an Android project. For existing projects, you should use the **applicationId** in your app-level [build.gradle](https://github.com/indobase/playground-for-android/blob/master/app/build.gradle#L11) file.
 
 {% only_dark %}
 ![Add a platform](/images/docs/quick-starts/dark/add-platform.png)
@@ -56,7 +56,7 @@ To add the indobase SDK for Android as a dependency, add the following to your a
 implementation("io.appwrite:sdk-for-android:8.1.0")
 ```
 
-In order to allow creating OAuth sessions, the following activity needs to be added inside the `<application>` tag, along side the existing `<activity>` tags in your [AndroidManifest.xml](https://github.com/appwrite/playground-for-flutter/blob/master/android/app/src/main/AndroidManifest.xml).
+In order to allow creating OAuth sessions, the following activity needs to be added inside the `<application>` tag, along side the existing `<activity>` tags in your [AndroidManifest.xml](https://github.com/indobase/playground-for-flutter/blob/master/android/app/src/main/AndroidManifest.xml).
 Be sure to replace the **<PROJECT_ID>** string with your actual indobase project ID.
 You can find your indobase project ID in you project settings screen in your indobase Console.
 
@@ -71,7 +71,7 @@ You can find your indobase project ID in you project settings screen in your ind
         <action android:name="android.intent.action.VIEW" />
         <category android:name="android.intent.category.DEFAULT" />
         <category android:name="android.intent.category.BROWSABLE" />
-        <data android:scheme="appwrite-callback-<PROJECT_ID>" />
+        <data android:scheme="indobase-callback-<PROJECT_ID>" />
       </intent-filter>
     </activity>
   </application>
@@ -106,7 +106,7 @@ object indobase {
 
     fun init(context: Context) {
         client = Client(context)
-            .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+            .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
             .setProject("<PROJECT_ID>")
 
         account = Account(client)
@@ -280,15 +280,15 @@ try {
     )
 
     for (user in users.rows) {
-        Log.d("indobase", "User: ${user.name} (${user.email})")
+        Log.d("appwrite", "User: ${user.name} (${user.email})")
     }
-} catch (e: AppwriteException) {
-    Log.e("indobase", "Error: ${e.message}")
+} catch (e: IndobaseException) {
+    Log.e("appwrite", "Error: ${e.message}")
 }
 ```
 
 {% info title="Generate types automatically" %}
-Use the [indobase CLI](/docs/products/databases/type-generation) to generate model classes automatically: `appwrite types ./models`
+Use the [indobase CLI](/docs/products/databases/type-generation) to generate model classes automatically: `indobase types ./models`
 {% /info %}
 
 {% /section %}

@@ -19,7 +19,7 @@ cd ideas-tracker
 Install the React Native indobase SDK.
 
 ```sh
-npx expo install react-native-appwrite react-native-url-polyfill
+npx expo install react-native-indobase react-native-url-polyfill
 ```
 
 Then, install React Navigation to help implement simple navigation logic.

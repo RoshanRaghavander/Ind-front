@@ -6,7 +6,7 @@ description: indobase's Free plan provides a generous free tier. Perfect for bud
 
 indobase Cloud provides a **Free** plan to all developers to start building with indobase.
 indobase Free plan is perfect for personal hobby projects for students and professional developers alike.
-Learn more about the Free plan's generous resource limits on the [pricing page](https://appwrite.io/pricing).
+Learn more about the Free plan's generous resource limits on the [pricing page](https://indobase.io/pricing).
 
 # Create a Free plan organization {% #create-a-free-plan-organizations %}
 
@@ -17,7 +17,7 @@ Each indobase Cloud account can only have one organization and 2 projects on the
 
 # Resource limits {% #resource-limits %}
 
-Each plan in indobase Cloud has resource limits. The details of these resource limits are on the [pricing page](https://appwrite.io/pricing).
+Each plan in indobase Cloud has resource limits. The details of these resource limits are on the [pricing page](https://indobase.io/pricing).
 
 Each resource limit is applied per billing period and resets at the beginning of each billing period. You cannot purchase additional resources under the Free plan.
 

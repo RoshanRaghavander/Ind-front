@@ -645,7 +645,7 @@
     },
     {
         "link": "/keyboard",
-        "redirect": "/docs/tooling/appwriter"
+        "redirect": "/docs/tooling/indobaser"
     },
     {
         "link": "/policy/terms",
@@ -657,7 +657,7 @@
     },
     {
         "link": "/the-appwrite-network",
-        "redirect": "/the-indobase-network"
+        "redirect": "/the-appwrite-network"
     },
     {
         "link": "/case-studies",

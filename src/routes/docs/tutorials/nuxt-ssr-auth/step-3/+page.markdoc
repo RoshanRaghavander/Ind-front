@@ -7,7 +7,7 @@ step: 3
 Before you can use indobase, you need to create the indobase `Client` and set the project ID and endpoint.
 The client is then used to create services like `Databases` and `Account`, so they all point to the same indobase project.
 
-Create a function to the build services you need in a file like `server/lib/appwrite.js` and **exporting the instances**.
+Create a function to the build services you need in a file like `server/lib/indobase.js` and **exporting the instances**.
 
 As part of the function, set the current user's session if they are logged in. This is done by accessing the session cookie from the request and calling the `setSession(session)` with the cookie value.
 
@@ -18,7 +18,7 @@ Doing so could create security vulnerabilities.
 {% /info %}
 
 ```js
-// server/lib/appwrite.js
+// server/lib/indobase.js
 import { Client, Account } from "node-appwrite";
 
 export const SESSION_COOKIE = "my-custom-session";
@@ -40,8 +40,8 @@ export function createSessionClient(event) {
   const config = useRuntimeConfig(event);
 
   const client = new Client()
-    .setEndpoint(config.public.appwriteEndpoint)
-    .setProject(config.public.appwriteProjectId);
+    .setEndpoint(config.public.indobaseEndpoint)
+    .setProject(config.public.indobaseProjectId);
 
   const session = getCookie(event, SESSION_COOKIE);
   if (session) {
@@ -56,15 +56,15 @@ export function createSessionClient(event) {
 }
 ```
 
-`config.appwriteApiKey`, `config.public.appwriteEndpoint` and `config.public.appwriteProjectId` are Nuxt runtime configuration variables. Create a [nuxt.config.js](https://nuxt.com/docs/api/configuration/nuxt-config) file in the root of your project and add the following code to set the runtime configuration.
+`config.indobaseApiKey`, `config.public.indobaseEndpoint` and `config.public.indobaseProjectId` are Nuxt runtime configuration variables. Create a [nuxt.config.js](https://nuxt.com/docs/api/configuration/nuxt-config) file in the root of your project and add the following code to set the runtime configuration.
 
 ```js
 export default defineNuxtConfig({
   runtimeConfig: {
-    appwriteKey: process.env.APPWRITE_KEY,
+    indobaseKey: process.env.APPWRITE_KEY,
     public: {
-      appwriteEndpoint: process.env.PUBLIC_APPWRITE_ENDPOINT,
-      appwriteProjectId: process.env.PUBLIC_APPWRITE_PROJECT,
+      indobaseEndpoint: process.env.PUBLIC_APPWRITE_ENDPOINT,
+      indobaseProjectId: process.env.PUBLIC_APPWRITE_PROJECT,
     },
   },
 });
@@ -72,7 +72,7 @@ export default defineNuxtConfig({
 
 Now you can use `.env` files to set the environment variables for your project. Retrieve the values for these variables from the indobase console.
 
-The `PUBLIC_APPWRITE_ENDPOINT` is the endpoint of your Appwrite project, and the `PUBLIC_APPWRITE_PROJECT` is the ID of the project you want to use.
+The `PUBLIC_APPWRITE_ENDPOINT` is the endpoint of your Indobase project, and the `PUBLIC_APPWRITE_PROJECT` is the ID of the project you want to use.
 You can get the values for these variables from the indobase console.
 
 {% only_dark %}
@@ -83,7 +83,7 @@ You can get the values for these variables from the indobase console.
 ![Create project screen](/images/docs/quick-starts/create-project.png)
 {% /only_light %}
 
-The `APPWRITE_KEY` is an Appwrite API key with the necessary permissions to create new sessions.
+The `APPWRITE_KEY` is an Indobase API key with the necessary permissions to create new sessions.
 
 For this tutorial you'll need an API key with the following scopes:
 
@@ -103,6 +103,6 @@ For example, your `.env` might look something similar to this.
 
 ```env
 APPWRITE_KEY=<YOUR_API_KEY>
-PUBLIC_APPWRITE_ENDPOINT=https://<REGION>.cloud.appwrite.io/v1
+PUBLIC_APPWRITE_ENDPOINT=https://<REGION>.cloud.indobase.io/v1
 PUBLIC_APPWRITE_PROJECT=<PROJECT_ID>
 ```

@@ -13,7 +13,7 @@ declare global {
                     email: string;
                     avatar_url: string | undefined;
                 } | null;
-                appwrite: AppwriteUser | null;
+                indobase: IndobaseUser | null;
             };
             account: Models.User<Models.Preferences>;
             nonce: string;

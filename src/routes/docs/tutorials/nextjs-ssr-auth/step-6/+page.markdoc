@@ -13,7 +13,7 @@ Now the end-user is able to sign up, we can create the account page. This page w
 import {
   createSessionClient,
   getLoggedInUser,
-} from "@/lib/server/appwrite";
+} from "@/lib/server/indobase";
 import { redirect } from "next/navigation";
 import { cookies } from "next/headers";
 

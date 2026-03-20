@@ -50,7 +50,7 @@ When creating, updating or upserting in bulk, you can set `$createdAt` and `$upd
 const sdk = require('node-appwrite');
 
 const client = new sdk.Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
     .setProject('<PROJECT_ID>')
     .setKey('<API_KEY>');
 
@@ -73,11 +73,11 @@ const result = await tablesDB.createRows(
 ```
 
 ```server-python
-from appwrite.client import Client
-from appwrite.services.tables_db import TablesDB
+from indobase.client import Client
+from indobase.services.tables_db import TablesDB
 
 client = Client()
-client.set_endpoint('https://<REGION>.cloud.appwrite.io/v1')
+client.set_endpoint('https://<REGION>.cloud.indobase.io/v1')
 client.set_project('<PROJECT_ID>')
 client.set_key('<API_KEY>')
 
@@ -88,11 +88,11 @@ result = tablesDB.create_rows(
     table_id = '<TABLE_ID>',
     rows = [
         {
-            '$id': appwrite.ID.unique(),
+            '$id': indobase.ID.unique(),
             'name': 'Row 1'
         },
         {
-            '$id': appwrite.ID.unique(),
+            '$id': indobase.ID.unique(),
             'name': 'Row 2'
         }
     ]
@@ -114,7 +114,7 @@ You can update multiple rows in a single request using the `updateRows` method.
 const sdk = require('node-appwrite');
 
 const client = new sdk.Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
     .setProject('<PROJECT_ID>')
     .setKey('<API_KEY>');
 
@@ -133,11 +133,11 @@ const result = await tablesDB.updateRows(
 ```
 
 ```server-python
-from appwrite.client import Client
-from appwrite.services.tables_db import TablesDB
+from indobase.client import Client
+from indobase.services.tables_db import TablesDB
 
 client = Client()
-client.set_endpoint('https://<REGION>.cloud.appwrite.io/v1')
+client.set_endpoint('https://<REGION>.cloud.indobase.io/v1')
 client.set_project('<PROJECT_ID>')
 client.set_key('<API_KEY>')
 
@@ -170,7 +170,7 @@ You can upsert multiple rows in a single request using the `upsertRows(` method.
 const sdk = require('node-appwrite');
 
 const client = new sdk.Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
     .setProject('<PROJECT_ID>')
     .setKey('<API_KEY>');
 
@@ -193,12 +193,12 @@ const result = await tablesDB.upsertRows(
 ```
 
 ```server-python
-from appwrite.client import Client
-from appwrite.services.tables_db import TablesDB
-from appwrite.id import ID
+from indobase.client import Client
+from indobase.services.tables_db import TablesDB
+from indobase.id import ID
 
 client = Client()
-client.set_endpoint('https://<REGION>.cloud.appwrite.io/v1')
+client.set_endpoint('https://<REGION>.cloud.indobase.io/v1')
 client.set_project('<PROJECT_ID>')
 client.set_key('<API_KEY>')
 
@@ -209,7 +209,7 @@ result = tablesDB.upsert_rows(
     table_id = '<TABLE_ID>',
     rows = [
         {
-            '$id': appwrite.ID.unique(),
+            '$id': indobase.ID.unique(),
             'name': 'Row 1'
         },
         {
@@ -235,7 +235,7 @@ You can delete multiple rows in a single request using the `deleteRows` method.
 const sdk = require('node-appwrite');
 
 const client = new sdk.Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
     .setProject('<PROJECT_ID>')
     .setKey('<API_KEY>');
 
@@ -251,12 +251,12 @@ const result = await tablesDB.deleteRows(
 ```
 
 ```server-python
-from appwrite.client import Client
-from appwrite.services.tables_db import TablesDB
-from appwrite.query import Query
+from indobase.client import Client
+from indobase.services.tables_db import TablesDB
+from indobase.query import Query
 
 client = Client()
-client.set_endpoint('https://<REGION>.cloud.appwrite.io/v1')
+client.set_endpoint('https://<REGION>.cloud.indobase.io/v1')
 client.set_project('<PROJECT_ID>')
 client.set_key('<API_KEY>')
 
@@ -301,8 +301,8 @@ tablesDB.create_rows(
   database_id = '<DATABASE_ID>',
   table_id = '<TABLE_ID>',
   rows = [
-    { '$id': appwrite.ID.unique(), 'name': 'One' },
-    { '$id': appwrite.ID.unique(), 'name': 'Two' }
+    { '$id': indobase.ID.unique(), 'name': 'One' },
+    { '$id': indobase.ID.unique(), 'name': 'Two' }
   ],
   transaction_id = '<TRANSACTION_ID>'
 )

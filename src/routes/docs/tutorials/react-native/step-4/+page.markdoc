@@ -13,9 +13,9 @@ You can use a context and a custom hook to manage our user's data.
 Create a new file `contexts/UserContext.jsx` and add the following code to it.
 
 ```client-react-native
-import { ID } from "react-native-appwrite";
+import { ID } from "react-native-indobase";
 import { createContext, useContext, useEffect, useState } from "react";
-import { account } from "../lib/appwrite";
+import { account } from "../lib/indobase";
 import { toast } from "../lib/toast";
 
 

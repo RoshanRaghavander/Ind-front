@@ -24,7 +24,7 @@ export async function generateServiceMarkdown(
 
         markdown += `## Base URL\n\n`;
         markdown += `\`\`\`\n`;
-        markdown += `https://<REGION>.cloud.appwrite.io/v1\n`;
+        markdown += `https://<REGION>.cloud.indobase.io/v1\n`;
         markdown += `\`\`\`\n\n`;
 
         if (methods.length === 0) {

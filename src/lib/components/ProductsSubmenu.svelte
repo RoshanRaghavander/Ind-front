@@ -60,7 +60,7 @@
     export const sublinks: Array<SubLink> = [
         {
             label: 'Indobase vs. Supabase',
-            href: '/blog/post/appwrite-compared-to-supabase'
+            href: '/blog/post/indobase-compared-to-supabase'
         },
         {
             label: 'Indobase vs. Firebase',

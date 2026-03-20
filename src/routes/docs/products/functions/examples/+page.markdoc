@@ -67,7 +67,7 @@ Finally, add `pip install -r requirements.txt` to your function's build commands
 Create a `pubspec.yaml` file with the following contents. This file is used to manage your Dart project's dependencies.
 
 ```yaml
-name: appwrite_function
+name: indobase_function
 description: indobase Function
 version: 1.0.0
 environment:
@@ -275,7 +275,7 @@ export default async function ({ req, res }) {
   const client = new Client();
   client
     .setProject(process.env.APPWRITE_FUNCTION_PROJECT_ID)
-    .setKey(req.headers['x-appwrite-key']);
+    .setKey(req.headers['x-indobase-key']);
 
   const tablesDB = new TablesDB(client);
 
@@ -307,9 +307,9 @@ export default async function ({ req, res }) {
 };
 ```
 ```python
-from appwrite.client import Client
-from appwrite.services.tables_db import TablesDB
-from appwrite.query import Query
+from indobase.client import Client
+from indobase.services.tables_db import TablesDB
+from indobase.query import Query
 import os
 
 def main(context):
@@ -326,7 +326,7 @@ def main(context):
     client = (
         Client()
         .set_project(os.environ['APPWRITE_FUNCTION_PROJECT_ID'])
-        .set_key(context.req.headers['x-appwrite-key'])
+        .set_key(context.req.headers['x-indobase-key'])
     )
 
     tablesDB = TablesDB(client)
@@ -375,7 +375,7 @@ return function ($context) {
     $client = new Client();
     $client
         ->setProject(getenv('APPWRITE_FUNCTION_PROJECT_ID'))
-        ->setKey($context->req->headers['x-appwrite-key']);
+        ->setKey($context->req->headers['x-indobase-key']);
 
     $tablesDB = new TablesDB($client);
 
@@ -423,7 +423,7 @@ Future main(final context) async {
     // Set project and set API key
     final client = Client()
         .setProject(Platform.environment['APPWRITE_FUNCTION_PROJECT_ID'])
-        .setKey(context.req.headers['x-appwrite-key']);
+        .setKey(context.req.headers['x-indobase-key']);
 
     final tablesDB = TablesDB(client);
 
@@ -470,7 +470,7 @@ def main(context)
     client = indobase::Client.new()
     client
         .set_project(ENV['APPWRITE_FUNCTION_PROJECT_ID'])
-        .set_key(context.req.headers['x-appwrite-key'])
+        .set_key(context.req.headers['x-indobase-key'])
 
     tablesDB = indobase::TablesDB.new(client)
 
@@ -559,7 +559,7 @@ export default async function ({ req, res }) {
     // Set project and set API key
     const client = new Client()
       .setProject(process.env.APPWRITE_FUNCTION_PROJECT_ID)
-      .setKey(req.headers['x-appwrite-key']);
+      .setKey(req.headers['x-indobase-key']);
 
     const tablesDB = new TablesDB(client);
     const row = await tablesDB.createRow({
@@ -577,9 +577,9 @@ export default async function ({ req, res }) {
 ```
 
 ```python
-from appwrite.client import Client
-from appwrite.services.tables_db import TablesDB
-from appwrite.query import Query
+from indobase.client import Client
+from indobase.services.tables_db import TablesDB
+from indobase.query import Query
 from urllib.parse import parse_qs
 import os
 
@@ -617,7 +617,7 @@ def main(context):
         client = (
           Client()
             .set_project(os.environ["APPWRITE_FUNCTION_PROJECT_ID"])
-            .set_key(context.req.headers["x-appwrite-key"])
+            .set_key(context.req.headers["x-indobase-key"])
         )
 
         tablesDB = TablesDB(client)
@@ -672,7 +672,7 @@ return function ($context) {
     // Set project and set API key
     $client = (new Client())
          ->setProject(getenv('APPWRITE_FUNCTION_PROJECT_ID'))
-         ->setKey($context->req->headers['x-appwrite-key']);
+         ->setKey($context->req->headers['x-indobase-key']);
 
     $tablesDB = new TablesDB($client);
     $row = $tablesDB->createRow('<DATABASE_ID>', '<MESSAGES_TABLE_ID>', ID::unique(), $message);
@@ -721,7 +721,7 @@ def main(context)
         # Set project and set API key
         client = indobase::Client.new
             .set_project(ENV['APPWRITE_FUNCTION_PROJECT_ID'])
-            .set_key(context.req.headers['x-appwrite-key'])
+            .set_key(context.req.headers['x-indobase-key'])
 
         tablesDB = indobase::TablesDB.new(client)
         row = tablesDB.create_row('<DATABASE_ID>', '<MESSAGES_TABLE_ID>', ID.unique(), message)
@@ -771,7 +771,7 @@ Future main(final context) async {
         // Set project and set API key
         final client = Client()
           .setProject(Platform.environment['APPWRITE_FUNCTION_PROJECT_ID'])
-          .setKey(context.req.headers['x-appwrite-key']);
+          .setKey(context.req.headers['x-indobase-key']);
 
         final tablesDB = TablesDB(client);
         final row = await tablesDB.createRow('<DATABASE_ID>', '<MESSAGES_TABLE_ID>', ID.unique(), message);

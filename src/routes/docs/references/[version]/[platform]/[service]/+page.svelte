@@ -276,7 +276,7 @@
                     <Fence
                         language="text"
                         badge="Base URL"
-                        content="https://<REGION>.cloud.appwrite.io/v1"
+                        content="https://<REGION>.cloud.indobase.io/v1"
                         process
                         withLineNumbers={false}
                     />

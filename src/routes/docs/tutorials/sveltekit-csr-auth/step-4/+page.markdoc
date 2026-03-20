@@ -10,7 +10,7 @@ With SvelteKit, you can use the `load` function to check if you're logged in bef
 
 ```js
 // src/routes/+layout.js
-import { appwrite } from "$lib/appwrite";
+import { indobase } from "$lib/appwrite";
 
 // Turn off SSR globally, turning the project into a static site
 export const ssr = false;
@@ -18,7 +18,7 @@ export const ssr = false;
 export const load = async () => {
   try {
     return {
-      account: await appwrite.account.get(),
+      account: await indobase.account.get(),
     };
   } catch {
     return {
@@ -37,14 +37,14 @@ We can get the returned data in the root page by using the `data` prop:
 <!-- src/routes/+page.svelte -->
 <script>
 	import { invalidateAll } from '$app/navigation';
-	import { appwrite } from '$lib/appwrite.js';
+	import { indobase } from '$lib/appwrite.js';
 
 	export let data;
 
 	$: loggedIn = !!data.account;
 
 	async function logout() {
-		await appwrite.account.deleteSession({ sessionId: 'current' });
+		await indobase.account.deleteSession({ sessionId: 'current' });
 		// invalidateAll will execute all `load` functions again.
 		// In our case, this means we'll fetch the account data again.
 		await invalidateAll();

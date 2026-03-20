@@ -5,7 +5,7 @@ const DEFAULT_BASE = 'https://studio.indobase.in';
 const ENV_BASE = (publicEnv.PUBLIC_APPWRITE_DASHBOARD || DEFAULT_BASE).replace(/\/$/, '');
 const DASHBOARD_BASE = ENV_BASE.startsWith('http://localhost') ? DEFAULT_BASE : ENV_BASE;
 
-export function getAppwriteDashboardUrl(path = '/dashboard/sign-in'): string {
+export function getIndobaseDashboardUrl(path = '/dashboard/sign-in'): string {
     const utmParams = getUtmSourceForLink();
 
     const base = DASHBOARD_BASE;

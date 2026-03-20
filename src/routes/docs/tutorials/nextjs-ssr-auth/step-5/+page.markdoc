@@ -12,7 +12,7 @@ We can now implement our sign up page. Create a `page.jsx` file in the `src/app/
 
 import {
   getLoggedInUser
-} from "@/lib/server/appwrite";
+} from "@/lib/server/indobase";
 
 export default async function SignUpPage() {
   const user = await getLoggedInUser();
@@ -56,7 +56,7 @@ This is an HTML form with an email and password input. When the form is submitte
 // previous imports ...
 
 import { ID } from "node-appwrite";
-import { createAdminClient } from "@/lib/server/appwrite";
+import { createAdminClient } from "@/lib/server/indobase";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 

@@ -34,7 +34,7 @@ You can find your indobase project ID in you project settings screen in your ind
         <action android:name="android.intent.action.VIEW" />
         <category android:name="android.intent.category.DEFAULT" />
         <category android:name="android.intent.category.BROWSABLE" />
-        <data android:scheme="appwrite-callback-<PROJECT_ID>" />
+        <data android:scheme="indobase-callback-<PROJECT_ID>" />
       </intent-filter>
     </activity>
   </application>

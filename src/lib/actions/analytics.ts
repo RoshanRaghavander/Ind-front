@@ -51,7 +51,7 @@ const plausible = (domain: string): AnalyticsPlugin => {
 
 const analytics = Analytics({
     app: 'appwrite',
-    plugins: [plausible('appwrite.io')]
+    plugins: [plausible('indobase.io')]
 });
 
 export type TrackEventArgs = { name: string; data?: object };

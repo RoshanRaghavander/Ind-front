@@ -33,7 +33,7 @@ If you encounter issues with your GitHub App integration:
 - Check the indobase logs for any errors related to GitHub integration:
 
 ```bash
-docker compose logs appwrite
+docker compose logs indobase
 ```
 
 {% partial file="update-variables.md" /%}

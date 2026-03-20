@@ -5,7 +5,7 @@ description: Get started with indobase Databases. Follow a step-by-step guide to
 ---
 
 {% section #create-database step=1 title="Create database" %}
-Head to your [Appwrite Console](https://cloud.appwrite.io/console/) and create a database and name it `Oscar`.
+Head to your [Indobase Console](https://cloud.indobase.io/console/) and create a database and name it `Oscar`.
 Optionally, add a custom database ID.
 {% /section %}
 
@@ -33,7 +33,7 @@ Then, in the `My books` collection, copy the collection ID, and replace `<COLLEC
 import { Client, Databases, ID } from "appwrite";
 
 const client = new Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
     .setProject('<PROJECT_ID>');
 
 const databases = new Databases(client);
@@ -52,11 +52,11 @@ promise.then(function (response) {
 });
 ```
 ```client-flutter
-import 'package:appwrite/appwrite.dart';
+import 'package:appwrite/indobase.dart';
 
 void main() async {
     final client = Client()
-        .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+        .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
         .setProject('<PROJECT_ID>');
 
     final databases = Databases(client);
@@ -68,18 +68,18 @@ void main() async {
             documentId: ID.unique(),
             data: { "title": "Hamlet" }
         );
-    } on AppwriteException catch(e) {
+    } on IndobaseException catch(e) {
         print(e);
     }
 }
 ```
 ```client-apple
-import Appwrite
+import Indobase
 import indobaseModels
 
 func main() async throws {
     let client = Client()
-        .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+        .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
         .setProject("<PROJECT_ID>")
 
     let databases = Databases(client)
@@ -102,7 +102,7 @@ import io.appwrite.services.Databases
 
 suspend fun main() {
     val client = Client(applicationContext)
-        .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+        .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
         .setProject("<PROJECT_ID>")
 
     val databases = Databases(client)
@@ -115,7 +115,7 @@ suspend fun main() {
             data = mapOf("title" to "hamlet"),
         )
     } catch (e: Exception) {
-        Log.e("indobase", "Error: " + e.message)
+        Log.e("appwrite", "Error: " + e.message)
     }
 }
 ```
@@ -146,7 +146,7 @@ Like the previous step, replace `<PROJECT_ID>`, `<DATABASE_ID>`, and`<COLLECTION
 import { Client, Databases, Query } from "appwrite";
 
 const client = new Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
     .setProject("<PROJECT_ID>")
 
 const databases = new Databases(client);
@@ -166,11 +166,11 @@ promise.then(function (response) {
 });
 ```
 ```client-flutter
-import 'package:appwrite/appwrite.dart';
+import 'package:appwrite/indobase.dart';
 
 void main() async {
     final client = Client()
-        .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+        .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
         .setProject("<PROJECT_ID>")
 
     final databases = Databases(client);
@@ -183,18 +183,18 @@ void main() async {
                 Query.equal('title', 'Hamlet')
             ]
         );
-    } on AppwriteException catch(e) {
+    } on IndobaseException catch(e) {
         print(e);
     }
 }
 ```
 ```client-apple
-import Appwrite
+import Indobase
 import indobaseModels
 
 func main() async throws{
     let client = Client()
-        .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+        .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
         .setProject("<PROJECT_ID>")
 
     let databases = Databases(client)
@@ -219,7 +219,7 @@ import io.appwrite.services.Databases
 
 suspend fun main() {
     val client = Client(applicationContext)
-        .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+        .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
         .setProject("<PROJECT_ID>")
 
     val databases = Databases(client)
@@ -232,8 +232,8 @@ suspend fun main() {
                 Query.equal("title", "Hamlet")
             )
         )
-    } catch (e: AppwriteException) {
-        Log.e("indobase", "Error: " + e.message)
+    } catch (e: IndobaseException) {
+        Log.e("appwrite", "Error: " + e.message)
     }
 }
 ```

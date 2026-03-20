@@ -7,7 +7,7 @@ step: 4
 
 Build a utility function to get the logged in user from indobase. This function will be used in our components and routes to check if a user is logged in, and access the user's details.
 
-Edit the `src/lib/server/appwrite.js` file to create a new function called `getLoggedInUser`.
+Edit the `src/lib/server/indobase.js` file to create a new function called `getLoggedInUser`.
 ```js
 // ... your initilization functions
 
@@ -26,7 +26,7 @@ Now, use the `getLoggedInUser` function in the home page to redirect based on th
 ```js
 // src/app/page.jsx
 
-import { getLoggedInUser } from "@/lib/server/appwrite";
+import { getLoggedInUser } from "@/lib/server/indobase";
 import { redirect } from "next/navigation";
 
 export default async function Home() {

@@ -41,7 +41,7 @@ Use the `incrementRowColumn` and `decrementRowColumn` methods to perform atomic 
 import { Client, TablesDB } from "appwrite";
 
 const client = new Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<YOUR_PROJECT_ID>'); // Your project ID
 
 const tablesDB = new TablesDB(client);
@@ -55,10 +55,10 @@ const result = await tablesDB.incrementRowColumn({
 });
 ```
 ```client-flutter
-import 'package:appwrite/appwrite.dart';
+import 'package:appwrite/indobase.dart';
 
 final client = Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
     .setProject('<PROJECT_ID>');
 
 final tablesDB = TablesDB(client);
@@ -76,7 +76,7 @@ import indobase
 import indobaseModels
 
 let client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
     .setProject("<PROJECT_ID>")
 
 let tablesDB = TablesDB(client)
@@ -94,7 +94,7 @@ import io.appwrite.Client
 import io.appwrite.services.TablesDB
 
 val client = Client(applicationContext)
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
     .setProject("<PROJECT_ID>")
 
 val tablesDB = TablesDB(client)
@@ -111,7 +111,7 @@ val row = tablesDB.incrementRowColumn(
 const sdk = require('node-appwrite');
 
 const client = new sdk.Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>') // Your project ID
     .setKey('<API_KEY>'); // Your secret API key
 
@@ -126,11 +126,11 @@ const result = await tablesDB.incrementRowColumn({
 });
 ```
 ```server-python
-from appwrite.client import Client
-from appwrite.services.tables_db import TablesDB
+from indobase.client import Client
+from indobase.services.tables_db import TablesDB
 
 client = Client()
-client.set_endpoint('https://<REGION>.cloud.appwrite.io/v1') # Your API Endpoint
+client.set_endpoint('https://<REGION>.cloud.indobase.io/v1') # Your API Endpoint
 client.set_project('<PROJECT_ID>') # Your project ID
 client.set_key('<API_KEY>') # Your secret API key
 
@@ -174,7 +174,7 @@ Use the `decrementRowColumn` method to decrease numeric fields:
 import { Client, TablesDB } from "appwrite";
 
 const client = new Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<YOUR_PROJECT_ID>'); // Your project ID
 
 const tablesDB = new TablesDB(client);
@@ -188,10 +188,10 @@ const result = await tablesDB.decrementRowColumn({
 });
 ```
 ```client-flutter
-import 'package:appwrite/appwrite.dart';
+import 'package:appwrite/indobase.dart';
 
 final client = Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
     .setProject('<PROJECT_ID>');
 
 final tablesDB = TablesDB(client);
@@ -205,11 +205,11 @@ final row = await tablesDB.decrementRowColumn(
 );
 ```
 ```client-apple
-import Appwrite
+import Indobase
 import indobaseModels
 
 let client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
     .setProject("<PROJECT_ID>")
 
 let tablesDB = TablesDB(client)
@@ -227,7 +227,7 @@ import io.appwrite.Client
 import io.appwrite.services.TablesDB
 
 val client = Client(applicationContext)
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
     .setProject("<PROJECT_ID>")
 
 val tablesDB = TablesDB(client)
@@ -244,7 +244,7 @@ val row = tablesDB.decrementRowColumn(
 const sdk = require('node-appwrite');
 
 const client = new sdk.Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>') // Your project ID
     .setKey('<API_KEY>'); // Your secret API key
 
@@ -259,11 +259,11 @@ const result = await tablesDB.decrementRowColumn({
 });
 ```
 ```server-python
-from appwrite.client import Client
-from appwrite.services.tables_db import TablesDB
+from indobase.client import Client
+from indobase.services.tables_db import TablesDB
 
 client = Client()
-client.set_endpoint('https://<REGION>.cloud.appwrite.io/v1') # Your API Endpoint
+client.set_endpoint('https://<REGION>.cloud.indobase.io/v1') # Your API Endpoint
 client.set_project('<PROJECT_ID>') # Your project ID
 client.set_key('<API_KEY>') # Your secret API key
 

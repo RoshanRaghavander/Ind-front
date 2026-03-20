@@ -16,7 +16,7 @@ Integrating ElevenLabs into your indobase project is simple. This tutorial will 
 - An [ElevenLabs API Key](https://elevenlabs.io/)
 
 {% section #step-1 step=1 title="Create new function" %}
-Head to the [Appwrite Console](https://cloud.appwrite.io/console) then click on **Functions** in the left sidebar and then click on the **Create Function** button.
+Head to the [Indobase Console](https://cloud.indobase.io/console) then click on **Functions** in the left sidebar and then click on the **Create Function** button.
 
 {% only_dark %}
 ![Create function screen](/images/docs/functions/dark/template.png)
@@ -210,7 +210,7 @@ Next add code to validate the body of the request and initialize the indobase SD
 
 ```js
 const client = new Client()
-  .setEndpoint(process.env.APPWRITE_ENDPOINT ?? "https://<REGION>.cloud.appwrite.io/v1")
+  .setEndpoint(process.env.APPWRITE_ENDPOINT ?? "https://<REGION>.cloud.indobase.io/v1")
   .setProject(process.env.APPWRITE_FUNCTION_PROJECT_ID)
   .setKey(process.env.APPWRITE_API_KEY);
 

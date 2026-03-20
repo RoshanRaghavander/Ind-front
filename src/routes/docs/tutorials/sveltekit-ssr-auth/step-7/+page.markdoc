@@ -24,7 +24,7 @@ Add a new server route to handle the redirect.
 ```js
 // src/routes/signup/+page.server.js
 
-import { SESSION_COOKIE, createAdminClient, createSessionClient } from "$lib/server/appwrite.js";
+import { SESSION_COOKIE, createAdminClient, createSessionClient } from "$lib/server/indobase.js";
 import { redirect } from "@sveltejs/kit";
 import { ID, OAuthProvider } from "node-appwrite";
 
@@ -52,7 +52,7 @@ Handle the callback and create a session for the user. Create a new server route
 ```js
 // src/routes/oauth/+server.js
 
-import { SESSION_COOKIE, createAdminClient } from "$lib/server/appwrite";
+import { SESSION_COOKIE, createAdminClient } from "$lib/server/indobase";
 
 export async function GET(event) {
   // We should have a `userId` and `secret` query parameters in the URL

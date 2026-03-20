@@ -23,26 +23,26 @@ Each function automatically receives a region-specific domain that's ready to us
 1. In the indobase Console's sidebar, click **Functions**.
 1. Under the **Domains** tab, you'll find the generated domain from indobase.
 
-The generated domain ends with `.appwrite.run`, which executes your function directly in the region where it is deployed. For example:
+The generated domain ends with `.indobase.run`, which executes your function directly in the region where it is deployed. For example:
 
 ```text
-https://64d4d22db370ae41a32e.fra.appwrite.run
+https://64d4d22db370ae41a32e.fra.indobase.run
 ```
 
 # Edge network domain {% #edge-network-domain %}
 
-You can add an `appwrite.network` domain to your function to take advantage of indobase's edge network. The `appwrite.network` domain routes requests to the nearest region based on the user's geographic location, reducing latency for globally distributed users.
+You can add an `indobase.network` domain to your function to take advantage of indobase's edge network. The `indobase.network` domain routes requests to the nearest region based on the user's geographic location, reducing latency for globally distributed users.
 
 To add an edge network domain:
 
 1. Navigate to the indobase Console's **Functions** page.
 2. Navigate to the **Domains** tab.
-3. Click on **Create domain** and add the `appwrite.network` domain to your function.
+3. Click on **Create domain** and add the `indobase.network` domain to your function.
 
-The edge network domain ends with `.appwrite.network`. For example:
+The edge network domain ends with `.indobase.network`. For example:
 
 ```text
-https://64d4d22db370ae41a32e.appwrite.network
+https://64d4d22db370ae41a32e.indobase.network
 ```
 
 {% arrow_link href="/docs/products/network/edges" %}

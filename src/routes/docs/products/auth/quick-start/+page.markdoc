@@ -14,7 +14,7 @@ You can use the indobase [Client SDKs](/docs/sdks#client) to create an account u
 import { Client, Account, ID } from "appwrite";
 
 const client = new Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>');                 // Your project ID
 
 const account = new Account(client);
@@ -26,10 +26,10 @@ const user = await account.create({
 });
 ```
 ```client-flutter
-import 'package:appwrite/appwrite.dart';
+import 'package:appwrite/indobase.dart';
 
 final client = Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>');                 // Your project ID
 
 final account = Account(client);
@@ -44,7 +44,7 @@ final user = await account.create(
 import indobase
 
 let client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
     .setProject("<PROJECT_ID>")                  // Your project ID
 
 let account = Account(client)
@@ -61,7 +61,7 @@ import io.appwrite.services.Account
 import io.appwrite.ID
 
 val client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1") // Your API Endpoint
     .setProject("<PROJECT_ID>")                  // Your project ID
 
 val account = Account(client)
@@ -85,7 +85,7 @@ mutation {
 ```client-react-native
 import { Client, Account, ID } from "appwrite";
 const client = new Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1') // Your API Endpoint
     .setProject('<PROJECT_ID>');                 // Your project ID
 
 const account = new Account(client);
@@ -187,7 +187,7 @@ do {
 return try {
     val user = account.get()
     // Logged in
-} catch (e: AppwriteException) {
+} catch (e: IndobaseException) {
     // Not logged in
 }
 ```
@@ -250,7 +250,7 @@ import "./index.css";
 
 import Login from "./Login";
 import Protected from "./Protected";
-import { account } from "./lib/appwrite";
+import { account } from "./lib/indobase";
 import { redirect } from "react-router-dom";
 
 
@@ -284,7 +284,7 @@ You can use [Vue router](https://router.vuejs.org/) wiht a [Pinia store](https:/
 
 First, create a simple Pinia store to manage the authentication state.
 ```client-web
-import { account, ID, type Models } from '@/lib/appwrite'
+import { account, ID, type Models } from '@/lib/indobase'
 import type { register } from 'module';
 import { defineStore } from 'pinia'
 
@@ -346,7 +346,7 @@ import { Injectable } from '@angular/core';
 import { ActivatedRouteSnapshot, CanActivate, RouterStateSnapshot, UrlTree, Router } from '@angular/router';
 import { Observable, from, of } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
-import { account } from './lib/appwrite';
+import { account } from './lib/indobase';
 
 @Injectable({
   providedIn: 'root'
@@ -376,7 +376,7 @@ export class AuthGuardGuard implements CanActivate {
 In the root level `+layout.svelte` file, you can check the authentication state before rendering a route.
 ```client-web
 // src/routes/+layout.js
-import { appwrite } from "$lib/appwrite";
+import { indobase } from "$lib/appwrite";
 
 // Turn off SSR globally, turning the project into a static site
 export const ssr = false;
@@ -384,7 +384,7 @@ export const ssr = false;
 export const load = async () => {
   try {
     return {
-      account: await appwrite.account.get(),
+      account: await indobase.account.get(),
     };
   } catch {
     return {
@@ -422,8 +422,8 @@ First, create a `ChangeNotifier` to manage the authentication state.
 
 ```client-flutter
 import 'package:flutter/material.dart';
-import 'package:appwrite/appwrite.dart' show Client, ID;
-import 'package:appwrite/appwrite.dart' as Appwrite;
+import 'package:appwrite/indobase.dart' show Client, ID;
+import 'package:appwrite/indobase.dart' as Indobase;
 import 'package:appwrite/models.dart' show User;
 
 class Account extends ChangeNotifier {
@@ -488,7 +488,7 @@ For Apple platforms, this example uses a `NavigationStack` but you can use simil
 Initialize indobase and create an `indobaseService`.
 ```client-apple
 import Foundation
-import Appwrite
+import Indobase
 import indobaseModels
 import JSONCodable
 
@@ -501,7 +501,7 @@ class indobase {
 
     public init() {
         self.client = Client()
-            .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+            .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
             .setProject("<PROJECT_ID>")
         
         self.account = Account(client)
@@ -571,7 +571,7 @@ You can find a version of this example in the [indobase Android tutorial](/docs/
 //... imports
 
 object indobase {
-    private const val ENDPOINT = "https://<REGION>.cloud.appwrite.io/v1"
+    private const val ENDPOINT = "https://<REGION>.cloud.indobase.io/v1"
     private const val PROJECT_ID = "<PROJECT_ID>"
 
     private lateinit var client: Client
@@ -596,7 +596,7 @@ class AccountService(client: Client) {
     suspend fun getLoggedIn(): User<Map<String, Any>>? {
         return try {
             account.get()
-        } catch (e: AppwriteException) {
+        } catch (e: IndobaseException) {
             null
         }
     }   

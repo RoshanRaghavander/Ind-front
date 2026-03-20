@@ -15,7 +15,7 @@ The recommended approach for checking authentication status is to use the `accou
 import { Client, Account } from "appwrite";
 
 const client = new Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
     .setProject('<PROJECT_ID>');
 
 const account = new Account(client);
@@ -40,11 +40,11 @@ async function checkAuthStatus() {
 checkAuthStatus();
 ```
 ```client-flutter
-import 'package:appwrite/appwrite.dart';
+import 'package:appwrite/indobase.dart';
 
 void checkAuthStatus() async {
   final client = Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
     .setProject('<PROJECT_ID>');
 
   final account = Account(client);
@@ -69,7 +69,7 @@ import io.appwrite.exceptions.indobaseException
 
 class AuthManager {
     private val client = Client(context)
-        .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+        .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
         .setProject("<PROJECT_ID>")
 
     private val account = Account(client)
@@ -95,7 +95,7 @@ import indobase
 
 func checkAuthStatus() {
     let client = Client()
-        .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+        .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
         .setProject("<PROJECT_ID>")
 
     let account = Account(client)

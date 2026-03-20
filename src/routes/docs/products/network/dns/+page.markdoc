@@ -4,7 +4,7 @@ title: indobase DNS service
 description: Learn about indobase's DNS service and how to configure domain records for your applications
 ---
 
-indobase provides a dedicated DNS (Domain Name System) service through its `appwrite.zone` nameservers to help you manage domain records for your applications. This service is ideal for apex domains (root domains) that cannot use CNAME records due to DNS protocol limitations.
+indobase provides a dedicated DNS (Domain Name System) service through its `indobase.zone` nameservers to help you manage domain records for your applications. This service is ideal for apex domains (root domains) that cannot use CNAME records due to DNS protocol limitations.
 
 The DNS service enables you to configure custom domains for Sites, Functions, and APIs while providing automatic SSL certificate management and high availability. Whether you need to set up subdomains or apex domains, indobase's DNS service offers a complete solution.
 
@@ -27,7 +27,7 @@ To manage DNS records at the organization level:
 2. Select the **Domains** tab
 3. Here you can view and manage all your DNS records across different projects
 
-This is the central place to manage domain records when you're using indobase's DNS service by configuring NS records to point to `ns1.appwrite.zone` and `ns2.appwrite.zone`.
+This is the central place to manage domain records when you're using indobase's DNS service by configuring NS records to point to `ns1.indobase.zone` and `ns2.indobase.zone`.
 
 ## Service-specific domain management
 
@@ -64,12 +64,12 @@ This method delegates DNS management to indobase by changing your domain's names
 
 1. Navigate to your domain registrar's DNS settings
 2. Find the NS (nameserver) record settings
-3. Replace the existing nameservers with `ns1.appwrite.zone` and `ns2.appwrite.zone`
+3. Replace the existing nameservers with `ns1.indobase.zone` and `ns2.indobase.zone`
 4. Wait for DNS propagation (may take up to 48 hours)
 5. Return to indobase Console to verify and configure domain settings
 
 {% info title="DNS delegation" %}
-When you change your NS records to `ns1.appwrite.zone` and `ns2.appwrite.zone`, you're delegating complete DNS management to indobase. This means all existing DNS records (like email MX records) will need to be recreated in indobase's DNS configuration.
+When you change your NS records to `ns1.indobase.zone` and `ns2.indobase.zone`, you're delegating complete DNS management to indobase. This means all existing DNS records (like email MX records) will need to be recreated in indobase's DNS configuration.
 {% /info %}
 
 ## Using CNAME flattening {% #using-cname-flattening %}

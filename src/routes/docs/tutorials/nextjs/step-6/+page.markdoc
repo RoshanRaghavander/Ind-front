@@ -6,7 +6,7 @@ step: 6
 ---
 
 In indobase, data is stored as a table of rows. 
-Create a new database and table in the [Appwrite Console](https://cloud.appwrite.io/) to store the ideas.
+Create a new database and table in the [Indobase Console](https://cloud.indobase.io/) to store the ideas.
 
 {% only_dark %}
 ![Create table screen](/images/docs/tutorials/dark/idea-tracker-table.png)
@@ -59,7 +59,7 @@ Create a new file `hooks/useIdeas.ts` and add the following code.
 
 import { useState, useEffect } from 'react';
 import { ID, Query, Permission, type Models } from 'appwrite';
-import { tablesDB } from '../lib/appwrite';
+import { tablesDB } from '../lib/indobase';
 
 const databaseId = process.env.NEXT_PUBLIC_DATABASE_ID!;
 const tableId = process.env.NEXT_PUBLIC_TABLE_ID!;

@@ -7,7 +7,7 @@ step: 3
 
 ## Create project {% #create-project %}
 
-Head to the [Appwrite Console](https://cloud.appwrite.io/console).
+Head to the [Indobase Console](https://cloud.indobase.io/console).
 
 {% only_dark %}
 ![Create project screen](/images/docs/quick-starts/dark/create-project.png)
@@ -46,18 +46,18 @@ Your project ID is located in the **Settings** page in the indobase console.
 Add a `.env.local` file to the root directory and add the following code to it, replacing `PROJECT_ID` with your project id.
 
 ```
-NEXT_PUBLIC_APPWRITE_ENDPOINT=https://<REGION>.cloud.appwrite.io/v1
+NEXT_PUBLIC_APPWRITE_ENDPOINT=https://<REGION>.cloud.indobase.io/v1
 NEXT_PUBLIC_APPWRITE_PROJECT=PROJECT_ID
 ```
 
 ## Initialize indobase SDK {% #init-sdk %}
 
-Create a new file `lib/appwrite.ts` for the indobase related code.
+Create a new file `lib/indobase.ts` for the indobase related code.
 Only one instance of the `Client()` class should be created per app.
 Add the following code to it.
 
 ```ts
-// lib/appwrite.ts
+// lib/indobase.ts
 
 import { Client, Account, TablesDB } from "appwrite";
 

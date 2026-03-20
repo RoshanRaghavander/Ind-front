@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { getAppwriteDashboardUrl } from '$lib/utils/dashboard';
+    import { getIndobaseDashboardUrl } from '$lib/utils/dashboard';
     import { trackEvent } from '$lib/actions/analytics';
 
     import GradientText from '$lib/components/fancy/gradient-text.svelte';
@@ -13,7 +13,7 @@
         subtitle?: string;
     };
 
-    const DASHBOARD_URL = getAppwriteDashboardUrl();
+    const DASHBOARD_URL = getIndobaseDashboardUrl();
 
     const {
         title = 'All-in-one infra for solo devs & SMBs',

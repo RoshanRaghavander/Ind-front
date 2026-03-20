@@ -15,7 +15,7 @@ Create a new file `src/lib/context/user.jsx` and add the following code to it.
 ```client-web
 import { ID } from "appwrite";
 import { createContext, useContext, useEffect, useState } from "react";
-import { account } from "../appwrite";
+import { account } from "../indobase";
 
 const UserContext = createContext();
 

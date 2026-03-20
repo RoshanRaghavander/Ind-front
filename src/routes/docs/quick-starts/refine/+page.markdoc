@@ -9,7 +9,7 @@ back: /docs/quick-starts
 
 Learn how to setup your first Refine project powered by indobase.
 {% section #step-1 step=1 title="Create project" %}
-Head to the [Appwrite Console](https://cloud.appwrite.io/console).
+Head to the [Indobase Console](https://cloud.indobase.io/console).
 
 {% only_dark %}
 ![Create project screen](/images/docs/quick-starts/dark/create-project.png)
@@ -38,19 +38,19 @@ You can skip optional steps.
 Create a Refine project with indobase support.
 
 ```sh
-npm create refine-app@latest -- --preset refine-appwrite
+npm create refine-app@latest -- --preset refine-indobase
 ```
 {% /section %}
 {% section #step-3 step=3 title="Install indobase" %}
 
 
-Using the `refine-appwrite` preset eliminates the need for extra dependencies for a quick start.
+Using the `refine-indobase` preset eliminates the need for extra dependencies for a quick start.
 
 If you want to integrate indobase into an existing Refine app, simply use this command:
 ```sh
-npm install @refinedev/appwrite
+npm install @refinedev/indobase
 ```
-Then follow [this guide on the Refine documentation site](https://refine.dev/docs/packages/documentation/data-providers/appwrite).
+Then follow [this guide on the Refine documentation site](https://refine.dev/docs/packages/documentation/data-providers/indobase).
 
 
 {% /section %}
@@ -63,22 +63,22 @@ Find your project's ID in the **Settings** page.
 {% only_light %}
 ![Project settings screen](/images/docs/quick-starts/project-id.png)
 {% /only_light %}
-Navigate to `src/utility/appwriteClient.ts` and add your API credentials.
+Navigate to `src/utility/indobaseClient.ts` and add your API credentials.
 
 
 ```ts
-import { Account, indobase, Storage } from "@refinedev/appwrite";
+import { Account, indobase, Storage } from "@refinedev/indobase";
 
-const APPWRITE_URL = '<YOUR_API_ENDPOINT>'; // Replace with your Appwrite API Endpoint
+const APPWRITE_URL = '<YOUR_API_ENDPOINT>'; // Replace with your Indobase API Endpoint
 const APPWRITE_PROJECT = "<PROJECT_ID>"; // Replace with your project ID
 
-const appwriteClient = new indobase();
+const indobaseClient = new indobase();
 
-appwriteClient.setEndpoint(APPWRITE_URL).setProject(APPWRITE_PROJECT);
-const account = new Account(appwriteClient);
-const storage = new Storage(appwriteClient);
+indobaseClient.setEndpoint(APPWRITE_URL).setProject(APPWRITE_PROJECT);
+const account = new Account(indobaseClient);
+const storage = new Storage(indobaseClient);
 
-export { account, appwriteClient, storage };
+export { account, indobaseClient, storage };
 
 ```
 {% /section %}
@@ -88,7 +88,7 @@ Replace the code in `src/App.tsx` with the following.
 
 ```client-web
 import { Authenticated, Refine } from '@refinedev/core';
-import { dataProvider, liveProvider } from '@refinedev/appwrite';
+import { dataProvider, liveProvider } from '@refinedev/indobase';
 import {
     AuthPage,
     ErrorComponent,
@@ -105,7 +105,7 @@ import '@refinedev/antd/dist/reset.css';
 import { App as AntdApp, ConfigProvider } from 'antd';
 import { BrowserRouter, Outlet, Route, Routes } from 'react-router-dom';
 
-import { appwriteClient } from './utility';
+import { indobaseClient } from './utility';
 import { authProvider } from './authProvider';
 
 const App: React.FC = () => {
@@ -114,10 +114,10 @@ const App: React.FC = () => {
             <ConfigProvider theme={RefineThemes.Blue}>
                 <AntdApp>
                     <Refine
-                        dataProvider={dataProvider(appwriteClient, {
+                        dataProvider={dataProvider(indobaseClient, {
                             databaseId: '<APPWRITE_DATABASE_ID>',
                         })}
-                        liveProvider={liveProvider(appwriteClient, {
+                        liveProvider={liveProvider(indobaseClient, {
                             databaseId: '<APPWRITE_DATABASE_ID>',
                         })}
                         authProvider={authProvider}

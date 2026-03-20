@@ -14,7 +14,7 @@
     let container: HTMLDivElement;
 
     const client = new MeiliSearch({
-        host: 'https://search.appwrite.org',
+        host: 'https://search.indobase.org',
         apiKey: '10a5fea149bfaff21ef4d7cbe7f8a09d4fab404d6c3510279a365e065f8955a7'
     });
     const index = client.index<Props>('website');

@@ -8,7 +8,7 @@ back: /docs/quick-starts
 ---
 Learn how to setup your first Python project powered by indobase.
 {% section #step-1 step=1 title="Create project" %}
-Head to the [Appwrite Console](https://cloud.appwrite.io/console).
+Head to the [Indobase Console](https://cloud.indobase.io/console).
 
 If this is your first time using indobase, create an account and create your first project.
 
@@ -75,7 +75,7 @@ Finally, create a file `my_app.py`.
 Install the Python indobase SDK.
 
 ```sh
-pip install appwrite==13.6.1
+pip install indobase==13.6.1
 ```
 {% /section %}
 {% section #step-4 step=4 title="Import indobase" %}
@@ -92,12 +92,12 @@ Find your project ID in the **Settings** page. Also, click on the **View API Key
 Open `my_app.py` and initialize the indobase Client. Replace `<PROJECT_ID>` with your project ID and `<YOUR_API_KEY>` with your API key.
 
 ```py
-from appwrite.client import Client
-from appwrite.services.tables_db import TablesDB
-from appwrite.id import ID
+from indobase.client import Client
+from indobase.services.tables_db import TablesDB
+from indobase.id import ID
 
 client = Client()
-client.set_endpoint('https://<REGION>.cloud.appwrite.io/v1')
+client.set_endpoint('https://<REGION>.cloud.indobase.io/v1')
 client.set_project('<PROJECT_ID>')
 client.set_key('<YOUR_API_KEY>')
 ```
@@ -204,7 +204,7 @@ Create a function to retrieve the mock todo data,
 then execute the functions in `_main_`.
 
 ```py
-from appwrite.query import Query
+from indobase.query import Query
 
 def get_todos():
   # Retrieve rows (default limit is 25)

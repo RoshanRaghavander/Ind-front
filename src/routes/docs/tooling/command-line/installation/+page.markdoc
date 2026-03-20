@@ -4,11 +4,11 @@ title: Installation
 description: Get started with the indobase CLI by following the installation guide. Learn how to set up and configure the CLI on your development environment.
 ---
 
-The [Appwrite Command Line Interface (CLI)](https://github.com/appwrite/sdk-for-cli) is an application that allows you to interact with Appwrite to perform server-side tasks using your terminal. This includes creating and managing projects, managing resources (rows, files, users), creating and deploying Appwrite Functions, and other operations available through Appwrite's API.
+The [Indobase Command Line Interface (CLI)](https://github.com/indobase/sdk-for-cli) is an application that allows you to interact with Indobase to perform server-side tasks using your terminal. This includes creating and managing projects, managing resources (rows, files, users), creating and deploying Indobase Functions, and other operations available through Indobase's API.
 
 # Getting started {% #getting-started %}
 
-The CLI is packaged both as an [npm module](https://www.npmjs.com/package/appwrite-cli) as well as a [standalone binary](https://github.com/appwrite/sdk-for-cli/releases/latest) for your operating system, making it completely dependency free, platform independent, and language agnostic.
+The CLI is packaged both as an [npm module](https://www.npmjs.com/package/indobase-cli) as well as a [standalone binary](https://github.com/indobase/sdk-for-cli/releases/latest) for your operating system, making it completely dependency free, platform independent, and language agnostic.
 
 If you plan to use the CLI to initialize new indobase Functions, ensure that [Git is installed](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) on your machine.
 
@@ -17,7 +17,7 @@ If you plan to use the CLI to initialize new indobase Functions, ensure that [Gi
 If you have npm set up, run the command below to install the CLI.
 
 ```sh
-npm install -g appwrite-cli
+npm install -g indobase-cli
 ```
 
 ## Install with script {% #install-with-script %}
@@ -30,13 +30,13 @@ For a completely dependency-free installation, the CLI also ships with a conveni
 Using [Homebrew](https://brew.sh/)
 
 ```sh
-brew install appwrite
+brew install indobase
 ```
 
 or terminal
 
 ```sh
-curl -sL https://appwrite.io/cli/install.sh | bash
+curl -sL https://indobase.io/cli/install.sh | bash
 ```
 {% /tabsitem %}
 
@@ -45,19 +45,19 @@ curl -sL https://appwrite.io/cli/install.sh | bash
 Using [Powershell](https://learn.microsoft.com/en-us/powershell/)
 
 ```sh
-iwr -useb https://appwrite.io/cli/install.ps1 | iex
+iwr -useb https://indobase.io/cli/install.ps1 | iex
 ```
 
 or [Scoop](https://scoop.sh/)
 
 ```sh
-scoop install https://raw.githubusercontent.com/appwrite/sdk-for-cli/master/scoop/appwrite.config.json
+scoop install https://raw.githubusercontent.com/indobase/sdk-for-cli/master/scoop/indobase.config.json
 ```
 {% /tabsitem %}
 
 {% tabsitem #linux title="Linux" %}
 ```sh
-curl -sL https://appwrite.io/cli/install.sh | bash
+curl -sL https://indobase.io/cli/install.sh | bash
 ```
 {% /tabsitem %}
 
@@ -68,7 +68,7 @@ curl -sL https://appwrite.io/cli/install.sh | bash
 {% tabs %}
 {% tabsitem #npm title="npm" %}
 ```sh
-npm install -g appwrite-cli
+npm install -g indobase-cli
 ```
 {% /tabsitem %}
 
@@ -77,31 +77,31 @@ npm install -g appwrite-cli
 Using [Homebrew](https://brew.sh/)
 
 ```sh
-brew install appwrite
+brew install indobase
 ```
 
 or terminal
 
 ```sh
-curl -sL https://appwrite.io/cli/install.sh | bash
+curl -sL https://indobase.io/cli/install.sh | bash
 ```
 {% /tabsitem %}
 
 {% tabsitem #windows title="Windows" %}
 ```sh
-iwr -useb https://appwrite.io/cli/install.ps1 | iex
+iwr -useb https://indobase.io/cli/install.ps1 | iex
 ```
 {% /tabsitem %}
 
 {% tabsitem #linux title="Linux" %}
 ```sh
-curl -sL https://appwrite.io/cli/install.sh | bash
+curl -sL https://indobase.io/cli/install.sh | bash
 ```
 {% /tabsitem %}
 
 {% tabsitem #scoop title="Scoop" %}
 ```sh
-scoop install https://raw.githubusercontent.com/appwrite/sdk-for-cli/master/scoop/appwrite.config.json
+scoop install https://raw.githubusercontent.com/indobase/sdk-for-cli/master/scoop/indobase.config.json
 ```
 {% /tabsitem %}
 
@@ -112,7 +112,7 @@ scoop install https://raw.githubusercontent.com/appwrite/sdk-for-cli/master/scoo
 After the installation or the update is complete, you can verify the indobase CLI is available by checking its version number.
 
 ```sh
-appwrite -v
+indobase -v
 ```
 
 # Login {% #login %}
@@ -120,13 +120,13 @@ appwrite -v
 Before you can use the CLI, you need to login to your indobase account using
 
 ```sh
-appwrite login
+indobase login
 ```
 
 Add the `--endpoint` flag if you're using a self-hosted instance of indobase. This flag requires you to add the URL string you're using for your self-hosted instance after the `--endpoint` flag.
 
 ```sh
-appwrite login --endpoint "<URL_HERE>"
+indobase login --endpoint "<URL_HERE>"
 ```
 You can log in to multiple accounts or change the **current** account by re-running the command.
 
@@ -135,29 +135,29 @@ You can log in to multiple accounts or change the **current** account by re-runn
 After you're logged in, the CLI needs to be initialized with your indobase project. You can initialize the CLI using:
 
 ```sh
-appwrite init project
+indobase init project
 ```
 
-This will create your `appwrite.config.json` file, where you will configure your various services like tables, functions, teams, topics, and buckets.
+This will create your `indobase.config.json` file, where you will configure your various services like tables, functions, teams, topics, and buckets.
 
 ```json
 {
     "projectId": "<PROJECT_ID>",
-    "endpoint": "https://<REGION>.cloud.appwrite.io/v1"
+    "endpoint": "https://<REGION>.cloud.indobase.io/v1"
 }
 ```
 
 You can run your first CLI command after logging in. Try fetching information about your indobase project.
 
 ```sh
-appwrite projects get --project-id "<PROJECT_ID>"
+indobase projects get --project-id "<PROJECT_ID>"
 ```
 
 {% info title="Self-signed certificates" %}
 By default, requests to domains with self-signed SSL certificates (or no certificates) are disabled. If you trust the domain, you can bypass the certificate validation using
 
 ```sh
-appwrite client --self-signed true
+indobase client --self-signed true
 ```
 {% /info %}
 
@@ -180,7 +180,7 @@ You can choose to use the CLI in a headless and non-interactive mode without the
 If you get stuck anywhere, you can always use the `help` command to get the usage examples.
 
 ```sh
-appwrite help
+indobase help
 ```
 
 # Configuration {% #configuration %}
@@ -188,11 +188,11 @@ appwrite help
 At any point, if you would like to change your server's endpoint, project ID, or self-signed certificate acceptance, use the `client` command.
 
 ```sh
-appwrite client --endpoint https://<REGION>.cloud.appwrite.io/v1
-appwrite client --key 23f24gwrhSDgefaY
-appwrite client --self-signed true
-appwrite client --reset // Resets your CLI configuration
-appwrite client --debug // Prints your current configuration
+indobase client --endpoint https://<REGION>.cloud.indobase.io/v1
+indobase client --key 23f24gwrhSDgefaY
+indobase client --self-signed true
+indobase client --reset // Resets your CLI configuration
+indobase client --debug // Prints your current configuration
 ```
 
 # Uninstall {% #uninstall %}
@@ -200,7 +200,7 @@ appwrite client --debug // Prints your current configuration
 If you installed indobase CLI using NPM, you can use the following command to uninstall it.
 
 ```sh
-npm uninstall -g appwrite-cli
+npm uninstall -g indobase-cli
 ```
 
 If you installed the indobase CLI with brew or the installation script for your operating system, use the following command to uninstall it.
@@ -211,13 +211,13 @@ If you installed the indobase CLI with brew or the installation script for your 
 Using [Homebrew](https://brew.sh/)
 
 ```sh
-brew uninstall appwrite
+brew uninstall indobase
 ```
 
 or terminal
 
 ```sh
-rm -f /usr/local/bin/appwrite | bash
+rm -f /usr/local/bin/indobase | bash
 ```
 {% /tabsitem %}
 
@@ -226,19 +226,19 @@ rm -f /usr/local/bin/appwrite | bash
 Using [Powershell](https://learn.microsoft.com/en-us/powershell/)
 
 ```sh
-$APPWRITE_INSTALL_DIR = Join-Path -Path $env:LOCALAPPDATA -ChildPath "Appwrite"; Remove-Item -Force -Path $APPWRITE_INSTALL_DIR
+$APPWRITE_INSTALL_DIR = Join-Path -Path $env:LOCALAPPDATA -ChildPath "Indobase"; Remove-Item -Force -Path $APPWRITE_INSTALL_DIR
 ```
 
 or [Scoop](https://scoop.sh/)
 
 ```sh
-scoop uninstall appwrite
+scoop uninstall indobase
 ```
 {% /tabsitem %}
 
 {% tabsitem #linux title="Linux" %}
 ```sh
-rm -f /usr/local/bin/appwrite | bash
+rm -f /usr/local/bin/indobase | bash
 ```
 {% /tabsitem %}
 
@@ -249,7 +249,7 @@ You can also remove the configuration, cookies, and API Keys the indobase CLI st
 {% tabs %}
 {% tabsitem #macos title="macOS" %}
 ```sh
-rm -rf ~/.appwrite | bash
+rm -rf ~/.indobase | bash
 ```
 {% /tabsitem %}
 
@@ -258,20 +258,20 @@ rm -rf ~/.appwrite | bash
 Using [Powershell](https://learn.microsoft.com/en-us/powershell/)
 
 ```sh
-$APPWRITE_CONFIG_DIR = Join-Path -Path $env:UserProfile -ChildPath ".appwrite"; Remove-Item -Recurse -Force -Path $APPWRITE_CONFIG_DIR
+$APPWRITE_CONFIG_DIR = Join-Path -Path $env:UserProfile -ChildPath ".indobase"; Remove-Item -Recurse -Force -Path $APPWRITE_CONFIG_DIR
 ```
 
 or [Scoop](https://scoop.sh/)
 
 ```sh
-appwrite client --reset
+indobase client --reset
 ```
 
 {% /tabsitem %}
 
 {% tabsitem #linux title="Linux" %}
 ```sh
-rm -rf ~/.appwrite | bash
+rm -rf ~/.indobase | bash
 ```
 {% /tabsitem %}
 

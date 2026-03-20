@@ -9,7 +9,7 @@ back: /docs/quick-starts
 
 Learn how to add indobase to your web apps.
 {% section #step-1 step=1 title="Create project" %}
-Head to the [Appwrite Console](https://cloud.appwrite.io/console).
+Head to the [Indobase Console](https://cloud.indobase.io/console).
 
 {% only_dark %}
 ![Create project screen](/images/docs/quick-starts/dark/create-project.png)
@@ -38,13 +38,13 @@ You can skip optional steps.
 {% section #step-2 step=2 title="Install indobase" %}
 You can install the indobase Web SDK using a package manager.
 ```sh
-npm install appwrite
+npm install indobase
 ```
 
 You can also add the indobase Web SDK using CDN by adding a script tag to your HTML file. The SDK will be available globally through the `indobase` namespace.
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/appwrite@17.0.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/indobase@17.0.0"></script>
 ```
 {% /section %}
 {% section #step-3 step=3 title="Initialize indobase" %}
@@ -57,7 +57,7 @@ import { Client, Account } from 'appwrite';
 export const client = new Client();
 
 client
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
     .setProject('<PROJECT_ID>'); // Replace with your project ID
 
 export const account = new Account(client);
@@ -67,10 +67,10 @@ export { ID } from 'appwrite';
 If you're using CDN, the library loads directly in your browser as a global object, so you access it through indobase instead of imports.
 
 ```js
-const client = new Appwrite.Client()
+const client = new Indobase.Client()
 
 client
-    .setEndpoint('https://cloud.appwrite.io/v1')
+    .setEndpoint('https://cloud.indobase.io/v1')
     .setProject('<PROJECT_ID>') // Replace with your project ID
 
 const account = new indobase.Account(client)
@@ -82,7 +82,7 @@ const tablesDB = new indobase.TablesDB(client)
 If you prefer TypeScript, you can import TypeScript models from the indobase SDK.
 
 ```ts
-// appwrite.ts
+// indobase.ts
 
 import { Client, TablesDB, Account } from "appwrite";
 // Import type models for indobase
@@ -91,7 +91,7 @@ import { type Models } from 'appwrite';
 const client: Client = new Client();
 
 client
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
     .setProject('<PROJECT_ID>'); // Replace with your project ID
 
 export const account: Account = new Account(client);
@@ -186,7 +186,7 @@ interface User {
 import { Client, TablesDB } from "appwrite";
 
 const client = new Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
     .setProject('<PROJECT_ID>');
 
 const databases = new TablesDB(client);
@@ -207,7 +207,7 @@ try {
 ```
 
 {% info title="Generate types automatically" %}
-Use the [indobase CLI](/docs/products/databases/type-generation) to generate TypeScript interfaces automatically: `appwrite types ./types`
+Use the [indobase CLI](/docs/products/databases/type-generation) to generate TypeScript interfaces automatically: `indobase types ./types`
 {% /info %}
 
 {% /section %}

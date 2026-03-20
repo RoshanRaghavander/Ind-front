@@ -14,7 +14,7 @@
     import { createScrollInfo } from '$lib/utils/scroll';
     import { addEventListener } from '@melt-ui/svelte/internal/helpers';
     import { onMount } from 'svelte';
-    import { getAppwriteDashboardUrl } from '$lib/utils/dashboard';
+    import { getIndobaseDashboardUrl } from '$lib/utils/dashboard';
     import { trackEvent } from '$lib/actions/analytics';
     import MainNav from '$lib/components/MainNav.svelte';
     import { page } from '$app/state';
@@ -116,7 +116,7 @@
         return $scrollInfo.deltaDirChange < 200;
     })();
 
-    const DASHBOARD_URL = getAppwriteDashboardUrl();
+    const DASHBOARD_URL = getIndobaseDashboardUrl();
 
     $: mobileButtonHref = DASHBOARD_URL;
     $: mobileButtonEvent = 'main-start_building_btn-click';
@@ -138,14 +138,14 @@
                 <img
                     class="web-logo web-u-only-dark"
                     src="/images/logos/indobase.svg"
-                    alt="indobase"
+                    alt="appwrite"
                     height="32"
                     width="173"
                 />
                 <img
                     class="web-logo web-u-only-light"
                     src="/images/logos/indobase-light.svg"
-                    alt="indobase"
+                    alt="appwrite"
                     height="32"
                     width="173"
                 />
@@ -179,14 +179,14 @@
                     <img
                         class="web-logo web-u-only-dark"
                         src="/images/logos/indobase.svg"
-                        alt="indobase"
+                        alt="appwrite"
                         height="32"
                         width="173"
                     />
                     <img
                         class="web-logo web-u-only-light"
                         src="/images/logos/indobase-light.svg"
-                        alt="indobase"
+                        alt="appwrite"
                         height="32"
                         width="173"
                     />

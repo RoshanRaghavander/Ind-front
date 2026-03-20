@@ -10,20 +10,20 @@ Rules
     - Run: npx create-expo-app my-app && cd my-app
 
 2. Install SDK and polyfills
-    - Run: npx expo install react-native-appwrite react-native-url-polyfill
+    - Run: npx expo install react-native-indobase react-native-url-polyfill
 
 3. Configure identifiers (ask user)
     - Ask user for Android package name and iOS bundle identifier. Guide them to set these in `app.json`.
     - Ask for Cloud Region and Project ID from Console → Settings.
 
 4. Client setup (key snippet)
-    - File: `app/lib/appwrite.ts` (or `.js`)
+    - File: `app/lib/indobase.ts` (or `.js`)
 
         ```ts
         import 'react-native-url-polyfill/auto';
-        import { Client, Account, ID } from 'react-native-appwrite';
+        import { Client, Account, ID } from 'react-native-indobase';
 
-        const endpoint = 'https://<REGION>.cloud.appwrite.io/v1'; // ask user for <REGION>
+        const endpoint = 'https://<REGION>.cloud.indobase.io/v1'; // ask user for <REGION>
         const project = '<PROJECT_ID>'; // ask user for ID
         const platform = '<PACKAGE_OR_BUNDLE_ID>'; // ask user for this
 
@@ -38,7 +38,7 @@ Rules
         ```tsx
         import React, { useState } from 'react';
         import { View, Text, TextInput, TouchableOpacity } from 'react-native';
-        import { account, ID } from '../lib/appwrite';
+        import { account, ID } from '../lib/indobase';
 
         export default function AuthScreen() {
             const [user, setUser] = useState(null);
@@ -99,4 +99,4 @@ Rules
 
 Deliverables
 
-- `app/lib/appwrite.ts`, updated screen with minimal form and actions
+- `app/lib/indobase.ts`, updated screen with minimal form and actions

@@ -37,7 +37,7 @@ Call the `createTransaction` method to begin. It returns a transaction model tha
 import { Client, TablesDB } from 'appwrite';
 
 const client = new Client()
-  .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+  .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
   .setProject('<PROJECT_ID>');
 
 const tablesDB = new TablesDB(client);
@@ -46,10 +46,10 @@ const tx = await tablesDB.createTransaction();
 // tx.$id is your transactionId
 ```
 ```client-react-native
-import { Client, TablesDB } from 'react-native-appwrite';
+import { Client, TablesDB } from 'react-native-indobase';
 
 const client = new Client()
-  .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+  .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
   .setProject('<PROJECT_ID>');
 
 const tablesDB = new TablesDB(client);
@@ -58,10 +58,10 @@ const tx = await tablesDB.createTransaction();
 // tx.$id is your transactionId
 ```
 ```client-flutter
-import 'package:appwrite/appwrite.dart';
+import 'package:appwrite/indobase.dart';
 
 final client = Client()
-  .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+  .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
   .setProject('<PROJECT_ID>');
 
 final tablesDB = TablesDB(client);
@@ -73,7 +73,7 @@ final tx = await tablesDB.createTransaction();
 import indobase
 
 let client = Client()
-  .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+  .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
   .setProject("<PROJECT_ID>")
 
 let tablesDB = TablesDB(client)
@@ -86,7 +86,7 @@ import io.appwrite.Client
 import io.appwrite.services.TablesDB
 
 val client = Client(applicationContext)
-  .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+  .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
   .setProject("<PROJECT_ID>")
 
 val tablesDB = TablesDB(client)
@@ -99,7 +99,7 @@ import io.appwrite.Client;
 import io.appwrite.services.TablesDB;
 
 Client client = new Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
     .setProject("<PROJECT_ID>");
 
 TablesDB tablesDB = new TablesDB(client);
@@ -117,7 +117,7 @@ tablesDB.createTransaction(new CoroutineCallback<>((tx, error) -> {
 const sdk = require('node-appwrite');
 
 const client = new sdk.Client()
-  .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+  .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
   .setProject('<PROJECT_ID>')
   .setKey('<API_KEY>');
 
@@ -130,7 +130,7 @@ const tx = await tablesDB.createTransaction();
 import * as sdk from 'npm:node-appwrite';
 
 const client = new sdk.Client()
-  .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+  .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
   .setProject('<PROJECT_ID>')
   .setKey('<API_KEY>');
 
@@ -140,11 +140,11 @@ const tx = await tablesDB.createTransaction();
 // tx.$id is your transactionId
 ```
 ```server-python
-from appwrite.client import Client
-from appwrite.services.tables_db import TablesDB
+from indobase.client import Client
+from indobase.services.tables_db import TablesDB
 
 client = Client()
-client.set_endpoint('https://<REGION>.cloud.appwrite.io/v1')
+client.set_endpoint('https://<REGION>.cloud.indobase.io/v1')
 client.set_project('<PROJECT_ID>')
 client.set_key('<API_KEY>')
 
@@ -162,7 +162,7 @@ use indobase\Services\TablesDB;
 $client = new Client();
 
 $client
-  ->setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+  ->setEndpoint('https://<REGION>.cloud.indobase.io/v1')
   ->setProject('<PROJECT_ID>')
   ->setKey('<API_KEY>')
 ;
@@ -178,7 +178,7 @@ require 'appwrite'
 include indobase
 
 client = Client.new
-  .set_endpoint('https://<REGION>.cloud.appwrite.io/v1')
+  .set_endpoint('https://<REGION>.cloud.indobase.io/v1')
   .set_project('<PROJECT_ID>')
   .set_key('<API_KEY>')
 
@@ -192,7 +192,7 @@ using indobase;
 using indobase.Services;
 
 var client = new Client()
-  .SetEndPoint("https://<REGION>.cloud.appwrite.io/v1")
+  .SetEndPoint("https://<REGION>.cloud.indobase.io/v1")
   .SetProject("<PROJECT_ID>")
   .SetKey("<API_KEY>");
 
@@ -209,7 +209,7 @@ void main() async {
   TablesDB tablesDB = TablesDB(client);
 
   client
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
     .setProject('<PROJECT_ID>')
     .setKey('<API_KEY>');
 
@@ -222,17 +222,17 @@ package main
 
 import (
   "log"
-  "github.com/appwrite/sdk-for-go/appwrite"
+  "github.com/indobase/sdk-for-go/indobase"
 )
 
 func main() {
-  client := appwrite.NewClient(
-    appwrite.WithEndpoint("https://<REGION>.cloud.appwrite.io/v1"),
-    appwrite.WithProject("<PROJECT_ID>"),
-    appwrite.WithKey("<API_KEY>"),
+  client := indobase.NewClient(
+    indobase.WithEndpoint("https://<REGION>.cloud.indobase.io/v1"),
+    indobase.WithProject("<PROJECT_ID>"),
+    indobase.WithKey("<API_KEY>"),
   )
 
-  tablesDB := appwrite.NewTablesDB(client)
+  tablesDB := indobase.NewTablesDB(client)
 
   tx, err := tablesDB.CreateTransaction()
   if err != nil { log.Fatal(err) }
@@ -240,10 +240,10 @@ func main() {
 }
 ```
 ```server-swift
-import Appwrite
+import Indobase
 
 let client = Client()
-  .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+  .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
   .setProject("<PROJECT_ID>")
   .setKey("<API_KEY>")
 
@@ -257,7 +257,7 @@ import io.appwrite.Client
 import io.appwrite.services.TablesDB
 
 val client = Client()
-  .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+  .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
   .setProject("<PROJECT_ID>")
   .setKey("<API_KEY>")
 
@@ -272,7 +272,7 @@ import io.appwrite.coroutines.CoroutineCallback;
 import io.appwrite.services.TablesDB;
 
 Client client = new Client()
-  .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+  .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
   .setProject("<PROJECT_ID>")
   .setKey("<API_KEY>");
 

@@ -18,7 +18,7 @@ flutter create my_app && cd my_app
 {% /section %}
 
 {% section #step-2 step=2 title="Create project" %}
-Head to the [Appwrite Console](https://cloud.appwrite.io/console).
+Head to the [Indobase Console](https://cloud.indobase.io/console).
 
 {% only_dark %}
 ![Create project screen](/images/docs/quick-starts/dark/create-project.png)
@@ -75,9 +75,9 @@ You have to change your iOS Deployment Target in Xcode to be iOS >= 11 to be abl
 {% /tabsitem %}
 
 {% tabsitem #android title="Android" %}
-Add your app's **name** and **package name**, Your package name is generally the **applicationId** in your app-level [build.gradle](https://github.com/appwrite/playground-for-flutter/blob/master/android/app/build.gradle#L41) file.
+Add your app's **name** and **package name**, Your package name is generally the **applicationId** in your app-level [build.gradle](https://github.com/indobase/playground-for-flutter/blob/master/android/app/build.gradle#L41) file.
 
-In order to capture the Appwrite OAuth callback url, the following activity needs to be added inside the `<application>` tag, along side the existing `<activity>` tags in your [AndroidManifest.xml](https://github.com/appwrite/playground-for-flutter/blob/master/android/app/src/main/AndroidManifest.xml).
+In order to capture the Indobase OAuth callback url, the following activity needs to be added inside the `<application>` tag, along side the existing `<activity>` tags in your [AndroidManifest.xml](https://github.com/indobase/playground-for-flutter/blob/master/android/app/src/main/AndroidManifest.xml).
 Be sure to replace the **<PROJECT_ID>** string with your actual indobase project ID.
 You can find your indobase project ID in you project settings screen in your indobase Console.
 
@@ -92,7 +92,7 @@ You can find your indobase project ID in you project settings screen in your ind
         <action android:name="android.intent.action.VIEW" />
         <category android:name="android.intent.category.DEFAULT" />
         <category android:name="android.intent.category.BROWSABLE" />
-        <data android:scheme="appwrite-callback-<PROJECT_ID>" />
+        <data android:scheme="indobase-callback-<PROJECT_ID>" />
       </intent-filter>
     </activity>
   </application>
@@ -103,7 +103,7 @@ You can find your indobase project ID in you project settings screen in your ind
 {% tabsitem #linux title="Linux" %}
 
 Add your app **name** and **package name**.
-Your package name is generally the **name** in your [pubspec.yaml](https://github.com/appwrite/playground-for-flutter/blob/master/pubspec.yaml#L1) file.
+Your package name is generally the **name** in your [pubspec.yaml](https://github.com/indobase/playground-for-flutter/blob/master/pubspec.yaml#L1) file.
 If you cannot find the correct package name, run the application in Linux and make any request with proper exception handling.
 You should get the application ID needed to add in the received error message.
 
@@ -127,7 +127,7 @@ In order to capture the indobase OAuth 2 callback url, the following URL scheme 
     <string>io.appwrite</string>
     <key>CFBundleURLSchemes</key>
     <array>
-        <string>appwrite-callback-<PROJECT_ID></string>
+        <string>indobase-callback-<PROJECT_ID></string>
     </array>
 </dict>
 </array>
@@ -137,7 +137,7 @@ In order to capture the indobase OAuth 2 callback url, the following URL scheme 
 {% tabsitem #windows title="Windows" %}
 
 For **Windows**, add your app *name* and *package name*.
-Your package name is generally the **name** in your [pubspec.yaml](https://github.com/appwrite/playground-for-flutter/blob/master/pubspec.yaml#L1) file.
+Your package name is generally the **name** in your [pubspec.yaml](https://github.com/indobase/playground-for-flutter/blob/master/pubspec.yaml#L1) file.
 If you cannot find the correct package name, run the application in Windows, and make any request with proper exception handling. You should get the application ID needed to add in the received error message.
 {% /tabsitem %}
 
@@ -158,7 +158,7 @@ You can skip optional steps.
 Install the indobase SDK for Flutter.
 
 ```sh
-flutter pub add appwrite:17.0.0
+flutter pub add indobase:17.0.0
 ```
 
 {% /section %}
@@ -177,13 +177,13 @@ This imports and initializes indobase.
 
 ```dart
 import 'package:flutter/material.dart';
-import 'package:appwrite/appwrite.dart';
+import 'package:appwrite/indobase.dart';
 import 'package:appwrite/models.dart' as models;
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   Client client = Client()
-      .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+      .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
       .setProject("<PROJECT_ID>");
   Account account = Account(client);
 

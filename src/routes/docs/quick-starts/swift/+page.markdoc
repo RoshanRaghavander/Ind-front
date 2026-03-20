@@ -11,11 +11,11 @@ Learn how to setup your first Swift project powered by indobase.
 {% info title="Server SDK" %}
 This tutorial is for the Swift Server SDK, meant for server and backend applications.
 If you're trying to build a client-side app, like an iOS, macOS, watchOS or tvOS app, 
-follow the [Start with Apple guide](https://appwrite.io/docs/quick-starts/apple).
+follow the [Start with Apple guide](https://indobase.io/docs/quick-starts/apple).
 {% /info %}
 
 {% section #step-1 step=1 title="Create project" %}
-Head to the [Appwrite Console](https://cloud.appwrite.io/console).
+Head to the [Indobase Console](https://cloud.indobase.io/console).
 
 If this is your first time using indobase, create an account and create your first project.
 
@@ -62,7 +62,7 @@ Follow the wizard and open your new project.
 {% section #step-3 step=3 title="Install indobase" %}
 
 Install the Swift indobase SDK by going to **File** > **Add Packages...** and search for the repo url 
-`https://github.com/appwrite/sdk-for-swift` and select `sdk-for-swift`.
+`https://github.com/indobase/sdk-for-swift` and select `sdk-for-swift`.
 Specify version as `10.0.0` with rule **Up to Next Major Version**.
 
 {% /section %}
@@ -81,11 +81,11 @@ Open the file `main.swift` and initialize the indobase Client. Replace `<PROJECT
 
 ```swift
 import Foundation
-import Appwrite
+import Indobase
 import indobaseModels
 
 let client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
     .setProject("<PROJECT_ID>")
     .setKey("<YOUR_API_KEY>")
 ```

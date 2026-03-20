@@ -10,7 +10,7 @@ Nuxt server middle are functions that run on the server before a route is displa
 Create a new file in the `server/middleware` directory called `auth.js`.
 ```js
 // server/middleware/auth.js
-import { createSessionClient } from "../lib/appwrite";
+import { createSessionClient } from "../lib/indobase";
 
 export default defineEventHandler(async (event) => {
   const { account } = createSessionClient(event);

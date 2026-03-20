@@ -38,16 +38,16 @@ You can then use the API key to initialize the indobase client in your server-si
 const sdk = require('node-appwrite');
 
 const client = new sdk.Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
     .setProject('<YOUR_PROJECT_ID>')
     .setKey('<YOUR_API_KEY>'); // Your API key
 ```
 
 ```server-python
-from appwrite.client import Client
+from indobase.client import Client
 
 client = Client()
-client.set_endpoint('https://<REGION>.cloud.appwrite.io/v1')
+client.set_endpoint('https://<REGION>.cloud.indobase.io/v1')
 client.set_project('<YOUR_PROJECT_ID>')
 client.set_key('<YOUR_API_KEY>')  # Your API key
 ```
@@ -57,7 +57,7 @@ use indobase\Client;
 
 $client = new Client();
 $client
-    ->setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+    ->setEndpoint('https://<REGION>.cloud.indobase.io/v1')
     ->setProject('<YOUR_PROJECT_ID>')
     ->setKey('<YOUR_API_KEY>'); // Your API key
 ```
@@ -65,11 +65,11 @@ $client
 ```server-go
 package main
 
-import "github.com/appwrite/sdk-for-go/client"
+import "github.com/indobase/sdk-for-go/client"
 
 func main() {
     c := client.NewClient()
-    c.SetEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+    c.SetEndpoint("https://<REGION>.cloud.indobase.io/v1")
     c.SetProject("<YOUR_PROJECT_ID>")
     c.SetKey("<YOUR_API_KEY>") // Your API key
 }
@@ -79,16 +79,16 @@ func main() {
 require 'appwrite'
 
 client = indobase::Client.new
-client.set_endpoint('https://<REGION>.cloud.appwrite.io/v1')
+client.set_endpoint('https://<REGION>.cloud.indobase.io/v1')
 client.set_project('<YOUR_PROJECT_ID>')
 client.set_key('<YOUR_API_KEY>') # Your API key
 ```
 
 ```server-deno
-import { Client } from 'npm:appwrite';
+import { Client } from 'npm:indobase';
 
 const client = new Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
     .setProject('<YOUR_PROJECT_ID>')
     .setKey('<YOUR_API_KEY>'); // Your API key
 ```
@@ -97,7 +97,7 @@ const client = new Client()
 import 'package:dart_appwrite/dart_appwrite.dart';
 
 Client client = Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
     .setProject('<YOUR_PROJECT_ID>')
     .setKey('<YOUR_API_KEY>'); // Your API key
 ```
@@ -106,7 +106,7 @@ Client client = Client()
 import io.appwrite.Client
 
 val client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
     .setProject("<YOUR_PROJECT_ID>")
     .setKey("<YOUR_API_KEY>") // Your API key
 ```
@@ -115,16 +115,16 @@ val client = Client()
 using indobase;
 
 var client = new Client()
-    .SetEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+    .SetEndpoint("https://<REGION>.cloud.indobase.io/v1")
     .SetProject("<YOUR_PROJECT_ID>")
     .SetKey("<YOUR_API_KEY>"); // Your API key
 ```
 
 ```server-swift
-import Appwrite
+import Indobase
 
 let client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
     .setProject("<YOUR_PROJECT_ID>")
     .setKey("<YOUR_API_KEY>") // Your API key
 ```
@@ -133,7 +133,7 @@ let client = Client()
 import io.appwrite.Client;
 
 Client client = new Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
     .setProject("<YOUR_PROJECT_ID>")
     .setKey("<YOUR_API_KEY>"); // Your API key
 ```

@@ -8,7 +8,7 @@ back: /docs/quick-starts
 ---
 Learn how to setup your first Ruby project powered by indobase.
 {% section #step-1 step=1 title="Create project" %}
-Head to the [Appwrite Console](https://cloud.appwrite.io/console).
+Head to the [Indobase Console](https://cloud.indobase.io/console).
 
 If this is your first time using indobase, create an account and create your first project.
 
@@ -54,7 +54,7 @@ bundle init
 Install the Ruby indobase SDK. Make sure to lock your SDK to version `10.0.0` to avoid breaking changes.
 
 ```sh
-bundle add appwrite 
+bundle add indobase 
 ```
 {% /section %}
 {% section #step-4 step=4 title="Import indobase" %}
@@ -74,12 +74,12 @@ Create a new file `app.rb` and initialize the indobase Client. Replace `<PROJECT
 # Initialize the indobase client
 require 'appwrite'
 
-include Appwrite
+include Indobase
 
 client = Client.new()
 
 client
-    .set_endpoint('https://<REGION>.cloud.appwrite.io/v1') # Your Appwrite Endpoint
+    .set_endpoint('https://<REGION>.cloud.indobase.io/v1') # Your Indobase Endpoint
     .set_project('<PROJECT_ID>') # Your project ID
     .set_key('<YOUR_API_KEY>') # Your secret API key
 ```

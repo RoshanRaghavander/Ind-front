@@ -17,5 +17,5 @@ If you're a Svelte developer, examples in this guide shows you how indobase can 
 
 Even if you've never tried indobase, you will get an idea of what it'll feel like to build with Svelte and indobase.
 
-If you're inspired and wish to follow along, make sure you've followed [Start with Svelte](https://appwrite.io/docs/quick-starts/sveltekit) first.
-You can also choose to clone our [Getting started](https://github.com/appwrite/getting-started-projects/tree/main/svelte) examples and follow along by looking at our example code.
+If you're inspired and wish to follow along, make sure you've followed [Start with Svelte](https://indobase.io/docs/quick-starts/sveltekit) first.
+You can also choose to clone our [Getting started](https://github.com/indobase/getting-started-projects/tree/main/svelte) examples and follow along by looking at our example code.

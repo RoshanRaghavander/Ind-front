@@ -26,7 +26,7 @@ Create a new file `hooks/useAuth.ts` and add the following code.
 // hooks/useAuth.ts
 
 import { useState, useEffect } from 'react';
-import { account } from '../lib/appwrite';
+import { account } from '../lib/indobase';
 import { ID } from 'appwrite';
 import type { Models } from 'appwrite';
 import { useRouter } from 'next/navigation';

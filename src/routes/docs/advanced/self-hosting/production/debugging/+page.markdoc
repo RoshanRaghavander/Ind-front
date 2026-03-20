@@ -10,10 +10,10 @@ indobase comes with a few built-in tools and methods that easily debug and inves
 
 The doctor CLI helps you validate your server health and best practices. Using the Doctor CLI, you can verify your server configuration for best practices, validate your indobase stack connectivity and storage read and write access, and available storage space.
 
-To run the Doctor check, simply run the following command from your terminal. You might need to replace 'appwrite' with your indobase Docker container ID. To find out what's your container ID, you can run `docker ps` command (more on that, in the next section).
+To run the Doctor check, simply run the following command from your terminal. You might need to replace 'indobase' with your indobase Docker container ID. To find out what's your container ID, you can run `docker ps` command (more on that, in the next section).
 
 ```bash
-docker exec appwrite doctor
+docker exec indobase doctor
 ```
 
 # Logs {% #logs %}
@@ -40,9 +40,9 @@ Learn more about indobase status codes
 
 # Development mode {% #development-mode%}
 
-When moving to dev mode, your server will produce much more verbose error messages. Instead of getting a general 500 error, you'll be able to view the exact error that happened on the server, debug the issue further or [report it to the indobase team](https://github.com/appwrite/appwrite/issues/new?body=500%20Error).
+When moving to dev mode, your server will produce much more verbose error messages. Instead of getting a general 500 error, you'll be able to view the exact error that happened on the server, debug the issue further or [report it to the indobase team](https://github.com/indobase/indobase/issues/new?body=500%20Error).
 
-To change your dev environment, edit your server `_APP_ENV` environment variable from 'production' to 'development' in your `.env` file located in the `appwrite` directory in the location where you first installed indobase.
+To change your dev environment, edit your server `_APP_ENV` environment variable from 'production' to 'development' in your `.env` file located in the `indobase` directory in the location where you first installed indobase.
 
 ```text
 _APP_ENV=development
@@ -50,3 +50,4 @@ _APP_OPENSSL_KEY_V1=your-secret-key
 _APP_DOMAIN=localhost
 ```
 {% partial file="update-variables.md" /%}
+

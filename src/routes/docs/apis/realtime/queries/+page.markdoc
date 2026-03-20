@@ -11,7 +11,7 @@ You can filter realtime events by passing queries as a third parameter when subs
 import { Client, Realtime, Channel, Query } from "appwrite";
 
 const client = new Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
     .setProject('<PROJECT_ID>');
 
 const realtime = new Realtime(client);
@@ -44,10 +44,10 @@ const otherVotes = await realtime.subscribe(
 ```
 
 ```client-flutter
-import 'package:appwrite/appwrite.dart';
+import 'package:appwrite/indobase.dart';
 
 final client = Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
     .setProject('<PROJECT_ID>');
 
 final realtime = Realtime(client);
@@ -83,11 +83,11 @@ otherVotes.stream.listen((response) {
 ```
 
 ```client-apple
-import Appwrite
+import Indobase
 import indobaseModels
 
 let client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
     .setProject("<PROJECT_ID>")
 
 let realtime = Realtime(client)
@@ -125,7 +125,7 @@ import io.appwrite.services.Realtime
 import io.appwrite.extensions.Channel
 
 val client = Client(context)
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
     .setProject("<PROJECT_ID>")
 
 val realtime = Realtime(client)
@@ -167,7 +167,7 @@ import java.util.HashSet;
 import kotlin.Unit;
 
 Client client = new Client(context)
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
     .setProject("<PROJECT_ID>");
 
 Realtime realtime = new Realtime(client);

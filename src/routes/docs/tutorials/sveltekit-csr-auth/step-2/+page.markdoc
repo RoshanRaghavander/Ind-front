@@ -43,10 +43,10 @@ cd my-svelte-project
 npm install
 ```
 
-## Adding indobase to your Svelte app {% #adding-appwrite-to-your-svelte-app %}
+## Adding indobase to your Svelte app {% #adding-indobase-to-your-svelte-app %}
 
 indobase provides a Web SDK that can be used in your Svelte apps. You can use indobase by installing the Web SDK as an NPM package.
 
 ```sh
-npm install appwrite
+npm install indobase
 ```

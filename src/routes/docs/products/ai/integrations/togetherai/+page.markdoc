@@ -17,7 +17,7 @@ Integrating Together AI into your indobase project is simple. This tutorial will
 - A [Together AI API Key](https://docs.together.ai/reference/authentication-1)
 
 {% section #step-1 step=1 title="Create new function" %}
-Head to the [Appwrite Console](https://cloud.appwrite.io/console), click, on **Functions** in the left sidebar, and click, the **Create Function** button.
+Head to the [Indobase Console](https://cloud.indobase.io/console), click, on **Functions** in the left sidebar, and click, the **Create Function** button.
 
 {% only_dark %}
 ![Create function screen](/images/docs/functions/dark/template.png)
@@ -286,7 +286,7 @@ let resJson = await response.json();
 
 // Upload image to indobase Storage and return URL
 if (req.body.type === 'image') {
-  const endpoint = process.env.APPWRITE_ENDPOINT || 'https://<REGION>.cloud.appwrite.io/v1'
+  const endpoint = process.env.APPWRITE_ENDPOINT || 'https://<REGION>.cloud.indobase.io/v1'
 
   const client = new Client()
     .setEndpoint(endpoint)

@@ -35,7 +35,7 @@ export default async ({ req, res, log, error }) => {
   // Set project and set API key
   // const client = new Client()
   //    .setProject(process.env.APPWRITE_FUNCTION_PROJECT_ID)
-  //    .setKey(req.headers['x-appwrite-key']);
+  //    .setKey(req.headers['x-indobase-key']);
 
   // You can log messages to the console
   log('Hello, Logs!');
@@ -53,9 +53,9 @@ export default async ({ req, res, log, error }) => {
   // `res.json()` is a handy helper for sending JSON
   return res.json({
     motto: 'Build like a team of hundreds_',
-    learn: 'https://appwrite.io/docs',
-    connect: 'https://appwrite.io/discord',
-    getInspired: 'https://builtwith.appwrite.io',
+    learn: 'https://indobase.io/docs',
+    connect: 'https://indobase.io/discord',
+    getInspired: 'https://builtwith.indobase.io',
   });
 };
 ```
@@ -74,7 +74,7 @@ return function ($context) {
     // Set project and set API key
     // $client = (new Client())
     //      ->setProject(getenv(APPWRITE_FUNCTION_PROJECT_ID))
-    //      ->setKey($context->req->headers['x-appwrite-key']);
+    //      ->setKey($context->req->headers['x-indobase-key']);
    
     // You can log messages to the console
     $context->log('Hello, Logs!');
@@ -92,15 +92,15 @@ return function ($context) {
     // `res.json()` is a handy helper for sending JSON
     return $context->res->json([
         'motto' => 'Build like a team of hundreds_',
-        'learn' => 'https://appwrite.io/docs',
-        'connect' => 'https://appwrite.io/discord',
-        'getInspired' => 'https://builtwith.appwrite.io',
+        'learn' => 'https://indobase.io/docs',
+        'connect' => 'https://indobase.io/discord',
+        'getInspired' => 'https://builtwith.indobase.io',
     ]);
 };
 ```
 
 ```python
-from appwrite.client import Client
+from indobase.client import Client
 import os
 
 
@@ -113,7 +113,7 @@ def main(context):
     # client = (
     #     Client()
     #        .set_project(os.environ["APPWRITE_FUNCTION_PROJECT_ID"])
-    #        .set_key(context.req.headers["x-appwrite-key"])
+    #        .set_key(context.req.headers["x-indobase-key"])
     # )
 
     # You can log messages to the console
@@ -131,9 +131,9 @@ def main(context):
     # `context.res.json()` is a handy helper for sending JSON
     return context.res.json({
         "motto": "Build like a team of hundreds_",
-        "learn": "https://appwrite.io/docs",
-        "connect": "https://appwrite.io/discord",
-        "getInspired": "https://builtwith.appwrite.io",
+        "learn": "https://indobase.io/docs",
+        "connect": "https://indobase.io/discord",
+        "getInspired": "https://builtwith.indobase.io",
     })
 ```
 ```ruby
@@ -147,7 +147,7 @@ def main(context)
   # Set project and set API key
   # client = Client.new
   #   .set_project(ENV['APPWRITE_FUNCTION_PROJECT_ID'])
-  #   .set_key(context.req.headers['x-appwrite-key'])
+  #   .set_key(context.req.headers['x-indobase-key'])
 
   # You can log messages to the console
   context.log("Hello, Logs!")
@@ -165,9 +165,9 @@ def main(context)
   # `context.res.json()` is a handy helper for sending JSON
   return context.res.json({
     "motto": "Build like a team of hundreds_",
-    "learn": "https://appwrite.io/docs",
-    "connect": "https://appwrite.io/discord",
-    "getInspired": "https://builtwith.appwrite.io",
+    "learn": "https://indobase.io/docs",
+    "connect": "https://indobase.io/discord",
+    "getInspired": "https://builtwith.indobase.io",
   })
 end
 ```
@@ -182,7 +182,7 @@ export default ({ req, res, log, error }: any) => {
   // Set project and set API key
   // const client = new Client()
   //    .setProject(Deno.env.get("APPWRITE_FUNCTION_PROJECT_ID") || "")
-  //    .setKey(req.headers["x-appwrite-key"] || "");
+  //    .setKey(req.headers["x-indobase-key"] || "");
 
   // You can log messages to the console
   log("Hello, Logs!");
@@ -200,9 +200,9 @@ export default ({ req, res, log, error }: any) => {
   // `res.json()` is a handy helper for sending JSON
   return res.json({
     motto: "Build like a team of hundreds_",
-    learn: "https://appwrite.io/docs",
-    connect: "https://appwrite.io/discord",
-    getInspired: "https://builtwith.appwrite.io",
+    learn: "https://indobase.io/docs",
+    connect: "https://indobase.io/discord",
+    getInspired: "https://builtwith.indobase.io",
   });
 };
 ```
@@ -213,7 +213,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/appwrite/sdk-for-go/appwrite"
+	"github.com/indobase/sdk-for-go/indobase"
 	"github.com/open-runtimes/types-for-go/v4/openruntimes"
 )
 
@@ -227,9 +227,9 @@ type Response struct {
 func Main(Context openruntimes.Context) openruntimes.Response {
 	// This is your indobase function
 	// It's executed each time we get a request service
-	var _ = appwrite.NewClient(
-		appwrite.WithProject(os.Getenv("APPWRITE_FUNCTION_PROJECT_ID")),
-		appwrite.WithKey(Context.Req.Headers["x-appwrite-key"]),
+	var _ = indobase.NewClient(
+		indobase.WithProject(os.Getenv("APPWRITE_FUNCTION_PROJECT_ID")),
+		indobase.WithKey(Context.Req.Headers["x-indobase-key"]),
 	)
 
 	// You can log messages to the console
@@ -248,9 +248,9 @@ func Main(Context openruntimes.Context) openruntimes.Response {
 	return Context.Res.Json(
 		Response{
 			Motto:       "Build like a team of hundreds_",
-			Learn:       "https://appwrite.io/docs",
-			Connect:     "https://appwrite.io/discord",
-			GetInspired: "https://builtwith.appwrite.io",
+			Learn:       "https://indobase.io/docs",
+			Connect:     "https://indobase.io/discord",
+			GetInspired: "https://builtwith.indobase.io",
 		})
 }
 ```
@@ -266,7 +266,7 @@ Future main(final context) async {
   // Set project and set API key
   // final client = Client()
   //    .setProject(Platform.environment['APPWRITE_FUNCTION_PROJECT_ID'])
-  //    .setKey(context.req.headers['x-appwrite-key']);
+  //    .setKey(context.req.headers['x-indobase-key']);
 
 
   // You can log messages to the console
@@ -285,9 +285,9 @@ Future main(final context) async {
   // `res.json()` is a handy helper for sending JSON
   return context.res.json({
     'motto': 'Build like a team of hundreds_',
-    'learn': 'https://appwrite.io/docs',
-    'connect': 'https://appwrite.io/discord',
-    'getInspired': 'https://builtwith.appwrite.io',
+    'learn': 'https://indobase.io/docs',
+    'connect': 'https://indobase.io/discord',
+    'getInspired': 'https://builtwith.indobase.io',
   });
 }
 ```
@@ -308,7 +308,7 @@ class Main {
         // Set project and set API key
         // val client = Client()
         //    .setProject(System.getenv("APPWRITE_FUNCTION_PROJECT_ID"))
-        //    .setKey(context.req.headers["x-appwrite-key"])
+        //    .setKey(context.req.headers["x-indobase-key"])
 
         // You can log messages to the console
         context.log("Hello, Logs!")
@@ -326,9 +326,9 @@ class Main {
         // `context.res.json()` is a handy helper for sending JSON
         return context.res.json(mutableMapOf(
             "motto" to "Build like a team of hundreds_",
-            "learn" to "https://appwrite.io/docs",
-            "connect" to "https://appwrite.io/discord",
-            "getInspired" to "https://builtwith.appwrite.io"
+            "learn" to "https://indobase.io/docs",
+            "connect" to "https://indobase.io/discord",
+            "getInspired" to "https://builtwith.indobase.io"
         ))
     }
 }
@@ -351,7 +351,7 @@ public class Main {
         // Set project and set API key
         // Client client = new Client();
         //     .setProject(System.getenv("APPWRITE_FUNCTION_PROJECT_ID"))
-        //     .setKey(context.getReq().getHeaders().get("x-appwrite-key"));
+        //     .setKey(context.getReq().getHeaders().get("x-indobase-key"));
 
         // You can log messages to the console
         context.log("Hello, Logs!");
@@ -368,9 +368,9 @@ public class Main {
 
         Map json = new HashMap<>();
         json.put("motto", "Build like a team of hundreds_");
-        json.put("learn", "https://appwrite.io/docs");
-        json.put("connect", "https://appwrite.io/discord");
-        json.put("getInspired", "https://builtwith.appwrite.io");
+        json.put("learn", "https://indobase.io/docs");
+        json.put("connect", "https://indobase.io/discord");
+        json.put("getInspired", "https://builtwith.indobase.io");
 
         // `context.getRes().json()` is a handy helper for sending JSON
         return context.getRes().json(json);
@@ -378,7 +378,7 @@ public class Main {
 }
 ```
 ```swift
-import Appwrite
+import Indobase
 import indobaseModels
 import Foundation
 
@@ -390,7 +390,7 @@ func main(context: RuntimeContext) async throws -> RuntimeOutput {
     // Set project and set API key
     // let client = Client()
     //    .setProject(ProcessInfo.processInfo.environment["APPWRITE_FUNCTION_PROJECT_ID"])
-    //    .setKey(context.req.headers["x-appwrite-key"] ?? "")
+    //    .setKey(context.req.headers["x-indobase-key"] ?? "")
 
     // You can log messages to the console
     context.log("Hello, Logs!")
@@ -408,9 +408,9 @@ func main(context: RuntimeContext) async throws -> RuntimeOutput {
     // `context.res.json()` is a handy helper for sending JSON
     return try context.res.json([
         "motto": "Build like a team of hundreds_",
-        "learn": "https://appwrite.io/docs",
-        "connect": "https://appwrite.io/discord",
-        "getInspired": "https://builtwith.appwrite.io",
+        "learn": "https://indobase.io/docs",
+        "connect": "https://indobase.io/discord",
+        "getInspired": "https://builtwith.indobase.io",
     ])
 }
 ```
@@ -432,7 +432,7 @@ public class Handler {
         // Set project and set API key
         // var client = new Client()
         //     .SetProject(Environment.GetEnvironmentVariable("APPWRITE_FUNCTION_PROJECT_ID"))
-        //     .SetKey(Context.Req.Headers["x-appwrite-key"]);
+        //     .SetKey(Context.Req.Headers["x-indobase-key"]);
 
         // You can log messages to the console
         Context.Log("Hello, Logs!");
@@ -451,9 +451,9 @@ public class Handler {
         return Context.Res.Json(new Dictionary()
         {
             { "motto", "Build like a team of hundreds_" },
-            { "learn", "https://appwrite.io/docs" },
-            { "connect", "https://appwrite.io/discord" },
-            { "getInspired", "https://builtwith.appwrite.io" },
+            { "learn", "https://indobase.io/docs" },
+            { "connect", "https://indobase.io/discord" },
+            { "getInspired", "https://builtwith.indobase.io" },
         });
     }
 }
@@ -544,8 +544,8 @@ export default async ({ req, res, log }) => {
     log(JSON.stringify(req.headers));     // String key-value pairs of all request headers, keys are lowercase
     log(req.scheme);                      // Value of the x-forwarded-proto header, usually http or https
     log(req.method);                      // Request method, such as GET, POST, PUT, DELETE, PATCH, etc.
-    log(req.url);                         // Full URL, for example: http://awesome.appwrite.io:8000/v1/hooks?limit=12&offset=50
-    log(req.host);                        // Hostname from the host header, such as awesome.appwrite.io
+    log(req.url);                         // Full URL, for example: http://awesome.indobase.io:8000/v1/hooks?limit=12&offset=50
+    log(req.host);                        // Hostname from the host header, such as awesome.indobase.io
     log(req.port);                        // Port from the host header, for example 8000
     log(req.path);                        // Path part of URL, for example /v1/hooks
     log(req.queryString);                 // Raw query params string. For example "limit=12&offset=50"
@@ -561,8 +561,8 @@ return function ($context) {
     $context->log(json_encode($context->req->headers)); // String key-value pairs of all request headers, keys are lowercase
     $context->log($context->req->scheme);               // Value of the x-forwarded-proto header, usually http or https
     $context->log($context->req->method);               // Request method, such as GET, POST, PUT, DELETE, PATCH, etc.
-    $context->log($context->req->url);                  // Full URL, for example: http://awesome.appwrite.io:8000/v1/hooks?limit=12&offset=50
-    $context->log($context->req->host);                 // Hostname from the host header, such as awesome.appwrite.io
+    $context->log($context->req->url);                  // Full URL, for example: http://awesome.indobase.io:8000/v1/hooks?limit=12&offset=50
+    $context->log($context->req->host);                 // Hostname from the host header, such as awesome.indobase.io
     $context->log($context->req->port);                 // Port from the host header, for example 8000
     $context->log($context->req->path);                 // Path part of URL, for example /v1/hooks
     $context->log($context->req->queryString);          // Raw query params string. For example "limit=12&offset=50"
@@ -580,8 +580,8 @@ def main(context):
     context.log(json.dumps(context.req.headers))   # String key-value pairs of all request headers, keys are lowercase
     context.log(context.req.scheme)                # Value of the x-forwarded-proto header, usually http or https
     context.log(context.req.method)                # Request method, such as GET, POST, PUT, DELETE, PATCH, etc.
-    context.log(context.req.url)                   # Full URL, for example: http://awesome.appwrite.io:8000/v1/hooks?limit=12&offset=50
-    context.log(context.req.host)                  # Hostname from the host header, such as awesome.appwrite.io
+    context.log(context.req.url)                   # Full URL, for example: http://awesome.indobase.io:8000/v1/hooks?limit=12&offset=50
+    context.log(context.req.host)                  # Hostname from the host header, such as awesome.indobase.io
     context.log(context.req.port)                  # Port from the host header, for example 8000
     context.log(context.req.path)                  # Path part of URL, for example /v1/hooks
     context.log(context.req.query_string)          # Raw query params string. For example "limit=12&offset=50"
@@ -598,8 +598,8 @@ def main(context)
     context.log(JSON.generate(context.req.headers))   # String key-value pairs of all request headers, keys are lowercase
     context.log(context.req.scheme)                   # Value of the x-forwarded-proto header, usually http or https
     context.log(context.req.method)                   # Request method, such as GET, POST, PUT, DELETE, PATCH, etc.
-    context.log(context.req.url)                      # Full URL, for example: http://awesome.appwrite.io:8000/v1/hooks?limit=12&offset=50
-    context.log(context.req.host)                     # Hostname from the host header, such as awesome.appwrite.io
+    context.log(context.req.url)                      # Full URL, for example: http://awesome.indobase.io:8000/v1/hooks?limit=12&offset=50
+    context.log(context.req.host)                     # Hostname from the host header, such as awesome.indobase.io
     context.log(context.req.port)                     # Port from the host header, for example 8000
     context.log(context.req.path)                     # Path part of URL, for example /v1/hooks
     context.log(context.req.query_string)             # Raw query params string. For example "limit=12&offset=50"
@@ -615,8 +615,8 @@ export default async ({ req, res, log }: any) => {
     log(JSON.stringify(req.headers));   // String key-value pairs of all request headers, keys are lowercase
     log(req.scheme);                    // Value of the x-forwarded-proto header, usually http or https
     log(req.method);                    // Request method, such as GET, POST, PUT, DELETE, PATCH, etc.
-    log(req.url);                       // Full URL, for example: http://awesome.appwrite.io:8000/v1/hooks?limit=12&offset=50
-    log(req.host);                      // Hostname from the host header, such as awesome.appwrite.io
+    log(req.url);                       // Full URL, for example: http://awesome.indobase.io:8000/v1/hooks?limit=12&offset=50
+    log(req.host);                      // Hostname from the host header, such as awesome.indobase.io
     log(req.port);                      // Port from the host header, for example 8000
     log(req.path);                      // Path part of URL, for example /v1/hooks
     log(req.queryString);               // Raw query params string. For example "limit=12&offset=50"
@@ -640,8 +640,8 @@ func Main(Context openruntimes.Context) openruntimes.Response {
 	Context.Log(json.Marshal(Context.Req.Headers))  // String key-value pairs of all request headers, keys are lowercase
 	Context.Log(Context.Req.Scheme)                 // Value of the x-forwarded-proto header, usually http or https
 	Context.Log(Context.Req.Method)                 // Request method, such as GET, POST, PUT, DELETE, PATCH, etc.
-	Context.Log(Context.Req.Url)                    // Full URL, for example: http://awesome.appwrite.io:8000/v1/hooks?limit=12&offset=50
-	Context.Log(Context.Req.Host)                   // Hostname from the host header, such as awesome.appwrite.io
+	Context.Log(Context.Req.Url)                    // Full URL, for example: http://awesome.indobase.io:8000/v1/hooks?limit=12&offset=50
+	Context.Log(Context.Req.Host)                   // Hostname from the host header, such as awesome.indobase.io
 	Context.Log(Context.Req.Port)                   // Port from the host header, for example 8000
 	Context.Log(Context.Req.Path)                   // Path part of URL, for example /v1/hooks
 	Context.Log(Context.Req.QueryString)            // Raw query params string. For example "limit=12&offset=50"
@@ -660,8 +660,8 @@ Future<dynamic> main(final context) async {
     context.log(json.encode(context.req.headers));   // String key-value pairs of all request headers, keys are lowercase
     context.log(context.req.scheme);                 // Value of the x-forwarded-proto header, usually http or https
     context.log(context.req.method);                 // Request method, such as GET, POST, PUT, DELETE, PATCH, etc.
-    context.log(context.req.url);                    // Full URL, for example: http://awesome.appwrite.io:8000/v1/hooks?limit=12&offset=50
-    context.log(context.req.host);                   // Hostname from the host header, such as awesome.appwrite.io
+    context.log(context.req.url);                    // Full URL, for example: http://awesome.indobase.io:8000/v1/hooks?limit=12&offset=50
+    context.log(context.req.host);                   // Hostname from the host header, such as awesome.indobase.io
     context.log(context.req.port);                   // Port from the host header, for example 8000
     context.log(context.req.path);                   // Path part of URL, for example /v1/hooks
     context.log(context.req.queryString);            // Raw query params string. For example "limit=12&offset=50"
@@ -680,8 +680,8 @@ func main(context: RuntimeContext) async throws -> RuntimeOutput {
     context.log(NSJSONSerialization.jsonObject(with: context.req.headers, options: [])!)   // String key-value pairs of all request headers, keys are lowercase
     context.log(context.req.scheme)                                                        // Value of the x-forwarded-proto header, usually http or https
     context.log(context.req.method)                                                        // Request method, such as GET, POST, PUT, DELETE, PATCH, etc.
-    context.log(context.req.url)                                                           // Full URL, for example: http://awesome.appwrite.io:8000/v1/hooks?limit=12&offset=50
-    context.log(context.req.host)                                                          // Hostname from the host header, such as awesome.appwrite.io
+    context.log(context.req.url)                                                           // Full URL, for example: http://awesome.indobase.io:8000/v1/hooks?limit=12&offset=50
+    context.log(context.req.host)                                                          // Hostname from the host header, such as awesome.indobase.io
     context.log(context.req.port)                                                          // Port from the host header, for example 8000
     context.log(context.req.path)                                                          // Path part of URL, for example /v1/hooks
     context.log(context.req.queryString)                                                   // Raw query params string. For example "limit=12&offset=50"
@@ -702,8 +702,8 @@ public class Handler {
         Context.Log(JsonSerializer.Serialize<object>(Context.Req.Headers));              // String key-value pairs of all request headers, keys are lowercase
         Context.Log(Context.Req.Scheme);                                                 // Value of the x-forwarded-proto header, usually http or https
         Context.Log(Context.Req.Method);                                                 // Request method, such as GET, POST, PUT, DELETE, PATCH, etc.
-        Context.Log(Context.Req.Url);                                                    // Full URL, for example: http://awesome.appwrite.io:8000/v1/hooks?limit=12&offset=50
-        Context.Log(Context.Req.Host);                                                   // Hostname from the host header, such as awesome.appwrite.io
+        Context.Log(Context.Req.Url);                                                    // Full URL, for example: http://awesome.indobase.io:8000/v1/hooks?limit=12&offset=50
+        Context.Log(Context.Req.Host);                                                   // Hostname from the host header, such as awesome.indobase.io
         Context.Log(Context.Req.Port);                                                   // Port from the host header, for example 8000
         Context.Log(Context.Req.Path);                                                   // Path part of URL, for example /v1/hooks
         Context.Log(Context.Req.QueryString);                                            // Raw query params string. For example "limit=12&offset=50"
@@ -729,8 +729,8 @@ class Main {
         context.log(gson.toString(context.req.headers))   // String key-value pairs of all request headers, keys are lowercase
         context.log(context.req.scheme)                   // Value of the x-forwarded-proto header, usually http or https
         context.log(context.req.method)                   // Request method, such as GET, POST, PUT, DELETE, PATCH, etc.
-        context.log(context.req.url)                      // Full URL, for example: http://awesome.appwrite.io:8000/v1/hooks?limit=12&offset=50
-        context.log(context.req.host)                     // Hostname from the host header, such as awesome.appwrite.io
+        context.log(context.req.url)                      // Full URL, for example: http://awesome.indobase.io:8000/v1/hooks?limit=12&offset=50
+        context.log(context.req.host)                     // Hostname from the host header, such as awesome.indobase.io
         context.log(context.req.port)                     // Port from the host header, for example 8000
         context.log(context.req.path)                     // Path part of URL, for example /v1/hooks
         context.log(context.req.queryString)              // Raw query params string. For example "limit=12&offset=50"
@@ -755,8 +755,8 @@ public class Main {
         context.log(gson.toString(context.getReq().getHeaders())); // String key-value pairs of all request headers, keys are lowercase
         context.log(context.getReq().getScheme());                 // Value of the x-forwarded-proto header, usually http or https
         context.log(context.getReq().getMethod());                 // Request method, such as GET, POST, PUT, DELETE, PATCH, etc.
-        context.log(context.getReq().getUrl());                    // Full URL, for example: http://awesome.appwrite.io:8000/v1/hooks?limit=12&offset=50
-        context.log(context.getReq().getHost());                   // Hostname from the host header, such as awesome.appwrite.io
+        context.log(context.getReq().getUrl());                    // Full URL, for example: http://awesome.indobase.io:8000/v1/hooks?limit=12&offset=50
+        context.log(context.getReq().getHost());                   // Hostname from the host header, such as awesome.indobase.io
         context.log(context.getReq().getPort());                   // Port from the host header, for example 8000
         context.log(context.getReq().getPath());                   // Path part of URL, for example /v1/hooks
         context.log(context.getReq().getQueryString());            // Raw query params string. For example "limit=12&offset=50"
@@ -775,16 +775,16 @@ These are provided alongside any custom headers sent to the function.
 
 | Variable                  | Description                                                                                                                                          |
 |---------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `x-appwrite-trigger`        |  Describes how the function execution was invoked. Possible values are `http`, `schedule` or `event`.                                                      |
-| `x-appwrite-event`          |  If the function execution was triggered by an event, describes the triggering event.                                                                |
-| `x-appwrite-key`            |  The dynamic API key is used for server authentication. [Learn more about dynamic api keys](/docs/products/functions/develop#dynamic-api-key). |
-| `x-appwrite-user-id`        |  If the function execution was invoked by an authenticated user, display the user ID. This doesn't apply to indobase Console users or API keys.      |
-| `x-appwrite-user-jwt`       |  JWT token generated from the invoking user's session. Used to authenticate Server SDKs to respect access permissions. [Learn more about JWT tokens](/docs/products/auth/jwt).  |
-| `x-appwrite-country-code`   |  Displays the country code of the configured locale.                                                                                                 |
-| `x-appwrite-continent-code` |  Displays the continent code of the configured locale.                                                                                               |
-| `x-appwrite-continent-eu`   |  Describes if the configured local is within the EU.                                                                                                 |
-| `x-appwrite-client-ip`       |  Displays the IP of the client creating the execution.                                                                                                |
-| `x-appwrite-execution-id`   |  Displays the ID of the current execution.                                                                                                            |
+| `x-indobase-trigger`        |  Describes how the function execution was invoked. Possible values are `http`, `schedule` or `event`.                                                      |
+| `x-indobase-event`          |  If the function execution was triggered by an event, describes the triggering event.                                                                |
+| `x-indobase-key`            |  The dynamic API key is used for server authentication. [Learn more about dynamic api keys](/docs/products/functions/develop#dynamic-api-key). |
+| `x-indobase-user-id`        |  If the function execution was invoked by an authenticated user, display the user ID. This doesn't apply to indobase Console users or API keys.      |
+| `x-indobase-user-jwt`       |  JWT token generated from the invoking user's session. Used to authenticate Server SDKs to respect access permissions. [Learn more about JWT tokens](/docs/products/auth/jwt).  |
+| `x-indobase-country-code`   |  Displays the country code of the configured locale.                                                                                                 |
+| `x-indobase-continent-code` |  Displays the continent code of the configured locale.                                                                                               |
+| `x-indobase-continent-eu`   |  Describes if the configured local is within the EU.                                                                                                 |
+| `x-indobase-client-ip`       |  Displays the IP of the client creating the execution.                                                                                                |
+| `x-indobase-execution-id`   |  Displays the ID of the current execution.                                                                                                            |
 
 ## Response {% #response %}
 Use the response object to send a response to the function caller. This could be a user, client app, or an integration.
@@ -828,7 +828,7 @@ export default async ({ req, res, log }) => {
             const bytes = await fs.readFile('file.png');
             return res.binary(bytes);
         case 'redirect':
-            return res.redirect("https://appwrite.io", 301);
+            return res.redirect("https://indobase.io", 301);
         case 'html':
             return res.text(
                 "<h1>This is an HTML response</h1>", 200, {
@@ -852,7 +852,7 @@ return function ($context) {
             $fileContent = file_get_contents('file.png');
             return $context->res->binary($fileContent);
         case 'redirect':
-            return $context->res->redirect("https://appwrite.io", 301);
+            return $context->res->redirect("https://indobase.io", 301);
         case 'html':
             return $context->res->text("<h1>This is an HTML response</h1>", 200, [
                 "content-type" => "text/html"
@@ -876,7 +876,7 @@ def main(context):
             file_contents = file.read()
         return context.res.binary(file_contents)
     elif type == 'redirect':
-        return context.res.redirect("https://appwrite.io", 301)
+        return context.res.redirect("https://indobase.io", 301)
     elif type == 'html':
         return context.res.text("<h1>This is an HTML response</h1>", 200, {
             "content-type": "text/html"
@@ -895,7 +895,7 @@ def main(context)
             file_contents = File.binread('file.png')
             return context.res.binary(file_contents)
         when 'redirect'
-            return context.res.redirect("https://appwrite.io", 301)
+            return context.res.redirect("https://indobase.io", 301)
         when 'html'
             return context.res.text("<h1>This is an HTML response</h1>", 200, {
                 "content-type": "text/html"
@@ -917,7 +917,7 @@ export default async ({ req, res, log }) => {
             const fileContents = await Deno.readFile('file.png');
             return res.binary(fileContents);
         case 'redirect':
-            return res.redirect("https://appwrite.io", 301);
+            return res.redirect("https://indobase.io", 301);
         case 'html':
             return res.text(
                 "<h1>This is an HTML response</h1>", 200, {
@@ -951,7 +951,7 @@ func Main(Context openruntimes.Context) openruntimes.Response {
 		imageData, _ := images.ReadFile("file.png")
 		return Context.Res.Binary(imageData)
 	case "redirect":
-		return Context.Res.Redirect("https://appwrite.io")
+		return Context.Res.Redirect("https://indobase.io")
 	case "html":
 		return Context.Res.Text("<h1>This is an HTML response</h1>")
 	default:
@@ -974,7 +974,7 @@ Future<dynamic> main(final context) async {
             final fileContents = await file.readAsBytes();
             return context.res.binary(fileContents);
         case 'redirect':
-            return context.res.redirect('https://appwrite.io', 301);
+            return context.res.redirect('https://indobase.io', 301);
         case 'html':
             return context.res.text('<h1>This is an HTML response</h1>',
                 200, {'content-type': 'text/html'});
@@ -996,7 +996,7 @@ func main(context: RuntimeContext) async throws -> RuntimeOutput {
         let fileContents = FileManager.default.contents(atPath: "file.png")
         return context.res.binary(fileContents)
     case "redirect":
-        return context.res.redirect("https://appwrite.io", 301)
+        return context.res.redirect("https://indobase.io", 301)
     case "html":
         return context.res.text("<h1>This is an HTML response</h1>", 200, [
             "content-type": "text/html"
@@ -1019,7 +1019,7 @@ public class Handler {
             case "binary":
                 return Context.Res.Binary(File.ReadAllBytes("file.png"));
             case "redirect":
-                return Context.Res.Redirect("https://appwrite.io", 301);
+                return Context.Res.Redirect("https://indobase.io", 301);
             case "html":
                 return Context.Res.Text("<h1>This is an HTML response</h1>", 200, new Dictionary<string, string>() {
                     { "content-type", "text/html" }
@@ -1042,7 +1042,7 @@ class Main {
             "empty" -> return context.res.empty()
             "json" -> return context.res.text(mapOf("type" to "This is a JSON response"))
             "binary" -> return context.res.binary(File("file.png").readBytes())
-            "redirect" -> return context.res.redirect("https://appwrite.io", 301)
+            "redirect" -> return context.res.redirect("https://indobase.io", 301)
             "html" -> return context.res.text("<h1>This is an HTML response</h1>", 200, mapOf("content-type" to "text/html"))
             else -> return context.res.text("This is a text response")
         }
@@ -1069,7 +1069,7 @@ public class Main {
             case "binary"
                 return context.getRes().binary(Files.readAllBytes(Paths.get("file.png")));
             case "redirect":
-                return context.getRes().redirect("https://appwrite.io", 301);
+                return context.getRes().redirect("https://indobase.io", 301);
             case "html":
                 return context.getRes().text("<h1>This is an HTML response</h1>", 200, Map.of("content-type", "text/html"));
             default:
@@ -1100,7 +1100,7 @@ namespace runtime {
           std::vector<char> buffer(std::istreambuf_iterator<char>(std::ifstream("file.png", std::ios::binary)), {});
           return context.res.binary(buffer)
         } else if (type == "redirect") {
-          return context.res.redirect("https://appwrite.io", 301);
+          return context.res.redirect("https://indobase.io", 301);
         } else if (type == "html") {
           Json::Value headers;
           headers["content-type"] = "text/html";
@@ -1118,11 +1118,11 @@ To get the different response types, set one of the following query parameters i
 
 | Type     | Query Param     | Example                                                     |
 |----------|-----------------|-------------------------------------------------------------|
-| `text`     | `/?type=text`     | `https://64d4d22db370ae41a32e.fra.appwrite.run/?type=text`     |
-| `json`     | `/?type=json`     | `https://64d4d22db370ae41a32e.fra.appwrite.run/?type=json`     |
-| `redirect` | `/?type=redirect` | `https://64d4d22db370ae41a32e.fra.appwrite.run/?type=redirect` |
-| `html`     | `/?type=html`     | `https://64d4d22db370ae41a32e.fra.appwrite.run/?type=html`     |
-| `empty`    | `/`               | `https://64d4d22db370ae41a32e.fra.appwrite.run/`               |
+| `text`     | `/?type=text`     | `https://64d4d22db370ae41a32e.fra.indobase.run/?type=text`     |
+| `json`     | `/?type=json`     | `https://64d4d22db370ae41a32e.fra.indobase.run/?type=json`     |
+| `redirect` | `/?type=redirect` | `https://64d4d22db370ae41a32e.fra.indobase.run/?type=redirect` |
+| `html`     | `/?type=html`     | `https://64d4d22db370ae41a32e.fra.indobase.run/?type=html`     |
+| `empty`    | `/`               | `https://64d4d22db370ae41a32e.fra.indobase.run/`               |
 
 ## Logging {% #logging %}
 To protect user privacy, the request and response objects are not logged to the indobase Console by default.
@@ -1324,7 +1324,7 @@ If you need to pass constants or secrets to indobase Functions, you can use envi
 | Variable                          | Description                                    |	Available at Build and/or Run Time                 |
 |-----------------------------------|------------------------------------------------|-----------------------------------------------------|
 | `APPWRITE_FUNCTION_API_ENDPOINT`    |  The API endpoint of the running function      | Both                                              |
-| `APPWRITE_VERSION`                  |  The Appwrite version used to run the function | Both                                              |
+| `APPWRITE_VERSION`                  |  The Indobase version used to run the function | Both                                              |
 | `APPWRITE_REGION`                   |  The region where the function will run from   | Both                                              |
 | `APPWRITE_FUNCTION_API_KEY`         |  The function API key is used for server authentication | Build time                               |
 | `APPWRITE_FUNCTION_ID`              |  The ID of the running function.               | Both                                              |
@@ -1543,7 +1543,7 @@ By default, we include the following package managers in each runtime.
 * N/A
 {% /table %}
 
-# Using indobase in a function {% #using-appwrite %}
+# Using indobase in a function {% #using-indobase %}
 indobase can be used in your functions by adding the relevant SDK to your function's dependencies.
 Authenticating with indobase is done via a dynamic API key or a JWT token.
 
@@ -1554,7 +1554,7 @@ However, you can only use dynamic API keys inside indobase functions.
 
 During the build process, dynamic API keys are automatically provided as the environment variable `APPWRITE_FUNCTION_API_KEY`. This environment variable doesn't need to be initialized.
 
-During execution, dynamic API keys are automatically provided in the `x-appwrite-key` [header](#headers).
+During execution, dynamic API keys are automatically provided in the `x-indobase-key` [header](#headers).
 
 Dynamic API keys grant access and operate without sessions.
 They allow your function to act as an admin-type role instead of acting on behalf of a user.
@@ -1574,7 +1574,7 @@ export default async ({ req, res, log, error }) => {
     // Set project and set API key
     const client = new Client()
        .setProject(process.env.APPWRITE_FUNCTION_PROJECT_ID)
-       .setKey(req.headers['x-appwrite-key']);
+       .setKey(req.headers['x-indobase-key']);
 
     const tablesDB = new TablesDB(client);
 
@@ -1607,7 +1607,7 @@ return function ($context) {
     // Set project and set API key
     $client = (new Client())
         ->setProject(getenv('APPWRITE_FUNCTION_PROJECT_ID'))
-        ->setKey($context->req->headers['x-appwrite-key']);
+        ->setKey($context->req->headers['x-indobase-key']);
 
     $tablesDB = new TablesDB($client);
 
@@ -1627,9 +1627,9 @@ return function ($context) {
 };
 ```
 ```python
-from appwrite.client import Client
-from appwrite.services.tables_db import TablesDB
-from appwrite.id import ID
+from indobase.client import Client
+from indobase.services.tables_db import TablesDB
+from indobase.id import ID
 
 import os
 
@@ -1638,7 +1638,7 @@ def main(context):
     client = (
         Client()
             .set_project(os.environ["APPWRITE_FUNCTION_PROJECT_ID"])
-            .set_key(context.req.headers["x-appwrite-key"])
+            .set_key(context.req.headers["x-indobase-key"])
     )
 
     tablesDB = TablesDB(client)
@@ -1659,13 +1659,13 @@ def main(context):
 ```ruby
 require "appwrite"
 
-include Appwrite
+include Indobase
 
 def main(context)
     # Set project and set API key
     client = indobase::Client.new
       .set_project(ENV['APPWRITE_FUNCTION_PROJECT_ID'])
-      .set_key(context.req.headers['x-appwrite-key'])
+      .set_key(context.req.headers['x-indobase-key'])
 
     tablesDB = indobase::TablesDB.new(client)
 
@@ -1691,7 +1691,7 @@ export default function ({req, res, error}: any){
     // Set project and set API key
     const client = new Client()
        .setProject(Deno.env.get("APPWRITE_FUNCTION_PROJECT_ID"))
-       .setKey(req.headers["x-appwrite-key"] || "");
+       .setKey(req.headers["x-indobase-key"] || "");
 
     const tablesDB = new TablesDB(client);
 
@@ -1717,19 +1717,19 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/appwrite/sdk-for-go/appwrite"
-	"github.com/appwrite/sdk-for-go/id"
+	"github.com/indobase/sdk-for-go/indobase"
+	"github.com/indobase/sdk-for-go/id"
 	"github.com/open-runtimes/types-for-go/v4/openruntimes"
 )
 
 func Main(Context openruntimes.Context) openruntimes.Response {
 	// Set project and set API key
-	client := appwrite.NewClient(
-		appwrite.WithProject(os.Getenv("APPWRITE_FUNCTION_PROJECT_ID")),
-		appwrite.WithKey(Context.Req.Headers["x-appwrite-key"]),
+	client := indobase.NewClient(
+		indobase.WithProject(os.Getenv("APPWRITE_FUNCTION_PROJECT_ID")),
+		indobase.WithKey(Context.Req.Headers["x-indobase-key"]),
 	)
 
-	databases := appwrite.NewTablesDB(client)
+	databases := indobase.NewTablesDB(client)
 
 	_, err := databases.createRow(
 		"<DATABASE_ID>",
@@ -1755,7 +1755,7 @@ Future<dynamic> main(final context) async {
     // Set project and set API key
     final client = Client()
        .setProject(Platform.environment['APPWRITE_FUNCTION_PROJECT_ID'])
-       .setKey(context.req.headers['x-appwrite-key']);
+       .setKey(context.req.headers['x-indobase-key']);
 
     final tablesDB = TablesDB(client);
 
@@ -1775,7 +1775,7 @@ Future<dynamic> main(final context) async {
 }
 ```
 ```swift
-import Appwrite
+import Indobase
 import indobaseModels
 import Foundation
 
@@ -1783,7 +1783,7 @@ func main(context: RuntimeContext) async throws -> RuntimeOutput {
     // Set project and set API key
     let client = Client()
        .setProject(ProcessInfo.processInfo.environment["APPWRITE_FUNCTION_PROJECT_ID"])
-       .setKey(context.req.headers["x-appwrite-key"] ?? "")
+       .setKey(context.req.headers["x-indobase-key"] ?? "")
 
     let tablesDB = TablesDB(client: client)
 
@@ -1816,7 +1816,7 @@ namespace DotNetRuntime
             // Set API
             var client = new Client()
                 .SetProject(Environment.GetEnvironmentVariable("APPWRITE_FUNCTION_PROJECT_ID"))
-                .SetKey(Context.Req.Headers["x-appwrite-key"]);
+                .SetKey(Context.Req.Headers["x-indobase-key"]);
 
             var tablesDB = new TablesDB(client);
 
@@ -1851,7 +1851,7 @@ class Main {
         // Set project and set API key
         val client = Client()
            .setProject(System.getenv("APPWRITE_FUNCTION_PROJECT_ID"))
-           .setKey(context.req.headers["x-appwrite-key"])
+           .setKey(context.req.headers["x-indobase-key"])
 
         val tablesDB = TablesDB(client)
 
@@ -1884,7 +1884,7 @@ public class Main {
         // Set project and set API key
         Client client = new Client();
              .setProject(System.getenv("APPWRITE_FUNCTION_PROJECT_ID"))
-             .setKey(context.getReq().getHeaders().get("x-appwrite-key"));
+             .setKey(context.getReq().getHeaders().get("x-indobase-key"));
 
         Databases tablesDB = new TablesDB(client);
 
@@ -1911,7 +1911,7 @@ JWTs allow you to act on behalf of an user in your indobase Function.
 When using JWTs, you will be able to access and change **only** the resources with the same permissions as the user account that signed the JWT.
 This preserves the permissions you configured on each resource.
 
-If the indobase Function is invoked by an authenticated user, the `x-appwrite-user-jwt` header is automatically passed in.
+If the indobase Function is invoked by an authenticated user, the `x-indobase-user-jwt` header is automatically passed in.
 
 {% multicode %}
 
@@ -1922,8 +1922,8 @@ export default async ({ req, res, log }) => {
     const client = new Client()
         .setProject(process.env.APPWRITE_FUNCTION_PROJECT_ID)
 
-    if (req.headers['x-appwrite-user-jwt']) {
-        client.setJWT(req.headers['x-appwrite-user-jwt'])
+    if (req.headers['x-indobase-user-jwt']) {
+        client.setJWT(req.headers['x-indobase-user-jwt'])
     } else {
         return res.text("Access denied: This function requires authentication. Please sign in to continue.");
     }
@@ -1959,8 +1959,8 @@ return function ($context) {
     $client = new (Client())
         ->setProject(getenv('APPWRITE_FUNCTION_PROJECT_ID'))
 
-    if (isset($context->req->headers['x-appwrite-user-jwt'])) {
-        $client->setJWT($context->req->headers['x-appwrite-user-jwt']);
+    if (isset($context->req->headers['x-indobase-user-jwt'])) {
+        $client->setJWT($context->req->headers['x-indobase-user-jwt']);
     } else {
         return $context->res->text("Access denied: This function requires authentication. Please sign in to continue.");
     }
@@ -1983,9 +1983,9 @@ return function ($context) {
 };
 ```
 ```python
-from appwrite.client import Client
-from appwrite.services.tables_db import TablesDB
-from appwrite.id import ID
+from indobase.client import Client
+from indobase.services.tables_db import TablesDB
+from indobase.id import ID
 
 import os
 
@@ -1995,8 +1995,8 @@ def main(context):
             .set_project(os.environ["APPWRITE_FUNCTION_PROJECT_ID"])
     )
 
-    if "x-appwrite-user-jwt" in context.req.headers:
-        client.set_jwt(context.req.headers["x-appwrite-user-jwt"])
+    if "x-indobase-user-jwt" in context.req.headers:
+        client.set_jwt(context.req.headers["x-indobase-user-jwt"])
     else:
         return context.res.text("Access denied: This function requires authentication. Please sign in to continue.")
 
@@ -2018,14 +2018,14 @@ def main(context):
 ```ruby
 require "appwrite"
 
-include Appwrite
+include Indobase
 
 def main(context)
     client = Client.new
         .set_project(ENV['APPWRITE_FUNCTION_PROJECT_ID'])
 
-    if context.request.headers['x-appwrite-user-jwt']
-        client.set_jwt(context.request.headers['x-appwrite-user-jwt'])
+    if context.request.headers['x-indobase-user-jwt']
+        client.set_jwt(context.request.headers['x-indobase-user-jwt'])
     else
         return context.response.text("Access denied: This function requires authentication. Please sign in to continue.")
     end
@@ -2049,8 +2049,8 @@ export default function ({req, res, error}: any){
     const client = new Client()
         .setProject(Deno.env.get("APPWRITE_FUNCTION_PROJECT_ID") || "")
 
-    if (req.headers["x-appwrite-user-jwt"]) {
-        client.setJWT(req.headers["x-appwrite-user-jwt"]);
+    if (req.headers["x-indobase-user-jwt"]) {
+        client.setJWT(req.headers["x-indobase-user-jwt"]);
     } else {
         return res.text("Access denied: This function requires authentication. Please sign in to continue.");
     }
@@ -2079,24 +2079,24 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/appwrite/sdk-for-go/appwrite"
-	"github.com/appwrite/sdk-for-go/id"
+	"github.com/indobase/sdk-for-go/indobase"
+	"github.com/indobase/sdk-for-go/id"
 	"github.com/open-runtimes/types-for-go/v4/openruntimes"
 )
 
 func Main(Context openruntimes.Context) openruntimes.Response {
-	client := appwrite.NewClient(
-		appwrite.WithProject("APPWRITE_FUNCTION_PROJECT_ID"),
+	client := indobase.NewClient(
+		indobase.WithProject("APPWRITE_FUNCTION_PROJECT_ID"),
 	)
 
-	jwt, exists := Context.Req.Headers["x-appwrite-user-jwt"]
+	jwt, exists := Context.Req.Headers["x-indobase-user-jwt"]
 	if !exists || len(jwt) == 0 {
-		appwrite.WithJWT(Context.Req.Headers["x-appwrite-user-jwt"])
+		indobase.WithJWT(Context.Req.Headers["x-indobase-user-jwt"])
 	} else {
 		return Context.Res.Text("Access denied: This function requires authentication. Please sign in to continue.")
 	}
 
-	databases := appwrite.NewTablesDB(client)
+	databases := indobase.NewTablesDB(client)
 
 	_, err := databases.createRow(
 		"<DATABASE_ID>",
@@ -2122,8 +2122,8 @@ Future<dynamic> main(final context) async {
     final client = Client()
         .setProject(Platform.environment['APPWRITE_FUNCTION_PROJECT_ID'])
 
-    if (context.req.headers['x-appwrite-user-jwt'] != null) {
-        client.setJWT(context.req.headers['x-appwrite-user-jwt']);
+    if (context.req.headers['x-indobase-user-jwt'] != null) {
+        client.setJWT(context.req.headers['x-indobase-user-jwt']);
     } else {
         return context.res.text("Access denied: This function requires authentication. Please sign in to continue.");
     }
@@ -2146,7 +2146,7 @@ Future<dynamic> main(final context) async {
 }
 ```
 ```swift
-import Appwrite
+import Indobase
 import indobaseModels
 import Foundation
 
@@ -2154,7 +2154,7 @@ func main(context: RuntimeContext) async throws -> RuntimeOutput {
     let client = Client()
        .setProject(ProcessInfo.processInfo.environment["APPWRITE_FUNCTION_PROJECT_ID"])
 
-    if let jwt = context.req.headers["x-appwrite-user-jwt"] {
+    if let jwt = context.req.headers["x-indobase-user-jwt"] {
         client.setJWT(jwt)
     } else {
         return context.res.text("Access denied: This function requires authentication. Please sign in to continue.")
@@ -2191,8 +2191,8 @@ namespace DotNetRuntime
             var client = new Client()
                .SetProject(Environment.GetEnvironmentVariable("APPWRITE_FUNCTION_PROJECT_ID"))
 
-            if (Context.Req.Headers.ContainsKey("x-appwrite-user-jwt")) {
-                client.SetJWT(Context.Req.Headers["x-appwrite-user-jwt"]);
+            if (Context.Req.Headers.ContainsKey("x-indobase-user-jwt")) {
+                client.SetJWT(Context.Req.Headers["x-indobase-user-jwt"]);
             } else {
                 return Context.Res.Text("Access denied: This function requires authentication. Please sign in to continue");
             }
@@ -2230,8 +2230,8 @@ class Main {
         val client = Client()
            .setProject(System.getenv("APPWRITE_FUNCTION_PROJECT_ID"))
 
-        if (context.req.headers["x-appwrite-user-jwt"] != null) {
-            client.setJWT(context.req.headers["x-appwrite-user-jwt"])
+        if (context.req.headers["x-indobase-user-jwt"] != null) {
+            client.setJWT(context.req.headers["x-indobase-user-jwt"])
         } else {
             return context.res.text("Access denied: This function requires authentication. Please sign in to continue.")
         }
@@ -2267,8 +2267,8 @@ public class Main {
         Client client = new Client()
             .setProject(System.getenv("APPWRITE_FUNCTION_PROJECT_ID"))
 
-        if (context.req.headers.containsKey("x-appwrite-user-jwt")) {
-            client.setJWT(context.req.headers.get("x-appwrite-user-jwt"));
+        if (context.req.headers.containsKey("x-indobase-user-jwt")) {
+            client.setJWT(context.req.headers.get("x-indobase-user-jwt"));
         } else {
             return context.res.text("Access denied: This function requires authentication. Please sign in to continue.");
         }

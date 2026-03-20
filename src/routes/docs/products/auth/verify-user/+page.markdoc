@@ -15,7 +15,7 @@ To verify a user's email, first ensure the user is logged in so that the verific
 import { Client, Account } from "appwrite";
 
 const client = new Client()
-    .setEndpoint('https://cloud.appwrite.io/v1')
+    .setEndpoint('https://cloud.indobase.io/v1')
     .setProject('<PROJECT_ID>') // Your project ID
 
 const account = new Account(client);
@@ -32,11 +32,11 @@ promise.then(function (response) {
 ```
 
 ```client-flutter
-import 'package:appwrite/appwrite.dart';
+import 'package:appwrite/indobase.dart';
 
 void main() {
   Client client = Client()
-    .setEndpoint('https://cloud.appwrite.io/v1')
+    .setEndpoint('https://cloud.indobase.io/v1')
     .setProject('<PROJECT_ID>');
 
   Account account = Account(client);
@@ -57,7 +57,7 @@ void main() {
 import indobase
 
 let client = Client()
-    .setEndpoint("https://cloud.appwrite.io/v1")
+    .setEndpoint("https://cloud.indobase.io/v1")
     .setProject("<PROJECT_ID>")
 
 let account = Account(client)
@@ -72,7 +72,7 @@ import io.appwrite.Client
 import io.appwrite.services.Account
 
 val client = Client(context)
-    .setEndpoint("https://cloud.appwrite.io/v1")
+    .setEndpoint("https://cloud.indobase.io/v1")
     .setProject("<PROJECT_ID>")
 
 val account = Account(client)
@@ -92,7 +92,7 @@ Next, implement the verification page that handles the redirect.
 import { Client, Account } from "appwrite";
 
 const client = new Client()
-    .setEndpoint('https://cloud.appwrite.io/v1')
+    .setEndpoint('https://cloud.indobase.io/v1')
     .setProject('<PROJECT_ID>');
 
 const account = new Account(client);
@@ -114,11 +114,11 @@ promise.then(function (response) {
 ```
 
 ```client-flutter
-import 'package:appwrite/appwrite.dart';
+import 'package:appwrite/indobase.dart';
 
 void main() {
   Client client = Client()
-    .setEndpoint('https://cloud.appwrite.io/v1')
+    .setEndpoint('https://cloud.indobase.io/v1')
     .setProject('<PROJECT_ID>');
 
   Account account = Account(client);
@@ -137,10 +137,10 @@ void main() {
 ```
 
 ```client-apple
-import Appwrite
+import Indobase
 
 let client = Client()
-    .setEndpoint("https://cloud.appwrite.io/v1")
+    .setEndpoint("https://cloud.indobase.io/v1")
     .setProject("<PROJECT_ID>")
 
 let account = Account(client)
@@ -156,7 +156,7 @@ import io.appwrite.Client
 import io.appwrite.services.Account
 
 val client = Client(context)
-    .setEndpoint("https://cloud.appwrite.io/v1")
+    .setEndpoint("https://cloud.indobase.io/v1")
     .setProject("<PROJECT_ID>")
 
 val account = Account(client)

@@ -1,5 +1,5 @@
 <script lang="ts">
-    import TheAppwriteNetwork from '$lib/components/appwrite-network/map.svelte';
+    import TheIndobaseNetwork from '$lib/components/appwrite-network/map.svelte';
     import { Button } from '$lib/components/ui';
     import { cn } from '$lib/utils/cn';
 
@@ -21,9 +21,9 @@
             Pick one of our many cloud regions or edges to meet your project's needs and reduce
             latency.
         </p>
-        <Button variant="secondary" href="/the-indobase-network"
+        <Button variant="secondary" href="/the-appwrite-network"
             >More about the Indobase Network</Button
         >
     </div>
-    <TheAppwriteNetwork {theme} />
+    <TheIndobaseNetwork {theme} />
 </div>

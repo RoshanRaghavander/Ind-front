@@ -26,7 +26,7 @@ function transform_tokens(tokens: ReturnType<typeof md.parse>): ReturnType<typeo
             case 'link_open': {
                 const href = token.attrGet('href');
                 if (href?.startsWith('http')) {
-                    if (!href.startsWith('https://appwrite.io')) {
+                    if (!href.startsWith('https://indobase.io')) {
                         token.attrPush(['rel', 'noopener noreferrer']);
                         token.attrPush(['target', '_blank']);
                     }

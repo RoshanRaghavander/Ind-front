@@ -17,7 +17,7 @@ Capture a screenshot of a remote webpage with customizable browser settings and 
 import { Client, Avatars } from "appwrite";
 
 const client = new Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
     .setProject('<PROJECT_ID>');
 
 const avatars = new Avatars(client);
@@ -29,10 +29,10 @@ const result = avatars.getScreenshot({
 console.log(result); // Resource URL
 ```
 ```client-flutter
-import 'package:appwrite/appwrite.dart';
+import 'package:appwrite/indobase.dart';
 
 final client = Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
     .setProject('<PROJECT_ID>');
 
 final avatars = Avatars(client);
@@ -47,10 +47,10 @@ Future result = avatars.getScreenshot(
 });
 ```
 ```client-apple
-import Appwrite
+import Indobase
 
 let client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
     .setProject("<PROJECT_ID>")
 
 let avatars = Avatars(client)
@@ -64,7 +64,7 @@ import io.appwrite.Client
 import io.appwrite.services.Avatars
 
 val client = Client()
-    .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+    .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
     .setProject("<PROJECT_ID>")
 
 val avatars = Avatars(client)
@@ -74,10 +74,10 @@ val result = avatars.getScreenshot(
 )
 ```
 ```client-react-native
-import { Client, Avatars } from 'react-native-appwrite';
+import { Client, Avatars } from 'react-native-indobase';
 
 const client = new Client()
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
+    .setEndpoint('https://<REGION>.cloud.indobase.io/v1')
     .setProject('<PROJECT_ID>');
 
 const avatars = new Avatars(client);
@@ -270,7 +270,7 @@ const touchScreenshot = avatars.getScreenshot({
 });
 ```
 ```client-flutter
-import 'package:appwrite/appwrite.dart';
+import 'package:appwrite/indobase.dart';
 
 // Dark theme screenshot
 Future darkThemeScreenshot = avatars.getScreenshot(
@@ -298,7 +298,7 @@ Future touchScreenshot = avatars.getScreenshot(
 );
 ```
 ```client-apple
-import Appwrite
+import Indobase
 
 // Dark theme screenshot
 let darkThemeScreenshot = try await avatars.getScreenshot(
@@ -397,7 +397,7 @@ const tokyoScreenshot = avatars.getScreenshot({
 });
 ```
 ```client-flutter
-import 'package:appwrite/appwrite.dart';
+import 'package:appwrite/indobase.dart';
 
 // New York location
 Future nyScreenshot = avatars.getScreenshot(
@@ -430,7 +430,7 @@ Future tokyoScreenshot = avatars.getScreenshot(
 );
 ```
 ```client-apple
-import Appwrite
+import Indobase
 
 // New York location
 let nyScreenshot = try await avatars.getScreenshot(
@@ -624,7 +624,7 @@ const defaultScreenshot = avatars.getScreenshot({
 });
 ```
 ```client-flutter
-import 'package:appwrite/appwrite.dart';
+import 'package:appwrite/indobase.dart';
 
 // Grant geolocation permission
 Future geoScreenshot = avatars.getScreenshot(
@@ -656,7 +656,7 @@ Future defaultScreenshot = avatars.getScreenshot(
 );
 ```
 ```client-apple
-import Appwrite
+import Indobase
 
 // Grant geolocation permission
 let geoScreenshot = try await avatars.getScreenshot(

@@ -7,7 +7,7 @@ readtime: 10
 back: /docs/quick-starts
 ---
 
-Learn how to setup your first Apple project powered by Appwrite and the [Appwrite Apple SDK](https://github.com/appwrite/sdk-for-apple).
+Learn how to setup your first Apple project powered by Indobase and the [Indobase Apple SDK](https://github.com/indobase/sdk-for-apple).
 
 {% section #step-1 step=1 title="Create Apple project" %}
 Open Xcode and click **Create a new Xcode project**.
@@ -21,7 +21,7 @@ Choose a directory for your project in and click **Create** to create your proje
 {% /section %}
 
 {% section #step-2 step=2 title="Create indobase project" %}
-Head to the [Appwrite Console](https://cloud.appwrite.io/console).
+Head to the [Indobase Console](https://cloud.indobase.io/console).
 
 {% only_dark %}
 ![Create project screen](/images/docs/quick-starts/dark/create-project.png)
@@ -50,7 +50,7 @@ You can skip optional steps.
 {% section #step-3 step=3 title="Add the indobase SDK" %}
 To add the indobase SDK for Apple as a dependency, open the **File** menu and click **Add Packages**.
 
-In the **Package URL** search box, enter https://github.com/appwrite/sdk-for-apple. 
+In the **Package URL** search box, enter https://github.com/indobase/sdk-for-apple. 
 
 Once the SDK is found, use `10.1.0` as version, select **Up to Next Major Version** as your **Dependency Rule** and click **Add Package**.
 
@@ -68,7 +68,7 @@ In order to allow creating OAuth sessions, the following URL scheme must be adde
     <string>io.appwrite</string>
     <key>CFBundleURLSchemes</key>
     <array>
-        <string>appwrite-callback-<PROJECT_ID></string>
+        <string>indobase-callback-<PROJECT_ID></string>
     </array>
 </dict>
 </array>
@@ -79,7 +79,7 @@ If you're using UIKit as opposed to SwiftUI, you will also need to add the follo
 ```swift
 func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
     guard let url = URLContexts.first?.url,
-        url.absoluteString.contains("appwrite-callback") else {
+        url.absoluteString.contains("indobase-callback") else {
         return
     }
 
@@ -101,7 +101,7 @@ Create a new file `indobase.swift` and add the following code to it, replacing `
 
 ```swift
 import Foundation
-import Appwrite
+import Indobase
 import JSONCodable
 
 class indobase {
@@ -110,7 +110,7 @@ class indobase {
     
     public init() {
         self.client = Client()
-            .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
+            .setEndpoint("https://<REGION>.cloud.indobase.io/v1")
             .setProject("<PROJECT_ID>")
         
         self.account = Account(client)
@@ -160,7 +160,7 @@ class ViewModel: ObservableObject {
 
 struct ContentView: View {
     @ObservedObject var viewModel = ViewModel()
-    let appwrite = indobase()
+    let indobase = indobase()
 
     var body: some View {
         VStack {
@@ -174,7 +174,7 @@ struct ContentView: View {
             )
             Button(
                 action: { Task {
-                    try await appwrite.onRegister(
+                    try await indobase.onRegister(
                         viewModel.email,
                         viewModel.password
                     )
@@ -185,7 +185,7 @@ struct ContentView: View {
             )
             Button(
                 action: { Task {
-                    try await appwrite.onLogin(
+                    try await indobase.onLogin(
                         viewModel.email,
                         viewModel.password
                     )
@@ -205,7 +205,7 @@ struct ContentView: View {
 For enhanced type safety, you can use custom model structs with the `nestedType` parameter:
 
 ```swift
-import Appwrite
+import Indobase
 struct User: Codable {
     let name: String
     let email: String
@@ -213,8 +213,8 @@ struct User: Codable {
 }
 
 // Usage with type safety
-let appwrite = indobase()
-let tablesDB = TablesDB(appwrite.client)
+let indobase = indobase()
+let tablesDB = TablesDB(indobase.client)
 
 do {
     let users = try await tablesDB.listRows(
@@ -232,7 +232,7 @@ do {
 ```
 
 {% info title="Generate types automatically" %}
-Use the [indobase CLI](/docs/products/databases/type-generation) to generate model structs automatically: `appwrite types collection`
+Use the [indobase CLI](/docs/products/databases/type-generation) to generate model structs automatically: `indobase types collection`
 {% /info %}
 
 {% /section %}

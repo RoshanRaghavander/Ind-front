@@ -164,7 +164,7 @@ const securityheaders: Handle = async ({ event, resolve }) => {
 };
 
 const initLocals: Handle = async ({ event, resolve }) => {
-    event.locals.initUser = { github: null, appwrite: null };
+    event.locals.initUser = { github: null, indobase: null };
     return resolve(event);
 };
 
