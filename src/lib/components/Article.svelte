@@ -8,8 +8,8 @@
         title: string;
         cover: string;
         href: string;
-        date: Date;
-        timeToRead: number;
+        date: string | Date;
+        timeToRead: string | number;
         authors: AuthorInfo[];
         avatars: string[];
     }

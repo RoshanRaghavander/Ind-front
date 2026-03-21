@@ -4,7 +4,7 @@
     import MainFooter from '$lib/components/MainFooter.svelte';
     import { Main } from '$lib/layouts';
     import { DEFAULT_HOST } from '$lib/utils/metadata';
-    import type { Integration } from '$routes/integrations/+page';
+    import type { Integration } from '$lib/types/markdoc-catalog';
     import { isHeaderHidden } from '$lib/layouts/Main.svelte';
     import { integrationCategoryDescriptions } from '$lib/constants';
     import { Button, Icon } from '$lib/components/ui';

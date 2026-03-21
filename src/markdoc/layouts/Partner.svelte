@@ -5,8 +5,7 @@
     import { DEFAULT_HOST } from '$lib/utils/metadata';
 
     import { cn } from '$lib/utils/cn';
-    import type { Partner } from '$routes/partners/catalog/+page';
-    import ContactPartner from '$routes/partners/catalog/(components)/contact-partner.svelte';
+    import type { Partner } from '$lib/types/markdoc-catalog';
     import Icon from '$lib/components/ui/icon';
     import type { Snippet } from 'svelte';
     import Button from '$lib/components/ui/button.svelte';

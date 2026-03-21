@@ -1,5 +1,7 @@
 assets/**/*.optimized
 .DS_Store
+# AppleDouble / resource forks (external drives, SMB, exFAT)
+**/._*
 node_modules
 /build
 /.svelte-kit

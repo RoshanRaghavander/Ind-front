@@ -1,5 +1,5 @@
 <script>
-    import Map from '$lib/components/appwrite-network/map.svelte';
+    import Map from '$lib/components/indobase-network/map.svelte';
     import { cn } from '$lib/utils/cn';
 
     import { createTabs, melt } from '@melt-ui/svelte';

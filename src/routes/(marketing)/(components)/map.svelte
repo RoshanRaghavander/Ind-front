@@ -1,5 +1,5 @@
 <script lang="ts">
-    import TheIndobaseNetwork from '$lib/components/appwrite-network/map.svelte';
+    import TheIndobaseNetwork from '$lib/components/indobase-network/map.svelte';
     import { Button } from '$lib/components/ui';
     import { cn } from '$lib/utils/cn';
 
