@@ -10,3 +10,6 @@ NODE_OPTIONS = '--max-old-space-size=4096'
 ENABLE_IMAGE_OPTIMIZER = 'false'
 NODE_ENV = 'production'
 UV_THREADPOOL_SIZE = '1'
+# @sveltejs/adapter-node — correct host/protocol behind Dokploy / Traefik / Caddy
+PROTOCOL_HEADER = 'x-forwarded-proto'
+HOST_HEADER = 'x-forwarded-host'

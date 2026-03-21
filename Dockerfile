@@ -19,6 +19,9 @@ RUN corepack enable
 ENV NODE_ENV=production
 ENV PORT=3000
 ENV PUBLIC_GROWTH_ENDPOINT=${PUBLIC_GROWTH_ENDPOINT}
+# Trust reverse-proxy headers (Dokploy / Traefik / Caddy)
+ENV PROTOCOL_HEADER=x-forwarded-proto
+ENV HOST_HEADER=x-forwarded-host
 COPY --from=builder /app/build ./build
 COPY --from=builder /app/node_modules ./node_modules
 COPY package.json ./

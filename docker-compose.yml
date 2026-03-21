@@ -11,6 +11,9 @@ services:
       - NODE_ENV=production
       - PORT=3000
       - PUBLIC_GROWTH_ENDPOINT=${PUBLIC_GROWTH_ENDPOINT}
+      # adapter-node: correct URLs behind Traefik/Caddy/nginx (Dokploy, Coolify, etc.)
+      - PROTOCOL_HEADER=x-forwarded-proto
+      - HOST_HEADER=x-forwarded-host
     restart: unless-stopped
     env_file:
       - .env
