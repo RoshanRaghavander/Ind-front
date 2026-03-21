@@ -1,8 +1,13 @@
 [phases.setup]
 nixPkgs = ['nodejs_22', 'pnpm-9_x', 'openssl']
 
+[phases.install]
+dependsOn = ['setup']
+cmds = ['pnpm install --frozen-lockfile']
+
 # Node heap for build (8GB VPS: 6GB Node, ~2GB for esbuild + system).
 [phases.build]
+dependsOn = ['install']
 cmds = ['NODE_OPTIONS="--max-old-space-size=6144" pnpm run build']
 
 [variables]
@@ -10,6 +15,12 @@ NODE_OPTIONS = '--max-old-space-size=4096'
 ENABLE_IMAGE_OPTIMIZER = 'false'
 NODE_ENV = 'production'
 UV_THREADPOOL_SIZE = '1'
+# adapter-node listen port (Dokploy usually overrides PORT)
+PORT = '3000'
 # @sveltejs/adapter-node — correct host/protocol behind Dokploy / Traefik / Caddy
 PROTOCOL_HEADER = 'x-forwarded-proto'
 HOST_HEADER = 'x-forwarded-host'
+
+# Explicit start: SvelteKit adapter-node output (matches package.json "start")
+[start]
+cmd = 'node build/index.js'
