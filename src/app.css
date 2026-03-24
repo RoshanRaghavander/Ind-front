@@ -486,12 +486,12 @@
 
     /* base */
     /* --color-primary: var(--color-greyscale-900); */
-    --color-primary: #FF9933;
+    --color-primary: var(--color-greyscale-900);
     /* --color-secondary: var(--color-greyscale-700); */
     /* --color-secondary: #138808; */
-    --color-secondary: #ffffff;
+    --color-secondary: var(--color-greyscale-700);
     /* --color-accent: var(--color-pink-500); */
-    --color-accent: #ffffff;
+    --color-accent: var(--color-saffron-500);
     /* --color-accent-darker: #ca2b58; */
     --color-accent-darker: #E6851F;
     --carousel-gradient: transparent;

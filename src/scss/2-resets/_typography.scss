@@ -23,7 +23,7 @@ body {
 
 ::selection {
 	color: hsl(var(--web-color-black)); -webkit-text-fill-color: hsl(var(--web-color-black));
-	background-color: hsl(var(--web-color-mint-500)); background-clip:revert; -webkit-background-clip:revert;
+	background-color: hsl(var(--web-color-mint-500));
 }
 
 code {
