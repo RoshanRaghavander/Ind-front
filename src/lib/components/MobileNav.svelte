@@ -5,7 +5,6 @@
     import type { NavLink } from './MainNav.svelte';
     import { getIndobaseDashboardUrl } from '$lib/utils/dashboard';
     import { Button } from '$lib/components/ui';
-    import { GithubStats } from '$lib/components/shared';
     import { trackEvent } from '$lib/actions/analytics';
     import { browser } from '$app/environment';
 
@@ -66,8 +65,6 @@
                 </ul>
             </section>
         </div>
-        <div class="web-side-nav-mobile-footer-buttons mx-1!">
-            <GithubStats class="w-full! md:w-fit" />
-        </div>
+
     </div>
 </nav>
