@@ -2,6 +2,12 @@
 @import './styles/typography.css';
 @custom-variant dark (&:where(.dark, .dark *));
 
+img, svg {
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+
 @theme {
     /* Colors */
     --color-*: initial;
