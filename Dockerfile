@@ -9,7 +9,7 @@ COPY scripts ./scripts
 RUN pnpm install --frozen-lockfile
 COPY . .
 ENV UV_THREADPOOL_SIZE=1
-RUN NODE_OPTIONS="--max-old-space-size=2560" pnpm build
+RUN NODE_OPTIONS="--max-old-space-size=2048" pnpm build
 
 FROM node:20 AS runner
 WORKDIR /app
