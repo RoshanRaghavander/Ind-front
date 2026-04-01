@@ -10,8 +10,6 @@ RUN pnpm install --frozen-lockfile
 COPY . .
 ENV UV_THREADPOOL_SIZE=1
 RUN NODE_OPTIONS="--max-old-space-size=2560" pnpm build
-# Prune dev dependencies to save massive amount of memory and disk space
-RUN pnpm prune --prod
 
 FROM node:20 AS runner
 WORKDIR /app
@@ -26,8 +24,12 @@ ENV PUBLIC_GROWTH_ENDPOINT=${PUBLIC_GROWTH_ENDPOINT}
 # Trust reverse-proxy headers (Dokploy / Traefik / Caddy)
 ENV PROTOCOL_HEADER=x-forwarded-proto
 ENV HOST_HEADER=x-forwarded-host
+
+# Cleanest way to get prod deps without memory spikes from prune
+COPY package.json pnpm-lock.yaml ./
+RUN pnpm install --prod --frozen-lockfile
+
 COPY --from=builder /app/build ./build
-COPY --from=builder /app/node_modules ./node_modules
 COPY package.json ./
 EXPOSE 3000
 CMD ["node", "build/index.js"]
