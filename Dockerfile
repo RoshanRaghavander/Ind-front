@@ -9,7 +9,7 @@ COPY scripts ./scripts
 RUN pnpm install --frozen-lockfile
 COPY . .
 ENV UV_THREADPOOL_SIZE=1
-RUN NODE_OPTIONS="--max-old-space-size=1536" pnpm build
+RUN NODE_OPTIONS="--max-old-space-size=2560" pnpm build
 # Prune dev dependencies to save massive amount of memory and disk space
 RUN pnpm prune --prod
 
@@ -18,7 +18,11 @@ WORKDIR /app
 RUN corepack enable
 ENV NODE_ENV=production
 ENV PORT=3000
+
+# Fix the warning: ARG must be declared again in the new stage
+ARG PUBLIC_GROWTH_ENDPOINT
 ENV PUBLIC_GROWTH_ENDPOINT=${PUBLIC_GROWTH_ENDPOINT}
+
 # Trust reverse-proxy headers (Dokploy / Traefik / Caddy)
 ENV PROTOCOL_HEADER=x-forwarded-proto
 ENV HOST_HEADER=x-forwarded-host
