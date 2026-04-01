@@ -27,6 +27,7 @@ ENV HOST_HEADER=x-forwarded-host
 
 # Cleanest way to get prod deps without memory spikes from prune
 COPY package.json pnpm-lock.yaml ./
+COPY scripts ./scripts
 RUN pnpm install --prod --frozen-lockfile
 
 COPY --from=builder /app/build ./build
