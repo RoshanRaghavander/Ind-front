@@ -100,7 +100,7 @@
                 loading="lazy"
                 src="/images/icons/illustrated/dark/functions.png"
                 alt="Functions icon"
-                class="size-7"
+                class="size-7 dark:brightness-100 dark:opacity-100 brightness-0 opacity-70"
             />
             <h3 class="font-aeonik-pro text-label text-primary">Functions</h3>
         </div>

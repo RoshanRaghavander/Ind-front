@@ -185,7 +185,8 @@
                                                     : platform.dark}
                                                 alt={platform.name}
                                                 class={cn(
-                                                    'h-8 w-auto grayscale transition-all duration-500 group-hover:grayscale-0'
+                                                    'h-8 w-auto grayscale transition-all duration-500 group-hover:grayscale-0',
+                                                    $themeInUse === 'light' && !platform.light && 'brightness-0 opacity-70 group-hover:opacity-100'
                                                 )}
                                             />
 
