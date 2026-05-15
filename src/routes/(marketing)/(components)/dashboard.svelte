@@ -34,12 +34,12 @@
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
             >
-                <g transform="translate(8, 11) scale(0.4)">
+                <g transform="translate(8, 19) scale(0.4)">
                     <path d="M20.61 22.27 L34.92 28.63 A1.5 1.5 0 0 1 34.92 31.37 L20.61 37.73 A1.5 1.5 0 0 1 19.39 37.73 L5.08 31.37 A1.5 1.5 0 0 1 5.08 28.63 L19.39 22.27 A1.5 1.5 0 0 1 20.61 22.27 Z" fill="#000000" stroke="#FFC107" stroke-width="2"/>
                     <path d="M20.61 12.27 L34.92 18.63 A1.5 1.5 0 0 1 34.92 21.37 L20.61 27.73 A1.5 1.5 0 0 1 19.39 27.73 L5.08 21.37 A1.5 1.5 0 0 1 5.08 18.63 L19.39 12.27 A1.5 1.5 0 0 1 20.61 12.27 Z" fill="#000000" stroke="#FFFFFF" stroke-width="2"/>
                     <path d="M20.61 2.27 L34.92 8.63 A1.5 1.5 0 0 1 34.92 11.37 L20.61 17.73 A1.5 1.5 0 0 1 19.39 17.73 L5.08 11.37 A1.5 1.5 0 0 1 5.08 8.63 L19.39 2.27 A1.5 1.5 0 0 1 20.61 2.27 Z" fill="#FFC107"/>
                 </g>
-                <text x="38" y="32" fill="#EDEDF0" font-size="14" font-family="system-ui, sans-serif">indobase</text>
+                <text x="28" y="32" fill="#EDEDF0" font-size="14" font-family="system-ui, sans-serif">indobase</text>
                 <text x="130" y="32" fill="#ADADB0" font-size="14" font-family="system-ui, sans-serif"> / </text>
                 <text x="150" y="32" fill="#D8D8DB" font-size="14" font-family="system-ui, sans-serif">Indobase Corp</text>
                 <text x="230" y="32" fill="#ADADB0" font-size="14" font-family="system-ui, sans-serif"> / </text>
