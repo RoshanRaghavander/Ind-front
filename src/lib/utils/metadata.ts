@@ -2,7 +2,7 @@ import type { AuthorData } from '$routes/blog/content';
 
 export const DEFAULT_HOST = 'https://indobase.in';
 export const DEFAULT_DESCRIPTION =
-    'Indobase is an open-source platform for building applications at any scale, using your preferred programming languages and tools.';
+    "Build and launch real apps in hours on India's only DPDP-compliant, INR-priced full-stack platform. No-code builder plus production backend. Data never leaves India.";
 
 /**
  * Generates an Open Graph image URL.
@@ -35,7 +35,7 @@ export function organizationJsonSchema() {
         name: 'Indobase',
         legalName: 'Indobase Technologies Ltd.',
         description:
-            'A secure open-source backend server provides the core APIs required to build web and mobile applications. Indobase provides authentication, database, storage, functions, messaging, and advanced realtime capabilities.',
+            "India's full-stack launch platform for building, launching, and scaling apps with a no-code builder, production backend, INR pricing, and India data residency.",
         logo: 'https://indobase.in/assets/logotype/indobase-white.png'
     });
 }
@@ -48,11 +48,12 @@ export function softwareAppSchema() {
         '@context': 'https://schema.org',
         '@type': 'SoftwareApplication',
         name: 'Indobase',
-        applicationCategory: 'Software development',
-        featureList: 'Authentication, Database, Storage, Functions, Messaging',
+        applicationCategory: 'BusinessApplication',
+        featureList:
+            'No-code builder, Authentication, Database, Storage, Functions, Messaging, Hosting, DPDP compliance, India data residency',
         audience: {
             '@type': 'Audience',
-            audienceType: 'Developers'
+            audienceType: 'Founders, developers, startups, agencies, and enterprise teams in India'
         },
         aggregateRating: {
             '@type': 'AggregateRating',

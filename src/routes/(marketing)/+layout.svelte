@@ -8,8 +8,9 @@
     const { children }: Props = $props();
 </script>
 
-<!-- <MainHeader /> -->
-{@render children()}
+<div class="dark min-h-screen bg-greyscale-900 text-primary">
+    {@render children()}
+</div>
 
 <!-- <MainFooter />
 <SubFooter /> -->

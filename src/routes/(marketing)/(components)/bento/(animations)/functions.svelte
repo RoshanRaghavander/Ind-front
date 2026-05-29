@@ -105,8 +105,8 @@
             <h3 class="font-aeonik-pro text-label text-primary">Functions</h3>
         </div>
         <p class="text-sub-body text-primary max-w-lg font-medium">
-            Deploy and scale serverless functions <span class="text-secondary"
-                >in 30+ secure, isolated runtimes in 13 languages.</span
+            Deploy business logic on demand <span class="text-secondary"
+                >with auto-scaling runtimes across Node.js, Python, PHP, Ruby, Go, Dart, and more.</span
             >
         </p>
     </div>

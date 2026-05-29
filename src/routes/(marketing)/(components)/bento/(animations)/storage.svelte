@@ -75,8 +75,8 @@
             <h3 class="font-aeonik-pro text-label text-primary">Storage</h3>
         </div>
         <p class="text-sub-body text-primary max-w-lg font-medium">
-            <span class="text-secondary">Securely store files with</span> advanced compression, encryption
-            and image transformations.
+            <span class="text-secondary">Store images, video, documents, and uploads with</span>
+            encryption, compression, and on-the-fly transformations built in.
         </p>
     </div>
     <div

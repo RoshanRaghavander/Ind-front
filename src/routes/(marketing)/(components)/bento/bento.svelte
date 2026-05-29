@@ -51,11 +51,18 @@
     ];
 </script>
 
-<div class="container py-20">
+<div id="product-platform" class="container py-20">
     <div class="mx-auto mb-16 flex max-w-5xl flex-col gap-8">
-        <h2 class="text-primary font-aeonik-pro text-title mx-auto max-w-lg text-center">
-            All the products you need, in one platform
-        </h2>
+        <div class="mx-auto max-w-4xl text-center">
+            <p class="text-caption text-secondary font-medium uppercase">Product features</p>
+            <h2 class="text-primary font-aeonik-pro text-title mx-auto mt-4 max-w-3xl text-center">
+                Everything your app needs. Nothing you don't.
+            </h2>
+            <p class="text-description text-secondary mx-auto mt-4 max-w-3xl font-medium">
+                From your first line of logic to your millionth user, Indobase gives you the
+                backend, deployment, and builder workflows to ship from one platform.
+            </p>
+        </div>
 
         <div class="hidden justify-between gap-8 lg:flex">
             <div

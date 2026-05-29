@@ -14,7 +14,7 @@
 
     const {
         title = 'Indobase',
-        description = 'Indobase is an open-source platform for building applications at any scale, using your preferred programming languages and tools.',
+        description = "Build and launch real apps in hours on India's only DPDP-compliant, INR-priced full-stack platform. No-code builder plus production backend. Data never leaves India.",
         ogImage = `${DEFAULT_HOST}/images/open-graph/website.png`
     }: Props = $props();
 </script>

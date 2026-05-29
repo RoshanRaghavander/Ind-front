@@ -1,63 +1,35 @@
 <script lang="ts">
+    import Audiences from './(components)/audiences.svelte';
     import Bento from './(components)/bento/bento.svelte';
+    import CaseStudies from './(components)/case-studies.svelte';
     import Features from './(components)/features.svelte';
+    import FinalCta from './(components)/final-cta.svelte';
     import Hero from './(components)/hero.svelte';
-    import Platforms from './(components)/platforms.svelte';
     import Pricing from './(components)/pricing.svelte';
+    import ProblemSolution from './(components)/problem-solution.svelte';
+    import SocialProof from './(components)/social-proof.svelte';
+    import Templates from './(components)/templates.svelte';
     import { Main } from '$lib/layouts';
     import Head from '$lib/components/meta/head.svelte';
-    import Pullquote from '$lib/components/marketing/pullquote.svelte';
     import { MainFooter } from '$lib/components';
-    import { onMount, onDestroy } from 'svelte';
-
-    const testimonials = [
-        {
-            name: 'Sivakumar Gingee',
-            title: 'Founder & CEO, Indobase',
-            avatar: '/images/testimonials/phil.jpg',
-            quote:
-                'Indobase is the control plane Indian startups have been waiting for – a single platform that removes infra complexity so founders can ship faster and focus on customers instead of servers.'
-        },
-        {
-            name: 'Roshan Raghavander',
-            title: 'Co-founder & CTO, Indobase',
-            avatar: '/images/testimonials/phil.jpg',
-            quote:
-                'We designed Indobase for the realities of building in India – unpredictable scale, tight budgets, and lean teams. It gives startups cloud-level reliability with predictable pricing and a developer experience that feels native to how Indian teams actually work.'
-        }
-    ] as const;
-
-    let activeIndex = 0;
-    let interval: ReturnType<typeof setInterval> | undefined;
-
-    onMount(() => {
-        interval = setInterval(() => {
-            activeIndex = (activeIndex + 1) % testimonials.length;
-        }, 8000);
-    });
-
-    onDestroy(() => {
-        if (interval) {
-            clearInterval(interval);
-        }
-    });
 </script>
 
-<Head title="Indobase - All-in-one infra for solo devs & SMBs" />
+<Head
+    title="Indobase - India's Full-Stack Launch Platform | Build and Deploy Apps Fast"
+    description="Build and launch real apps in hours on India's only DPDP-compliant, INR-priced full-stack platform. No-code builder plus production backend. Data never leaves India."
+/>
 
 <Main>
-    <Hero title="All-in-one infra for solo devs & SMBs" />
-    <Platforms headline="Designed for the tools you work with" />
+    <Hero title="Your idea deserves to be live today." />
+    <SocialProof />
+    <ProblemSolution />
+    <Templates />
     <Bento />
-    <Pullquote
-        name={testimonials[activeIndex].name}
-        title={testimonials[activeIndex].title}
-        avatar={testimonials[activeIndex].avatar}
-    >
-        {testimonials[activeIndex].quote}
-    </Pullquote>
     <Features theme="dark" />
+    <Audiences />
+    <CaseStudies />
     <Pricing />
+    <FinalCta />
 </Main>
 
 <div class="container">

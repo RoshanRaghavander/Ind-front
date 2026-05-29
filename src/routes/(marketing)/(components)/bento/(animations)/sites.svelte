@@ -117,8 +117,8 @@
             <h3 class="font-aeonik-pro text-label text-primary">Sites</h3>
         </div>
         <p class="text-sub-body text-primary max-w-lg font-medium">
-            <span class="text-secondary">Host and maintain</span> your website domains and frontend code.
-            Integrated with all Indobase products.
+            <span class="text-secondary">Deploy your frontend in seconds</span> with custom domains,
+            SSL, and hosting that stays connected to your Indobase backend.
         </p>
     </div>
     <div

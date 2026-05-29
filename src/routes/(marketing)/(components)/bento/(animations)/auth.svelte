@@ -62,9 +62,8 @@
             <h3 class="font-aeonik-pro text-label text-primary">Auth</h3>
         </div>
         <p class="text-sub-body text-primary max-w-lg font-medium">
-            <span class="text-secondary"
-                >Authenticate users securely with multiple login methods like</span
-            > Email/Password, SMS, OAuth, Anonymous, and Magic URLs.
+            <span class="text-secondary">Secure sign-in in minutes with</span> email and password,
+            SMS OTP, OAuth, anonymous sessions, magic links, MFA, and session management.
         </p>
     </div>
     <div

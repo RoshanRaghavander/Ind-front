@@ -36,7 +36,7 @@
                     class="flex-1"
                     event="mobile_nav-sign_up-click"
                 >
-                    Sign up
+                    Start Free
                 </Button>
                 <IsLoggedIn class="flex-1" offerButton={false} />
             {/if}

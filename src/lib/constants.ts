@@ -162,7 +162,7 @@ export const socials: Array<Social> = [
     {
         icon: 'web-icon-discord',
         label: 'Discord',
-        link: 'https://indobase.in/discord'
+        link: 'https://discord.gg/kbUgQQF8s'
     },
     {
         icon: 'web-icon-github',
@@ -172,12 +172,12 @@ export const socials: Array<Social> = [
     {
         icon: 'web-icon-x',
         label: 'Twitter',
-        link: 'https://twitter.com/intent/follow?screen_name=indobase'
+        link: 'https://x.com/Indobase_in'
     },
     {
         icon: 'web-icon-linkedin',
         label: 'LinkedIn',
-        link: 'https://linkedin.com/company/indobase'
+        link: 'https://www.linkedin.com/company/indobase/'
     },
     {
         icon: 'web-icon-youtube',
@@ -185,23 +185,8 @@ export const socials: Array<Social> = [
         link: 'https://youtube.com/@indobase?sub_confirmation=1'
     },
     {
-        icon: 'web-icon-daily-dev',
-        label: 'Daily.dev',
-        link: 'https://app.daily.dev/squads/indobase'
-    },
-    {
-        icon: 'web-icon-bluesky',
-        label: 'Bluesky',
-        link: 'https://bsky.app/profile/indobase.fun'
-    },
-    {
-        icon: 'web-icon-tiktok',
-        label: 'Tiktok',
-        link: 'https://tiktok.com/@indobase'
-    },
-    {
         icon: 'web-icon-instagram',
         label: 'Instagram',
-        link: 'https://instagram.com/indobase.fun'
+        link: 'https://www.instagram.com/indobase_in?igsh=MWRjZDVoYm8wc2NhMA=='
     }
 ];

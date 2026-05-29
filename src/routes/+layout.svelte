@@ -64,10 +64,15 @@
     function applyTheme(theme: Theme) {
         if (!browser) return;
 
-        const resolvedTheme = theme === 'system' ? getSystemTheme() : theme;
+        const resolvedTheme = page.url.pathname.startsWith('/docs')
+            ? theme === 'system'
+                ? getSystemTheme()
+                : theme
+            : 'dark';
         const className = `${resolvedTheme}`;
         document.body.classList.remove('dark', 'light');
         document.body.classList.add(className);
+        document.documentElement.style.setProperty('color-scheme', resolvedTheme);
     }
 
     const thresholds = [0.25, 0.5, 0.75];

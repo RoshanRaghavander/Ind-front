@@ -17,7 +17,6 @@
     import { getIndobaseDashboardUrl } from '$lib/utils/dashboard';
     import { trackEvent } from '$lib/actions/analytics';
     import MainNav from '$lib/components/MainNav.svelte';
-    import { page } from '$app/state';
     import { Button, Icon } from '$lib/components/ui';
 
     export let omitMainId = false;
@@ -95,10 +94,12 @@
     });
 
     $: navLinks = [
-        { label: 'Docs', href: '/docs' },
+        { label: 'Products', href: '#product-platform' },
+        { label: 'Solutions', href: '#audiences-title' },
+        { label: 'Templates', href: '#builder-showcase' },
         { label: 'Pricing', href: '/pricing' },
-        { label: 'Contact', href: '/contact-us' },
-        { label: 'Enterprise', href: '/contact-us/enterprise' }
+        { label: 'Docs', href: '/docs' },
+        { label: 'Blog', href: 'https://indobase.in/blog' }
     ];
 
     $: resolvedTheme = $isMobileNavOpen ? 'dark' : theme;
@@ -116,11 +117,11 @@
         return $scrollInfo.deltaDirChange < 200;
     })();
 
-    const DASHBOARD_URL = getIndobaseDashboardUrl();
+    const DASHBOARD_SIGN_UP_URL = getIndobaseDashboardUrl('/dashboard/sign-up');
 
-    $: mobileButtonHref = DASHBOARD_URL;
-    $: mobileButtonEvent = 'main-start_building_btn-click';
-    $: mobileButtonText = 'Start building';
+    $: mobileButtonHref = DASHBOARD_SIGN_UP_URL;
+    $: mobileButtonEvent = 'main-start_free_btn-click';
+    $: mobileButtonText = 'Start Free';
 
     const handleNav = () => {
         $isMobileNavOpen = !$isMobileNavOpen;
@@ -135,20 +136,25 @@
     >
         <div class="web-mobile-header-start">
             <a href="/">
-                <img
-                    class="web-logo web-u-only-dark"
-                    src="/images/logos/indobase.svg"
-                    alt="appwrite"
-                    height="32"
-                    width="173"
-                />
-                <img
-                    class="web-logo web-u-only-light"
-                    src="/images/logos/indobase-light.svg"
-                    alt="appwrite"
-                    height="32"
-                    width="173"
-                />
+                <div class="flex flex-col gap-0.5">
+                    <img
+                        class="web-logo web-u-only-dark"
+                        src="/images/logos/indobase.svg"
+                        alt="Indobase"
+                        height="32"
+                        width="173"
+                    />
+                    <img
+                        class="web-logo web-u-only-light"
+                        src="/images/logos/indobase-light.svg"
+                        alt="Indobase"
+                        height="32"
+                        width="173"
+                    />
+                    <span class="text-[0.65rem] font-medium tracking-wide text-primary uppercase">
+                        India's Launch Platform
+                    </span>
+                </div>
             </a>
         </div>
         <div class="web-mobile-header-end">
@@ -176,20 +182,25 @@
         >
             <div class="web-main-header-start">
                 <a href="/">
-                    <img
-                        class="web-logo web-u-only-dark"
-                        src="/images/logos/indobase.svg"
-                        alt="appwrite"
-                        height="32"
-                        width="173"
-                    />
-                    <img
-                        class="web-logo web-u-only-light"
-                        src="/images/logos/indobase-light.svg"
-                        alt="appwrite"
-                        height="32"
-                        width="173"
-                    />
+                    <div class="flex flex-col gap-0.5">
+                        <img
+                            class="web-logo web-u-only-dark"
+                            src="/images/logos/indobase.svg"
+                            alt="Indobase"
+                            height="32"
+                            width="173"
+                        />
+                        <img
+                            class="web-logo web-u-only-light"
+                            src="/images/logos/indobase-light.svg"
+                            alt="Indobase"
+                            height="32"
+                            width="173"
+                        />
+                        <span class="text-[0.65rem] font-medium tracking-wide text-primary uppercase">
+                            India's Launch Platform
+                        </span>
+                    </div>
                 </a>
                 {#if !hideNavigation}
                     <MainNav initialized={$initialized} links={navLinks} />
@@ -197,9 +208,14 @@
             </div>
             <div class="web-main-header-end">
                 <span class="nav-badge text-sub-body font-medium text-primary">
-                    Made in India
+                    DPDP compliant
                 </span>
-                <IsLoggedIn offerButton={false} />
+                <Button href="#builder-showcase" variant="secondary" event="main-view_demo-click">
+                    <span class="text">View Demo</span>
+                </Button>
+                <Button href={DASHBOARD_SIGN_UP_URL} event="main-start_building_free-click">
+                    <span class="text">Start Building Free</span>
+                </Button>
             </div>
         </div>
     </header>
