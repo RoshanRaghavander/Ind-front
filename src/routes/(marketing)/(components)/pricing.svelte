@@ -20,7 +20,7 @@
             description: 'Perfect for side projects, proofs of concept, and hackathon builds.',
             event: 'home-pricing-cards-free-click',
             features: [
-                '50,000 monthly active users',
+                '50,000 monthly active users (fair use)',
                 '500 MB database',
                 '5 GB storage',
                 '5 GB egress',

@@ -32,7 +32,7 @@
     } & SvelteHTMLElements['div'];
 
     const {
-        platforms = ['Auth0', 'Firebase', 'Supabase', 'NHost'],
+        platforms = ['Firebase', 'Supabase', 'AWS Amplify', 'Hasura'],
         class: className,
         ...rest
     }: Props = $props();
@@ -63,7 +63,7 @@
     <div class="container overflow-x-hidden max-md:px-5!">
         <div class="mx-auto mb-20 flex max-w-2xl flex-col items-center gap-4 text-center">
             <h2 class="text-display text-primary font-aeonik-pro">
-                Open source <br class="hidden md:block" />alternative to
+                India's managed backend <br class="hidden md:block" />alternative to
 
                 <br class="block md:hidden" />
                 <div
@@ -76,8 +76,9 @@
                 </div>
             </h2>
             <p class="md:text-description text-main-body text-secondary font-medium">
-                Indobase is a 100% open source project, giving you the flexibility and support you
-                need to get your project started.
+                Indobase runs isolated Postgres data planes with Auth, Storage, Realtime, and Edge
+                Functions — plus INR billing and India hosting. Not Appwrite; built on open-source
+                Supabase-style infrastructure.
             </p>
             <div
                 class="mx-auto mt-2 flex w-full flex-col items-center justify-center gap-2 md:flex-row"

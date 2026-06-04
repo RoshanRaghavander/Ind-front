@@ -15,7 +15,7 @@
 </script>
 
 <Head
-    title="Indobase - India's Full-Stack Launch Platform | Build and Deploy Apps Fast"
+    title="Indobase - Managed PostgreSQL Backend for India | Supabase-Compatible APIs"
     description="Build and launch real apps in hours on India's only DPDP-compliant, INR-priced full-stack platform. No-code builder plus production backend. Data never leaves India."
 />
 

@@ -14,7 +14,7 @@
 
     const {
         title = 'Indobase',
-        description = "Build and launch real apps in hours on India's only DPDP-compliant, INR-priced full-stack platform. No-code builder plus production backend. Data never leaves India.",
+        description = "India's managed PostgreSQL backend — Supabase-compatible APIs, Indobase Studio, INR pricing, India data residency. Not Appwrite.",
         ogImage = `${DEFAULT_HOST}/images/open-graph/website.png`
     }: Props = $props();
 </script>

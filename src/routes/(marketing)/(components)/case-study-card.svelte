@@ -23,17 +23,15 @@
         'data-[state="on"]:basis-[70%] data-[state="on"]:bg-black/2  data-[state="on"]:p-8 data-[state="on"]:shadow-[0px_0px_0px_4px_var(--color-offset)]! md:data-[state="on"]:p-12'
     )}
 >
-    <img
-        loading="lazy"
-        src={study.logo}
-        alt={study.headline}
-        width={100}
-        height={100}
+    <span
         class={cn(
-            'h-5 shrink-0 opacity-100 transition-all [grid-area:stack] lg:h-12',
-            'self-center justify-self-center brightness-50 group-[&[data-state=on]]/card:invisible group-[&[data-state=on]]/card:opacity-0'
+            'text-caption text-secondary shrink-0 text-center font-medium uppercase [grid-area:stack]',
+            'self-center justify-self-center group-[&[data-state=on]]/card:invisible group-[&[data-state=on]]/card:opacity-0',
+            'max-w-[12ch] leading-tight'
         )}
-    />
+    >
+        {study.company}
+    </span>
 
     <div
         class={cn(
@@ -41,16 +39,13 @@
             'group-[&[data-state=on]]/card:block group-[&[data-state=on]]/card:opacity-100 group-[&[data-state=on]]/card:blur-none'
         )}
     >
-        <img
-            loading="lazy"
-            width={80}
-            height={80}
-            src={study.logo}
-            alt={study.headline}
-            class={cn('-mt-8 h-20 w-20', {
+        <p
+            class={cn('text-caption text-secondary font-medium uppercase', {
                 'animate-fade-in': isActive
             })}
-        />
+        >
+            {study.company}
+        </p>
 
         <span
             class={cn(
@@ -77,7 +72,7 @@
                     <img
                         loading="lazy"
                         src={study.avatar}
-                        alt={study.headline}
+                        alt={study.name}
                         class="size-8 rounded-full md:size-6"
                     />
                     <span class="text-caption text-primary text-left font-medium text-pretty"

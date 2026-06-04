@@ -1,9 +1,9 @@
 <script lang="ts">
     const stats = [
-        '50,000+ apps built',
-        '200+ cities',
-        'DPDP compliant',
-        'SOC-2 certified'
+        'Postgres + Supabase-compatible APIs',
+        'India data residency',
+        'DPDP aligned',
+        'INR pricing'
     ];
 
     const logos = [

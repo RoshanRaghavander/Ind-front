@@ -2,7 +2,7 @@ import type { AuthorData } from '$routes/blog/content';
 
 export const DEFAULT_HOST = 'https://indobase.in';
 export const DEFAULT_DESCRIPTION =
-    "Build and launch real apps in hours on India's only DPDP-compliant, INR-priced full-stack platform. No-code builder plus production backend. Data never leaves India.";
+    "India's managed PostgreSQL backend — Supabase-compatible APIs, Indobase Studio, INR pricing, and data residency. Not Appwrite.";
 
 /**
  * Generates an Open Graph image URL.
@@ -35,7 +35,7 @@ export function organizationJsonSchema() {
         name: 'Indobase',
         legalName: 'Indobase Technologies Ltd.',
         description:
-            "India's full-stack launch platform for building, launching, and scaling apps with a no-code builder, production backend, INR pricing, and India data residency.",
+            "India's managed PostgreSQL backend platform (Supabase-compatible APIs, Indobase Studio). INR pricing and India data residency. Not affiliated with Appwrite.",
         logo: 'https://indobase.in/assets/logotype/indobase-white.png'
     });
 }
@@ -50,7 +50,7 @@ export function softwareAppSchema() {
         name: 'Indobase',
         applicationCategory: 'BusinessApplication',
         featureList:
-            'No-code builder, Authentication, Database, Storage, Functions, Messaging, Hosting, DPDP compliance, India data residency',
+            'PostgreSQL database, Row Level Security, Authentication (GoTrue), Object storage, Edge Functions (Deno), Realtime, SQL editor, Indobase Studio, DPDP alignment, India data residency, INR billing',
         audience: {
             '@type': 'Audience',
             audienceType: 'Founders, developers, startups, agencies, and enterprise teams in India'

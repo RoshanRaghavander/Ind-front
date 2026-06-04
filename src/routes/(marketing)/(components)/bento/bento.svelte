@@ -3,9 +3,7 @@
     import Auth from './(animations)/auth.svelte';
     import Databases from './(animations)/databases.svelte';
     import Functions from './(animations)/functions.svelte';
-    import Messaging from './(animations)/messaging.svelte';
     import Realtime from './(animations)/realtime.svelte';
-    import Sites from './(animations)/sites.svelte';
     import Storage from './(animations)/storage.svelte';
     import Indobase from './(animations)/indobase.svelte';
 
@@ -36,17 +34,17 @@
             href: '/pricing'
         },
         {
-            label: 'Messaging',
-            icon: '/images/icons/illustrated/dark/messaging.png',
+            label: 'SQL',
+            icon: '/images/icons/illustrated/dark/databases.png',
             href: '/pricing'
         }
     ];
 
     const deploy = [
         {
-            label: 'Sites',
+            label: 'Studio',
             icon: '/images/icons/illustrated/dark/sites.png',
-            href: '/pricing'
+            href: 'https://studio.indobase.in'
         }
     ];
 </script>
@@ -130,8 +128,7 @@
         <Databases />
         <Storage />
         <Functions />
-        <Messaging />
+        <Realtime />
         <Indobase />
-        <Sites />
     </div>
 </div>

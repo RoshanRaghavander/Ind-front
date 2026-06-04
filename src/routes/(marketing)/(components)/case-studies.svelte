@@ -1,12 +1,9 @@
 <script lang="ts" module>
-    import DevKind from '../(assets)/logos/devkind.svg';
-    import LangX from '../(assets)/logos/langx.svg';
-    import KCollect from '../(assets)/logos/k-collect.svg';
     import CaseStudyCard from './case-study-card.svelte';
 
     const studies = [
         {
-            logo: DevKind,
+            company: 'B2B SaaS · Bengaluru',
             headline: 'I launched my SaaS in 3 days with a working MVP on day one',
             blurb:
                 'The builder gave me a usable product in hours, and the DPDP-ready backend helped my first enterprise customer say yes faster.',
@@ -16,7 +13,7 @@
             url: '#'
         },
         {
-            logo: LangX,
+            company: 'Fintech · Mumbai',
             headline: 'We moved off USD billing and passed our compliance review cleanly',
             blurb:
                 'Switching from Supabase to Indobase cut billing friction, kept data in India, and removed exceptions from our audit checklist.',
@@ -26,8 +23,8 @@
             url: '#'
         },
         {
-            logo: KCollect,
-            headline: 'One console turned managed backend into a new agency revenue line',
+            company: 'Agency · Hyderabad',
+            headline: 'One console turned managed Postgres into a new agency revenue line',
             blurb:
                 'We now manage multiple client backends from one place and sell a fully managed backend service with far less operational overhead.',
             name: 'Founder',

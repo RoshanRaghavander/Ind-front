@@ -10,7 +10,7 @@
 
     const {
         title = 'Build like a team of hundreds',
-        subtitle = 'Indobase is an open-source, all-in-one development platform. Use built-in backend infrastructure and web hosting, all from a single place.',
+        subtitle = 'Indobase is a managed PostgreSQL backend for Indian teams — Supabase-compatible APIs, Indobase Studio, and data that stays in India.',
         showDashboard = true,
         ctaLabel = 'Start building for free',
         ctaHref = getIndobaseDashboardUrl()
