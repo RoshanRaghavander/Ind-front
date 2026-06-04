@@ -16,7 +16,7 @@
 
 <Head
     title="Indobase - Managed PostgreSQL Backend for India | Supabase-Compatible APIs"
-    description="Build and launch real apps in hours on India's only DPDP-compliant, INR-priced full-stack platform. No-code builder plus production backend. Data never leaves India."
+    description="India's managed PostgreSQL backend — Supabase-compatible APIs, Indobase Studio, INR pricing, and data residency. Not Appwrite."
 />
 
 <Main>
