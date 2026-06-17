@@ -1,65 +1,100 @@
 <script lang="ts">
-    import Bento from './(components)/bento/bento.svelte';
-    import Features from './(components)/features.svelte';
-    import Hero from './(components)/hero.svelte';
-    import Platforms from './(components)/platforms.svelte';
-    import Pricing from './(components)/pricing.svelte';
     import { Main } from '$lib/layouts';
     import Head from '$lib/components/meta/head.svelte';
-    import Pullquote from '$lib/components/marketing/pullquote.svelte';
-    import { MainFooter } from '$lib/components';
-    import { onMount, onDestroy } from 'svelte';
-
-    const testimonials = [
-        {
-            name: 'Sivakumar Gingee',
-            title: 'Founder & CEO, Indobase',
-            avatar: '/images/testimonials/phil.jpg',
-            quote:
-                'Indobase is the control plane Indian startups have been waiting for – a single platform that removes infra complexity so founders can ship faster and focus on customers instead of servers.'
-        },
-        {
-            name: 'Roshan Raghavander',
-            title: 'Co-founder & CTO, Indobase',
-            avatar: '/images/testimonials/phil.jpg',
-            quote:
-                'We designed Indobase for the realities of building in India – unpredictable scale, tight budgets, and lean teams. It gives startups cloud-level reliability with predictable pricing and a developer experience that feels native to how Indian teams actually work.'
-        }
-    ] as const;
-
-    let activeIndex = 0;
-    let interval: ReturnType<typeof setInterval> | undefined;
-
-    onMount(() => {
-        interval = setInterval(() => {
-            activeIndex = (activeIndex + 1) % testimonials.length;
-        }, 8000);
-    });
-
-    onDestroy(() => {
-        if (interval) {
-            clearInterval(interval);
-        }
-    });
+    import GenHero from './(components)/landing/gen-hero.svelte';
+    import Bharat from './(components)/landing/bharat.svelte';
+    import PreviewSplit from './(components)/landing/preview-split.svelte';
+    import FeaturesGrid from './(components)/landing/features-grid.svelte';
+    import LandingFooter from './(components)/landing/landing-footer.svelte';
+    import { reveal } from './(components)/landing/reveal';
 </script>
 
-<Head title="Indobase - All-in-one infra for solo devs & SMBs" />
+<Head title="Indobase - Generate your full-stack app" />
 
 <Main>
-    <Hero title="All-in-one infra for solo devs & SMBs" />
-    <Platforms headline="Designed for the tools you work with" />
-    <Bento />
-    <Pullquote
-        name={testimonials[activeIndex].name}
-        title={testimonials[activeIndex].title}
-        avatar={testimonials[activeIndex].avatar}
-    >
-        {testimonials[activeIndex].quote}
-    </Pullquote>
-    <Features theme="dark" />
-    <Pricing />
+    <div class="landing">
+        <GenHero />
+
+        <div use:reveal>
+            <Bharat />
+        </div>
+
+        <div use:reveal>
+            <PreviewSplit
+                variant="mobile"
+                eyebrow="Developer experience"
+                title="Live-preview split"
+                subtitle="See your UI update live as you build, rendered straight from the Indobase database."
+                filename="index.js"
+            />
+        </div>
+
+        <div use:reveal>
+            <PreviewSplit
+                variant="data"
+                eyebrow="Type-safe by default"
+                title="Schema to data, instantly"
+                subtitle="Define a collection once and get a fully-typed client plus a live data view — no migrations to hand-write."
+                filename="models.js"
+            />
+        </div>
+
+        <div id="features" use:reveal>
+            <FeaturesGrid />
+        </div>
+
+        <LandingFooter />
+    </div>
 </Main>
 
-<div class="container">
-    <MainFooter />
-</div>
+<style>
+    .landing {
+        position: relative;
+        isolation: isolate;
+        background-color: #0a0907;
+        color: #fff;
+    }
+
+    /* atmospheric gold glows layered down the full page (docs-style depth) */
+    .landing::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        z-index: -2;
+        pointer-events: none;
+        background:
+            radial-gradient(1000px 560px at 50% -4%, rgba(255, 153, 51, 0.16), transparent 60%),
+            radial-gradient(720px 520px at 10% 16%, rgba(217, 159, 60, 0.12), transparent 55%),
+            radial-gradient(780px 540px at 90% 30%, rgba(255, 120, 40, 0.09), transparent 55%),
+            radial-gradient(860px 600px at 16% 58%, rgba(214, 170, 92, 0.1), transparent 55%),
+            radial-gradient(960px 640px at 84% 82%, rgba(255, 153, 51, 0.11), transparent 55%),
+            radial-gradient(900px 600px at 50% 100%, rgba(217, 159, 60, 0.08), transparent 60%);
+    }
+
+    /* faint dot texture across the whole page */
+    .landing::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        pointer-events: none;
+        background-image: radial-gradient(rgba(245, 220, 170, 0.05) 1px, transparent 1px);
+        background-size: 24px 24px;
+        mask-image: radial-gradient(ellipse 100% 70% at 50% 0%, #000 30%, transparent 85%);
+        -webkit-mask-image: radial-gradient(ellipse 100% 70% at 50% 0%, #000 30%, transparent 85%);
+    }
+
+    /* scroll-reveal (classes toggled by the reveal action) */
+    :global(.landing .reveal) {
+        opacity: 0;
+        transform: translateY(34px);
+        transition:
+            opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1) var(--reveal-delay, 0ms),
+            transform 0.7s cubic-bezier(0.22, 1, 0.36, 1) var(--reveal-delay, 0ms);
+        will-change: opacity, transform;
+    }
+    :global(.landing .reveal.is-visible) {
+        opacity: 1;
+        transform: none;
+    }
+</style>

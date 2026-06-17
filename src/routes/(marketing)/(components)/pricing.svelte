@@ -12,6 +12,7 @@
         tag?: string;
         subtitle?: string;
         event: string;
+        builder: string;
         features: string[];
     }> = [
         {
@@ -20,6 +21,7 @@
             subtitle: ' / month',
             description: 'Get started with:',
             event: 'home-pricing-cards-free-click',
+            builder: '5 AI app generations / mo',
             features: [
                 'Unlimited API requests',
                 '50,000 monthly active users',
@@ -32,10 +34,11 @@
         },
         {
             name: 'Get Started',
-            price: '₹2,499',
+            price: '₹2,999',
             subtitle: ' / month',
             description: 'Everything in the Free Plan, plus:',
             event: 'home-pricing-cards-pro-click',
+            builder: '100 AI app generations / mo',
             features: [
                 '100,000 monthly active users',
                 '8 GB disk size per project',
@@ -49,10 +52,11 @@
         },
         {
             name: 'Get Started',
-            price: '₹49,999',
+            price: '₹54,999',
             subtitle: ' / month',
             description: 'Everything in the Pro Plan, plus:',
             event: 'home-pricing-cards-scale-click',
+            builder: 'Unlimited AI generations',
             features: [
                 'SOC2',
                 'Project-scoped and read-only access',
@@ -69,6 +73,7 @@
             price: 'Custom',
             description: 'Enterprise features:',
             event: 'home-pricing-cards-enterprise-click',
+            builder: 'Unlimited + custom AI models',
             features: [
                 'Designated Support manager',
                 'Uptime SLAs',
@@ -137,7 +142,7 @@
         <div
             class="border-smooth divide-smooth grid min-h-75 w-full grid-cols-1 divide-y divide-dashed rounded-3xl border bg-white/2 backdrop-blur-lg md:grid-cols-2 md:gap-y-12 md:divide-y-0 md:px-4 md:py-8 {gridCols} lg:divide-x"
         >
-            {#each visiblePlans as { name, price, tag: label, subtitle, description, event, features }, index (`${name},${label},${index}`)}
+            {#each visiblePlans as { name, price, tag: label, subtitle, description, event, builder, features }, index (`${name},${label},${index}`)}
                 {@const isEnterprise = name === 'Custom'}
                 <div class="flex h-full w-full grow flex-col gap-1 px-5 py-5 md:py-0">
                     <div class="flex items-center gap-2.5">
@@ -159,6 +164,33 @@
                                 >
                             {/if}
                         </span>
+
+                        {#if builder}
+                            <div class="builder-highlight mt-4 rounded-xl px-3 py-2.5">
+                                <div class="flex items-center gap-1.5">
+                                    <svg
+                                        width="14"
+                                        height="14"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        class="text-accent"
+                                    >
+                                        <path
+                                            d="M12 3v4m0 10v4m9-9h-4M7 12H3m13.5-6.5-2.8 2.8m-5.4 5.4-2.8 2.8m0-11 2.8 2.8m5.4 5.4 2.8 2.8"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                        />
+                                    </svg>
+                                    <span class="text-caption font-semibold text-primary"
+                                        >AI Builder included</span
+                                    >
+                                </div>
+                                <span class="text-caption text-secondary mt-0.5 block"
+                                    >{builder}</span
+                                >
+                            </div>
+                        {/if}
 
                         <p class="text-caption text-secondary mt-4 mb-2 block font-medium">
                             {description}
@@ -186,3 +218,14 @@
         </div>
     </div>
 </div>
+
+<style>
+    .builder-highlight {
+        background: linear-gradient(
+            135deg,
+            color-mix(in srgb, hsl(var(--color-saffron-hue) 100% 60%) 14%, transparent),
+            color-mix(in srgb, hsl(var(--color-saffron-hue) 100% 60%) 4%, transparent)
+        );
+        border: 1px solid color-mix(in srgb, hsl(var(--color-saffron-hue) 100% 60%) 28%, transparent);
+    }
+</style>
