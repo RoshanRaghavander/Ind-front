@@ -6,6 +6,40 @@
 
     const features = [
         {
+            label: 'DPDP compliant',
+            description:
+                "India's Digital Personal Data Protection alignment is built into every deployment by default.",
+            icon: '/images/icons/gradients/star.svg',
+            href: '/pricing'
+        },
+        {
+            label: 'India data residency',
+            description:
+                "Your users' data stays in Indian data centres instead of being replicated outside the country.",
+            icon: '/images/icons/gradients/globe.svg',
+            href: '/pricing'
+        },
+        {
+            label: 'INR pricing',
+            description:
+                'No USD bills, exchange-rate surprises, or hidden currency conversion fees.',
+            icon: '/images/icons/gradients/cloud-credit.svg',
+            href: '/pricing'
+        },
+        {
+            label: 'SOC-2',
+            description: 'Enterprise-grade security controls with audited operational safeguards.',
+            icon: '/images/icons/gradients/soc-2.svg',
+            href: '/pricing'
+        },
+        {
+            label: 'HIPAA ready',
+            description:
+                'Protect healthtech workloads with HIPAA-ready controls available for regulated teams.',
+            icon: '/images/icons/gradients/hipaa.svg',
+            href: '/pricing'
+        },
+        {
             label: 'DDoS',
             description:
                 'Automatically detect and mitigate Distributed Denial-of-Service (DDoS) attacks.',
@@ -14,44 +48,14 @@
         },
         {
             label: 'Encryption',
-            description: 'Built-in data encryption both in rest and in transit.',
+            description: 'AES-256 at rest and TLS 1.3 in transit across your data and APIs.',
             icon: '/images/icons/gradients/lock.svg',
             href: '/pricing'
         },
         {
             label: 'Abuse protection',
-            description: 'Protect your APIs from abuse with built-in protection.',
+            description: 'Built-in rate limiting and anomaly detection protect your APIs from abuse.',
             icon: '/images/icons/gradients/verified.svg',
-            href: '/pricing'
-        },
-        {
-            label: 'Data migrations',
-            description: 'Easily transfer data from 3rd parties or between Cloud and self-hosted.',
-            icon: '/images/icons/gradients/database.svg',
-            href: '/pricing'
-        },
-        {
-            label: 'DPDA',
-            description: 'Safeguard user data and privacy with provided DPDA regulations.',
-            icon: '/images/icons/gradients/star.svg',
-            href: '/pricing'
-        },
-        {
-            label: 'SOC-2',
-            description: 'Ensure the highest level of security and privacy protection.',
-            icon: '/images/icons/gradients/soc-2.svg',
-            href: '/pricing'
-        },
-        {
-            label: 'HIPAA',
-            description: 'Protect sensitive user health data.',
-            icon: '/images/icons/gradients/hipaa.svg',
-            href: '/pricing'
-        },
-        {
-            label: 'CCPA',
-            description: 'Protect sensitive user health data.',
-            icon: '/images/icons/gradients/ccpa.svg',
             href: '/pricing'
         }
     ];
@@ -74,14 +78,11 @@
             <h2
                 class="text-title font-aeonik-pro text-primary max-w-[700px] text-3xl leading-12 text-pretty sm:text-4xl md:text-5xl"
             >
-                Safely scale with built-in
-                <span class="whitespace-nowrap">security and compliance</span><span
-                    class="text-accent">_</span
-                >
+                Built for India. Certified by everyone who matters.<span class="text-accent">_</span>
             </h2>
             <p class="text-secondary text-description mt-4 max-w-full font-medium lg:max-w-xl">
-                With a security-first approach, we ensure your products and users are safe by
-                default, making it easy for you to adhere to strict safety policies.
+                Your users are in India, your billing is in INR, and your compliance checklist is
+                non-negotiable. Indobase is the launch platform that lines those up by default.
             </p>
         </section>
     </div>

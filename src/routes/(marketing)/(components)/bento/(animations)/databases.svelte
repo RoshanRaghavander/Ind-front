@@ -159,8 +159,8 @@
             <h3 class="font-aeonik-pro text-label text-primary">Databases</h3>
         </div>
         <p class="text-sub-body text-primary max-w-lg font-medium">
-            Scalable and robust databases <span class="text-secondary"
-                >backed by your favorite technologies.</span
+            Real-time, managed databases <span class="text-secondary"
+                >with secure access controls and instant APIs generated from your schema.</span
             >
         </p>
     </div>

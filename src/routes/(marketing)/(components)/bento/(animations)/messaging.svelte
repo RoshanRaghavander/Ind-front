@@ -69,8 +69,8 @@
             <h3 class="font-aeonik-pro text-label text-primary">Messaging</h3>
         </div>
         <p class="text-sub-body text-primary max-w-lg font-medium">
-            Set up a full-functioning messaging service that covers <span class="text-secondary"
-                >multiple channels under one unified platform.</span
+            Send SMS, email, and push notifications <span class="text-secondary"
+                >from one dashboard instead of stitching together separate providers.</span
             >
         </p>
     </div>

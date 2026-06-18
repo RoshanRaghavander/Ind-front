@@ -30,6 +30,10 @@ terraform/**/**/*.tfstate*
 *.ps1
 *.log
 *.txt
+!static/llms.txt
+!static/robots.txt
+!src/routes/llms.txt/
+!src/routes/robots.txt/
 check_output.txt
 check_output_utf8.txt
 

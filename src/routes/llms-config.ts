@@ -9,9 +9,9 @@ export const SPECIAL_PAGES = [
         title: 'Integrations',
         description:
             'Connect your favorite apps to Indobase for a unified tech stack. Explore the Indobase catalog: a marketplace to find integrations for your projects.',
-        fullContent: `Connect your favorite apps to Indobase for a unified tech stack. Explore the Indobase catalog: a marketplace to find integrations for your projects.
+        fullContent: `Connect your favorite apps to Indobase for a unified tech stack. Explore integrations for Postgres-backed Indobase projects.
 
-Browse integrations by category including AI, Deployments, Messaging, Auth, Payments, Logging, MCP, Databases, Search, Sites, and Storage.`
+Browse integrations by category including AI, Auth, Payments, Logging, MCP, Databases, Storage, and Edge Functions. Indobase is a PostgreSQL / Supabase-compatible platform — not Appwrite.`
     }
     // Add more special pages here as needed
 ] as const;

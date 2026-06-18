@@ -3,9 +3,7 @@
     import Auth from './(animations)/auth.svelte';
     import Databases from './(animations)/databases.svelte';
     import Functions from './(animations)/functions.svelte';
-    import Messaging from './(animations)/messaging.svelte';
     import Realtime from './(animations)/realtime.svelte';
-    import Sites from './(animations)/sites.svelte';
     import Storage from './(animations)/storage.svelte';
     import Indobase from './(animations)/indobase.svelte';
 
@@ -36,26 +34,33 @@
             href: '/pricing'
         },
         {
-            label: 'Messaging',
-            icon: '/images/icons/illustrated/dark/messaging.png',
+            label: 'SQL',
+            icon: '/images/icons/illustrated/dark/databases.png',
             href: '/pricing'
         }
     ];
 
     const deploy = [
         {
-            label: 'Sites',
+            label: 'Studio',
             icon: '/images/icons/illustrated/dark/sites.png',
-            href: '/pricing'
+            href: 'https://studio.indobase.in'
         }
     ];
 </script>
 
-<div class="container py-20">
+<div id="product-platform" class="container py-20">
     <div class="mx-auto mb-16 flex max-w-5xl flex-col gap-8">
-        <h2 class="text-primary font-aeonik-pro text-title mx-auto max-w-lg text-center">
-            All the products you need, in one platform
-        </h2>
+        <div class="mx-auto max-w-4xl text-center">
+            <p class="text-caption text-secondary font-medium uppercase">Product features</p>
+            <h2 class="text-primary font-aeonik-pro text-title mx-auto mt-4 max-w-3xl text-center">
+                Everything your app needs. Nothing you don't.
+            </h2>
+            <p class="text-description text-secondary mx-auto mt-4 max-w-3xl font-medium">
+                From your first line of logic to your millionth user, Indobase gives you the
+                backend, deployment, and builder workflows to ship from one platform.
+            </p>
+        </div>
 
         <div class="hidden justify-between gap-8 lg:flex">
             <div
@@ -123,8 +128,7 @@
         <Databases />
         <Storage />
         <Functions />
-        <Messaging />
+        <Realtime />
         <Indobase />
-        <Sites />
     </div>
 </div>

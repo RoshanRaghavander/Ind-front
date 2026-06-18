@@ -14,7 +14,7 @@
 
     const {
         title = 'Indobase',
-        description = 'Indobase is an open-source platform for building applications at any scale, using your preferred programming languages and tools.',
+        description = "India's managed PostgreSQL backend — Supabase-compatible APIs, Indobase Studio, INR pricing, India data residency. Not Appwrite.",
         ogImage = `${DEFAULT_HOST}/images/open-graph/website.png`
     }: Props = $props();
 </script>

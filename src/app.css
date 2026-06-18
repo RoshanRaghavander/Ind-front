@@ -21,7 +21,7 @@ img, svg {
     --color-primary: var(--color-primary);
     --color-secondary: var(--color-secondary);
     --color-accent: var(--color-saffron-500);
-    --color-accent-darker: hsl(39 100% 45%);
+    --color-accent-darker: hsl(47 72% 54%);
     --color-smooth: var(--color-smooth);
     --color-subtle: var(--color-subtle);
     --color-tertiary: var(--color-tertiary);
@@ -33,11 +33,11 @@ img, svg {
     --color-pink-600: hsl(var(--color-pink-hue) 65% 48%);
     --color-pink-700: hsl(var(--color-pink-hue) 65% 36%);
 
-    /* saffron (India-inspired primary) */
-    --color-saffron-200: hsl(var(--color-saffron-hue) 100% 88%);
-    --color-saffron-500: hsl(var(--color-saffron-hue) 100% 60%);
-    --color-saffron-600: hsl(var(--color-saffron-hue) 100% 45%);
-    --color-saffron-700: hsl(var(--color-saffron-hue) 100% 35%);
+    /* mustard primary */
+    --color-saffron-200: hsl(var(--color-saffron-hue) 100% 86%);
+    --color-saffron-500: hsl(var(--color-saffron-hue) 100% 67%);
+    --color-saffron-600: hsl(var(--color-saffron-hue) 72% 54%);
+    --color-saffron-700: hsl(var(--color-saffron-hue) 64% 42%);
 
     /* green (India-inspired secondary) */
     --color-green-200: hsl(var(--color-green-hue) 78% 75%);
@@ -480,6 +480,7 @@ img, svg {
 
     /* color hues */
     --color-pink-hue: 343;
+    --color-saffron-hue: 47;
     --color-secondary-hue: 351;
     --color-red-hue: 3;
     --color-orange-hue: 18;
@@ -499,7 +500,7 @@ img, svg {
     /* --color-accent: var(--color-pink-500); */
     --color-accent: var(--color-saffron-500);
     /* --color-accent-darker: #ca2b58; */
-    --color-accent-darker: #E6851F;
+    --color-accent-darker: #dfbf41;
     --carousel-gradient: transparent;
     --color-badge-bg: var(--color-badge-bg-light);
     --color-badge-border: var(--color-badge-border-light);
@@ -513,8 +514,8 @@ img, svg {
 .dark {
     /* --color-primary: var(--color-greyscale-100);
     --color-secondary: var(--color-greyscale-300); */
-    --color-primary: #FF9933;
-    /* Saffron */
+    --color-primary: #FFDB58;
+    /* Mustard */
     --color-secondary: #ffffff;
     /* --color-secondary: #138808;  */
     --carousel-gradient: 23, 23, 26;

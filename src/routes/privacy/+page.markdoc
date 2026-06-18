@@ -381,7 +381,7 @@ The following rights (which may be subject to certain exemptions or derogations)
 
 {% count_title  / %}
 
-You can exercise your rights by contacting us at privacy@appwrite.io. You may use an authorized agent to submit a request on your behalf if you provide the authorized agent written permission signed by you. To protect your privacy, we may take steps to verify your identity before fulfilling your request. Subject to legal and other permissible considerations, we will make every reasonable effort to honor your request promptly in accordance with applicable law or inform you if we require further information in order to fulfill your request. When processing your request, we may ask you for additional information to confirm or verify your identity and for security purposes, before processing and/or honoring your request. We reserve the right to charge a fee where permitted by law, for instance, if your request is manifestly unfounded or excessive. In the event that your request would adversely affect the rights and freedoms of others (for example, would impact the duty of confidentiality we owe to others) or if we are legally entitled to deal with your request in a different way than initially requested, we will address your request to the maximum extent possible, all in accordance with applicable law. 
+You can exercise your rights by contacting us at privacy@indobase.in. You may use an authorized agent to submit a request on your behalf if you provide the authorized agent written permission signed by you. To protect your privacy, we may take steps to verify your identity before fulfilling your request. Subject to legal and other permissible considerations, we will make every reasonable effort to honor your request promptly in accordance with applicable law or inform you if we require further information in order to fulfill your request. When processing your request, we may ask you for additional information to confirm or verify your identity and for security purposes, before processing and/or honoring your request. We reserve the right to charge a fee where permitted by law, for instance, if your request is manifestly unfounded or excessive. In the event that your request would adversely affect the rights and freedoms of others (for example, would impact the duty of confidentiality we owe to others) or if we are legally entitled to deal with your request in a different way than initially requested, we will address your request to the maximum extent possible, all in accordance with applicable law. 
 
 {% count_title  / %}
 Deleting your Cloud account: Should you ever decide to delete your Cloud account, you may do so in the Console on the [account settings page](https://cloud.indobase.io/console/account). If you terminate your account, any association between your account and Personal Data we store will no longer be accessible through your account. However, given the nature of sharing on certain services, any public activity on your account prior to deletion will remain stored on our servers and will remain accessible to the public. 
@@ -389,7 +389,7 @@ Deleting your Cloud account: Should you ever decide to delete your Cloud account
 
 {% count_section %}
 # Use by children
-We do not offer our products or services for use by children and, therefore, we do not knowingly collect Personal Data from, and/or about children under the age of eighteen (18). If you are under the age of eighteen (18), do not provide any Personal Data to us without involvement of a parent or a guardian. For the purposes of the GDPR, we do not intend to offer information society services directly to children. In the event that we become aware that you provide Personal Data in violation of applicable privacy laws, we reserve the right to delete it. If you believe that we might have any such information, please contact us at privacy@appwrite.io. 
+We do not offer our products or services for use by children and, therefore, we do not knowingly collect Personal Data from, and/or about children under the age of eighteen (18). If you are under the age of eighteen (18), do not provide any Personal Data to us without involvement of a parent or a guardian. For the purposes of the GDPR, we do not intend to offer information society services directly to children. In the event that we become aware that you provide Personal Data in violation of applicable privacy laws, we reserve the right to delete it. If you believe that we might have any such information, please contact us at privacy@indobase.in. 
 {%/count_section %}
 
 {% count_section %}
@@ -441,7 +441,7 @@ Do Not Track (“DNT”) is a privacy preference that users can set in certain w
 {% count_section %}
 # Contact us
 
-If you have any questions, concerns or complaints regarding our compliance with this notice and the data protection laws, or if you wish to exercise your rights, we encourage you to first contact us at privacy@appwrite.io.
+If you have any questions, concerns or complaints regarding our compliance with this notice and the data protection laws, or if you wish to exercise your rights, we encourage you to first contact us at privacy@indobase.in.
 
 {% /count_section %}
 
