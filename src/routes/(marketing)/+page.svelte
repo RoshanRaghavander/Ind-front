@@ -13,9 +13,11 @@
 
 <Main>
     <div class="landing">
+        <span id="builder-showcase" aria-hidden="true" class="block"></span>
         <GenHero />
 
         <div use:reveal>
+            <span id="audiences-title" aria-hidden="true" class="block"></span>
             <Bharat />
         </div>
 
@@ -40,6 +42,7 @@
         </div>
 
         <div id="features" use:reveal>
+            <span id="product-platform" aria-hidden="true" class="block"></span>
             <FeaturesGrid />
         </div>
 
