@@ -3,7 +3,7 @@
         { label: 'Features', href: '#features' },
         { label: 'Pricing', href: '/pricing' },
         { label: 'Docs', href: '/docs' },
-        { label: 'Blog', href: '/blog' }
+        { label: 'Contact', href: '/contact-us' }
     ];
 </script>
 
